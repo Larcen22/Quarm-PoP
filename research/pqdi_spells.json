@@ -1,0 +1,2414 @@
+{
+ "6": {
+  "name": "Ignite Blood",
+  "mana": 250,
+  "skill": "Alteration",
+  "casting_time": 4.0,
+  "recast_time": 2.25,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "2 min 6 sec (21 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 56 per tick"
+  ]
+ },
+ "13": {
+  "name": "Complete Healing",
+  "mana": 400,
+  "skill": "Alteration",
+  "casting_time": 10.0,
+  "recast_time": 2.25,
+  "recovery_time": 2.5,
+  "range": 100,
+  "duration": "Instant",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Hitpoints by 7500"
+  ]
+ },
+ "36": {
+  "name": "Gate",
+  "mana": 70,
+  "skill": "Alteration",
+  "casting_time": 5.0,
+  "recast_time": 8.0,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "Instant",
+  "resist_type": "Unresistable",
+  "target_type": "Self only",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Gate"
+  ]
+ },
+ "49": {
+  "name": "Nullify Magic",
+  "mana": 50,
+  "skill": "Abjuration",
+  "casting_time": 4.5,
+  "recast_time": 6.0,
+  "recovery_time": 2.25,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Cancel Magic (4)",
+   "2: Effect type: Cancel Magic (4)"
+  ]
+ },
+ "73": {
+  "name": "Gravity Flux",
+  "mana": 337,
+  "skill": "Alteration",
+  "casting_time": 5.9,
+  "recast_time": 10.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 248 (L39) to 300 (L65)",
+   "2: Effect type: Toss Up by 100"
+  ]
+ },
+ "133": {
+  "name": "Paralyzing Earth",
+  "mana": 100,
+  "skill": "Alteration",
+  "casting_time": 2.5,
+  "recast_time": 2.5,
+  "recovery_time": 2.25,
+  "range": 200,
+  "duration": "3 min  (30 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Root"
+  ]
+ },
+ "732": {
+  "name": "Ice Comet",
+  "mana": 400,
+  "skill": "Evocation",
+  "casting_time": 6.3,
+  "recast_time": 2.25,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Cold",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 1110 (L49) to 1120 (L50)"
+  ]
+ },
+ "794": {
+  "name": "Fist of Earth",
+  "mana": 0,
+  "skill": "Evocation",
+  "casting_time": 0.0,
+  "recast_time": 0.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 200"
+  ]
+ },
+ "808": {
+  "name": "Avatar Power",
+  "mana": 0,
+  "skill": "Evocation",
+  "casting_time": 0.0,
+  "recast_time": 35.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "Instant",
+  "resist_type": "Unresistable",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 100",
+   "2: Effect type: Cancel Magic (9)"
+  ]
+ },
+ "820": {
+  "name": "FlameSongOfRo",
+  "mana": 0,
+  "skill": "Evocation",
+  "casting_time": 0.0,
+  "recast_time": 12.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "6 sec (1 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 850 per tick"
+  ]
+ },
+ "836": {
+  "name": "Diseased Cloud",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 12.0,
+  "recovery_time": 0.0,
+  "range": 300,
+  "duration": "3 min 12 sec (32 ticks)",
+  "resist_type": "Disease",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Disease Counter by 9",
+   "2: Effect type: Decrease Attack Speed by 55%",
+   "3: Effect type: Decrease Hitpoints when cast by 1250"
+  ]
+ },
+ "955": {
+  "name": "Beholder Dispel",
+  "mana": 0,
+  "skill": "Abjuration",
+  "casting_time": 0.25,
+  "recast_time": 12.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Cancel Magic (9)",
+   "2: Effect type: Cancel Magic (9)",
+   "3: Effect type: Cancel Magic (9)",
+   "4: Effect type: Cancel Magic (9)"
+  ]
+ },
+ "982": {
+  "name": "Cazic Touch",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 0.0,
+  "recovery_time": 0.0,
+  "range": 1000,
+  "duration": "Instant",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 20000"
+  ]
+ },
+ "1032": {
+  "name": "Hail Storm",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 2.0,
+  "recast_time": 30.0,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 400",
+   "2: Effect type: Stun (0.001 sec)"
+  ]
+ },
+ "1040": {
+  "name": "Meteor Storm",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 2.0,
+  "recast_time": 40.0,
+  "recovery_time": 2.25,
+  "range": 100,
+  "duration": "Instant",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Mana by 500",
+   "3: Effect type: Stun (1.0 sec)",
+   "4: Effect type: Decrease Hitpoints by 1500"
+  ]
+ },
+ "1042": {
+  "name": "Storm Comet",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 1.5,
+  "recast_time": 30.0,
+  "recovery_time": 2.25,
+  "range": 200,
+  "duration": "1 hour (600 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Movement by 10%",
+   "2: Effect type: Decrease Attack Speed by 90%",
+   "3: Effect type: Decrease Hitpoints when cast by 3000",
+   "4: Effect type: Decrease Curse Counter by 36"
+  ]
+ },
+ "1043": {
+  "name": "Manastorm",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 36.0,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 600",
+   "2: Effect type: Decrease Mana by 200"
+  ]
+ },
+ "1044": {
+  "name": "Rage of the Rainkeeper",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 1.5,
+  "recast_time": 40.0,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "1 min 48 sec (18 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Levitate",
+   "2: Effect type: SpinStun",
+   "3: Effect type: Decrease Hitpoints when cast by 800",
+   "4: Effect type: Decrease Hitpoints by 80 per tick"
+  ]
+ },
+ "1045": {
+  "name": "Chain Lightning",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 0.0,
+  "recovery_time": 0.0,
+  "range": 100,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 500",
+   "2: Effect type: Decrease Mana by 500"
+  ]
+ },
+ "1059": {
+  "name": "Theft of Life",
+  "mana": 405,
+  "skill": "Alteration",
+  "casting_time": 6.0,
+  "recast_time": 0.0,
+  "recovery_time": 2.5,
+  "range": 50,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Tap",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 3500"
+  ]
+ },
+ "1073": {
+  "name": "Cloud of Deadly Decay",
+  "mana": 0,
+  "skill": "Conjuration",
+  "casting_time": 0.0,
+  "recast_time": 10.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "3 hours  (1800 ticks)",
+  "resist_type": "Disease",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints by 667 per tick",
+   "3: Effect type: Increase Disease Counter by 18"
+  ]
+ },
+ "1074": {
+  "name": "Steam Blast",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 300,
+  "duration": "Instant",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints by 800"
+  ]
+ },
+ "1075": {
+  "name": "Electrical Short",
+  "mana": 0,
+  "skill": "Evocation",
+  "casting_time": 0.0,
+  "recast_time": 45.0,
+  "recovery_time": 2.5,
+  "range": 150,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints by 300",
+   "3: Effect type: Stun (1.0 sec)"
+  ]
+ },
+ "1076": {
+  "name": "Oil Spray",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 1.0,
+  "recast_time": 30.0,
+  "recovery_time": 2.25,
+  "range": 200,
+  "duration": "1 min  (10 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Movement by 65%"
+  ]
+ },
+ "1077": {
+  "name": "Mana Beam",
+  "mana": 0,
+  "skill": "Evocation",
+  "casting_time": 0.0,
+  "recast_time": 30.0,
+  "recovery_time": 2.5,
+  "range": 100,
+  "duration": "Instant",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 2000"
+  ]
+ },
+ "1078": {
+  "name": "Gyrosonic Disruption",
+  "mana": 0,
+  "skill": "Evocation",
+  "casting_time": 0.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints by 600"
+  ]
+ },
+ "1079": {
+  "name": "Wave of White Noise",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 45.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "6 sec (1 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Silence"
+  ]
+ },
+ "1081": {
+  "name": "Deathfog IV",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 120.0,
+  "recovery_time": 0.0,
+  "range": 150,
+  "duration": "18 sec (3 ticks)",
+  "resist_type": "Poison",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 900 per tick"
+  ]
+ },
+ "1107": {
+  "name": "Tremor of Judgment",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 2.7,
+  "recast_time": 0.0,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints by 800",
+   "3: Effect type: Stamina by 100"
+  ]
+ },
+ "1109": {
+  "name": "Justice",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 1.5,
+  "recast_time": 40.0,
+  "recovery_time": 2.25,
+  "range": 50,
+  "duration": "3 min 12 sec (32 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Affected is healed for 10 when striking a target.",
+   "3: Effect type: Decrease Hitpoints when cast by 800",
+   "4: Effect type: Increase Hitpoints by 1 per tick"
+  ]
+ },
+ "1112": {
+  "name": "Decay of the Plaguebringer",
+  "mana": 0,
+  "skill": "Conjuration",
+  "casting_time": 0.0,
+  "recast_time": 40.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "1 min 48 sec (18 ticks)",
+  "resist_type": "Disease",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints by 300 per tick",
+   "3: Effect type: Decrease Attack Speed by 60%",
+   "4: Effect type: Increase Disease Counter by 36"
+  ]
+ },
+ "1113": {
+  "name": "Stench of Decay",
+  "mana": 0,
+  "skill": "Conjuration",
+  "casting_time": 0.0,
+  "recast_time": 40.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "1 min 48 sec (18 ticks)",
+  "resist_type": "Disease",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints by 200 per tick",
+   "3: Effect type: Stamina by 10",
+   "4: Effect type: Increase Disease Counter by 36"
+  ]
+ },
+ "1115": {
+  "name": "Plasma Decay",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 240.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "3 min 12 sec (32 ticks)",
+  "resist_type": "Disease",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "4: Effect type: Increase Hitpoints by 1 per tick",
+   "5: Effect type: Decrease Curse Counter by 9"
+  ]
+ },
+ "1151": {
+  "name": "Raven Screech",
+  "mana": 0,
+  "skill": "Evocation",
+  "casting_time": 0.0,
+  "recast_time": 60.0,
+  "recovery_time": 2.5,
+  "range": 25,
+  "duration": "Instant",
+  "resist_type": "Unresistable",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 200",
+   "2: Effect type: Stun (2.0 sec)"
+  ]
+ },
+ "1454": {
+  "name": "Flame of Light",
+  "mana": 85,
+  "skill": "Evocation",
+  "casting_time": 2.5,
+  "recast_time": 18.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 125"
+  ]
+ },
+ "1486": {
+  "name": "Ancient Breath",
+  "mana": 0,
+  "skill": "Evocation",
+  "casting_time": 0.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "3 hours 15 min  (1950 ticks)",
+  "resist_type": "Disease",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Attack Speed by 40%",
+   "3: Effect type: Decrease Hitpoints when cast by 250",
+   "4: Effect type: Decrease Hitpoints by 20 per tick",
+   "5: Effect type: Increase Disease Counter by 36"
+  ]
+ },
+ "1508": {
+  "name": "Asystole",
+  "mana": 210,
+  "skill": "Alteration",
+  "casting_time": 6.1,
+  "recast_time": 2.25,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "1 min  (10 ticks)",
+  "resist_type": "Disease",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Disease Counter by 4",
+   "2: Effect type: Decrease STR by 37 (L44) to 40 (L50)",
+   "3: Effect type: Decrease AC for Cloth Casters by 21 (L44) to 23 (L50), Everyone else by 15 (L44) to 17 (L50)",
+   "4: Effect type: Decrease Hitpoints by 69 per tick"
+  ]
+ },
+ "1526": {
+  "name": "Annul Magic",
+  "mana": 75,
+  "skill": "Abjuration",
+  "casting_time": 4.0,
+  "recast_time": 6.0,
+  "recovery_time": 2.25,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Cancel Magic (9)",
+   "2: Effect type: Cancel Magic (9)"
+  ]
+ },
+ "1534": {
+  "name": "Yaulp IV",
+  "mana": 1,
+  "skill": "Abjuration",
+  "casting_time": 0.5,
+  "recast_time": 18.0,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "24 sec (4 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Self only",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase ATK by 17",
+   "3: Effect type: Increase STR by 40",
+   "4: Effect type: Stamina by 10",
+   "5: Effect type: Increase AC for Cloth Casters by 18, Everyone else by 14"
+  ]
+ },
+ "1545": {
+  "name": "The Unspoken Word",
+  "mana": 427,
+  "skill": "Evocation",
+  "casting_time": 1.0,
+  "recast_time": 120.0,
+  "recovery_time": 5.0,
+  "range": 0,
+  "duration": "6 sec (1 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Blindness",
+   "2: Effect type: Stun (0.001 sec)",
+   "3: Effect type: Decrease Hitpoints when cast by 605"
+  ]
+ },
+ "1609": {
+  "name": "Manaskin",
+  "mana": 330,
+  "skill": "Abjuration",
+  "casting_time": 5.0,
+  "recast_time": 2.25,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "2 hours  (1200 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Self only",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Absorb Damage by 521 (L52) to 600 (L60)",
+   "2: Effect type: Block new spell if slot 52 is effect 'Increase Mana' and < 0",
+   "6: Effect type: Increase Mana by 1 per tick (total 1200)"
+  ]
+ },
+ "1631": {
+  "name": "Atol's Spectral Shackles",
+  "mana": 125,
+  "skill": "Alteration",
+  "casting_time": 2.0,
+  "recast_time": 2.25,
+  "recovery_time": 2.25,
+  "range": 200,
+  "duration": "2 min 30 sec (25 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Movement by 60%"
+  ]
+ },
+ "1634": {
+  "name": "Tishan's Discord",
+  "mana": 130,
+  "skill": "Evocation",
+  "casting_time": 2.25,
+  "recast_time": 18.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Stun (5.0 sec)",
+   "2: Effect type: Decrease Hitpoints by 260"
+  ]
+ },
+ "1637": {
+  "name": "Draught of Fire",
+  "mana": 215,
+  "skill": "Evocation",
+  "casting_time": 3.0,
+  "recast_time": 2.25,
+  "recovery_time": 2.25,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Fire",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 643 (L51) to 688 (L60)"
+  ]
+ },
+ "1638": {
+  "name": "Lure of Flame",
+  "mana": 320,
+  "skill": "Evocation",
+  "casting_time": 4.5,
+  "recast_time": 2.25,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Fire",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints by 640"
+  ]
+ },
+ "1642": {
+  "name": "Lure of Frost",
+  "mana": 320,
+  "skill": "Evocation",
+  "casting_time": 4.5,
+  "recast_time": 2.25,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Cold",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints by 640"
+  ]
+ },
+ "1643": {
+  "name": "Draught of Jiva",
+  "mana": 215,
+  "skill": "Evocation",
+  "casting_time": 3.0,
+  "recast_time": 2.25,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 663 (L55) to 688 (L60)",
+   "2: Effect type: Stun (0.001 sec)"
+  ]
+ },
+ "1645": {
+  "name": "Pillar of Lightning",
+  "mana": 344,
+  "skill": "Evocation",
+  "casting_time": 4.5,
+  "recast_time": 6.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 828 (L54) to 848 (L58)"
+  ]
+ },
+ "1650": {
+  "name": "Inferno of Al'Kabor",
+  "mana": 625,
+  "skill": "Evocation",
+  "casting_time": 5.0,
+  "recast_time": 9.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 750 (L53) to 800 (L58)"
+  ]
+ },
+ "1968": {
+  "name": "Stunning Strike",
+  "mana": 0,
+  "skill": "Evocation",
+  "casting_time": 0.0,
+  "recast_time": 18.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints by 200 per tick",
+   "3: Effect type: Stun (20.0 sec)"
+  ]
+ },
+ "2046": {
+  "name": "Deathly Chants",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 18.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "2 hours 30 min  (1500 ticks)",
+  "resist_type": "Disease",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease CHA by 6",
+   "2: Effect type: Decrease Hitpoints by 120 per tick",
+   "4: Effect type: Decrease Curse Counter by 9",
+   "8: Effect type: Decrease Mana Pool by 1500"
+  ]
+ },
+ "2095": {
+  "name": "Zruk Tap",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 0.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Tap",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints by 400"
+  ]
+ },
+ "2137": {
+  "name": "Rain of Terror",
+  "mana": 0,
+  "skill": "Evocation",
+  "casting_time": 0.0,
+  "recast_time": 12.0,
+  "recovery_time": 0.0,
+  "range": 150,
+  "duration": "Instant",
+  "resist_type": "Poison",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 350"
+  ]
+ },
+ "2182": {
+  "name": "Ethereal Light",
+  "mana": 525,
+  "skill": "Alteration",
+  "casting_time": 4.75,
+  "recast_time": 2.25,
+  "recovery_time": 2.5,
+  "range": 100,
+  "duration": "Instant",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Hitpoints by 1600"
+  ]
+ },
+ "2272": {
+  "name": "Wrath of Xuzl",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 48.0,
+  "recovery_time": 0.0,
+  "range": 100,
+  "duration": "Instant",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Summon Pets: AnimationXuzl"
+  ]
+ },
+ "2390": {
+  "name": "Crumbling Earth Breath",
+  "mana": 0,
+  "skill": "Evocation",
+  "casting_time": 0.0,
+  "recast_time": 18.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "1 min  (10 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Movement by 60%",
+   "3: Effect type: Decrease Hitpoints when cast by 1100"
+  ]
+ },
+ "2444": {
+  "name": "Rage of Zek",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 35.0,
+  "recovery_time": 2.25,
+  "range": 100,
+  "duration": "36 sec (6 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 400 per tick",
+   "2: Effect type: Decrease Mana by 50 per tick (total 300)",
+   "3: Effect type: Decrease Curse Counter by 9"
+  ]
+ },
+ "2445": {
+  "name": "Sedition",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 0.0,
+  "recovery_time": 2.25,
+  "range": 150,
+  "duration": "10 min  (100 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease AC for Cloth Casters by 590, Everyone else by 442",
+   "2: Effect type: Decrease Curse Counter by 18"
+  ]
+ },
+ "2448": {
+  "name": "Tallon's Balance",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 60.0,
+  "recovery_time": 2.25,
+  "range": 200,
+  "duration": "1 min  (10 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease All Resists by 300"
+  ]
+ },
+ "2449": {
+  "name": "Barb of Tallon",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 4.0,
+  "recovery_time": 2.25,
+  "range": 300,
+  "duration": "3 min 24 sec (34 ticks)",
+  "resist_type": "Cold",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 1436 (L65) to 2608 (L65)",
+   "3: Effect type: Decrease Attack Speed by 40%",
+   "4: Effect type: Decrease Movement by 40%"
+  ]
+ },
+ "2450": {
+  "name": "Barb of Tallon",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 4.5,
+  "recovery_time": 2.25,
+  "range": 300,
+  "duration": "Instant",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 1792 (L65) to 3014 (L71)"
+  ]
+ },
+ "2451": {
+  "name": "Barb of Tallon",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 5.0,
+  "recovery_time": 2.25,
+  "range": 300,
+  "duration": "1 min  (10 ticks)",
+  "resist_type": "Disease",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 300 per tick",
+   "2: Effect type: Decrease AC for Cloth Casters by 195, Everyone else by 147",
+   "3: Effect type: Increase Agro Multiplier by 60%"
+  ]
+ },
+ "2452": {
+  "name": "Barb of Tallon",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 6.0,
+  "recovery_time": 2.25,
+  "range": 300,
+  "duration": "Instant",
+  "resist_type": "Poison",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 2052 (L65) to 3058 (L71)"
+  ]
+ },
+ "2508": {
+  "name": "Judgement",
+  "mana": 325,
+  "skill": "Evocation",
+  "casting_time": 6.5,
+  "recast_time": 7.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 925"
+  ]
+ },
+ "2554": {
+  "name": "Elnerick's Entombment of Ice",
+  "mana": 225,
+  "skill": "Evocation",
+  "casting_time": 5.0,
+  "recast_time": 3.5,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "24 sec (4 ticks)",
+  "resist_type": "Cold",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 303 (L39) to 355 (L65)",
+   "2: Effect type: Root"
+  ]
+ },
+ "2673": {
+  "name": "Unity of Fire",
+  "mana": 0,
+  "skill": "Abjuration",
+  "casting_time": 0.0,
+  "recast_time": 0.0,
+  "recovery_time": 0.0,
+  "range": 100,
+  "duration": "7 min 30 sec (75 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Enchantment that damages attacker for 35",
+   "2: Effect type: Increase Fire Resist by 35"
+  ]
+ },
+ "2823": {
+  "name": "Gravel Rain",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 10.0,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "30 min  (300 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints when cast by 250",
+   "3: Effect type: Decrease Movement by 55%",
+   "4: Effect type: Decrease Curse Counter by 72"
+  ]
+ },
+ "2860": {
+  "name": "Shackles",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 0.0,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "12 sec (2 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Root"
+  ]
+ },
+ "2897": {
+  "name": "Pebble Rain",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 10.0,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "30 sec (5 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints when cast by 75",
+   "3: Effect type: Decrease Movement by 55%"
+  ]
+ },
+ "3004": {
+  "name": "Fist of Lava",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 0.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Fire",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 150",
+   "2: Effect type: Stun (3.0 sec)"
+  ]
+ },
+ "3006": {
+  "name": "Corona of Sol",
+  "mana": 0,
+  "skill": "Abjuration",
+  "casting_time": 0.0,
+  "recast_time": 0.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "3 hours 15 min  (1950 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Self only",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Enchantment that damages attacker for 150"
+  ]
+ },
+ "3007": {
+  "name": "Solar Flame",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 24.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "6 sec (1 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 2000",
+   "3: Effect type: Decrease ATK by 50"
+  ]
+ },
+ "3008": {
+  "name": "Solar Winds",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 48.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "6 sec (1 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 1000",
+   "3: Effect type: Decrease ATK by 50"
+  ]
+ },
+ "3009": {
+  "name": "Reckless Mutterings",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 20.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "6 sec (1 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 500",
+   "3: Effect type: Decrease ATK by 50"
+  ]
+ },
+ "3012": {
+  "name": "Rot of the Plaguebringer",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "3 min 12 sec (32 ticks)",
+  "resist_type": "Disease",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 500",
+   "2: Effect type: Increase Mana by 1 per tick (total 32)",
+   "3: Effect type: Decrease ATK by 150",
+   "4: Effect type: Increase Hitpoints by 1 per tick",
+   "5: Effect type: Increase Disease Counter by 72"
+  ]
+ },
+ "3020": {
+  "name": "Rain of Burning Fire",
+  "mana": 0,
+  "skill": "Evocation",
+  "casting_time": 2.0,
+  "recast_time": 30.0,
+  "recovery_time": 0.0,
+  "range": 150,
+  "duration": "Instant",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 1000"
+  ]
+ },
+ "3049": {
+  "name": "Infernal Darkness",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 5.0,
+  "recast_time": 30.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "12 sec (2 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Mana by 1 per tick (total 2)",
+   "2: Effect type: Blindness",
+   "3: Effect type: Decrease ATK by 100"
+  ]
+ },
+ "3050": {
+  "name": "Ravaging Rage of the Fiends",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 1.0,
+  "recast_time": 10.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "30 min  (300 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Attack Speed by 99%",
+   "2: Effect type: Increase AC for Cloth Casters by 590, Everyone else by 442",
+   "3: Effect type: Increase ATK by 500"
+  ]
+ },
+ "3051": {
+  "name": "Fiery Assault",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 2.0,
+  "recast_time": 30.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Stun (2.0 sec)",
+   "2: Effect type: Decrease Hitpoints by 500",
+   "3: Effect type: SpinStun"
+  ]
+ },
+ "3052": {
+  "name": "Rising Suns",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 6.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "1 min  (10 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Blindness",
+   "2: Effect type: Decrease Hitpoints by 500 per tick"
+  ]
+ },
+ "3053": {
+  "name": "Web of Flame",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 3.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "48 sec (8 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Mana by 50 per tick (total 400)",
+   "2: Effect type: Root"
+  ]
+ },
+ "3054": {
+  "name": "Comet of Flames",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 10.0,
+  "recast_time": 120.0,
+  "recovery_time": 2.25,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Mana by 500",
+   "3: Effect type: Decrease Hitpoints when cast by 3000"
+  ]
+ },
+ "3055": {
+  "name": "Cataclysm of Ro",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 3.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "1 hour (600 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Movement by 10%",
+   "2: Effect type: Decrease Hitpoints by 100 per tick",
+   "3: Effect type: Decrease Hitpoints when cast by 3000",
+   "4: Effect type: Decrease Mana by 100 per tick (total 60000)",
+   "5: Effect type: Decrease Curse Counter by 18"
+  ]
+ },
+ "3057": {
+  "name": "Tidal Freeze",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 1.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Cold",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 2000",
+   "2: Effect type: Stun (5.0 sec)"
+  ]
+ },
+ "3058": {
+  "name": "Engulfing Ink",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 1.0,
+  "recast_time": 30.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "18 sec (3 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Blindness",
+   "2: Effect type: Decrease Hitpoints by 500 per tick"
+  ]
+ },
+ "3059": {
+  "name": "Battle Cry of Regrua",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 2.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "48 sec (8 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 3000",
+   "2: Effect type: Increase Movement by 20%"
+  ]
+ },
+ "3060": {
+  "name": "Mists of Enlightenment",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 1.0,
+  "recast_time": 20.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "1 hour (600 ticks)",
+  "resist_type": "Cold",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Attack Speed by 20%",
+   "2: Effect type: Decrease Hitpoints by 250 per tick",
+   "3: Effect type: Decrease AC for Cloth Casters by 590, Everyone else by 442",
+   "4: Effect type: Decrease Mana by 100 per tick (total 60000)",
+   "5: Effect type: Decrease Curse Counter by 18"
+  ]
+ },
+ "3061": {
+  "name": "Curse of the Triumvirate",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 1.0,
+  "recast_time": 30.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "1 hour (600 ticks)",
+  "resist_type": "Cold",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Cancel Magic (9)",
+   "2: Effect type: Decrease Hitpoints when cast by 2000",
+   "3: Effect type: Decrease ATK by 500",
+   "4: Effect type: Decrease Curse Counter by 18"
+  ]
+ },
+ "3070": {
+  "name": "Timeless Panic",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 42.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "18 sec (3 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Fear up to level 52",
+   "2: Effect type: Decrease Hitpoints when cast by 1000"
+  ]
+ },
+ "3071": {
+  "name": "Insipid Dreams",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 1200",
+   "2: Effect type: Stun (4.0 sec)"
+  ]
+ },
+ "3072": {
+  "name": "Torrential Torment",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 300.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "3 min 12 sec (32 ticks)",
+  "resist_type": "Poison",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "3: Effect type: Decrease Mana by 45 per tick (total 1440)",
+   "4: Effect type: Increase Hitpoints by 1 per tick",
+   "5: Effect type: Decrease Curse Counter by 9"
+  ]
+ },
+ "3075": {
+  "name": "Wind of Xegony",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 30.0,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "1 min 48 sec (18 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Spell Mana Cost by 50%",
+   "2: Effect type: Decrease Curse Counter by 9",
+   "3: Effect type: Decrease Hitpoints when cast by 1000",
+   "4: Effect type: Decrease Hitpoints by 200 per tick",
+   "5: Effect type: Decrease Attack Speed by 30%",
+   "6: Effect type: Decrease Curse Counter by 4"
+  ]
+ },
+ "3155": {
+  "name": "Elemental Judgement",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 36.0,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "2 min  (20 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 500 per tick",
+   "2: Effect type: Decrease Mana by 350 per tick (total 7000)",
+   "3: Effect type: SpinStun",
+   "4: Effect type: Decrease Attack Speed by 35%"
+  ]
+ },
+ "3163": {
+  "name": "Storm Avalanche",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 30.0,
+  "recovery_time": 2.25,
+  "range": 0,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 750"
+  ]
+ },
+ "3164": {
+  "name": "Froglok Misery",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 0.0,
+  "recovery_time": 0.0,
+  "range": 100,
+  "duration": "Instant",
+  "resist_type": "Disease",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 1000"
+  ]
+ },
+ "3165": {
+  "name": "Silence of Marr",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 3.0,
+  "recovery_time": 0.0,
+  "range": 20,
+  "duration": "30 sec (5 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Root"
+  ]
+ },
+ "3166": {
+  "name": "Blinding Essence of Purity",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 20,
+  "duration": "12 sec (2 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Stun (3.0 sec)",
+   "2: Effect type: Blindness"
+  ]
+ },
+ "3167": {
+  "name": "Strike of Marr",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 12.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 3500",
+   "2: Effect type: Stun (3.0 sec)"
+  ]
+ },
+ "3176": {
+  "name": "Butchery",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 65.0,
+  "recovery_time": 0.0,
+  "range": 100,
+  "duration": "Instant",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 3026 (L65) to 3128 (L67)"
+  ]
+ },
+ "3177": {
+  "name": "Prayer of Pain",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 65.0,
+  "recovery_time": 2.25,
+  "range": 100,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 1500"
+  ]
+ },
+ "3225": {
+  "name": "Glass Roar",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 36.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "42 sec (7 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 500 per tick",
+   "2: Effect type: Fear up to level 52",
+   "3: Effect type: Decrease Hitpoints when cast by 700"
+  ]
+ },
+ "3226": {
+  "name": "Glass Shards",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 36.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "1 min  (10 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 3000",
+   "2: Effect type: Decrease Attack Speed by 45%",
+   "3: Effect type: Increase Disease Counter by 16"
+  ]
+ },
+ "3296": {
+  "name": "Faith",
+  "mana": 200,
+  "skill": "Abjuration",
+  "casting_time": 3.5,
+  "recast_time": 2.25,
+  "recovery_time": 2.5,
+  "range": 100,
+  "duration": "1 hour12 min  (720 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase AC for Cloth Casters by 29, Everyone else by 21",
+   "2: Effect type: Increase Max Hitpoints by 520",
+   "3: Effect type: Increase Hitpoints when cast by 520"
+  ]
+ },
+ "3400": {
+  "name": "Festering Darkness",
+  "mana": 175,
+  "skill": "Conjuration",
+  "casting_time": 3.2,
+  "recast_time": 4.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "2 min  (20 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 50 per tick",
+   "2: Effect type: Decrease Movement by 60%"
+  ]
+ },
+ "3403": {
+  "name": "Aura of Pain",
+  "mana": 60,
+  "skill": "Alteration",
+  "casting_time": 1.5,
+  "recast_time": 72.0,
+  "recovery_time": 2.25,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Disease",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "7: Effect type: Decrease Hitpoints by 200"
+  ]
+ },
+ "3413": {
+  "name": "Touch of Innoruuk",
+  "mana": 330,
+  "skill": "Alteration",
+  "casting_time": 3.2,
+  "recast_time": 10.0,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Tap",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 470"
+  ]
+ },
+ "3429": {
+  "name": "Touch of Nife",
+  "mana": 450,
+  "skill": "Alteration",
+  "casting_time": 5.0,
+  "recast_time": 2.25,
+  "recovery_time": 2.5,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Hitpoints by 1125"
+  ]
+ },
+ "3466": {
+  "name": "Symbol of Kazad",
+  "mana": 600,
+  "skill": "Abjuration",
+  "casting_time": 5.0,
+  "recast_time": 2.25,
+  "recovery_time": 2.5,
+  "range": 100,
+  "duration": "1 hour3 min  (630 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "3: Effect type: Increase Max Hitpoints by 910",
+   "4: Effect type: Increase Hitpoints when cast by 910"
+  ]
+ },
+ "3473": {
+  "name": "Catastrophe",
+  "mana": 650,
+  "skill": "Evocation",
+  "casting_time": 5.0,
+  "recast_time": 24.0,
+  "recovery_time": 2.5,
+  "range": 0,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 850"
+  ]
+ },
+ "3474": {
+  "name": "Armor of the Zealot",
+  "mana": 400,
+  "skill": "Abjuration",
+  "casting_time": 4.5,
+  "recast_time": 2.25,
+  "recovery_time": 2.5,
+  "range": 100,
+  "duration": "2 hours 24 min  (1440 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Self only",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Max Hitpoints by 450",
+   "2: Effect type: Increase AC for Cloth Casters by 47, Everyone else by 35",
+   "3: Effect type: Increase Hitpoints when cast by 450",
+   "4: Effect type: Increase Mana by 8 per tick (total 11520)"
+  ]
+ },
+ "3643": {
+  "name": "Grip of Mortal Reality",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 30.0,
+  "recovery_time": 0.0,
+  "range": 300,
+  "duration": "2 min  (20 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease ATK by 500",
+   "2: Effect type: Decrease AC for Cloth Casters by 236, Everyone else by 177",
+   "3: Effect type: Decrease Curse Counter by 9"
+  ]
+ },
+ "3741": {
+  "name": "Pyrokinetic Aura",
+  "mana": 0,
+  "skill": "Abjuration",
+  "casting_time": 0.0,
+  "recast_time": 420.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "3 hours 15 min  (1950 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Self only",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Enchantment that damages attacker for 75",
+   "2: Effect type: Increase ATK by 175",
+   "3: Effect type: Increase All Resists by 150"
+  ]
+ },
+ "3742": {
+  "name": "Black Pyre",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 180.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "30 sec (5 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Spell Haste by 50%",
+   "2: Effect type: Decrease Hitpoints by 225 per tick"
+  ]
+ },
+ "3744": {
+  "name": "Aqueous flux",
+  "mana": 0,
+  "skill": "Abjuration",
+  "casting_time": 0.0,
+  "recast_time": 300.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "30 sec (5 ticks)",
+  "resist_type": "Cold",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 850",
+   "2: Effect type: Decrease Movement by 70%",
+   "3: Effect type: Decrease Attack Speed by 40%"
+  ]
+ },
+ "3745": {
+  "name": "Caustic Aura",
+  "mana": 0,
+  "skill": "Abjuration",
+  "casting_time": 0.0,
+  "recast_time": 420.0,
+  "recovery_time": 0.0,
+  "range": 100,
+  "duration": "3 hours 15 min  (1950 ticks)",
+  "resist_type": "Poison",
+  "target_type": "Self only",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Enchantment that damages attacker for 125",
+   "2: Effect type: Increase ATK by 125",
+   "3: Effect type: Increase All Resists by 100"
+  ]
+ },
+ "3746": {
+  "name": "Caustic Atmosphere",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 180.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "2 min  (20 ticks)",
+  "resist_type": "Poison",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Spell Haste by 25%",
+   "2: Effect type: Decrease Attack Speed by 25%",
+   "3: Effect type: Decrease Hitpoints when cast by 550"
+  ]
+ },
+ "3747": {
+  "name": "Insidious Calamity",
+  "mana": 0,
+  "skill": "Abjuration",
+  "casting_time": 0.0,
+  "recast_time": 180.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "18 sec (3 ticks)",
+  "resist_type": "Cold",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Spell Mana Cost by 50%",
+   "2: Effect type: Decrease Hitpoints when cast by 575",
+   "3: Effect type: Decrease Hitpoints by 350 per tick"
+  ]
+ },
+ "3748": {
+  "name": "Insipid Decay",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 300.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Disease",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Stun (5.0 sec)",
+   "3: Effect type: Decrease Hitpoints by 1000"
+  ]
+ },
+ "3749": {
+  "name": "Unholy Aura",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 300.0,
+  "recovery_time": 0.0,
+  "range": 100,
+  "duration": "2 min  (20 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 800",
+   "3: Effect type: Decrease ATK by 90",
+   "5: Effect type: Decrease AGI by 90",
+   "6: Effect type: Decrease STR by 90",
+   "7: Effect type: Decrease STA by 90"
+  ]
+ },
+ "3751": {
+  "name": "Quivering Nightmares",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 24.0,
+  "recovery_time": 0.0,
+  "range": 150,
+  "duration": "2 min  (20 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Spell/Bash Hate by 25%",
+   "3: Effect type: Decrease STR by 200",
+   "4: Effect type: Decrease AGI by 200",
+   "5: Effect type: Decrease STA by 200",
+   "6: Effect type: Decrease INT by 200",
+   "7: Effect type: Decrease WIS by 200"
+  ]
+ },
+ "3752": {
+  "name": "Phantasmal Torment",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 30.0,
+  "recovery_time": 0.0,
+  "range": 100,
+  "duration": "1 min  (10 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 200 per tick",
+   "2: Effect type: Decrease Mana by 150 per tick (total 1500)"
+  ]
+ },
+ "3753": {
+  "name": "Torrent of Agony",
+  "mana": 0,
+  "skill": "Conjuration",
+  "casting_time": 0.0,
+  "recast_time": 24.0,
+  "recovery_time": 4.0,
+  "range": 150,
+  "duration": "3 min  (30 ticks)",
+  "resist_type": "Poison",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 1500",
+   "2: Effect type: Increase Agro Multiplier by 60%",
+   "3: Effect type: Decrease Attack Speed by 40%",
+   "4: Effect type: Increase Disease Counter by 20"
+  ]
+ },
+ "3754": {
+  "name": "Horrifying affliction",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 30.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "24 sec (4 ticks)",
+  "resist_type": "Disease",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Spell Damage by 50%",
+   "2: Effect type: Decrease Mana by 175 per tick (total 700)",
+   "3: Effect type: Decrease Mana Pool by 500"
+  ]
+ },
+ "3757": {
+  "name": "Strategic Blow",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 420.0,
+  "recovery_time": 0.0,
+  "range": 300,
+  "duration": "3 min  (30 ticks)",
+  "resist_type": "Cold",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Hitpoints when cast by 2000",
+   "3: Effect type: Decrease Hitpoints by 500 per tick",
+   "4: Effect type: Stun (8.0 sec)"
+  ]
+ },
+ "3758": {
+  "name": "Planeshift",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 420.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "3 min 12 sec (32 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Spell Mana Cost by 50%"
+  ]
+ },
+ "3759": {
+  "name": "Call of the Faceless",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 180.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "30 sec (5 ticks)",
+  "resist_type": "Poison",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 200 per tick",
+   "2: Effect type: Decrease Movement by 40%",
+   "3: Effect type: Silence"
+  ]
+ },
+ "3760": {
+  "name": "Aura of Fear",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 180.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "30 sec (5 ticks)",
+  "resist_type": "Poison",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 2000",
+   "2: Effect type: Stun (6.0 sec)",
+   "3: Effect type: Decrease Hitpoints by 550 per tick"
+  ]
+ },
+ "3761": {
+  "name": "Blind Rage",
+  "mana": 0,
+  "skill": "Alteration",
+  "casting_time": 0.0,
+  "recast_time": 420.0,
+  "recovery_time": 0.0,
+  "range": 100,
+  "duration": "3 min 12 sec (32 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Self only",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease AC for Cloth Casters by 236, Everyone else by 177",
+   "2: Effect type: Increase Attack Speed by 65%",
+   "3: Effect type: Increase ATK by 250"
+  ]
+ },
+ "3762": {
+  "name": "Vindictive Strike",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 180.0,
+  "recovery_time": 0.0,
+  "range": 300,
+  "duration": "Instant",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 3500",
+   "2: Effect type: Stun (20.0 sec)"
+  ]
+ },
+ "3763": {
+  "name": "Black Plague",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 20.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "3 hours 24 min  (2040 ticks)",
+  "resist_type": "Disease",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Disease Counter by 18",
+   "2: Effect type: Decrease Movement by 80%",
+   "3: Effect type: Decrease Hitpoints by 700 per tick"
+  ]
+ },
+ "3764": {
+  "name": "Rain of Bile",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 250,
+  "duration": "Instant",
+  "resist_type": "Poison",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "2: Effect type: Decrease Mana by 275",
+   "3: Effect type: Decrease Hitpoints by 975"
+  ]
+ },
+ "3765": {
+  "name": "Seething Hatred",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 240.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "24 sec (4 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 550 per tick",
+   "2: Effect type: Increase Agro Multiplier by 75%",
+   "3: Effect type: Fear up to level 52"
+  ]
+ },
+ "3766": {
+  "name": "Barrier of Hatred",
+  "mana": 0,
+  "skill": "Abjuration",
+  "casting_time": 0.0,
+  "recast_time": 420.0,
+  "recovery_time": 0.0,
+  "range": 0,
+  "duration": "1 hour40 min  (1000 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Self only",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Enchantment that damages attacker for 225",
+   "2: Effect type: Increase ATK by 175",
+   "3: Effect type: Increase AC for Cloth Casters by 177, Everyone else by 132",
+   "4: Effect type: Increase Absorb Damage by 1800"
+  ]
+ },
+ "3913": {
+  "name": "Ashen Form",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "5 min  (50 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "3: Effect type: Increase Agro Multiplier by 95%"
+  ]
+ },
+ "3914": {
+  "name": "Marl",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 100,
+  "duration": "3 hours 15 min  (1950 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Spell Mana Cost by 100%",
+   "2: Effect type: Decrease Hitpoints by 100 per tick",
+   "3: Effect type: Limit: Spell Type (Detrimental only)",
+   "4: Effect type: Decrease Curse Counter by 36"
+  ]
+ },
+ "3936": {
+  "name": "Dark Aura",
+  "mana": 0,
+  "skill": "Conjuration",
+  "casting_time": 0.0,
+  "recast_time": 60.0,
+  "recovery_time": 0.0,
+  "range": 100,
+  "duration": "3 min  (30 ticks)",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Increase Spell Haste by 15%",
+   "2: Effect type: Decrease Attack Speed by 15%",
+   "3: Effect type: Decrease Curse Counter by 8"
+  ]
+ },
+ "3964": {
+  "name": "Outbreak",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 0.0,
+  "recovery_time": 0.0,
+  "range": 300,
+  "duration": "Instant",
+  "resist_type": "Disease",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 600",
+   "2: Effect type: Stun (8.0 sec)"
+  ]
+ },
+ "3965": {
+  "name": "Static Burn",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 1.5,
+  "recast_time": 2.4,
+  "recovery_time": 2.25,
+  "range": 200,
+  "duration": "12 sec (2 ticks)",
+  "resist_type": "Fire",
+  "target_type": "Area of effect around the caster",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints when cast by 300",
+   "2: Effect type: Decrease Hitpoints by 500 per tick"
+  ]
+ },
+ "3968": {
+  "name": "Discord",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 12.0,
+  "recovery_time": 0.0,
+  "range": 300,
+  "duration": "12 sec (2 ticks)",
+  "resist_type": "Magic",
+  "target_type": "Area of effect around the target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Silence"
+  ]
+ },
+ "3970": {
+  "name": "Scorch",
+  "mana": 0,
+  "skill": "Clicky",
+  "casting_time": 0.0,
+  "recast_time": 12.0,
+  "recovery_time": 0.0,
+  "range": 200,
+  "duration": "Instant",
+  "resist_type": "Unresistable",
+  "target_type": "Single target",
+  "zone_type": "Any",
+  "effects": [
+   "1: Effect type: Decrease Hitpoints by 1600"
+  ]
+ }
+}

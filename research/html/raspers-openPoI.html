@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Planes of Power: Plane of Innovation</title>
+</head>
+<body onload="createImage('../Maps/poinnovation.txt', 1, 0, 0, 0, 0, false, 'mapContainer', 500, 500, [
+    [-950, -1450, 128, 128, 0, 7, 0, 0, 0, 'A'],
+    [720, -1550, 128, 0, 0, 7, 240, 240, 240, 'X'],
+    [-1135, 20, 128, 0, 0, 7, 240, 240, 240, 'B'],
+    [-250, 270, 128, 0, 0, 7, 240, 240, 240, 'P'],
+    [250, 270, 128, 0, 0, 7, 240, 240, 240, 'P'],
+    [0, 500, 128, 0, 0, 7, 240, 240, 240, 'P'],
+    [0, -170, 0, 192, 192, 7, 240, 240, 240, 'F'],
+    [-250, -525, 0, 192, 192, 7, 240, 240, 240, 'Z']
+])">
+    <link href="../Scripts/main.css" rel="stylesheet" type="text/css" />
+    <link href="../Scripts/sideNav.css" rel="stylesheet" type="text/css" />
+    <script src="../Maps/mapImages.js" type="text/javascript"></script>
+    <script src="../Scripts/banner.js" type="text/javascript"></script>
+    <script src="../Scripts/sideNav.js" type="text/javascript"></script>
+    <script src="../Scripts/Tabs.js" type="text/javascript"></script>
+
+    <div class="navbar">
+        <script src="../Scripts/expansionList.js" type="text/javascript"></script>
+        <script src="https://www.magelocdn.com/pack/eq/en/magelo-bar.js#1" type="text/javascript"></script>
+        <script src="NavBar.js" type="text/javascript"></script>
+    </div>
+
+    <div id="content">
+        <p />
+        <h2>Plane of Innovation</h2>
+        <p />
+        <div class="tab">
+            <button class="tablinks" id="Overview" onclick="openTabContent(this)">Overview</button>
+            <button class="tablinks" id="Rares" onclick="openTabContent(this)">Rares</button>
+            <button class="tablinks" id="Tasks" onclick="openTabContent(this)">Events</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="tabOverview" class="tabcontent">
+            <h3>Overview</h3>
+            <p>
+                The Plane of Innovation consists of two main regions, a large looped path to the north and the factory to the south. The northern
+                loops contains the zones only rares (spawning from roamers so difficult to 'camp'). The factory area is behind a locked door. To get
+                the key you must defeat Xanamech, but as long as someone opens the door anybody can run in.
+            </p>
+            <p id="mapContainer" />
+            <p>
+                <ul>
+                    <li>Z - Zone in/out</li>
+                    <li>F - Factory door, requires defeating Xanamech to open</li>
+                    <li>A - Anizok, roams from marker to zone in</li>
+                    <li>B - Manaetic Behemoth</li>
+                    <li>P - Manaetic Prototypes</li>
+                    <li>X - Xanamech Nezmirthafen fight location</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="tabRares" class="tabcontent">
+            <h3><a href="?Tab=Rares">Rare Mobs</a></h3>
+            <dl>
+                <dt><a href="https://eq.magelo.com/npc/386116" target="_">Junk Beast</a></dt>
+                <dd>
+                    A rare robotic critter which can spawn from a multitude of roamers in the northern half of the zone. It always drops a
+                    <a href="https://eq.magelo.com/item/29145" target="_">Junk Beast Power Source</a> for the PoK manual quest series.<br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/16094" target="_">Broken Drivebelt</a>,
+                    <a href="https://eq.magelo.com/item/27299" target="_">Corroded Steel Plate</a>,
+                    <a href="https://eq.magelo.com/item/27098" target="_">Flickering Powersource</a>,
+                    <a href="https://eq.magelo.com/item/10368" target="_">Half Spiked Sprocket</a>,
+                    <a href="https://eq.magelo.com/item/11404" target="_">Lined Burlap Sleeves</a>,
+                    <a href="https://eq.magelo.com/item/15808" target="_">Metal Flecked Wirespun Cape</a>, and
+                    <a href="https://eq.magelo.com/item/21878" target="_">Pile Driver</a>
+                </dd>
+                <dt>
+                    "<a href="https://eq.magelo.com/npc/96925" target="_">a malfunctioning system</a>",
+                    "<a href="https://eq.magelo.com/npc/96862" target="_">a rust covered model</a>", and
+                    "<a href="https://eq.magelo.com/npc/96220" target="_">a corroded prototype</a>"
+                </dt>
+                <dd>
+                    3 versions of rare robots which can spawn in a multitude of locations in the northern half of the zone.  They each always drops a
+                    <a href="https://eq.magelo.com/item/29230" target="_">Solid Block of Perilium</a> for the alternate access to Halls of Honor quest and have the same
+                    loot table.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/8776" target="_">Large Smoothmetal Torque</a>,
+                    <a href="https://eq.magelo.com/item/9581" target="_">Bellows Crafted Cap</a>,
+                    <a href="https://eq.magelo.com/item/27819" target="_">Compound Steelshaft Bow</a>, and
+                    <a href="https://eq.magelo.com/item/26097" target="_">Sheetmetal Ulak</a>
+                </dd>
+                <dt>
+                    "<a href="https://eq.magelo.com/npc/96204" target="_">a defective clockwork</a>"
+                </dt>
+                <dd>
+                    Not exactly a rare, but these robotic spiders can see through invis and rarely drop unique loot and various quest items.
+                    <br />
+                    Drops - <a href="https://eq.magelo.com/item/11320" target="_">Metal Flecked Wirespun Sleeves</a>,
+                    <a href="https://eq.magelo.com/item/15878" target="_">Knotted Wire</a>
+                </dd>
+            </dl>
+        </div>
+        <div id="tabTasks" class="tabcontent">
+            <h3><a href="?Tab=Tasks">Events</a></h3>
+            <dl>
+                <dt>Xanamech Nezmirthafen</dt>
+                <dd>
+                    <ul>
+                        <li>Size: Unlimited, 3+ groups suggested</li>
+                        <li>Respawn: Unknown</li>
+                    </ul>
+                    To trigger this event you will need to collect three items from trash mobs throughout the zone:
+                    <a href="https://eq.magelo.com/item/9426" target="_">Bundle of Super Conductive Wires</a>,
+                    <a href="https://eq.magelo.com/item/9295" target="_">Copper Node</a>, and
+                    <a href="https://eq.magelo.com/item/9434" target="_">Intact Power Cell</a>.  Once you have all three find your way to
+                    <a href="https://eq.magelo.com/npc/104005" target="_">Nitram Anizok</a> in the northwest.  Hail him,
+                    follow the dialog (keyword: collecting materials), and hand over the items.  Nitram will then start to walk towards the clockwork dragon
+                    in the northeastern corner of the zone.  You will need to clear the path and keep him safe during the journey, if you need time you can
+                    hail him to have him pause.  Once he reaches the dragon, Xanamech activates and attacks.  You MUST keep Nitram alive so be sure to turn
+                    the dragon to keep him out of frontal AE and riposte damage.  Once Xanamech goes down you can hail Nitram to receive a character flag allowing
+                    you to open the Factory Door to reach the Manaetic Behemoth.  Xanamech drops a few spells and two of the following:
+                    <br />
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/22580" target="_">Cord Hilted Spike Driver</a></li>
+                        <li><a href="https://eq.magelo.com/item/10296" target="_">Innovator's Ring</a></li>
+                        <li><a href="https://eq.magelo.com/item/27270" target="_">Pulsing Phase Emitter</a></li>
+                        <li><a href="https://eq.magelo.com/item/24785" target="_">The Weapon's Driveshaft</a></li>
+                        <li><a href="https://eq.magelo.com/item/8785" target="_">Woven Shim Choker</a></li>
+                    </ul>
+                </dd>
+                <dt>Endurance Testing</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 6</li>
+                        <li>Respawn: Instant?</li>
+                    </ul>
+                    Inside of the factory area (see Xanamech above for access) find
+                    <a href="https://eq.magelo.com/npc/96198" target="_">Researcher Kaeon</a>.  Hail him and follow the dialog
+                    (keyword: I am ready) to start the event.  This will teleport you and your group into a square room where you will
+                    face multiple waves of multiple clockwork spiders. After 6 waves Researcher Kelrig will spawn and ask if you wish to
+                    continue or quit.  if you say "quit" Kelrig will port you out.  If you say "continue" Kelrid will start another set of
+                    waves of spiders and you can do this up to four sets of waves.  On the final wave of each set you will get one of the
+                    following:
+                    <br />
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/22947" target="_">Elemental Divining Rod</a></li>
+                        <li><a href="https://eq.magelo.com/item/9588" target="_">Polished Tin Mail Coif</a></li>
+                        <li><a href="https://eq.magelo.com/item/20436" target="_">Prickly Ball of Wire</a></li>
+                        <li><a href="https://eq.magelo.com/item/12588" target="_">Riveted Joint Gauntlets</a></li>
+                        <li><a href="https://eq.magelo.com/item/25226" target="_">Stuck Bearing Persuader</a></li>
+                        <li><a href="https://eq.magelo.com/item/4319" target="_">Tin Star Earring</a></li>
+                        <li><a href="https://eq.magelo.com/item/15817" target="_">Wire Mesh Drape</a></li>
+                    </ul>
+                </dd>
+                <dt>Manaetic Prototype IX, X, and XI</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 3+ groups</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    Inside the factory (see Xanamech above for access) is a X-intersection with Manaetic Prototype IX in the south wing,
+                    X in the east wing, and XI in the west.  Each prototype is tethered to their room, if they are pulled out they will
+                    reset to full health, which makes pulling any trash out fairly easy.  Once engaged randomly a prototype will banish
+                    the tank to the next prototype's room, IX to X, X to XI, and XI to IX.  You can either choose one, burn it down, rez
+                    any banished, med up, and move on to next (which means banished will go to an empty room).  Or you can set up multiple
+                    tank teams and manage all three at once while dps focuses.  Each prototype drops a spell or two and one of the
+                    following:
+                    <br />
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/13646" target="_">Cog Encrusted Epaulets</a></li>
+                        <li><a href="https://eq.magelo.com/item/11047" target="_">Double Wrapped Wide Belt</a></li>
+                        <li><a href="https://eq.magelo.com/item/9496" target="_">Polished Smoothmetal Torque</a></li>
+                        <li><a href="https://eq.magelo.com/item/24771" target="_">Sharp Ended Broken Lever</a></li>
+                    </ul>
+                </dd>
+                <dt>Manaetic Behemoth</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    Inside the factory (see Xanamech above for access) to the west there is a large room with the Manaetic Behemoth.  A
+                    series of spiders roam into the room and explode.  To activate the Behemoth you need to prevent the spiders from reaching
+                    him for 5-10 minutes.  Once activated engage and kill while keeping spiders contained.  Upon its deatha Planar
+                    Projection spawns, hail it for your flag to unlock Plane of Tactics.  The Manaetic Behemoth drops 4 spells and 2 of
+                    the following:
+                    <br />
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/9498" target="_">Coil of Twisted Platinum Wire</a></li>
+                        <li><a href="https://eq.magelo.com/item/10074" target="_">Glowing Steel Shim</a></li>
+                        <li><a href="https://eq.magelo.com/item/21865" target="_">Innovator's Hammer</a></li>
+                        <li><a href="https://eq.magelo.com/item/15831" target="_">Protective Dust Drape</a></li>
+                        <li><a href="https://eq.magelo.com/item/27286" target="_">Self Contained Force Barrierer</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <script>
+        var tab, ele;
+        tab = getURLVariable("Tab");
+        if (tab) {
+            ele = document.getElementById(tab);
+            if (ele) {
+                ele.click();
+            } else {
+                document.getElementById("Overview").click();
+            }
+        } else {
+            document.getElementById("Overview").click();
+        }
+    </script>
+</body>

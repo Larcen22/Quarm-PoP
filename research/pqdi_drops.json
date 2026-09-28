@@ -1,0 +1,875 @@
+{
+  "npc-aerin-dar.md": {
+    "boss": "Aerin'Dar",
+    "npc_id": 208074,
+    "drops": [
+      {
+        "id": 26031,
+        "name": "Double-edged Greatsword of Visions"
+      },
+      {
+        "id": 29112,
+        "name": "Ethereal Parchment"
+      },
+      {
+        "id": 22973,
+        "name": "Honorable Longsword"
+      },
+      {
+        "id": 8366,
+        "name": "Honorary Amulet"
+      },
+      {
+        "id": 10946,
+        "name": "Ring of Nobility"
+      },
+      {
+        "id": 13678,
+        "name": "Shoulderpads of the Visionary"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      },
+      {
+        "id": 21863,
+        "name": "Valorous Quarterstaff"
+      },
+      {
+        "id": 25189,
+        "name": "Wrath of Mithaniel"
+      }
+    ]
+  },
+  "npc-agnarr-the-storm-lord.md": {
+    "boss": "Agnarr",
+    "npc_id": 209026,
+    "drops": [
+      {
+        "id": 29198,
+        "name": "Amulet of the Rain"
+      },
+      {
+        "id": 6512,
+        "name": "Crystallized Rain"
+      },
+      {
+        "id": 22975,
+        "name": "Double Edged Stormblade"
+      },
+      {
+        "id": 29132,
+        "name": "Glyphed Rune Word"
+      },
+      {
+        "id": 4139,
+        "name": "Karana&#39;s Tear"
+      },
+      {
+        "id": 27649,
+        "name": "Longbow of the Stormcaller"
+      },
+      {
+        "id": 26797,
+        "name": "Orb of Thunderous Spirits"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      },
+      {
+        "id": 11879,
+        "name": "Stormriders Gauntlets"
+      }
+    ]
+  },
+  "npc-arlyxir.md": {
+    "boss": "Arlyxir",
+    "npc_id": 212023,
+    "drops": [
+      {
+        "id": 9239,
+        "name": "Collar of Corrupted Flame"
+      },
+      {
+        "id": 29132,
+        "name": "Glyphed Rune Word"
+      },
+      {
+        "id": 13650,
+        "name": "Hooded Sanguine Mantle"
+      },
+      {
+        "id": 16291,
+        "name": "Ornate Chain Tunic Pattern"
+      },
+      {
+        "id": 16355,
+        "name": "Ornate Silk Robe Pattern"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      }
+    ]
+  },
+  "npc-avatar-of-earth.md": {
+    "boss": "Avatar of Earth",
+    "npc_id": 222040,
+    "drops": [
+      {
+        "id": 15002,
+        "name": "Chestguard of Enchanted Marble"
+      },
+      {
+        "id": 20621,
+        "name": "Earthen Bile"
+      },
+      {
+        "id": 24879,
+        "name": "Earthspined Staff"
+      },
+      {
+        "id": 16367,
+        "name": "Elemental Chain Pant Pattern"
+      },
+      {
+        "id": 16373,
+        "name": "Elemental Greaves Mold"
+      },
+      {
+        "id": 16381,
+        "name": "Elemental Leather Pant Pattern"
+      },
+      {
+        "id": 16388,
+        "name": "Elemental Silk Pant Pattern"
+      },
+      {
+        "id": 32111,
+        "name": "Essence of Earth"
+      },
+      {
+        "id": 11402,
+        "name": "Leaf-twined Guards"
+      },
+      {
+        "id": 10137,
+        "name": "Ring of Flowing Stones"
+      },
+      {
+        "id": 24585,
+        "name": "Sword of Primordial Power"
+      }
+    ]
+  },
+  "npc-bertoxxulous.md": {
+    "boss": "Bertoxxulous",
+    "npc_id": 223005,
+    "drops": [
+      {
+        "id": 15927,
+        "name": "Belt of Temporal Bindings"
+      },
+      {
+        "id": 25995,
+        "name": "Boots of Despair"
+      },
+      {
+        "id": 15847,
+        "name": "Celestial Cloak"
+      },
+      {
+        "id": 8977,
+        "name": "Collar of Catastrophe"
+      },
+      {
+        "id": 9574,
+        "name": "Eye of Dreams"
+      },
+      {
+        "id": 26092,
+        "name": "Greatblade of Chaos"
+      },
+      {
+        "id": 28651,
+        "name": "Leggings of Furious Might"
+      },
+      {
+        "id": 26993,
+        "name": "Pulsing Onyx Ring"
+      },
+      {
+        "id": 20508,
+        "name": "Symbol of Ancient Summoning"
+      },
+      {
+        "id": 16377,
+        "name": "Timeless Leather Tunic Pattern"
+      },
+      {
+        "id": 24573,
+        "name": "Timespinner, Blade of the Hunter"
+      },
+      {
+        "id": 9435,
+        "name": "Veil of the Inferno"
+      }
+    ]
+  },
+  "npc-carprin-deatharn.md": {
+    "boss": "Carprin Deatharn",
+    "npc_id": 200232,
+    "drops": [
+      {
+        "id": 9478,
+        "name": "Blazing Eye Skull Mask"
+      },
+      {
+        "id": 22503,
+        "name": "Blue Diamond"
+      },
+      {
+        "id": 29976,
+        "name": "Decaying Skeletal Shard"
+      },
+      {
+        "id": 10037,
+        "name": "Diamond"
+      },
+      {
+        "id": 29112,
+        "name": "Ethereal Parchment"
+      },
+      {
+        "id": 29975,
+        "name": "Parchment of Flesh"
+      },
+      {
+        "id": 10028,
+        "name": "Peridot"
+      },
+      {
+        "id": 29977,
+        "name": "Putrid Vial of Fluid"
+      },
+      {
+        "id": 15981,
+        "name": "Raw Diamond"
+      },
+      {
+        "id": 24634,
+        "name": "Runebladed Dagger"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      }
+    ]
+  },
+  "npc-grummus.md": {
+    "boss": "Grummus",
+    "npc_id": 205091,
+    "drops": [
+      {
+        "id": 21864,
+        "name": "Bone Spiked Crusher"
+      },
+      {
+        "id": 20624,
+        "name": "Chunk of Decaying Cloth"
+      },
+      {
+        "id": 9443,
+        "name": "Diseased Ratskin Mask"
+      },
+      {
+        "id": 29112,
+        "name": "Ethereal Parchment"
+      },
+      {
+        "id": 11033,
+        "name": "Fetid Flesh Wristband"
+      },
+      {
+        "id": 5593,
+        "name": "Malarian Leg Ear Stud"
+      },
+      {
+        "id": 27285,
+        "name": "Pus Covered Beetle Carapace"
+      },
+      {
+        "id": 10109,
+        "name": "Ring of the Pox-bearer"
+      },
+      {
+        "id": 26081,
+        "name": "Runed Lance of Gryme"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      }
+    ]
+  },
+  "npc-jiva.md": {
+    "boss": "Jiva",
+    "npc_id": 212014,
+    "drops": [
+      {
+        "id": 10653,
+        "name": "Black Basalt Band"
+      },
+      {
+        "id": 22503,
+        "name": "Blue Diamond"
+      },
+      {
+        "id": 10037,
+        "name": "Diamond"
+      },
+      {
+        "id": 29132,
+        "name": "Glyphed Rune Word"
+      },
+      {
+        "id": 22985,
+        "name": "Jagged Shard of Frozen Flame"
+      },
+      {
+        "id": 23497,
+        "name": "Ornate Broadsword"
+      },
+      {
+        "id": 10028,
+        "name": "Peridot"
+      },
+      {
+        "id": 15981,
+        "name": "Raw Diamond"
+      },
+      {
+        "id": 25220,
+        "name": "Rune Etched Bamboo Bo"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      }
+    ]
+  },
+  "npc-lord-mithaniel-marr.md": {
+    "boss": "Lord Mithaniel Marr",
+    "npc_id": 220020,
+    "drops": [
+      {
+        "id": 24576,
+        "name": "Blade of the Tempest"
+      },
+      {
+        "id": 27815,
+        "name": "Bow of Contortion"
+      },
+      {
+        "id": 15804,
+        "name": "Cloak of the Wrulons"
+      },
+      {
+        "id": 24647,
+        "name": "Dart of Immobility"
+      },
+      {
+        "id": 8773,
+        "name": "Gemstone Choker"
+      },
+      {
+        "id": 20623,
+        "name": "Signet of the Advisor"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      },
+      {
+        "id": 15873,
+        "name": "Valiant Belt of Fallen Heroes"
+      }
+    ]
+  },
+  "npc-manaetic-behemoth.md": {
+    "boss": "Manaetic Behemoth",
+    "npc_id": 206046,
+    "drops": [
+      {
+        "id": 9498,
+        "name": "Coil of Twisted Platinum Wire"
+      },
+      {
+        "id": 29112,
+        "name": "Ethereal Parchment"
+      },
+      {
+        "id": 10074,
+        "name": "Glowing Steel Shim"
+      },
+      {
+        "id": 21865,
+        "name": "Innovators Hammer"
+      },
+      {
+        "id": 15831,
+        "name": "Protective Dust Drape"
+      },
+      {
+        "id": 27286,
+        "name": "Self Contained Force Barrier"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      }
+    ]
+  },
+  "npc-rallos-zek-the-warlord.md": {
+    "boss": "Rallos Zek",
+    "npc_id": 214312,
+    "drops": [
+      {
+        "id": 7770,
+        "name": "Black Collar of Boundless Might"
+      },
+      {
+        "id": 25989,
+        "name": "Blade of War"
+      },
+      {
+        "id": 19082,
+        "name": "Boots of the Warmaster"
+      },
+      {
+        "id": 29132,
+        "name": "Glyphed Rune Word"
+      },
+      {
+        "id": 9485,
+        "name": "Grimfaced Visor"
+      },
+      {
+        "id": 9436,
+        "name": "Red Eyed Mask of Rage"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      },
+      {
+        "id": 5975,
+        "name": "War Charm of Crossed Blades"
+      }
+    ]
+  },
+  "npc-rizlona.md": {
+    "boss": "Rizlona",
+    "npc_id": 212026,
+    "drops": [
+      {
+        "id": 18440,
+        "name": "The Time Grows Near"
+      }
+    ]
+  },
+  "npc-saryrn-potorment.md": {
+    "boss": "Saryrn",
+    "npc_id": 223003,
+    "drops": [
+      {
+        "id": 28648,
+        "name": "Cap of Flowing Time"
+      },
+      {
+        "id": 22986,
+        "name": "Edge of Eternity"
+      },
+      {
+        "id": 28664,
+        "name": "Girdle of Intense Durability"
+      },
+      {
+        "id": 26996,
+        "name": "Gloves of the Unseen"
+      },
+      {
+        "id": 26994,
+        "name": "Ring of Evasion"
+      },
+      {
+        "id": 28663,
+        "name": "Runewarded Belt"
+      },
+      {
+        "id": 13673,
+        "name": "Shroud of Provocation"
+      },
+      {
+        "id": 20898,
+        "name": "Symbol of the Planemasters"
+      },
+      {
+        "id": 24699,
+        "name": "Time&#39;s Antithesis"
+      },
+      {
+        "id": 26981,
+        "name": "Veil of Lost Hopes"
+      }
+    ]
+  },
+  "npc-solusek-ro.md": {
+    "boss": "Solusek Ro",
+    "npc_id": 212025,
+    "drops": [
+      {
+        "id": 9481,
+        "name": "Baroque Half Mask of Solusek Ro"
+      },
+      {
+        "id": 11878,
+        "name": "Gauntlets of the Burning Prince"
+      },
+      {
+        "id": 29132,
+        "name": "Glyphed Rune Word"
+      },
+      {
+        "id": 24611,
+        "name": "Gold Runed Mithril Knife"
+      },
+      {
+        "id": 15823,
+        "name": "Raiment of the Fire Son"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      },
+      {
+        "id": 20486,
+        "name": "The Orb of the Sun"
+      }
+    ]
+  },
+  "npc-tallon-zek-potactics.md": {
+    "boss": "Tallon Zek",
+    "npc_id": 223001,
+    "drops": [
+      {
+        "id": 28654,
+        "name": "Amulet of Crystal Dreams"
+      },
+      {
+        "id": 26991,
+        "name": "Band of Prismatic Focus"
+      },
+      {
+        "id": 28667,
+        "name": "Bracer of Precision"
+      },
+      {
+        "id": 32607,
+        "name": "Circlet of Flowing Time"
+      },
+      {
+        "id": 15815,
+        "name": "Cloak of the Falling Skies"
+      },
+      {
+        "id": 23498,
+        "name": "Hopebringer"
+      },
+      {
+        "id": 28658,
+        "name": "Mantle of Deadly Precision"
+      },
+      {
+        "id": 22959,
+        "name": "Serpent of Vindication"
+      },
+      {
+        "id": 28656,
+        "name": "Tactician&#39;s Shield"
+      },
+      {
+        "id": 26988,
+        "name": "Winged Storm Boots"
+      }
+    ]
+  },
+  "npc-terris-thule-nightmare.md": {
+    "boss": "Terris-Thule",
+    "npc_id": 223002,
+    "drops": [
+      {
+        "id": 21995,
+        "name": "Armguards of the Brute"
+      },
+      {
+        "id": 21998,
+        "name": "Cape of Endless Torment"
+      },
+      {
+        "id": 28605,
+        "name": "Coif of Flowing Time"
+      },
+      {
+        "id": 22890,
+        "name": "Cudgel of Venomous Hatred"
+      },
+      {
+        "id": 7125,
+        "name": "Earring of Corporeal Essence"
+      },
+      {
+        "id": 21886,
+        "name": "Hammer of Hours"
+      },
+      {
+        "id": 26895,
+        "name": "Orb of Clinging Death"
+      },
+      {
+        "id": 8774,
+        "name": "Talisman of Tainted Energy"
+      },
+      {
+        "id": 29172,
+        "name": "Vanazir, Dreamer&#39;s Despair"
+      }
+    ]
+  },
+  "npc-the-keeper-of-sorrows-plane-of-torment-event.md": {
+    "boss": "Keeper of Sorrows",
+    "npc_id": 207015,
+    "drops": [
+      {
+        "id": 26629,
+        "name": "A Tormentors Hoof"
+      },
+      {
+        "id": 10800,
+        "name": "Band of the Adorned"
+      },
+      {
+        "id": 29759,
+        "name": "Bloody Tormentor Parts"
+      },
+      {
+        "id": 22893,
+        "name": "Crowned Staff of Anguish"
+      },
+      {
+        "id": 29112,
+        "name": "Ethereal Parchment"
+      },
+      {
+        "id": 26030,
+        "name": "Great Blade of Malise"
+      },
+      {
+        "id": 26628,
+        "name": "Large Black Horn"
+      },
+      {
+        "id": 26627,
+        "name": "Massive Tusks"
+      },
+      {
+        "id": 24087,
+        "name": "Plague Mites"
+      },
+      {
+        "id": 15820,
+        "name": "Shaded Cloak"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      },
+      {
+        "id": 8783,
+        "name": "Tormentor&#39;s Chain Collar"
+      }
+    ]
+  },
+  "npc-the-protector-of-dresolik.md": {
+    "boss": "Protector of Dresolik",
+    "npc_id": 212408,
+    "drops": [
+      {
+        "id": 25987,
+        "name": "Basalt Greatsword of the Protector"
+      },
+      {
+        "id": 22503,
+        "name": "Blue Diamond"
+      },
+      {
+        "id": 10037,
+        "name": "Diamond"
+      },
+      {
+        "id": 24590,
+        "name": "Gleaming Obsidian Shard"
+      },
+      {
+        "id": 29132,
+        "name": "Glyphed Rune Word"
+      },
+      {
+        "id": 21884,
+        "name": "Mithril Battle Hammer"
+      },
+      {
+        "id": 10028,
+        "name": "Peridot"
+      },
+      {
+        "id": 24082,
+        "name": "Phosphorous Powder"
+      },
+      {
+        "id": 15981,
+        "name": "Raw Diamond"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      },
+      {
+        "id": 20469,
+        "name": "Sphere of Encased Flame"
+      },
+      {
+        "id": 26748,
+        "name": "Wand of the Firestorm"
+      }
+    ]
+  },
+  "npc-vallon-zek-potactics.md": {
+    "boss": "Vallon Zek",
+    "npc_id": 999217,
+    "drops": []
+  },
+  "npc-xanamech-nezmirthafen.md": {
+    "boss": "Xanamech Nezmirthafen",
+    "npc_id": 206208,
+    "drops": [
+      {
+        "id": 9426,
+        "name": "Bundle of Super Conductive Wires"
+      },
+      {
+        "id": 9179,
+        "name": "Coiled Spring"
+      },
+      {
+        "id": 9295,
+        "name": "Copper Node"
+      },
+      {
+        "id": 22580,
+        "name": "Cord Hilted Spike Driver"
+      },
+      {
+        "id": 29112,
+        "name": "Ethereal Parchment"
+      },
+      {
+        "id": 16858,
+        "name": "Gears"
+      },
+      {
+        "id": 24083,
+        "name": "Golden Ember Powder"
+      },
+      {
+        "id": 10296,
+        "name": "Innovators Ring"
+      },
+      {
+        "id": 9434,
+        "name": "Intact Power Cell"
+      },
+      {
+        "id": 14804,
+        "name": "Mana Battery - Class Five"
+      },
+      {
+        "id": 9181,
+        "name": "Mana Battery - Class Six"
+      },
+      {
+        "id": 9178,
+        "name": "Pinion"
+      },
+      {
+        "id": 27270,
+        "name": "Pulsing Phase Emitter"
+      },
+      {
+        "id": 9180,
+        "name": "Saltpeter"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      },
+      {
+        "id": 16859,
+        "name": "Sprockets"
+      },
+      {
+        "id": 9184,
+        "name": "Steel Ball Bearing"
+      },
+      {
+        "id": 24785,
+        "name": "The Weapon&#39;s Driveshaft"
+      },
+      {
+        "id": 8785,
+        "name": "Woven Shim Choker"
+      }
+    ]
+  },
+  "npc-xuzl.md": {
+    "boss": "Xuzl",
+    "npc_id": 212055,
+    "drops": [
+      {
+        "id": 27278,
+        "name": "Circular Shield of the Blaze"
+      },
+      {
+        "id": 29132,
+        "name": "Glyphed Rune Word"
+      },
+      {
+        "id": 26086,
+        "name": "Lance of the Flame Knight"
+      },
+      {
+        "id": 16346,
+        "name": "Ornate Breastplate Mold"
+      },
+      {
+        "id": 16348,
+        "name": "Ornate Leather Tunic Pattern"
+      },
+      {
+        "id": 29131,
+        "name": "Spectral Parchment"
+      }
+    ]
+  }
+}

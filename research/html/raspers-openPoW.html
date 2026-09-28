@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Planes of Power: Plane of Water</title>
+</head>
+<body onload="createImage('../Maps/powater.txt', 1, 0, 0, 0, 0, false, 'mapContainer', 500, 500, [
+        [240, -380, 128, 128, 0, 7, 0, 0, 0, 'F'],
+        [65, -290, 128, 0, 0, 9, 240, 240, 240, 'M1'],
+        [-200, 666, 128, 0, 0, 9, 240, 240, 240, 'M2'],
+        [-350, -420, 128, 0, 0, 9, 240, 240, 240, 'M3'],
+        [85, -700, 128, 0, 0, 9, 240, 240, 240, 'M4'],
+        [780, -1100, 128, 0, 0, 9, 240, 240, 240, 'C'],
+        [515, 610, 0, 128, 0, 7, 240, 192, 240, '1'],
+        [260, 870, 0, 128, 0, 7, 240, 192, 240, '2'],
+        [10, 950, 0, 128, 0, 7, 240, 192, 240, '3'],
+        [-550, 860, 0, 128, 0, 7, 240, 192, 240, '4'],
+        [-455, 1200, 0, 128, 0, 7, 240, 192, 240, '5'],
+        [-130, 950, 0, 128, 0, 7, 240, 192, 240, '6'],
+        [280, 690, 0, 128, 0, 7, 240, 192, 240, '7'],
+        [-190, -175, 0, 128, 0, 7, 240, 192, 240, '8'],
+        [-280, -300, 0, 128, 0, 7, 240, 192, 240, '9'],
+        [360, -140, 0, 128, 0, 7, 240, 192, 240, '10'],
+        [400, -300, 0, 128, 0, 7, 240, 192, 240, '11'],
+        [120, -620, 0, 128, 0, 7, 240, 192, 240, '12'],
+        [-250, -420, 0, 128, 0, 7, 240, 192, 240, '13'],
+        [450, -435, 0, 128, 0, 7, 240, 192, 240, '14'],
+        [410, 780, 0, 128, 0, 7, 240, 192, 240, '15'],
+        [-200, 740, 0, 128, 0, 7, 240, 192, 240, '16'],
+        [160, 1250, 0, 0, 0, 0, 0, 128, 128, 'Z']
+]);">
+    <link href="../Scripts/main.css" rel="stylesheet" type="text/css" />
+    <link href="../Scripts/sideNav.css" rel="stylesheet" type="text/css" />
+    <script src="../Maps/mapImages.js" type="text/javascript"></script>
+    <script src="../Scripts/banner.js" type="text/javascript"></script>
+    <script src="../Scripts/sideNav.js" type="text/javascript"></script>
+    <script src="../Scripts/Tabs.js" type="text/javascript"></script>
+
+    <div class="navbar">
+        <script src="../Scripts/expansionList.js" type="text/javascript"></script>
+        <script src="https://www.magelocdn.com/pack/eq/en/magelo-bar.js#1" type="text/javascript"></script>
+        <script src="NavBar.js" type="text/javascript"></script>
+    </div>
+
+    <div id="content">
+        <p />
+        <h2>Plane of Water</h2>
+        <p />
+        <div class="tab">
+            <button class="tablinks" id="Overview" onclick="openTabContent(this)">Overview</button>
+            <button class="tablinks" id="Rares" onclick="openTabContent(this)">Rares</button>
+            <button class="tablinks" id="Tasks" onclick="openTabContent(this)">Events</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="tabOverview" class="tabcontent">
+            <h3>Overview</h3>
+            <p>
+            </p>
+            <div id="mapContainer">
+            </div>
+            <ul>
+                <li>Z - Zone in/out</li>
+                <li>F - Fishlord Craiyk (Summoning Event)</li>
+                <li>1 - an enormous frog</li>
+                <li>2 - Ferocious Barracuda and Triloun Warder</li>
+                <li>3 - Monstrous Sea Turtle</li>
+                <li>4 - Gigadon</li>
+                <li>5 - Hammertooth</li>
+                <li>6 - Razorfin</li>
+                <li>7 - Swordfang</li>
+                <li>8 - Frenzied Anglerfish</li>
+                <li>9 - Furious Deepwater Kraken</li>
+                <li>10 - Savage Deepwater Kraken</li>
+                <li>11 - Hraquis Arch Magus</li>
+                <li>12 - Hraquis Chieftain</li>
+                <li>13 - Regrua Overlord</li>
+                <li>14 - Regrua Protector</li>
+                <li>15 - Triloun Egg Keeper</li>
+                <li>16 - Triloun Seer</li>
+                <li>M1 - Hydrotha</li>
+                <li>M2 - Grioihin the Wise</li>
+                <li>M3 - Krziik the Mighty</li>
+                <li>M4 - Ofossaa the Enlightened</li>
+                <li>C - Coirnav the Avatar of Water</li>
+            </ul>
+        </div>
+
+        <div id="tabRares" class="tabcontent">
+            <h3><a href="?Tab=Rares">Rare Mobs</a></h3>
+            <dl>
+                <dt><a href="https://eq.magelo.com/npc/166264" target="_">an enormous frog</a></dt>
+                <dd>
+                    A rare frog whose only drop appears to be "Oil of a frog", an ingredient in eventually creating the Plane of Time key.
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/162901" target="_">Ferocious Barracuda</a></dt>
+                <dd>
+                    A rare fish spawning in the first chamber east of the zone entrance.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/20887" target="_">Coral Shard</a>,
+                    <a href="https://eq.magelo.com/item/24594" target="_">Coral Hilted Shortsword</a>
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/390527" target="_">Monstrous Sea Turtle</a></dt>
+                <dd>
+                    A rare turtle spawning just north of the zone entrance.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/20887" target="_">Coral Shard</a>,
+                    <a href="https://eq.magelo.com/item/24594" target="_">Coral Hilted Shortsword</a>
+                </dd>
+                <dt>
+                    <a href="https://eq.magelo.com/npc/411133" target="_">Gigadon</a>,
+                    <a href="https://eq.magelo.com/npc/99298" target="_">Hammertooth</a>,
+                    <a href="https://eq.magelo.com/npc/175959" target="_">Razorfin</a>, and
+                    <a href="https://eq.magelo.com/npc/411134" target="_">Swordfang</a>
+                </dt>
+                <dd>
+                    4 rares that spawn in the western side of the southern region.  They share a loot table.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/22899" target="_">Coral Headed Mace</a>,
+                    <a href="https://eq.magelo.com/item/26038" target="_">Opalescent Two-Handed Sword</a>,
+                    <a href="https://eq.magelo.com/item/27318" target="_">Shield of Coral</a>,
+                    <a href="https://eq.magelo.com/item/21885" target="_">Sharkspine Club</a>
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/412970" target="_">Frenzied Anglerfish</a></dt>
+                <dd>
+                    A rare fish spawning in the southwest chamber of the northern region.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/13657" target="_">Mantle of Seascales</a>,
+                    <a href="https://eq.magelo.com/item/24594" target="_">Coral Hilted Shortsword</a>
+                </dd>
+                <dt>
+                    <a href="https://eq.magelo.com/npc/419157" target="_">Furious Deepwater Kraken</a>
+                    and <a href="https://eq.magelo.com/npc/413852" target="_">Savage Deepwater Kraken</a>
+                </dt>
+                <dd>
+                    A pair of rare squiddies, Furious is in the central west chamber of the northern region and Savage is the the southwestern chamber.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/11408" target="_">Phosphorescent Sleeves</a>
+                </dd>
+                <dt>
+                    <a href="https://eq.magelo.com/npc/385136" target="_">Hraquis Arch Magus</a>
+                    and <a href="https://eq.magelo.com/npc/412156" target="_">Hraquis Chieftain</a>
+                </dt>
+                <dd>
+                    Rare creatures from the black lagoon.  The Magus spawns in the cental east chamber of the northern region while
+                    the Chieftan spawns in the back of the central area.  They share a loot table.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/14962" target="_">Algae Covered Chainmail</a>,
+                    <a href="https://eq.magelo.com/item/20506" target="_">Opalescent Seascale</a>
+                </dd>
+                <dt>
+                    <a href="https://eq.magelo.com/npc/101704" target="_">Regrua Overlord</a>
+                    and <a href="https://eq.magelo.com/npc/420000" target="_">Regrua Protector</a>
+                </dt>
+                <dd>
+                    Rare crabs.  The Overlord spawns in the northwest chamber of the northern region while
+                    the Protector spawns in the northeast chamber.  They share a loot table.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/22946" target="_">Kelp Hilted Mace</a>,
+                    <a href="https://eq.magelo.com/item/25994" target="_">Coral Hilted Tulwar</a>
+                </dd>
+                <dt>
+                    <a href="https://eq.magelo.com/npc/410463" target="_">Triloun Egg Keeper</a>,
+                    <a href="https://eq.magelo.com/npc/412823" target="_">Triloun Seer</a>,
+                    and <a href="https://eq.magelo.com/npc/411062" target="_">Triloun Warder</a>
+                </dt>
+                <dd>
+                    3 rare water mephits spawning in the southern half of the zone.  They share a loot table.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/21852" target="_">Oblong Seashell</a>,
+                    <a href="https://eq.magelo.com/item/25986" target="_">Plankton Laced Greatsword</a>,
+                    <a href="https://eq.magelo.com/item/20889" target="_">Pearlescent Gemstone</a>
+                </dd>
+            </dl>
+        </div>
+        <div id="tabTasks" class="tabcontent">
+            <h3><a href="?Tab=Tasks">Events</a></h3>
+            <dl>
+                <dt>Fishlord Summoning Event</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 2-3+ groups suggested</li>
+                        <li>Respawn: unknown</li>
+                    </ul>
+                    <p>
+                        This event is triggered by giving Fishlord Craiyk 100 platinum.  During the event waves of level 65 trash mobs will spawn and move towards
+                        Craiyk. If Craiyk dies the event ends, but he can take a bit of beating before dying.  As you battle through he will occasionally say, "A
+                        dweller of some power comes, prepare yourself." which is your cue that a boss is about to pop.  The bosses hit harder, can range from 68 to
+                        71, and are what drops the loot for the event.  The entire event can take up to 3 hours and there is no way to speed it up.
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/7127" target="_">Abalone Earring</a></li>
+                            <li><a href="https://eq.magelo.com/item/15813" target="_">Phosphorescent Kelp-Lined Cloak</a></li>
+                            <li><a href="https://eq.magelo.com/item/7756" target="_">Amulet of the Starfish</a></li>
+                            <li><a href="https://eq.magelo.com/item/27268" target="_">Enormous Seascale</a></li>
+                            <li><a href="https://eq.magelo.com/item/15876" target="_">Moss Covered Twine</a></li>
+                            <li><a href="https://eq.magelo.com/item/19088" target="_">Oceanic Kelp Boots</a></li>
+                            <li><a href="https://eq.magelo.com/item/11420" target="_">Ornate Coral Armguards</a></li>
+                            <li><a href="https://eq.magelo.com/item/11426" target="_">Shellplated Armguards</a></li>
+                            <li><a href="https://eq.magelo.com/item/20629" target="_">Putrid Chunk of Moss</a></li>
+                            <li><a href="https://eq.magelo.com/item/5791" target="_">Sharkbone Earring</a></li>
+                            <li><a href="https://eq.magelo.com/item/8788" target="_">Seascale Talisman</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Hydrotha</dt>
+                <dd>
+                    <ul>
+                        <li>Size: unlimited</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Flurries and casts a blind with 500 pt dot on the tank.
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/16372" target="_">Elemental Vambrace Mold</a></li>
+                            <li><a href="https://eq.magelo.com/item/16364" target="_">Elemental Chain Sleeve Pattern</a></li>
+                            <li><a href="https://eq.magelo.com/item/16378" target="_">Elemental Leather Sleeve Pattern</a></li>
+                            <li><a href="https://eq.magelo.com/item/16385" target="_">Elemental Silk Sleeve Pattern</a></li>
+                            <li><a href="https://eq.magelo.com/item/10654" target="_">Moss Encrusted Band</a></li>
+                            <li><a href="https://eq.magelo.com/item/9488" target="_">Abalone Engraved Tribal Mask</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Grioihin the Wise</dt>
+                <dd>
+                    <ul>
+                        <li>Size: unlimited</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Has a 2k AE with a 5 second stun.
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/10945" target="_">Ring of Algae</a></li>
+                            <li><a href="https://eq.magelo.com/item/16605" target="_">Seaweed Woven Leggings</a></li>
+                            <li><a href="https://eq.magelo.com/item/27994" target="_">Lute of the Flowing Waters</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Krziik the Mighty</dt>
+                <dd>
+                    <ul>
+                        <li>Size: unlimited</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        This one casts a 3k dd on the tank every 60 seconds.  It increases run speed, which can make adjusting positioning more difficult.
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/16369" target="_">Elemental Bracer Mold</a></li>
+                            <li><a href="https://eq.magelo.com/item/16365" target="_">Elemental Chain Bracelet Pattern</a></li>
+                            <li><a href="https://eq.magelo.com/item/16379" target="_">Elemental Leather Wrist Pattern</a></li>
+                            <li><a href="https://eq.magelo.com/item/16386" target="_">Elemental Silk Bracelet Pattern</a></li>
+                            <li><a href="https://eq.magelo.com/item/22990" target="_">Gem Encrusted Axe</a></li>
+                            <li><a href="https://eq.magelo.com/item/27646" target="_">Ornate Abalone Recurve Bow</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Ofossaa the Enlightened</dt>
+                <dd>
+                    <ul>
+                        <li>Size: unlimited</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Casts an AE which is a slow, a 250 pt dot, a 450 AC debuff, and a 100 mana/tick drain.  The mana drain overwrites the druid skin line of
+                        buff.  The AE is cold resist based and takes 18 curse counters to cure.
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/16370" target="_">Elemental Boot Mold</a></li>
+                            <li><a href="https://eq.magelo.com/item/16368" target="_">Elemental Chain Boot Pattern</a></li>
+                            <li><a href="https://eq.magelo.com/item/16382" target="_">Elemental Leather Boot Pattern</a></li>
+                            <li><a href="https://eq.magelo.com/item/16389" target="_">Elemental Silk Boot Pattern</a></li>
+                            <li><a href="https://eq.magelo.com/item/27272" target="_">Intricately Etched Seashell</a></li>
+                            <li><a href="https://eq.magelo.com/item/24774" target="_">Algae Covered Stiletto</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Coirnav the Avatar of Water</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Coirnav is a timed ring event encounter.  You start by killing Guardian of Coirnav, this begins a 14 minute timer.  If Coirnav isn't dead
+                        before then the event despawns and you fail.  For the first wave you have Pwelon of Vapor along with 25 adds.  When adds are down Nrinda of
+                        Ice spawns along with 25 more adds.  The third wave is Vamuil of Water with a third set of 25 adds.  At this point Coirnav becomes
+                        targetable even if the mini-bosses are still alive.  After defeating each mini-boss they respawn (but weaker) near Coirnav.  Pull them
+                        again, then burn Coirnav.  A final set of 25 adds will spawn when it is engaged, but they despawn when Coirnav dies.  Get everybody rezzed
+                        up and then hail the Essence of Water for your flag and
+                        <a href="https://eq.magelo.com/item/29163" target="_">Sphere of Coalesced Water</a>, one of the 4 pieces needed for Plane of Time key.
+                        The mini-bosses can drop any Elemental Wrist mold and Coirnav has a chance of dropping an Elemental Leg pattern as a bonus along with 2 of
+                        the following:
+                    </p>
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/26220" target="_">Hammer of Crushing Waves</a></li>
+                        <li><a href="https://eq.magelo.com/item/13634" target="_">Kelp-Lined Mantle</a></li>
+                        <li><a href="https://eq.magelo.com/item/13694" target="_">Sharkbone Plated Shoulderpads</a></li>
+                        <li><a href="https://eq.magelo.com/item/10242" target="_">Earring of Embedded Coral</a></li>
+                        <li><a href="https://eq.magelo.com/item/16097" target="_">Double Woven Kelp Cord</a></li>
+                        <li><a href="https://eq.magelo.com/item/14961" target="_">Mail of Storms</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <script>
+        var tab, ele;
+        tab = getURLVariable("Tab");
+        if (tab) {
+            ele = document.getElementById(tab);
+            if (ele) {
+                ele.click();
+            } else {
+                document.getElementById("Overview").click();
+            }
+        } else {
+            document.getElementById("Overview").click();
+        }
+    </script>
+</body>

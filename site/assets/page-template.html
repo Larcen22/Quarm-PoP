@@ -1,0 +1,151 @@
+<!-- ============================================================
+     SHARED PAGE TEMPLATE — copy this skeleton into every page.
+     Replace [PAGE TITLE], mark the current nav link with class="active",
+     and put page content between the <main> markers.
+     GitHub Pages compatible: all paths relative, no build step.
+     ============================================================ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[PAGE TITLE] — EverQuest Planes of Power Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <!-- NAV: mark the current page's link with class="active" -->
+    <nav class="topbar">
+        <a href="index.html">Home</a><span class="sep">·</span>
+        <a href="flagging.html">Flagging</a><span class="sep">·</span>
+        <a href="bosses-tier1.html">Bosses T1</a>
+        <a href="bosses-tier2.html">T2</a>
+        <a href="bosses-tier3.html">T3</a>
+        <a href="solusek-ro-tower.html">Solusek Ro Tower</a><span class="sep">·</span>
+        <a href="plane-of-air.html">Air</a>
+        <a href="plane-of-earth.html">Earth</a>
+        <a href="plane-of-fire.html">Fire</a>
+        <a href="plane-of-water.html">Water</a>
+        <a href="plane-of-time.html">Time</a><span class="sep">·</span>
+        <a href="quests-items.html">Quests &amp; Items</a>
+        <a href="gear-tradeskills.html">Gear &amp; Tradeskills</a>
+        <a href="videos.html">Videos</a>
+    </nav>
+
+    <!-- PAGE HEADER (inner pages only — index uses the big hero instead) -->
+    <div class="page-header">
+        <h1>[PAGE TITLE]</h1>
+        <p class="subtitle">[one-line subtitle]</p>
+    </div>
+
+    <main>
+        <!-- [PAGE CONTENT] -->
+    </main>
+
+    <footer>
+        <p>
+            A fan guide to EverQuest's Planes of Power expansion (2003). Not affiliated with
+            Daybreak Game Company or Sony. Guide text sourced from eqprogression.com and
+            raspersrealm.com; boss statistics cross-checked against pqdi.cc (Project Quarm
+            Database Interface, DB 2026-09-07); videos embedded from YouTube.
+        </p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        for (let i = 0; i < 60; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                vx: (Math.random() - 0.5) * 0.3,
+                vy: -(Math.random() * 0.5 + 0.2),
+                size: Math.random() * 2 + 0.5,
+                alpha: Math.random() * 0.5 + 0.2
+            });
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.x += p.vx; p.y += p.vy;
+                if (p.y < -10) { p.y = canvas.height + 10; p.x = Math.random() * canvas.width; }
+                if (p.x < -10) p.x = canvas.width + 10;
+                if (p.x > canvas.width + 10) p.x = -10;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(212, 175, 55, ${p.alpha})`;
+                ctx.fill();
+            });
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+
+    <script>
+    // Image sizing + side-by-side grouping for guide screenshots
+    (function () {
+      const figs = Array.from(document.querySelectorAll('figure.guide-img'));
+      if (!figs.length) return;
+      function sizeFigure(f) {
+        const img = f.querySelector('img');
+        if (!img || !img.naturalWidth) return;
+        const n = img.naturalWidth, h = img.naturalHeight;
+        let s = Math.min(3.5, 760 / n, 350 / h); // small images scale up to ~3.5x; nothing exceeds 760 wide or 350 tall
+        if (n >= 500) s = Math.min(s, 1);        // medium/large: never bigger than natural size
+        const w = Math.round(n * s);
+        img.style.width = w + 'px';
+        f.style.maxWidth = (w + 40) + 'px';
+      }
+      figs.forEach(f => {
+        const img = f.querySelector('img');
+        if (!img) return;
+        if (img.complete && img.naturalWidth) sizeFigure(f);
+        else img.addEventListener('load', () => sizeFigure(f));
+      });
+      // Group consecutive figures side-by-side (up to 3 per row)
+      function immediatelyFollows(a, b) {
+        let n = a.nextSibling;
+        while (n && n !== b) {
+          if (n.nodeType === 3 && !/\S/.test(n.textContent)) { n = n.nextSibling; continue; }
+          return false;
+        }
+        return !!n;
+      }
+      let i = 0;
+      while (i < figs.length) {
+        const f = figs[i];
+        if (f.parentElement && f.parentElement.classList.contains('img-row')) { i++; continue; }
+        const group = [f];
+        let j = i;
+        while (group.length < 3 && j + 1 < figs.length && immediatelyFollows(figs[j], figs[j + 1])) {
+          j++; group.push(figs[j]);
+        }
+        if (group.length >= 2) {
+          const row = document.createElement('div');
+          row.className = 'img-row';
+          f.parentNode.insertBefore(row, f);
+          group.forEach(g => row.appendChild(g));
+        }
+        i = j + 1;
+      }
+    })();
+    </script>
+
+    <script src="assets/pqdi-tooltip.js"></script>
+</body>
+</html>

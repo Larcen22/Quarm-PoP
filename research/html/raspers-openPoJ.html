@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Planes of Power: Plane of Justice</title>
+</head>
+<body onload="createImage('../Maps/pojustice.txt', 1.2, 1, 275, 0, 0, false, 'mapContainer', 500, 500, [
+        [-740, 470, 128, 128, 0, 7, 0, 0, 0, 'M'],
+        [900, 770, 0, 128, 0, 7, 240, 192, 240, '1'],
+        [715, 750, 0, 128, 0, 7, 240, 192, 240, '2'],
+        [650, 480, 0, 128, 0, 7, 240, 192, 240, '3'],
+        [825, 575, 0, 128, 0, 7, 240, 192, 240, '4'],
+        [890, 820, 0, 128, 0, 7, 240, 192, 240, '5'],
+        [965, 1065, 0, 128, 0, 7, 240, 192, 240, '6'],
+        [615, 1115, 0, 128, 0, 7, 240, 192, 240, '7'],
+        [650, 975, 0, 128, 0, 7, 240, 192, 240, '8'],
+        [415, 1170, 0, 128, 0, 7, 240, 192, 240, '9'],
+        [850, 1300, 0, 128, 0, 7, 240, 192, 240, '10'],
+        [-215, -475, 0, 192, 192, 7, 240, 240, 240, 'T'],
+        [0, 0, 0, 192, 192, 7, 240, 240, 240, 'Zi'],
+        [-370, 0, 0, 192, 192, 7, 240, 240, 240, 'Zo']
+])">
+    <link href="../Scripts/main.css" rel="stylesheet" type="text/css" />
+    <link href="../Scripts/sideNav.css" rel="stylesheet" type="text/css" />
+    <script src="../Maps/mapImages.js" type="text/javascript"></script>
+    <script src="../Scripts/banner.js" type="text/javascript"></script>
+    <script src="../Scripts/sideNav.js" type="text/javascript"></script>
+    <script src="../Scripts/Tabs.js" type="text/javascript"></script>
+
+    <div class="navbar">
+        <script src="../Scripts/expansionList.js" type="text/javascript"></script>
+        <script src="https://www.magelocdn.com/pack/eq/en/magelo-bar.js#1" type="text/javascript"></script>
+        <script src="NavBar.js" type="text/javascript"></script>
+    </div>
+
+    <div id="content">
+        <p />
+        <h2>Plane of Justice</h2>
+        <p />
+        <div class="tab">
+            <button class="tablinks" id="Overview" onclick="openTabContent(this)">Overview</button>
+            <button class="tablinks" id="Rares" onclick="openTabContent(this)">Rares</button>
+            <button class="tablinks" id="Tasks" onclick="openTabContent(this)">Events</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="tabOverview" class="tabcontent">
+            <h3>Overview</h3>
+            <p>
+                The Plane of Justice is a Tier 1 zone, divided into 3 parts: Cells, Caves, and Trials.  The Cells are the closest to the zone in with non-kos
+                rats and guards roaming the halls and Prisoners in the northern cells and Creatures in the southern cells.  The two types have competing
+                factions, killing Prisoners to raise Creatures and vice versa, but the only known use of the factions is the alt-access quest for Plane of
+                Torment.  The Cave system in the southeast is populated with bugs and rocks with one rare mob spawn point in each chamber.  Lastly is the Trials,
+                reached from a portal in the northern Cell region.  Here you can do the 6 trials or the Tribunal raid.
+            </p>
+            <p id="mapContainer" />
+            <ul>
+                <li>Zi/Zo - Zone in, Zone out</li>
+                <li>T - Portal to Trials area</li>
+                <li>M - Mavuin</li>
+                <li>1 - a grallok elder</li>
+                <li>2 - a grallok overseer</li>
+                <li>3 - a grallok appraisor</li>
+                <li>4 - a grallok crusader</li>
+                <li>5 - the grallok underlord</li>
+                <li>6 - the ancient crawler</li>
+                <li>7 - a blood leech</li>
+                <li>8 - a screeching parasite</li>
+                <li>9 - a diamond beetle</li>
+                <li>10 - the yrendan scarab</li>
+            </ul>
+        </div>
+
+        <div id="tabRares" class="tabcontent">
+            <h3><a href="?Tab=Rares">Rare Mobs</a></h3>
+            <dl>
+                <dt>
+                    "<a href="https://eq.magelo.com/npc/393223" target="_">a grallok elder</a>",
+                    "<a href="https://eq.magelo.com/npc/96975" target="_">a grallok overseer</a>",
+                    "<a href="https://eq.magelo.com/npc/95992" target="_">a grallok appraisor</a>",
+                    "<a href="https://eq.magelo.com/npc/382082" target="_">a grallok crusader</a>"
+                </dt>
+                <dd>
+                    4 rare versions of the geonid creatures in the mines.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/16639" target="_">Bailiff's Greaves</a>
+                </dd>
+
+                <dt>"<a href="https://eq.magelo.com/npc/419048" target="_">the grallok underlord</a>"</dt>
+                <dd>
+                    A rare rockpile in the mines.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/10244" target="_">Virtue Engraved Ban</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/409021" target="_">the ancient crawler</a>"</dt>
+                <dd>
+                    A rare worm in the mines.  Casts Wizard spells.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/10245" target="_">Scale Emblazoned Ring</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/412277" target="_">a blood leech</a>"</dt>
+                <dd>
+                    A rare worm in the mines.  Enrages.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/12098" target="_">Fine Steel Guardian Gauntlets</a>,
+                    <a href="https://eq.magelo.com/item/22895" target="_">Baton of the Peacekeeper</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/407416" target="_">a screeching parasite</a>"</dt>
+                <dd>
+                    A rare bug in the mines.  Casts Cleric spells.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/11421" target="_">Twice Forged Arm Guards</a>,
+                    <a href="https://eq.magelo.com/item/9952" target="_">Hammer Signet Ring</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/95993" target="_">a diamond beetle</a>"</dt>
+                <dd>
+                    A rare bug in the mines.  Casts Necromancer spells.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/15829" target="_">Justice Cape</a>,
+                    <a href="https://eq.magelo.com/item/27937" target="_">True Bow of Balance</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/18398" target="_">the yrendan scarab</a>"</dt>
+                <dd>
+                    A rare bug in the mines.  Casts Enchanter spells including charm and flux.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/14963" target="_">Rigid Beetle Carapace</a>,
+                    <a href="https://eq.magelo.com/item/19096" target="_">Resplendent Scalemail Boots</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/413049" target="_">herald of destruction</a>"</dt>
+                <dd>
+                    Spawns during the Trial of Execution.  Hits under 300 and can proc a 50% slow.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/9322" target="_">Veil of the Executioner</a>,
+                    <a href="https://eq.magelo.com/item/5596" target="_">Silver Hammer Earring</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/421093" target="_">priest of doom</a>"</dt>
+                <dd>
+                    Spawns during the Trial of Execution.  Hits around 300, no spells.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/13649" target="_">Pauldrons of Witness</a>,
+                    <a href="https://eq.magelo.com/item/22891" target="_">Troubadour's Mace</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/413047" target="_">a burning nemesis</a>"</dt>
+                <dd>
+                    Spawns during the Trial of Flame.  Can hit 400, casts Shadowknight spells, might be mezzable??
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/21889" target="_">Ornate Sceptre</a>,
+                    <a href="https://eq.magelo.com/item/9439" target="_">Mask of the Witness</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/418499" target="_">a fiery aggressor</a>"</dt>
+                <dd>
+                    Spawns during the Trial of Flame.  Hits up to 400, casts Shaman spells, might be mezzable??
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/9594" target="_">Massive Flameguard Helm</a>,
+                    <a href="https://eq.magelo.com/item/9323" target="_">Mask of Contemplation</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/425678" target="_">phantom of asphyxiation</a>"</dt>
+                <dd>
+                    Spawns during the Trial of Hanging.  No data.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/27198" target="_">Stout Bulwark</a>,
+                    <a href="https://eq.magelo.com/item/26792" target="_">Writ of Wisdom</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/413084" target="_">a smothering nemesis</a>"</dt>
+                <dd>
+                    Spawns during the Trial of Hanging.  Hits for 400, casts Shaman spells,
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/13660" target="_">Sentinel's Shoulder Plates</a>,
+                    <a href="https://eq.magelo.com/item/24782" target="_">Great Staff of Mourning</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/413054" target="_">a harrowing lasher</a>"</dt>
+                <dd>
+                    Spawns during the Trial of Lashing.  Hits for 400, casts Wizard spells, doesn't appear to summon.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/19146" target="_">Bailiff's Plate Boot</a>,
+                    <a href="https://eq.magelo.com/item/21797" target="_">Onyx Gavel</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/413053" target="_">a stinging nemesis</a>"</dt>
+                <dd>
+                    Spawns during the Trial of Lashing.  Hits 350, casts Shadowknight spells, immune to mez.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/11410" target="_">Cordwound Sleeves</a>,
+                    <a href="https://eq.magelo.com/item/20613" target="_">Greater Truthstone</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/413059" target="_">nemesis of stone</a>"</dt>
+                <dd>
+                    Spawns during the Trial of Stoning.  Casts a few Necromancer spells.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/9582" target="_">Cowl of the Convicted</a>,
+                    <a href="https://eq.magelo.com/item/26032" target="_">Cleaver of Vengence</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/425508" target="_">a ruthless grinder</a>"</dt>
+                <dd>
+                    Spawns during the Trial of Stoning.  Hits 400, casts Wizard spells.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/16569" target="_">Leggings of the Truthspeaker</a>,
+                    <a href="https://eq.magelo.com/item/10381" target="_">Ring of Woe</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/410065" target="_">an accursed tormentor</a>"</dt>
+                <dd>
+                    Spawns during the Trial of Torture.  Hits 300, casts Shaman spells.
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/9576" target="_">Attorney's Circlet of Station</a>,
+                    <a href="https://eq.magelo.com/item/9439" target="_">Mask of the Witness</a>
+                </dd>
+                <dt>"<a href="https://eq.magelo.com/npc/413062" target="_">nemesis of despair</a>"</dt>
+                <dd>
+                    Spawns during the Trial of Torture.  Hits 300.  No spells?
+                    <br />
+                    Drops -
+                    <a href="https://eq.magelo.com/item/15874" target="_">Hammer Buckled Cordwound Belt</a>,
+                    <a href="https://eq.magelo.com/item/21798" target="_">Gavel of Justice</a>
+                </dd>
+            </dl>
+            <p>
+                The following prisoners and creatures are not rare spawns, but spawn in the cells and can rarely drop loot.  This list may not be exhaustive.
+                <dl>
+                    <dt>Nerkila, Oracle Morgak, Priest of Tumagal, Tjey Xeda, Treasurer Ma`Quivo, Warlord Urgalth</dt>
+                    <dd>
+                        Drops -
+                        <a href="https://eq.magelo.com/item/23499" target="_">Vengeful Diamond Blade</a>,
+                        <a href="https://eq.magelo.com/item/15868" target="_">Belt of Woven Blanket Remains</a>
+                    </dd>
+                    <dt>
+                        Arch Menoch Vanim
+                    </dt>
+                    <dd>
+                        Drops - <a href="https://eq.magelo.com/item/14046" target="_">Chain Links of the Hunted</a>,
+                        <a href="https://eq.magelo.com/item/16568" target="_">Confiscated Buckskin Pants</a>
+                    </dd>
+                    <dt>
+                        Jegard Q`Nacat
+                    </dt>
+                    <dd>
+                        Drops - <a href="https://eq.magelo.com/item/24697" target="_">Tribunal Loyalist's Spear</a>
+                    </dd>
+                    <dt>
+                        Dremekal, Iyalinaoukh, Mublok, Quillon, "warrior of Nel`Ptan", Wraith of Domagr, Wurgoz, Yalaki, Zayenaekk
+                    </dt>
+                    <dd>
+                        Drops - <a href="https://eq.magelo.com/item/11056" target="_">Chains of the Accused</a>,
+                        <a href="https://eq.magelo.com/item/27291" target="_">Plated Shield</a>
+                    </dd>
+                    <dt>
+                        Dumann the Quick, Fubbel Copperwheel, Golikan, High Shaman Dannal, Ra`Silyas, Tamyna Willowsong, Zakis Var Sl`tad
+                    </dt>
+                    <dd>
+                        Drops - <a href="https://eq.magelo.com/item/21899" target="_">Bed Leg Club</a>,
+                        <a href="https://eq.magelo.com/item/8367" target="_">Golden Charm of the Hopeful</a>
+                    </dd>
+                    <dt>
+                        Dreamthief, General Vhan`Geltah, Kalliz, Nghala Sretch, Talliz, Tetorau Xi Atraeth, The Xel`Moar, Xenioth the Endless
+                    </dt>
+                    <dd>
+                        Drops - <a href="https://eq.magelo.com/item/24574" target="_">Falchion of Flowing Water</a>,
+                        <a href="https://eq.magelo.com/item/11403" target="_">Hammer Emblazoned Sleeves</a>
+                    </dd>
+                    <dt>
+                        Councilor Vaylaz, Huntmaster Synl, Xaui Xi Ans Vius, Zammar of Tial`Vok
+                    </dt>
+                    <dd>
+                        Drops - <a href="https://eq.magelo.com/item/12055" target="_">Prisoner Crafted Digging Gloves</a>,
+                        <a href="https://eq.magelo.com/item/11097" target="_">Stout Plate Manacles</a>
+                    </dd>
+                </dl>
+            </p>
+        </div>
+        <div id="tabTasks" class="tabcontent">
+            <h3><a href="?Tab=Tasks">Events</a></h3>
+            <dl>
+                <dt>Trial of Execution</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 6</li>
+                        <li>Respawn: 30 minutes</li>
+                        <li>Trigger: I am ready to begin the trial of execution</li>
+                    </ul>
+                    <br />
+                    During the trial you will face four waves of mobs.  The fungal fiend models can be mezzed while the rock pile models can be snared/rooted.
+                    While defeating these waves Prime Executioner Vathoch will walk to the prisoner.  If the Executioner reaches them, you fail the trial.  Each
+                    time you kill a mob the Executioner resets and starts his walk over so it is important to focus your dps on one mob at a time.  When you
+                    defeat the fourth wave the Executioner will become active and attack you.  When killed the Executioner drops 6
+                    <a href="https://eq.magelo.com/item/31842" target="_">Mark of Execution</a>.  <br />
+                    Loot: There is no specific loot from winning the trial, however "priest of doom" and "herald of destruction" can spawn during the waves.
+                    These are harder versions of the normal mobs and drop loot.
+                </dd>
+                <dt>Trial of Flame</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 6</li>
+                        <li>Respawn: 30 minutes</li>
+                        <li>Trigger: I am ready to begin the trial of flame</li>
+                    </ul>
+                    <br />
+                    During the trial you will face four waves of mobs that are going to try to reach the pillar in the center of the room.  If any reach the pillar
+                    they must be killed very quickly or you fail the trial.  The elemental models can be mezzed while the imp models can be snared/rooted.
+                    While dealing with the mobs three AEs will cycle, one being cast every 30 seconds or so.  Once four waves of four mobs are defeated the
+                    Punisher of Flame will spawn.  When killed it drops 6
+                    <a href="https://eq.magelo.com/item/31796" target="_">Mark of Flame</a>.  <br />
+                    Loot: There is no specific loot from winning the trial, however "a burning nemesis" and "a fiery aggressor" can spawn during the waves.
+                    These are harder versions of the normal mobs and drop loot.
+                </dd>
+                <dt>Trial of Hanging</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 6</li>
+                        <li>Respawn: 30 minutes</li>
+                        <li>Trigger: I am ready to begin the trial of hanging</li>
+                    </ul>
+                    <br />
+                    During the trial you will face four waves of mobs.  At first you will get two mobs and a spirit of suffocation.  The spirit Must be killed
+                    quickly or one of the prisoners will die and you will fail the trial.  When the spirit dies a second spirit will spawn.  When the second is
+                    killed then kill the two other mobs to complete the wave.  Of the non-spirit mobs the elementals can be mezzed while the razorbeasts can be
+                    snared/rooted.  Repeat for four waves.  When the second spirit of the fourth wave dies
+                    Gallows Master Teion spawns and attacks, regardless of how many other mobs are still rooted or mezzed.  When killed he drops
+                    6 <a href="https://eq.magelo.com/item/31846" target="_">Mark of Suffocation</a>.  <br />
+                    Loot: There is no specific loot from winning the trial, however "a smothering nemesis" and "phantom of asphyxiation" can spawn during the waves.
+                    These are harder versions of the normal mobs and drop loot.
+                </dd>
+                <dt>Trial of Lashing</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 6</li>
+                        <li>Respawn: 30 minutes</li>
+                        <li>Trigger: I am ready to begin the trial of lashing</li>
+                    </ul>
+                    <br />
+                    During the trial you will face four waves of mobs.  Each wave begins with four standard mobs which should all be mezzable and shortly
+                    after a 'scourge' appears, an untargetable creature.  When the scourge appeaars 3 "flickering spirits" also spawn on the upper floor.
+                    Kill off the spirits (low health and rooted) and the scourge despawns.  Clean up the standard mobs before the next wave starts.  When the
+                    fourth scourge is despawned Lashman Azakal spawns, regardless of how many standard mobs are still rooted or mezzed.  When killed he drops
+                    6 <a href="https://eq.magelo.com/item/31960" target="_">Mark of Lashing</a>.  <br />
+                    Loot: There is no specific loot from winning the trial, however "a harrowing lasher" and "a stinging nemesis" can spawn during the waves.
+                    These are harder versions of the normal mobs and drop loot.
+                </dd>
+                <dt>Trial of Stoning</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 6</li>
+                        <li>Respawn: 30 minutes</li>
+                        <li>Trigger: I am ready to begin the trial of stoning</li>
+                    </ul>
+                    <br />
+                    During the trial you will face four waves of standard mobs.  The specter models can be mezzed while the stone models can be snared/rooted.
+                    At the same time them two untargetable archers will be shooting at the prisoners.  You will need to put yourself between the archers and the
+                    prisoners and take damage from their arrows or they will kill a prisoner and you fail the trial.  If you kill off all four mobs before the next
+                    wave starts the archers will despawn as well giving you a short break.  After the fourth wave Yurae Zhaleem will spawn and attack.  When killed
+                    he drops 6 <a href="https://eq.magelo.com/item/31845" target="_">Mark of Stone</a>.  <br />
+                    Loot: There is no specific loot from winning the trial, however "nemesis of stone" and "a ruthless grinder" can spawn during the waves.
+                    These are harder versions of the normal mobs and drop loot.
+                </dd>
+                <dt>Trial of Torture</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 6</li>
+                        <li>Respawn: 30 minutes</li>
+                        <li>Trigger: I am ready to begin the trial of torture</li>
+                    </ul>
+                    <br />
+                    During the trial you will face four waves of mobs.  During each wave four standard mobs will attack, the shade models can be mezzed while the
+                    razorfiend models can be snared/rooted.  If the four are killed before the next wave starts a Wraith of Agony will spawn somewhere in the trial.
+                    While it is alive the prisoners will take damage and if they die you fail the trial, but when you kill the wraith you get an AE heal.  Once the
+                    fourth wave is finished Punisher Veshtaq spawns.  When killed he drops
+                    drops 6 <a href="https://eq.magelo.com/item/31844" target="_">Mark of Torture</a>.  <br />
+                    Loot: There is no specific loot from winning the trial, however "an accursed tormentor" and "nemesis of despair" can spawn during the waves.
+                    These are harder versions of the normal mobs and drop loot.
+                </dd>
+                <dt>Seventh Hammer</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <br />
+                    If you have completed all 6 of the above trials you can speak with any Tribunal (keyword: I seek knowledge) and they will give you a
+                    <a href="https://eq.magelo.com/item/31599" target="_">The Mark of Justice</a>.  With the Mark on cursor click the blue portal to zone your
+                    raid into the area with the Seventh Hammer.  When killed it drops a half dozen spell scrolls and two of the following:
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/8789" target="_">Precious Cameo Pendant</a></li>
+                        <li><a href="https://eq.magelo.com/item/13680" target="_">Mantle of the Accused</a></li>
+                        <li><a href="https://eq.magelo.com/item/15929" target="_">Headsman's Hoop</a></li>
+                        <li><a href="https://eq.magelo.com/item/24592" target="_">Knife of Justice</a></li>
+                        <li><a href="https://eq.magelo.com/item/25996" target="_">Faith Wrought Two Handed Sword</a></li>
+                        <li><a href="https://eq.magelo.com/item/27297" target="_">Warden's Buckler</a></li>
+                        <li><a href="https://eq.magelo.com/item/27816" target="_">Steel Centered Great Bow</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <script>
+        var tab, ele;
+        tab = getURLVariable("Tab");
+        if (tab) {
+            ele = document.getElementById(tab);
+            if (ele) {
+                ele.click();
+            } else {
+                document.getElementById("Overview").click();
+            }
+        } else {
+            document.getElementById("Overview").click();
+        }
+    </script>
+</body>

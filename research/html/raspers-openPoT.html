@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Planes of Power: Plane of Torment</title>
+</head>
+<body onload="createImage('../Maps/potorment.txt', 1, 0, 0, 0, 0, false, 'mapContainer', 500, 500, [
+        [0, 1000, 128, 128, 0, 7, 0, 0, 0, 'B'],
+        [-250, -510, 128, 0, 0, 9, 240, 240, 240, 'A1'],
+        [670, -530, 128, 0, 0, 9, 240, 240, 240, 'A2'],
+        [430, 470, 128, 0, 0, 9, 240, 240, 240, 'A3'],
+        [-515, 510, 128, 0, 0, 9, 240, 240, 240, 'A4'],
+        [950, 330, 0, 128, 0, 7, 240, 192, 240, '1'],
+        [675, -425, 0, 128, 0, 7, 240, 192, 240, '2'],
+        [-240, -430, 0, 128, 0, 7, 240, 192, 240, '3'],
+        [-850, -130, 0, 128, 0, 7, 240, 192, 240, '4'],
+        [225, -1700, 0, 0, 0, 0, 0, 128, 128, 'Z']
+]); createImage('../Maps/potorment.txt', 11, 0, 90, -75, -25, true, 'mapTower1', 100, 100, []);
+    createImage('../Maps/potorment.txt', 11, 0, 90, 0, 100, true, 'mapTower2', 100, 100, []);
+    createImage('../Maps/potorment.txt', 11, 0, 90, 100, 200, true, 'mapTower3', 100, 100, []);
+    createImage('../Maps/potorment.txt', 11, 0, 90, 200, 400, true, 'mapTower4', 100, 100, []);
+    createImage('../Maps/potorment.txt', 11, 0, 90, 400, 500, true, 'mapTower5', 100, 100, []);
+    createImage('../Maps/potorment.txt', 11, 0, 90, 500, 600, true, 'mapTower6', 100, 100, [
+        [-5, -10, 128, 0, 0, 7, 240, 240, 240, 'S']]);
+    ">
+    <link href="../Scripts/main.css" rel="stylesheet" type="text/css" />
+    <link href="../Scripts/sideNav.css" rel="stylesheet" type="text/css" />
+    <script src="../Maps/mapImages.js" type="text/javascript"></script>
+    <script src="../Scripts/banner.js" type="text/javascript"></script>
+    <script src="../Scripts/sideNav.js" type="text/javascript"></script>
+    <script src="../Scripts/Tabs.js" type="text/javascript"></script>
+
+    <div class="navbar">
+        <script src="../Scripts/expansionList.js" type="text/javascript"></script>
+        <script src="https://www.magelocdn.com/pack/eq/en/magelo-bar.js#1" type="text/javascript"></script>
+        <script src="NavBar.js" type="text/javascript"></script>
+    </div>
+
+    <div id="content">
+        <p />
+        <h2>Plane of Torment</h2>
+        <p />
+        <div class="tab">
+            <button class="tablinks" id="Overview" onclick="openTabContent(this)">Overview</button>
+            <button class="tablinks" id="Rares" onclick="openTabContent(this)">Rares</button>
+            <button class="tablinks" id="Tasks" onclick="openTabContent(this)">Events</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="tabOverview" class="tabcontent">
+            <h3>Overview</h3>
+            <p>
+                The Plane of Torment is a Tier 2 zone, requires defeating Terris Thule for access. This is the home of Saryrn, but serves little purpose beyond
+                raiding: the mobs are poor xp, can make pulling difficult with snare, and the Rare mobs have no loot.  Even the tradeskilled gear made from zone
+                drops aren't worth the effort.
+            </p>
+            <div id="mapContainer">
+            </div>
+            <p>
+                Saryrn's Tower, floors 1 to 6
+            </p>
+            <span id="mapTower1"></span>
+            <span id="mapTower2"></span>
+            <span id="mapTower3"></span>
+            <span id="mapTower4"></span>
+            <span id="mapTower5"></span>
+            <span id="mapTower6"></span>
+            <ul>
+                <li>Z - Zone in/out</li>
+                <li>B - Baraguj Szuul</li>
+                <li>1 - Dirge Malicia</li>
+                <li>2 - a pain devourer</li>
+                <li>3 - a sorrow seeker</li>
+                <li>4 - A Kaniz flesh flayer</li>
+                <li>A1 - Avatar of Agony</li>
+                <li>A2 - Avatar of Anguish</li>
+                <li>A3 - Avatar of Pain</li>
+                <li>A4 - Avatar of Suffering</li>
+                <li>S - Saryrn</li>
+            </ul>
+        </div>
+
+        <div id="tabRares" class="tabcontent">
+            <h3><a href="?Tab=Rares">Rare Mobs</a></h3>
+            <dl>
+                <dt><a href="https://eq.magelo.com/npc/418462" target="_">Dirge Malicia</a></dt>
+                <dd>
+                    A rare raven.  If it has loot besides spells it must be very rare.
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/433813" target="_">"A pain devourer"</a></dt>
+                <dd>
+                    A rare 4 armed mouth thing.  If it has loot besides spells it must be very rare.
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/421506" target="_">"A pain golem"</a></dt>
+                <dd>
+                    A rare 4 armed mouth thing.  If it has loot besides spells it must be very rare.
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/433812" target="_">"A sorrow seeker"</a></dt>
+                <dd>
+                    A rare 4 armed mouth thing.  If it has loot besides spells it must be very rare.
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/419253" target="_">"The Mouths of Misery"</a></dt>
+                <dd>
+                    A rare 4 armed mouth thing.  If it has loot besides spells it must be very rare.
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/413899" target="_">A Kaniz flesh flayer</a></dt>
+                <dd>
+                    A rare 4 armed mouth thing.  If it has loot besides spells it must be very rare.
+                </dd>
+            </dl>
+        </div>
+        <div id="tabTasks" class="tabcontent">
+            <h3><a href="?Tab=Tasks">Events</a></h3>
+            <dl>
+                <dt>Keying for Saryrn</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 2-3+ groups suggested</li>
+                        <li>Respawn: N/A</li>
+                    </ul>
+                    <p>
+                        To start this you need to agro <a href="https://eq.magelo.com/npc/14628" target="_">Baraguj Szuul</a> on the upper floor of his building and
+                        allow him to hit you, this will teleport your group into his stomach.  When everybody is inside open the trapdoor in the floor and slide to
+                        face off with some zone trash until you reach An Unimaginable Horror, flurries about 500 and has 100k hp.  Once it is dead you will be ported
+                        out.  The port out requires you to be hit by an invisible mob, so make sure you don't have runes up.  Outside the raid will be downstairs
+                        to face Baraguj, for real this time.  Baraguj drops <a href="https://eq.magelo.com/item/17172" target="_">Mouths of Baraguj Szuul</a>, a 4
+                        slot container, and one of the following:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/19091" target="_">Slippers of Eternal Nightmares</a></li>
+                            <li><a href="https://eq.magelo.com/item/24694" target="_">Rapier of Curses</a></li>
+                            <li><a href="https://eq.magelo.com/item/12079" target="_">Shadowhide Gloves</a></li>
+                            <li><a href="https://eq.magelo.com/item/10238" target="_">Band of Miserable Souls</a></li>
+                        </ul>
+                    </p>
+                    <p>
+                        Once you have the container you will need to hunt down 4 rare spawns: The Avatar of Agony, Anguish, Pain, and Suffering.  Each Avatar drops
+                        their respective Orb. Combine the four orbs inside the Mouths to form a
+                        <a href="https://eq.magelo.com/item/22954" target="_">Screaming Sphere</a> which is the key to access Saryn's Tower.
+                    </p>
+                </dd>
+                <dt>Salczek the Fleshgrinder</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Spawns on 1st floor of the Tower.  Late in the fight he gains AE rampage. Drops a spell or two and
+                        sometimes one of the following:
+                    </p>
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/24605" target="_">Dirk of Great Sorrow</a></li>
+                        <li><a href="https://eq.magelo.com/item/27276" target="_">Aegis of Gloom</a></li>
+                        <li><a href="https://eq.magelo.com/item/27991" target="_">Tormented Flute</a></li>
+                        <li><a href="https://eq.magelo.com/item/21838" target="_">Baton of Torment</a></li>
+                    </ul>
+                </dd>
+                <dt>The Acolyte of Affliction</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Spawns on 2nd floor of the Tower.  Spawns adds during the fight which despawn when he dies.  Drops a spell or two and
+                        sometimes one of the following:
+                    </p>
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/9325" target="_">Adorned Soulstone Mask</a></li>
+                        <li><a href="https://eq.magelo.com/item/15794" target="_">Black Cloak of Malise</a></li>
+                        <li><a href="https://eq.magelo.com/item/24568" target="_">Whip of Unending Pain</a></li>
+                        <li><a href="https://eq.magelo.com/item/25843" target="_">Staff of Agonizing Battle</a></li>
+                    </ul>
+                </dd>
+                <dt>Ta'Grusch the Abomination</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Spawns on 3rd floor of the Tower.  Very low health but deals serious rampage damage.  Drops a spell or two and
+                        sometimes one of the following:
+                    </p>
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/21897" target="_">Staff of Primordial Ooze</a></li>
+                        <li><a href="https://eq.magelo.com/item/20438" target="_">Tormented Stone of Souls</a></li>
+                        <li><a href="https://eq.magelo.com/item/16149" target="_">Girdle of the Tormentor</a></li>
+                        <li><a href="https://eq.magelo.com/item/27164" target="_">Shield of Unimaginable Horrors</a></li>
+                    </ul>
+                </dd>
+                <dt>Maareq the Prophet</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Spawns in the Tower.  Once engaged a stream of "minion of Maareq" move towards him and heal if they reach.  They can not be stunned
+                        or mezzed, so bring plenty of AE nukers.  Late in the fight he transforms into one of the 4 tentacle mouth things and gains AE rampage.
+                        Drops a spell or two and sometimes one of the following:
+                    </p>
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/5431" target="_">Lesser Eye of Insanity</a></li>
+                        <li><a href="https://eq.magelo.com/item/15838" target="_">Battlecloak of Lost Souls</a></li>
+                        <li><a href="https://eq.magelo.com/item/24572" target="_">Longblade of Ethereal Terror</a></li>
+                        <li><a href="https://eq.magelo.com/item/11405" target="_">Shadow-Woven Sleeves</a></li>
+                    </ul>
+                </dd>
+                <dt>The Keeper of Sorrows</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        After hailing Tylis (keyword: we are ready) the raid will be ported over (make sure everybody is close so to not get left behind).  Once
+                        inside you'll have a few rooms of trash to clear before reaching Keeper.  It normally drops a spell and sometimes one of the following:
+                    </p>
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/10800" target="_">Band of the Adorned</a></li>
+                        <li><a href="https://eq.magelo.com/item/26030" target="_">Great Blade of Malise</a></li>
+                        <li><a href="https://eq.magelo.com/item/22893" target="_">Crowned Staff of Anguish</a></li>
+                        <li><a href="https://eq.magelo.com/item/8783" target="_">Tormentor's Chain Collar</a></li>
+                        <li><a href="https://eq.magelo.com/item/15820" target="_">Shaded Cloak</a></li>
+                    </ul>
+                </dd>
+                <dt>Saryrn</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Spawns at the top of the Tower with her pet raven Sorrowsong.  During the fight Sorrowsong moves around casting a PBAE silence that you'll need to avoid.
+                        Meanwhile every 10% Saryn will spawn 3 adds that need to be rooted away from the raid.  Once Saryn is down you can clean up adds and hail the planar
+                        projection for your flag.  Drops a couple spells antd two of the following:
+                    </p>
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/27407" target="_">Orb of Infinite Terror</a></li>
+                        <li><a href="https://eq.magelo.com/item/15843" target="_">Unadorned Cloak of Battle</a></li>
+                        <li><a href="https://eq.magelo.com/item/22982" target="_">Twin-Blade of Sorrow</a></li>
+                        <li><a href="https://eq.magelo.com/item/4118" target="_">Miserable Bauble</a></li>
+                        <li><a href="https://eq.magelo.com/item/26087" target="_">Greatstaff of Misery</a></li>
+                        <li><a href="https://eq.magelo.com/item/15806" target="_">Cape Embroidered with Runes</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <script>
+        var tab, ele;
+        tab = getURLVariable("Tab");
+        if (tab) {
+            ele = document.getElementById(tab);
+            if (ele) {
+                ele.click();
+            } else {
+                document.getElementById("Overview").click();
+            }
+        } else {
+            document.getElementById("Overview").click();
+        }
+    </script>
+</body>

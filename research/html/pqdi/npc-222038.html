@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+<head>
+    
+    
+    
+    
+    
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRMK1JFQTY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JRMK1JFQTY');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+
+<script src="/static/color-modes.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
+  
+<script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+    
+    
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+     
+<meta property="og:url" content="https://www.pqdi.cc/npc/222038">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Warlord Gintolaken :: NPC :: PQDI">
+<meta property="og:description" content="A level 77 Giant Warrior.">
+<meta property="og:image" content="https://www.pqdi.cc/static/icons/item_3202.png">
+<title>Warlord Gintolaken :: NPC :: PQDI</title>
+<script src="/static/konva.min.js"></script>
+<script type="text/javascript">
+    
+    mapBaseName = JSON.parse('"poearthb"')
+    
+</script>
+
+<script>
+    const creatureSpawnPoints = [
+        
+        { x: -425.0, y: -161.0},
+        
+    ];
+</script>
+<script src="/static/konvamap.js"></script>
+<script>
+    const creaturePathPoints = {};
+</script>
+<script>
+    const creatureRoamBoxes = [
+        
+    ]
+</script>
+
+    
+</head>
+<body class="d-flex flex-column h-100">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><svg class="bi" fill="currentColor" width="1.5em" height="1.5em"><use href="/static/bootstrap-icons.svg#house-fill"></use></svg></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+        <li class="nav-item"><a href="/zones" class="nav-link">Zones</a></li>
+                <li class="nav-item"><a href="/items" class="nav-link">Items</a></li>
+                <li class="nav-item"><a href="/factions" class="nav-link">Factions</a></li>
+                <li class="nav-item"><a href="/npcs" class="nav-link">Bestiary</a></li>
+                <li class="nav-item"><a href="/spells" class="nav-link">Spells</a></li>
+                <li class="nav-item"><a href="/recipes" class="nav-link">Recipes</a></li>
+                        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Misc
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/zem">ZEM</a></li>
+            <li><a class="dropdown-item" href="/instances">Instance Timers</a></li>
+            <li><a class="dropdown-item" href="/exp">Exp per Level</a></li>
+            <li><a class="dropdown-item" href="/altadv">AA Listings</a></li>
+            <li><a class="dropdown-item" href="/characters">Class/Race/Faction</a></li>
+            <li><a class="dropdown-item" href="/pets">Pets</a></li>
+            <li><a class="dropdown-item" href="/skills">Skill Caps</a></li>
+            <li><a class="dropdown-item" href="/lootfinder">Loot by Level</a></li>
+            <li><a class="dropdown-item" href="/missing-spells">Missing Spells</a></li>
+            <li><a class="dropdown-item" href="/find-spells">Spell Search</a></li>
+            <li><a class="dropdown-item" href="/logparse">Log Parser</a></li>
+            <li><a class="dropdown-item" href="/fishing">Fishin'</a></li>
+          </ul>
+        </li>
+        <li class="nav-item "><a href="/focus-items" class="nav-link text-danger-emphasis"><strong>Focus Items</strong></a></li>
+        <li class="nav-item "><a href="/objects" class="nav-link text-danger-emphasis"><strong>Objects</strong></a></li>
+      </ul>
+
+      
+      <div class="dropdown px-3">
+      <button class="btn border-0 py-0 dropdown-toggle align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" fill="currentColor" width="1.5em" height="1.5em"><use href="/static/bootstrap-icons.svg#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="/static/bootstrap-icons.svg#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="/static/bootstrap-icons.svg#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="/static/bootstrap-icons.svg#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="/static/bootstrap-icons.svg#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="/static/bootstrap-icons.svg#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="/static/bootstrap-icons.svg#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+      </div>
+        
+      
+
+      <form class="d-flex input-group w-auto" role="search" id="searchForm" action="/" method="post" novalidate>
+        <input id="csrf_token" name="csrf_token" type="hidden" value="ImI5MTY1NGQ1MTgyNGUyNjc1M2Y5NjhjMDgwYTI3ODRjZDgwOTQ4MjMi.ap6mEg.16FqgKS7rpOEDnGnn7yGM8WKB2w">
+        <input class="form-control" id="search" name="search" required type="text" value="">
+        <input class="btn btn-sm btn-outline-secondary" id="submit" name="submit" type="submit" value="Search">
+        
+      </form>
+    </div>
+    
+  </div>
+</nav>
+    
+    <div style="height:1px; margin-top:2em;"></div>
+    <main class="flex-shrink-0 pt-4">
+    <div class="container py-4">
+    
+    
+<div class="">
+        <div class="col-12 col-md-12"><h2 class="text-center mb-4">Warlord Gintolaken</h2></div>
+        <div class="">
+    <div class="row align-items-md-stretch">
+        <div class="col-12 col-md-9">
+            
+            <div id="konva-container" style="min-width: 400px; min-height: 600px;position:relative;"></div>
+            <div id="controls" class="navbar">
+            <ul class="nav nav-fill">
+                <li class="nav-item">
+                    <label for="customRange1" class="form-label">Line Weight</label>
+                    <input type="range" class="form-range" id="lineWeight" min="1" max="10" step="1" value="2">
+                </li>
+                <li class="nav-item">
+                    <input class="form-check-input" type="checkbox" id="showPoints" value="option1">
+                    <label class="form-check-label" for="showPoints">Toggle Points</label>
+                </li>
+                <li class="nav-item">
+                    <div class="ms-3">
+                    <input class="form-check-input" type="checkbox" id="toggleAnim">
+                    <label class="form-check-label" for="toggleAnim">Toggle Animation</label>
+                    </div>
+                </li>
+            </ul>
+            <span class="navbar-text">Credit for all maps goes to <a class="link" href="https://www.eqmaps.info/">Brewall</a></span>
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="col-12 col-md-12 py-3">
+        <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#raw-modal">
+        
+    <svg class="bi my-1 theme-icon-active" fill="currentColor" width="1em" height="1em">
+      <use href="/static/bootstrap-icons.svg#database"></use>
+    </svg>
+    
+        <span>Raw</span>
+        </button>
+        
+        <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#script-modal">
+        
+    <svg class="bi my-1 theme-icon-active" fill="currentColor" width="1em" height="1em">
+      <use href="/static/bootstrap-icons.svg#terminal"></use>
+    </svg>
+    
+        <span>Script Attached</span>
+        </button>
+        
+        </div>
+        </div>
+
+        
+
+        <div class="col-12 col-md-3">
+            <article class="border bg-body-tertiary p-3 mb-4">
+                <h4 class="text-center">Quick Facts</h4>
+                <dt>
+                    
+                    
+                    
+                    <dd class="text-warning">&#9200; Instance Spawn Timer: <br>2 days and 18 hours</dd>
+                    
+                    <dd class="expansion-tag planes">Expansion: <span>Planes</span> 
+                    </dd>
+                    <dd>Zone: <a class="link" href="/zone/222">Plane of Earth</a>
+                        </dd>
+                    <dd>Level 77 </dd>
+                    <dd>Giant</dd>
+                    <dd>Warrior
+                    </dd>
+                    <dd>Humanoid (body type)</dd>
+                    <dd>Primary Faction: <a class="link" href="/faction/5017">KOS</a></dd>
+                    <dd>Hits for 551 - 2212</dd>
+                    <dd>Has 1,050,000 hitpoints</dd>
+                    
+                    <dd class="text-info">&#128064;  sees through invis!</dd>
+                    
+                    
+                    <dd class="text-info">&#128064;  sees through invis undead!</dd>
+                    
+                    
+                    
+                    
+                    <dd>
+                        <table class="table-bordered table-sm">
+                            <thead>
+                                <th>MR</th>
+                                <th>CR</th>
+                                <th>FR</th>
+                                <th>DR</th>
+                                <th>PR</th>
+                            </thead>
+                            <td>365</td>
+                            <td>290</td>
+                            <td>150</td>
+                            <td>1000</td>
+                            <td>95</td>
+                        </table>
+                    </dd>
+                    
+                </dt>
+                
+                <h5 class="text-center">Special Abilities : </h5>
+                <p> Summon,  Enrage,  Area Rampage,  Dual Wield,  Do Not Equip,  Unmezzable,  Uncharmable,  Unstunable,  Unsnarable,  Immune to fleeing,  Immune to melee except magical,  Immune to lull effects,  NO LOITERING</p>
+                
+                
+                <h5 class="text-center">Can cast these spells : </h5>
+                <dd>
+                
+                <details class="border bg-body-secondary p-1">
+                <summary>Warlord Gintolaken</summary>
+                    
+                    <dd><img src="/static/icons/111.gif"> <a href="/spell/1042" class="link spell-tooltip" data-url="1042">Storm Comet</a></dd>
+                    
+                </details>
+                
+                
+                </dd>
+                
+                
+                <h5 class="text-center">Can proc:</h5>
+                <dd>
+                    <img src="/static/icons/85.gif"> <a href="/spell/2823" class="link spell-tooltip" data-url="2823">Gravel Rain</a>
+                    
+                </dd>
+                
+            </article>
+        </div>
+    </div>
+    
+</div>
+
+<div class="col-12">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#drops">Drops</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#spawns">Spawns</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#spawngroups">Spawn Groups</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#faction">Faction</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade p-3 border-end border-bottom border-start bg-body-tertiary show active" id="drops">
+            
+            
+            <div class="card mb-4">
+                <div class="card-header expansion-tag default">
+                    <div class="mb-1">(id: 7068) poearth tree giant stuff 
+                        <span>
+                            Default
+                        </span>
+                         <small>-1.0 -> -1.0</small>
+                    </div>
+                    <div>
+                        Bulk copy in-game links:  
+                        
+                        
+                            
+                            
+                            <button class="btn btn-sm btn-outline-secondary copy-btn" 
+                                data-loot="&#18;021717 Root Entwined Chunk of Dirt&#18; (4.0%), &#18;021718 A Large Root&#18; (3.5%), &#18;021719 Leaf Encrusted Branch&#18; (3.5%)">
+                                Item(s) 1-3
+                            </button>
+                        
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">With a probability of 100% (multiplier: 1)
+                        - 0 to 3 drops</h5>
+                        <h6 class="text-info">Each item on this table is rolled for drop independently.</h6>
+                    <ul class="list-unstyled">
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem01.png);background-position:-120.0px -220.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 583'></span></div><a href="/item/21717" data-url="21717"
+                                class="tooltip-link link">Root Entwined Chunk of Dirt</a>
+                                
+                                
+                                    4.0% (4.0% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem01.png);background-position:-120.0px -220.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 583'></span></div><a href="/item/21718" data-url="21718"
+                                class="tooltip-link link">A Large Root</a>
+                                
+                                
+                                    3.5% (3.5% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem02.png);background-position:-160.0px -140.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 795'></span></div><a href="/item/21719" data-url="21719"
+                                class="tooltip-link link">Leaf Encrusted Branch</a>
+                                
+                                
+                                    3.5% (3.5% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="card mb-4">
+                <div class="card-header expansion-tag default">
+                    <div class="mb-1">(id: 12256) PoP Diamonds 2.5-1 
+                        <span>
+                            Default
+                        </span>
+                         <small>-1.0 -> -1.0</small>
+                    </div>
+                    <div>
+                        Bulk copy in-game links:  
+                        
+                        
+                            
+                            
+                            <button class="btn btn-sm btn-outline-secondary copy-btn" 
+                                data-loot="&#18;010037 Diamond&#18; (2.5%), &#18;022503 Blue Diamond&#18; (1.0%)">
+                                Item(s) 1-2
+                            </button>
+                        
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">With a probability of 100% (multiplier: 1)
+                        - 0 to 2 drops</h5>
+                        <h6 class="text-info">Each item on this table is rolled for drop independently.</h6>
+                    <ul class="list-unstyled">
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem03.png);background-position:-120.0px -200.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 966'></span></div><a href="/item/10037" data-url="10037"
+                                class="tooltip-link link">Diamond</a>
+                                
+                                
+                                    2.5% (2.5% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem03.png);background-position:-120.0px -200.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 966'></span></div><a href="/item/22503" data-url="22503"
+                                class="tooltip-link link">Blue Diamond</a>
+                                
+                                
+                                    1.0% (1.0% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="card mb-4">
+                <div class="card-header expansion-tag default">
+                    <div class="mb-1">(id: 23398) #Warlord_Gintolaken 
+                        <span>
+                            Default
+                        </span>
+                         <small>-1.0 -> -1.0</small>
+                    </div>
+                    <div>
+                        Bulk copy in-game links:  
+                        
+                        
+                            
+                            
+                            <button class="btn btn-sm btn-outline-secondary copy-btn" 
+                                data-loot="&#18;016372 Elemental Vambrace Mold&#18; (20.0%), &#18;016385 Elemental Silk Sleeve Pattern&#18; (20.0%), &#18;016158 Bands of Earthen Energy&#18; (18.0%), &#18;024695 Reinforced Mephit Talon&#18; (18.0%), &#18;016364 Elemental Chain Sleeve Pattern&#18; (12.0%), &#18;016378 Elemental Leather Sleeve Pattern&#18; (12.0%)">
+                                Item(s) 1-6
+                            </button>
+                        
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">With a probability of 100% (multiplier: 1)
+                        - 2 to 2 drops</h5>
+                        
+                    <ul class="list-unstyled">
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem04.png);background-position:-120.0px -60.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 1151'></span></div><a href="/item/16372" data-url="16372"
+                                class="tooltip-link link">Elemental Vambrace Mold</a>
+                                
+                                
+                                    20.0% (20.0% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem01.png);background-position:-300.0px -40.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 682'></span></div><a href="/item/16385" data-url="16385"
+                                class="tooltip-link link">Elemental Silk Sleeve Pattern</a>
+                                
+                                
+                                    20.0% (20.0% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem01.png);background-position:-0.0px -160.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 508'></span></div><a href="/item/16158" data-url="16158"
+                                class="tooltip-link link">Bands of Earthen Energy</a>
+                                
+                                
+                                    18.0% (18.0% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem05.png);background-position:-80.0px -180.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 1325'></span></div><a href="/item/24695" data-url="24695"
+                                class="tooltip-link link">Reinforced Mephit Talon</a>
+                                
+                                
+                                    18.0% (18.0% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem02.png);background-position:-280.0px -20.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 861'></span></div><a href="/item/16364" data-url="16364"
+                                class="tooltip-link link">Elemental Chain Sleeve Pattern</a>
+                                
+                                
+                                    12.0% (12.0% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem02.png);background-position:-280.0px -60.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 863'></span></div><a href="/item/16378" data-url="16378"
+                                class="tooltip-link link">Elemental Leather Sleeve Pattern</a>
+                                
+                                
+                                    12.0% (12.0% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="card mb-4">
+                <div class="card-header expansion-tag default">
+                    <div class="mb-1">(id: 96411) Spectral Parchment 
+                        <span>
+                            Default
+                        </span>
+                         <small>-1.0 -> -1.0</small>
+                    </div>
+                    <div>
+                        Bulk copy in-game links:  
+                        
+                        
+                            
+                            
+                            <button class="btn btn-sm btn-outline-secondary copy-btn" 
+                                data-loot="&#18;029131 Spectral Parchment&#18; (100.0%)">
+                                Item(s) 1
+                            </button>
+                        
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">With a probability of 25% (multiplier: 1)
+                        - 0 to 1 drops</h5>
+                        <h6 class="text-info">Each item on this table is rolled for drop independently.</h6>
+                    <ul class="list-unstyled">
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem01.png);background-position:-300.0px -60.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 683'></span></div><a href="/item/29131" data-url="29131"
+                                class="tooltip-link link">Spectral Parchment</a>
+                                
+                                
+                                    100.0% (25.0% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="card mb-4">
+                <div class="card-header expansion-tag default">
+                    <div class="mb-1">(id: 115474) Glyphed Rune Word 
+                        <span>
+                            Default
+                        </span>
+                         <small>-1.0 -> -1.0</small>
+                    </div>
+                    <div>
+                        Bulk copy in-game links:  
+                        
+                        
+                            
+                            
+                            <button class="btn btn-sm btn-outline-secondary copy-btn" 
+                                data-loot="&#18;029132 Glyphed Rune Word&#18; (100.0%)">
+                                Item(s) 1
+                            </button>
+                        
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">With a probability of 50% (multiplier: 4)
+                        - 2 to 4 drops</h5>
+                        
+                    <ul class="list-unstyled">
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem03.png);background-position:-120.0px -220.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 967'></span></div><a href="/item/29132" data-url="29132"
+                                class="tooltip-link link">Glyphed Rune Word</a>
+                                
+                                
+                                    100.0% (50.0% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="card mb-4">
+                <div class="card-header expansion-tag default">
+                    <div class="mb-1">(id: 115508) Jord Meat 
+                        <span>
+                            Default
+                        </span>
+                         <small>-1.0 -> -1.0</small>
+                    </div>
+                    <div>
+                        Bulk copy in-game links:  
+                        
+                        
+                            
+                            
+                            <button class="btn btn-sm btn-outline-secondary copy-btn" 
+                                data-loot="&#18;029770 Jord Meat&#18; (100.0%)">
+                                Item(s) 1
+                            </button>
+                        
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">With a probability of 25% (multiplier: 1)
+                        - 0 to 1 drops</h5>
+                        <h6 class="text-info">Each item on this table is rolled for drop independently.</h6>
+                    <ul class="list-unstyled">
+                        
+                        
+                        
+                        <li class="mb-1 ms-3"><div class='icon-container-sm'><span class='item-icon' style='background-image:url(/static/iconss/dragitem02.png);background-position:-200.0px -100.0px;position: absolute;display:inline-block;height:20px;width:20px; background-size:320px 240px' title='Icon 817'></span></div><a href="/item/29770" data-url="29770"
+                                class="tooltip-link link">Jord Meat</a>
+                                
+                                
+                                    100.0% (25.0% Global) 
+                                
+                                
+                                
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <div class="tab-pane fade p-3 border-end border-bottom border-start bg-body-tertiary" id="spawns">
+            <table class="table" id="sortable-table-3">
+                <thead>
+                    <tr>
+                        <th>Zone</th>
+                        <th>Coordinates (Y, X, Z)</th>
+                        <th>Respawn</th>
+                    </tr>
+                </thead>
+                
+                <tr>
+                    <td><a class="link" href="/zone/222">Plane of Earth</a></td>
+                    <td>(161.0, 425.0, -42.1)</td>
+                    <td>2 days and 18 hours </td>
+                </tr>
+                
+            </table>
+    
+        </div>
+        <div class="tab-pane fade p-3 border-end border-bottom border-start bg-body-tertiary" id="spawngroups">
+            <table class="table" id="sortable-table-4">
+                    <thead>
+                        <tr>
+                            <th>Coordinates (Y, X, Z)</th>
+                            <th>NPCs</th>
+                            <th>Respawn</th>
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                    <td><a class="link" href="/spawngroup/225650/369491">poearthb #Warlord_Gintolaken</a>
+                     <abbr title="SpawngroupID: 225650, Spawn2.ID: 369491" class="initialism">info</abbr><br>
+                    (161.0, 425.0, -42.1)
+                    </td>
+                    <td>
+                        <a class="link" href="/npc/222038">Warlord Gintolaken</a> 
+                            
+                                (100%)
+                            
+                            <br>
+                        </td>
+                    <td>2 days and 18 hours</td>
+                    
+                    </tr>
+                
+                </table>
+    
+        </div>
+       
+        <div class="tab-pane fade p-3 border-end border-bottom border-start bg-body-tertiary" id="faction">
+            <dt>
+                
+                
+            </dt>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade" id="raw-modal" tabindex="-1" aria-labelledby="rawModalFullscreenLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4" id="rawModalFullscreenLabel">Raw Data</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container column-list">
+        
+            <dd><strong>npcclass:  </strong><span class="text-wrap">1</span></dd>
+            
+            <dd><strong>id:  </strong><span class="text-wrap">222038</span></dd>
+            
+            <dd><strong>name:  </strong><span class="text-wrap">#Warlord_Gintolaken</span></dd>
+            
+            <dd><strong>lastname:  </strong><span class="text-wrap"></span></dd>
+            
+            <dd><strong>level:  </strong><span class="text-wrap">77</span></dd>
+            
+            <dd><strong>race:  </strong><span class="text-wrap">306</span></dd>
+            
+            <dd><strong>class:  </strong><span class="text-wrap">1</span></dd>
+            
+            <dd><strong>bodytype:  </strong><span class="text-wrap">1</span></dd>
+            
+            <dd><strong>hp:  </strong><span class="text-wrap">1050000</span></dd>
+            
+            <dd><strong>mana:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>gender:  </strong><span class="text-wrap">2</span></dd>
+            
+            <dd><strong>texture:  </strong><span class="text-wrap">1</span></dd>
+            
+            <dd><strong>helmtexture:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>size:  </strong><span class="text-wrap">35.0</span></dd>
+            
+            <dd><strong>hp_regen_rate:  </strong><span class="text-wrap">25000</span></dd>
+            
+            <dd><strong>mana_regen_rate:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>loottable_id:  </strong><span class="text-wrap">87629</span></dd>
+            
+            <dd><strong>merchant_id:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>npc_spells_id:  </strong><span class="text-wrap">633</span></dd>
+            
+            <dd><strong>npc_spells_effects_id:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>npc_faction_id:  </strong><span class="text-wrap">79</span></dd>
+            
+            <dd><strong>mindmg:  </strong><span class="text-wrap">551</span></dd>
+            
+            <dd><strong>maxdmg:  </strong><span class="text-wrap">2212</span></dd>
+            
+            <dd><strong>attack_count:  </strong><span class="text-wrap">-1</span></dd>
+            
+            <dd><strong>special_abilities:  </strong><span class="text-wrap">1,1^2,1^4,1,20^7,1^8,1^13,1^14,1^15,1^16,1^21,1^23,1^31,1^46,1</span></dd>
+            
+            <dd><strong>aggroradius:  </strong><span class="text-wrap">125</span></dd>
+            
+            <dd><strong>assistradius:  </strong><span class="text-wrap">70</span></dd>
+            
+            <dd><strong>face:  </strong><span class="text-wrap">255</span></dd>
+            
+            <dd><strong>luclin_hairstyle:  </strong><span class="text-wrap">255</span></dd>
+            
+            <dd><strong>luclin_haircolor:  </strong><span class="text-wrap">255</span></dd>
+            
+            <dd><strong>luclin_eyecolor:  </strong><span class="text-wrap">255</span></dd>
+            
+            <dd><strong>luclin_eyecolor2:  </strong><span class="text-wrap">255</span></dd>
+            
+            <dd><strong>luclin_beardcolor:  </strong><span class="text-wrap">255</span></dd>
+            
+            <dd><strong>luclin_beard:  </strong><span class="text-wrap">255</span></dd>
+            
+            <dd><strong>armortint_id:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>armortint_red:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>armortint_green:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>armortint_blue:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>d_melee_texture1:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>d_melee_texture2:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>prim_melee_type:  </strong><span class="text-wrap">28</span></dd>
+            
+            <dd><strong>sec_melee_type:  </strong><span class="text-wrap">28</span></dd>
+            
+            <dd><strong>ranged_type:  </strong><span class="text-wrap">7</span></dd>
+            
+            <dd><strong>runspeed:  </strong><span class="text-wrap">1.25</span></dd>
+            
+            <dd><strong>MR:  </strong><span class="text-wrap">365</span></dd>
+            
+            <dd><strong>CR:  </strong><span class="text-wrap">290</span></dd>
+            
+            <dd><strong>DR:  </strong><span class="text-wrap">1000</span></dd>
+            
+            <dd><strong>FR:  </strong><span class="text-wrap">150</span></dd>
+            
+            <dd><strong>PR:  </strong><span class="text-wrap">95</span></dd>
+            
+            <dd><strong>see_invis:  </strong><span class="text-wrap">1</span></dd>
+            
+            <dd><strong>see_invis_undead:  </strong><span class="text-wrap">1</span></dd>
+            
+            <dd><strong>qglobal:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>AC:  </strong><span class="text-wrap">230</span></dd>
+            
+            <dd><strong>npc_aggro:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>spawn_limit:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>attack_delay:  </strong><span class="text-wrap">11</span></dd>
+            
+            <dd><strong>STR:  </strong><span class="text-wrap">136</span></dd>
+            
+            <dd><strong>STA:  </strong><span class="text-wrap">136</span></dd>
+            
+            <dd><strong>DEX:  </strong><span class="text-wrap">136</span></dd>
+            
+            <dd><strong>AGI:  </strong><span class="text-wrap">136</span></dd>
+            
+            <dd><strong>_INT:  </strong><span class="text-wrap">136</span></dd>
+            
+            <dd><strong>WIS:  </strong><span class="text-wrap">136</span></dd>
+            
+            <dd><strong>CHA:  </strong><span class="text-wrap">136</span></dd>
+            
+            <dd><strong>see_sneak:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>see_improved_hide:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>ATK:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>Accuracy:  </strong><span class="text-wrap">300</span></dd>
+            
+            <dd><strong>slow_mitigation:  </strong><span class="text-wrap">65</span></dd>
+            
+            <dd><strong>maxlevel:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>scalerate:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>private_corpse:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>unique_spawn_by_name:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>underwater:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>isquest:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>emoteid:  </strong><span class="text-wrap">1011</span></dd>
+            
+            <dd><strong>spellscale:  </strong><span class="text-wrap">100.0</span></dd>
+            
+            <dd><strong>healscale:  </strong><span class="text-wrap">100.0</span></dd>
+            
+            <dd><strong>raid_target:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>chesttexture:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>armtexture:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>bracertexture:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>handtexture:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>legtexture:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>feettexture:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>light:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>walkspeed:  </strong><span class="text-wrap">0.5</span></dd>
+            
+            <dd><strong>combat_hp_regen:  </strong><span class="text-wrap">100</span></dd>
+            
+            <dd><strong>combat_mana_regen:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>aggro_pc:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>ignore_distance:  </strong><span class="text-wrap">400.0</span></dd>
+            
+            <dd><strong>encounter:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>ignore_despawn:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>avoidance:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>exp_pct:  </strong><span class="text-wrap">150</span></dd>
+            
+            <dd><strong>greed:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>engage_notice:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>stuck_behavior:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>flymode:  </strong><span class="text-wrap">-1</span></dd>
+            
+            <dd><strong>loot_lockout:  </strong><span class="text-wrap">237600</span></dd>
+            
+            <dd><strong>instance_spawn_timer_override:  </strong><span class="text-wrap">237600000</span></dd>
+            
+            <dd><strong>skip_global_loot:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>rare_spawn:  </strong><span class="text-wrap">0</span></dd>
+            
+            <dd><strong>min_expansion:  </strong><span class="text-wrap">-1.0</span></dd>
+            
+            <dd><strong>max_expansion:  </strong><span class="text-wrap">-1.0</span></dd>
+            
+            <dd><strong>long_name:  </strong><span class="text-wrap">Plane of Earth</span></dd>
+            
+            <dd><strong>zoneidnumber:  </strong><span class="text-wrap">222</span></dd>
+            
+            <dd><strong>zone:  </strong><span class="text-wrap">poearthb</span></dd>
+            
+            <dd><strong>expansion:  </strong><span class="text-wrap">4</span></dd>
+            
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+
+<div class="modal fade" id="script-modal" tabindex="-1" aria-labelledby="scriptModalFullscreenLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4" id="scriptModalFullscreenLabel">Raw Data</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        
+      </div>
+      <div class="modal-body">
+        <div class="bg-body-tertiary">
+    <div class="highlight"><pre><span></span><span class="kd">local</span> <span class="n">BOSS_TYPES</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">222035</span><span class="p">,</span> <span class="mi">222037</span><span class="p">,</span> <span class="mi">222036</span><span class="p">,</span> <span class="mi">222008</span><span class="p">,</span> <span class="mi">222009</span><span class="p">,</span> <span class="mi">222010</span> <span class="p">};</span> <span class="c1">-- Chieftans, Chieftan spawners</span>
+
+<span class="kr">function</span> <span class="nf">event_spawn</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+	<span class="n">eq</span><span class="p">.</span><span class="n">set_timer</span><span class="p">(</span><span class="s2">&quot;check&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">event_combat</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+	<span class="kr">if</span> <span class="p">(</span> <span class="n">e</span><span class="p">.</span><span class="n">joined</span> <span class="p">)</span> <span class="kr">then</span>
+		<span class="n">eq</span><span class="p">.</span><span class="n">set_timer</span><span class="p">(</span><span class="s2">&quot;drophate&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
+	<span class="kr">else</span>
+		<span class="n">eq</span><span class="p">.</span><span class="n">stop_timer</span><span class="p">(</span><span class="s2">&quot;drophate&quot;</span><span class="p">);</span>
+		
+		<span class="c1">-- this is to mimic certain behavior Sony&#39;s servers had/has.  NPCs aggroed a long time sometimes warp home or</span>
+		<span class="c1">-- some distance away in the direction of home and heal somewhat when they hate list wipe.  The exact logic to this</span>
+		<span class="c1">-- behavior is unknown.  Bosses with the tank hate list drop mechanic need this in order to not trivialize the</span>
+		<span class="c1">-- encounter using mem blur.  This is a crude solution that works well enough</span>
+		<span class="kd">local</span> <span class="n">ratio</span> <span class="o">=</span> <span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetHPRatio</span><span class="p">();</span>
+		<span class="kr">if</span> <span class="p">(</span> <span class="n">ratio</span> <span class="o">&lt;</span> <span class="mi">50</span> <span class="ow">or</span> <span class="nb">math.random</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">ratio</span> <span class="p">)</span> <span class="kr">then</span>
+			<span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GMMove</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetGuardPointX</span><span class="p">(),</span> <span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetGuardPointY</span><span class="p">(),</span> <span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetGuardPointZ</span><span class="p">(),</span> <span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetSpawnPointH</span><span class="p">());</span>
+			<span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">SetHP</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetHP</span><span class="p">()</span> <span class="o">+</span> <span class="nb">math.floor</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetMaxHP</span><span class="p">()</span> <span class="o">*</span> <span class="mf">0.3</span><span class="p">));</span>
+		<span class="kr">end</span>
+	<span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">event_timer</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+	<span class="kr">if</span> <span class="p">(</span> <span class="n">e</span><span class="p">.</span><span class="n">timer</span> <span class="o">==</span> <span class="s2">&quot;drophate&quot;</span> <span class="p">)</span> <span class="kr">then</span>
+	
+		<span class="kr">if</span> <span class="p">(</span> <span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetX</span><span class="p">()</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">137</span> <span class="p">)</span> <span class="kr">then</span>
+			<span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GMMove</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetSpawnPointX</span><span class="p">(),</span> <span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetSpawnPointY</span><span class="p">(),</span> <span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetSpawnPointZ</span><span class="p">(),</span> <span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetSpawnPointH</span><span class="p">());</span>
+			<span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">WipeHateList</span><span class="p">();</span>
+			<span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">CastSpell</span><span class="p">(</span><span class="mi">3230</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetID</span><span class="p">());</span> <span class="c1">-- Balance of the Nameless</span>
+			<span class="kr">return</span><span class="p">;</span>
+		<span class="kr">end</span>
+		
+		<span class="kr">if</span> <span class="p">(</span> <span class="nb">math.random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.03333</span> <span class="p">)</span> <span class="kr">then</span> <span class="c1">-- averages to once per 30 seconds</span>
+			<span class="kd">local</span> <span class="n">target</span> <span class="o">=</span> <span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetTarget</span><span class="p">();</span>
+			<span class="kr">if</span> <span class="p">(</span> <span class="n">target</span> <span class="ow">and</span> <span class="n">target</span><span class="p">.</span><span class="n">valid</span> <span class="p">)</span> <span class="kr">then</span>
+				<span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">RemoveFromHateList</span><span class="p">(</span><span class="n">target</span><span class="p">);</span>
+			<span class="kr">end</span>
+			<span class="n">eq</span><span class="p">.</span><span class="n">debug</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">self</span><span class="p">:</span><span class="n">GetName</span><span class="p">()</span><span class="o">..</span><span class="s2">&quot; dropped target from hate list (&quot;</span><span class="o">..</span><span class="n">target</span><span class="p">:</span><span class="n">GetName</span><span class="p">()</span><span class="o">..</span><span class="s2">&quot;)&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+		<span class="kr">end</span>
+	
+	<span class="kr">elseif</span> <span class="p">(</span> <span class="n">e</span><span class="p">.</span><span class="n">timer</span> <span class="o">==</span> <span class="s2">&quot;check&quot;</span> <span class="p">)</span> <span class="kr">then</span>
+		<span class="n">eq</span><span class="p">.</span><span class="n">stop_timer</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">timer</span><span class="p">);</span>
+
+		<span class="c1">-- Ginto has a spawn2 so he&#39;ll be up if the zone goes down.  need to despawn him if triggers are up</span>
+		<span class="kd">local</span> <span class="n">elist</span> <span class="o">=</span> <span class="n">eq</span><span class="p">.</span><span class="n">get_entity_list</span><span class="p">();</span>
+		<span class="kr">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">id</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">BOSS_TYPES</span><span class="p">)</span> <span class="kr">do</span>
+			<span class="kr">if</span> <span class="p">(</span> <span class="n">elist</span><span class="p">:</span><span class="n">IsMobSpawnedByNpcTypeID</span><span class="p">(</span><span class="n">id</span><span class="p">)</span> <span class="p">)</span> <span class="kr">then</span>
+				<span class="n">eq</span><span class="p">.</span><span class="n">depop_with_timer</span><span class="p">();</span>
+				<span class="kr">return</span><span class="p">;</span>
+			<span class="kr">end</span>
+		<span class="kr">end</span>
+	<span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">event_death_complete</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+	<span class="n">eq</span><span class="p">.</span><span class="n">get_entity_list</span><span class="p">():</span><span class="n">GetSpawnByID</span><span class="p">(</span><span class="mi">369490</span><span class="p">):</span><span class="n">GetNPC</span><span class="p">():</span><span class="n">Depop</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+	<span class="n">eq</span><span class="p">.</span><span class="n">get_entity_list</span><span class="p">():</span><span class="n">GetSpawnByID</span><span class="p">(</span><span class="mi">369490</span><span class="p">):</span><span class="n">SetTimer</span><span class="p">(</span><span class="mi">302400000</span><span class="p">);</span>
+<span class="kr">end</span>
+</pre></div>
+
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+
+<script>
+  $(document).ready(function () {
+    $('#sortable-table-2').DataTable({
+      paging: false,
+      autoWidth: false
+    });
+    $('#sortable-table-3').DataTable({
+      paging: false,
+      autoWidth: false
+    });
+    $('#sortable-table-4').DataTable({
+      paging: false,
+      autoWidth: false
+    });
+  });
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".copy-btn").forEach(button => {
+        button.addEventListener("click", function () {
+            const textToCopy = this.getAttribute("data-loot");
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const originalText = this.innerText;
+                this.classList.remove("btn-outline-secondary");
+                this.classList.add("btn-success");
+                this.innerText = "Copied!";
+                
+                setTimeout(() => {
+                    this.classList.remove("btn-success");
+                    this.classList.add("btn-outline-secondary");
+                    this.innerText = originalText;
+                }, 3000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        });
+    });
+});
+</script>
+
+    </div>
+</main>
+
+<script src="/static/popper.min.js"></script>
+<script src="/static/tippy-bundle.umd.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        tippy('.tooltip-link', {
+            content: 'Loading...',
+            allowHTML: true,
+            maxWidth: 'none',
+            onShow(instance) {
+                const url = instance.reference.dataset.url;
+                fetch(`/get-item-tooltip/${encodeURIComponent(url)}`)
+                    .then(response => response.text())
+                    .then(content => {
+                        instance.setContent(content);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching tooltip content:', error);
+                    });
+            },
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        tippy('.spell-tooltip', {
+            content: 'Loading...',
+            allowHTML: true,
+            maxWidth: 'none',
+            onShow(instance) {
+                const url = instance.reference.dataset.url;
+                fetch(`/api/v1/spell/${encodeURIComponent(url)}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const content = formatTooltip(data);
+                        instance.setContent(content);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching tooltip content:', error);
+                    });
+            },
+        });
+
+        function formatTooltip(data) {
+            let effectsList = '';
+
+            if (data.effects && Array.isArray(data.effects)) {
+                effectsList = '<ul>';
+                data.effects.forEach(effect => {
+                    effectsList += `<li>${effect}</li>`;
+                });
+                effectsList += '</ul>';
+            }
+            
+            return `
+                <div class="tooltip-content">
+                    <h3>${data.name}</h3>
+                    <p><strong>Effects:</strong> ${effectsList}</p>
+                </div>
+            `;
+        }
+    });
+</script>
+
+<footer class="footer mt-auto">
+      <div class="container">
+        <p class="text-muted text-center">Database version:    2026-09-07 (see diff by Icestorm on <a href="https://yaqds.cc/database/changes/" target="_blank">YAQDS</a>)</p>
+      </div>
+    </footer>
+</body>
+
+
+</html>

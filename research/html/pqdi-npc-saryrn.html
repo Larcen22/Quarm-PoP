@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+<head>
+    
+    
+    
+    
+    
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRMK1JFQTY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JRMK1JFQTY');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+
+<script src="/static/color-modes.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
+  
+<script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+    
+    
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+     
+<title>NPCs :: PQDI</title>
+
+    
+</head>
+<body class="d-flex flex-column h-100">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><svg class="bi" fill="currentColor" width="1.5em" height="1.5em"><use href="/static/bootstrap-icons.svg#house-fill"></use></svg></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+        <li class="nav-item"><a href="/zones" class="nav-link">Zones</a></li>
+                <li class="nav-item"><a href="/items" class="nav-link">Items</a></li>
+                <li class="nav-item"><a href="/factions" class="nav-link">Factions</a></li>
+                <li class="nav-item"><a href="/npcs" class="nav-link">Bestiary</a></li>
+                <li class="nav-item"><a href="/spells" class="nav-link">Spells</a></li>
+                <li class="nav-item"><a href="/recipes" class="nav-link">Recipes</a></li>
+                        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Misc
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/zem">ZEM</a></li>
+            <li><a class="dropdown-item" href="/instances">Instance Timers</a></li>
+            <li><a class="dropdown-item" href="/exp">Exp per Level</a></li>
+            <li><a class="dropdown-item" href="/altadv">AA Listings</a></li>
+            <li><a class="dropdown-item" href="/characters">Class/Race/Faction</a></li>
+            <li><a class="dropdown-item" href="/pets">Pets</a></li>
+            <li><a class="dropdown-item" href="/skills">Skill Caps</a></li>
+            <li><a class="dropdown-item" href="/lootfinder">Loot by Level</a></li>
+            <li><a class="dropdown-item" href="/missing-spells">Missing Spells</a></li>
+            <li><a class="dropdown-item" href="/find-spells">Spell Search</a></li>
+            <li><a class="dropdown-item" href="/logparse">Log Parser</a></li>
+            <li><a class="dropdown-item" href="/fishing">Fishin'</a></li>
+          </ul>
+        </li>
+        <li class="nav-item "><a href="/focus-items" class="nav-link text-danger-emphasis"><strong>Focus Items</strong></a></li>
+        <li class="nav-item "><a href="/objects" class="nav-link text-danger-emphasis"><strong>Objects</strong></a></li>
+      </ul>
+
+      
+      <div class="dropdown px-3">
+      <button class="btn border-0 py-0 dropdown-toggle align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" fill="currentColor" width="1.5em" height="1.5em"><use href="/static/bootstrap-icons.svg#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="/static/bootstrap-icons.svg#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="/static/bootstrap-icons.svg#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="/static/bootstrap-icons.svg#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="/static/bootstrap-icons.svg#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="/static/bootstrap-icons.svg#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="/static/bootstrap-icons.svg#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+      </div>
+        
+      
+
+      <form class="d-flex input-group w-auto" role="search" id="searchForm" action="/" method="post" novalidate>
+        <input id="csrf_token" name="csrf_token" type="hidden" value="Ijk0NTIyYzgzMjQ0MWMzYmY5MGM1ZjExYzE0ZTQ2MGNlMjNkMjIxNTgi.arp4yQ.vEtY4dvgvxf6aEGie3UrN0J9dic">
+        <input class="form-control" id="search" name="search" required type="text" value="">
+        <input class="btn btn-sm btn-outline-secondary" id="submit" name="submit" type="submit" value="Search">
+        
+      </form>
+    </div>
+    
+  </div>
+</nav>
+    
+    <div style="height:1px; margin-top:2em;"></div>
+    <main class="flex-shrink-0 pt-4">
+    <div class="container py-4">
+    
+    
+<h1 class="text-center mb-4">NPC Search</h1>
+<form class="p-3 mb-4 bg-body-tertiary border" action="" method="post" novalidate>
+<div class="row">
+    <input id="csrf_token" name="csrf_token" type="hidden" value="Ijk0NTIyYzgzMjQ0MWMzYmY5MGM1ZjExYzE0ZTQ2MGNlMjNkMjIxNTgi.arp4yQ.vEtY4dvgvxf6aEGie3UrN0J9dic">
+    <div class="col-12 col-md-4">
+        <input class="form-control" id="npc_name" name="npc_name" required type="text" value="">
+        <div class="form-text text-wrap"><label for="npc_name">NPC Name</label></div>
+    </div>
+    <div class="col-12 col-md-3">
+        <select class="form-select" id="type_select" name="type_select"><option value="Type">Type</option><option value="1">Humanoid</option><option value="2">Lycanthrope</option><option value="3">Undead</option><option value="4">Giant</option><option value="5">Construct</option><option value="6">Extraplanar</option><option value="7">Magical</option><option value="8">SummonedUndead</option><option value="9">BaneGiant</option><option value="10">Dain</option><option value="11">NoTarget</option><option value="12">Vampire</option><option value="13">Atenha Ra</option><option value="14">Greater Akheva</option><option value="15">Khati Sha</option><option value="16">Seru</option><option value="17">Grieg Veneficus</option><option value="18">Draz Nurakk</option><option value="19">Zek</option><option value="20">Luggald</option><option value="21">Animal</option><option value="22">Insect</option><option value="23">Monster</option><option value="24">Summoned</option><option value="25">Plant</option><option value="26">Dragon</option><option value="27">Summoned2</option><option value="28">Summoned3</option><option value="29">Dragon2</option><option value="30">VeliousDragon</option><option value="31">Familiar</option><option value="32">Dragon3</option><option value="33">Boxes</option><option value="34">Muramite</option><option value="60">NoTarget2</option><option value="63">SwarmPet</option><option value="64">MonsterSummon</option></select>
+        <div class="form-text text-wrap"><label for="type_select">Type</label></div>
+    </div>
+    <div class="col-12 col-md-3">
+        <select class="form-select" id="race_select" name="race_select"><option value="Race">Race</option><option value="-1">Gender</option><option value="0">Invalid</option><option value="1">Human</option><option value="2">Barbarian</option><option value="3">Erudite</option><option value="4">Wood Elf</option><option value="5">High Elf</option><option value="6">Dark Elf</option><option value="7">Half Elf</option><option value="8">Dwarf</option><option value="9">Troll</option><option value="10">Ogre</option><option value="11">Halfling</option><option value="12">Gnome</option><option value="13">Aviak</option><option value="14">Werewolf</option><option value="15">Brownie</option><option value="16">Centaur</option><option value="17">Golem</option><option value="18">Giant</option><option value="19">Trakanon</option><option value="20">Venril Sathir</option><option value="21">Evil Eye</option><option value="22">Beetle</option><option value="23">Kerran</option><option value="24">Fish</option><option value="25">Fairy</option><option value="26">Froglok</option><option value="27">Froglok</option><option value="28">Fungusman</option><option value="29">Gargoyle</option><option value="30">Gasbag</option><option value="31">Gelatinous Cube</option><option value="32">Ghost</option><option value="33">Ghoul</option><option value="34">Bat</option><option value="35">Eel</option><option value="36">Rat</option><option value="37">Snake</option><option value="38">Spider</option><option value="39">Gnoll</option><option value="40">Goblin</option><option value="41">Gorilla</option><option value="42">Wolf</option><option value="43">Bear</option><option value="44">Guard</option><option value="45">Demi Lich</option><option value="46">Imp</option><option value="47">Griffin</option><option value="48">Kobold</option><option value="49">Dragon</option><option value="50">Lion</option><option value="51">Lizard Man</option><option value="52">Mimic</option><option value="53">Minotaur</option><option value="54">Orc</option><option value="55">Beggar</option><option value="56">Pixie</option><option value="57">Drachnid</option><option value="58">Solusek Ro</option><option value="59">Goblin</option><option value="60">Skeleton</option><option value="61">Shark</option><option value="62">Tunare</option><option value="63">Tiger</option><option value="64">Treant</option><option value="65">Vampire</option><option value="66">Rallos Zek</option><option value="67">Human</option><option value="68">Tentacle Terror</option><option value="69">Will-O-Wisp</option><option value="70">Zombie</option><option value="71">Human</option><option value="72">Ship</option><option value="73">Launch</option><option value="74">Piranha</option><option value="75">Elemental</option><option value="76">Puma</option><option value="77">Dark Elf</option><option value="78">Erudite</option><option value="79">Bixie</option><option value="80">Reanimated Hand</option><option value="81">Halfling</option><option value="82">Scarecrow</option><option value="83">Skunk</option><option value="84">Snake Elemental</option><option value="85">Spectre</option><option value="86">Sphinx</option><option value="87">Armadillo</option><option value="88">Clockwork Gnome</option><option value="89">Drake</option><option value="90">Barbarian</option><option value="91">Alligator</option><option value="92">Troll</option><option value="93">Ogre</option><option value="94">Dwarf</option><option value="95">Cazic Thule</option><option value="96">Cockatrice</option><option value="97">Daisy Man</option><option value="98">Vampire</option><option value="99">Amygdalan</option><option value="100">Dervish</option><option value="101">Efreeti</option><option value="102">Tadpole</option><option value="103">Kedge</option><option value="104">Leech</option><option value="105">Swordfish</option><option value="106">Guard</option><option value="107">Mammoth</option><option value="108">Eye</option><option value="109">Wasp</option><option value="110">Mermaid</option><option value="111">Harpy</option><option value="112">Guard</option><option value="113">Drixie</option><option value="114">Ghost Ship</option><option value="115">Clam</option><option value="116">Seahorse</option><option value="117">Ghost</option><option value="118">Ghost</option><option value="119">Sabertooth</option><option value="120">Wolf</option><option value="121">Gorgon</option><option value="122">Dragon</option><option value="123">Innoruuk</option><option value="124">Unicorn</option><option value="125">Pegasus</option><option value="126">Djinn</option><option value="127">Invisible Man</option><option value="128">Iksar</option><option value="129">Scorpion</option><option value="130">Vah Shir</option><option value="131">Sarnak</option><option value="132">Draglock</option><option value="133">Drolvarg</option><option value="134">Mosquito</option><option value="135">Rhinoceros</option><option value="136">Xalgoz</option><option value="137">Goblin</option><option value="138">Yeti</option><option value="139">Iksar</option><option value="140">Giant</option><option value="141">Boat</option><option value="142">Minor Illusion</option><option value="143">Treeform</option><option value="144">Burynai</option><option value="145">Goo</option><option value="146">Sarnak Spirit</option><option value="147">Iksar Spirit</option><option value="148">Fish</option><option value="149">Scorpion</option><option value="150">Erollisi</option><option value="151">Tribunal</option><option value="152">Bertoxxulous</option><option value="153">Bristlebane</option><option value="154">Fay Drake</option><option value="155">Undead Sarnak</option><option value="156">Ratman</option><option value="157">Wyvern</option><option value="158">Wurm</option><option value="159">Devourer</option><option value="160">Iksar Golem</option><option value="161">Undead Iksar</option><option value="162">Man-Eating Plant</option><option value="163">Raptor</option><option value="164">Sarnak Golem</option><option value="165">Dragon</option><option value="166">Animated Hand</option><option value="167">Succulent</option><option value="168">Holgresh</option><option value="169">Brontotherium</option><option value="170">Snow Dervish</option><option value="171">Dire Wolf</option><option value="172">Manticore</option><option value="173">Totem</option><option value="174">Ice Spectre</option><option value="175">Enchanted Armor</option><option value="176">Snow Rabbit</option><option value="177">Walrus</option><option value="178">Geonid</option><option value="179">Unknown</option><option value="180">Unknown</option><option value="181">Yakkar</option><option value="182">Faun</option><option value="183">Coldain</option><option value="184">Dragon</option><option value="185">Hag</option><option value="186">Hippogriff</option><option value="187">Siren</option><option value="188">Giant</option><option value="189">Giant</option><option value="190">Othmir</option><option value="191">Ulthork</option><option value="192">Dragon</option><option value="193">Abhorrent</option><option value="194">Sea Turtle</option><option value="195">Dragon</option><option value="196">Dragon</option><option value="197">Ronnie Test</option><option value="198">Dragon</option><option value="199">Shik&#39;Nar</option><option value="200">Rockhopper</option><option value="201">Underbulk</option><option value="202">Grimling</option><option value="203">Worm</option><option value="204">Evan Test</option><option value="205">Shadel</option><option value="206">Owlbear</option><option value="207">Rhino Beetle</option><option value="208">Vampire</option><option value="209">Earth Elemental</option><option value="210">Air Elemental</option><option value="211">Water Elemental</option><option value="212">Fire Elemental</option><option value="213">Wetfang Minnow</option><option value="214">Thought Horror</option><option value="215">Tegi</option><option value="216">Horse</option><option value="217">Shissar</option><option value="218">Fungal Fiend</option><option value="219">Vampire</option><option value="220">Stonegrabber</option><option value="221">Scarlet Cheetah</option><option value="222">Zelniak</option><option value="223">Lightcrawler</option><option value="224">Shade</option><option value="225">Sunflower</option><option value="226">Sun Revenant</option><option value="227">Shrieker</option><option value="228">Galorian</option><option value="229">Netherbian</option><option value="230">Akheva</option><option value="231">Grieg Veneficus</option><option value="232">Sonic Wolf</option><option value="233">Ground Shaker</option><option value="234">Vah Shir Skeleton</option><option value="235">Wretch</option><option value="236">Seru</option><option value="237">Recuso</option><option value="238">Vah Shir</option><option value="239">Guard</option><option value="240">Teleport Man</option><option value="241">Werewolf</option><option value="242">Nymph</option><option value="243">Dryad</option><option value="244">Treant</option><option value="245">Fly</option><option value="246">Tarew Marr</option><option value="247">Solusek Ro</option><option value="248">Clockwork Golem</option><option value="249">Clockwork Brain</option><option value="250">Banshee</option><option value="251">Guard of Justice</option><option value="252">Mini POM</option><option value="253">Diseased Fiend</option><option value="254">Solusek Ro Guard</option><option value="255">Bertoxxulous</option><option value="256">The Tribunal</option><option value="257">Terris Thule</option><option value="258">Vegerog</option><option value="259">Crocodile</option><option value="260">Bat</option><option value="261">Hraquis</option><option value="262">Tranquilion</option><option value="263">Tin Soldier</option><option value="264">Nightmare Wraith</option><option value="265">Malarian</option><option value="266">Knight of Pestilence</option><option value="267">Lepertoloth</option><option value="268">Bubonian</option><option value="269">Bubonian Underling</option><option value="270">Pusling</option><option value="271">Water Mephit</option><option value="272">Stormrider</option><option value="273">Junk Beast</option><option value="274">Broken Clockwork</option><option value="275">Giant Clockwork</option><option value="276">Clockwork Beetle</option><option value="277">Nightmare Goblin</option><option value="278">Karana</option><option value="279">Blood Raven</option><option value="280">Nightmare Gargoyle</option><option value="281">Mouth of Insanity</option><option value="282">Skeletal Horse</option><option value="283">Saryrn</option><option value="284">Fennin Ro</option><option value="285">Tormentor</option><option value="286">Soul Devourer</option><option value="287">Nightmare</option><option value="288">Rallos Zek</option><option value="289">Vallon Zek</option><option value="290">Tallon Zek</option><option value="291">Air Mephit</option><option value="292">Earth Mephit</option><option value="293">Fire Mephit</option><option value="294">Nightmare Mephit</option><option value="295">Zebuxoruk</option><option value="296">Mithaniel Marr</option><option value="297">Undead Knight</option><option value="298">The Rathe</option><option value="299">Xegony</option><option value="300">Fiend</option><option value="301">Test Object</option><option value="302">Crab</option><option value="303">Phoenix</option><option value="304">Dragon</option><option value="305">Bear</option><option value="306">Giant</option><option value="307">Giant</option><option value="308">Giant</option><option value="309">Giant</option><option value="310">Giant</option><option value="311">Giant</option><option value="312">Giant</option><option value="313">War Wraith</option><option value="314">Wrulon</option><option value="315">Kraken</option><option value="316">Poison Frog</option><option value="317">Nilborien</option><option value="318">Valorian</option><option value="319">War Boar</option><option value="320">Efreeti</option><option value="321">War Boar</option><option value="322">Valorian</option><option value="323">Animated Armor</option><option value="324">Undead Footman</option><option value="325">Rallos Zek Minion</option><option value="326">Arachnid</option><option value="327">Crystal Spider</option><option value="328">Zebuxoruk&#39;s Cage</option><option value="329">BoT Portal</option><option value="330">Froglok</option><option value="331">Troll</option><option value="332">Troll</option><option value="333">Troll</option><option value="334">Ghost</option><option value="335">Pirate</option><option value="336">Pirate</option><option value="337">Pirate</option><option value="338">Pirate</option><option value="339">Pirate</option><option value="340">Pirate</option><option value="341">Pirate</option><option value="342">Pirate</option><option value="343">Frog</option><option value="344">Troll Zombie</option><option value="345">Luggald</option><option value="346">Luggald</option><option value="347">Luggalds</option><option value="348">Drogmore</option><option value="349">Froglok Skeleton</option><option value="350">Undead Froglok</option><option value="351">Knight of Hate</option><option value="352">Arcanist of Hate</option><option value="353">Veksar</option><option value="354">Veksar</option><option value="355">Veksar</option><option value="356">Chokadai</option><option value="357">Undead Chokadai</option><option value="358">Undead Veksar</option><option value="359">Vampire</option><option value="360">Vampire</option><option value="361">Rujarkian Orc</option><option value="362">Bone Golem</option><option value="363">Synarcana</option><option value="364">Sand Elf</option><option value="365">Vampire</option><option value="366">Rujarkian Orc</option><option value="367">Skeleton</option><option value="368">Mummy</option><option value="369">Goblin</option><option value="370">Insect</option><option value="371">Froglok Ghost</option><option value="372">Dervish</option><option value="373">Shade</option><option value="374">Golem</option><option value="375">Evil Eye</option><option value="376">Box</option><option value="377">Barrel</option><option value="378">Chest</option><option value="379">Vase</option><option value="380">Table</option><option value="381">Weapon Rack</option><option value="382">Coffin</option><option value="383">Bones</option><option value="384">Jokester</option><option value="385">Nihil</option><option value="386">Trusik</option><option value="387">Stone Worker</option><option value="388">Hynid</option><option value="389">Turepta</option><option value="390">Cragbeast</option><option value="391">Stonemite</option><option value="392">Ukun</option><option value="393">Ixt</option><option value="394">Ikaav</option><option value="395">Aneuk</option><option value="396">Kyv</option><option value="397">Noc</option><option value="398">Ra`tuk</option><option value="399">Taneth</option><option value="400">Huvul</option><option value="401">Mutna</option><option value="402">Mastruq</option><option value="403">Taelosian</option><option value="404">Discord Ship</option><option value="405">Stone Worker</option><option value="406">Mata Muram</option><option value="407">Lightning Warrior</option><option value="408">Succubus</option><option value="409">Bazu</option><option value="410">Feran</option><option value="411">Pyrilen</option><option value="412">Chimera</option><option value="413">Dragorn</option><option value="414">Murkglider</option><option value="415">Rat</option><option value="416">Bat</option><option value="417">Gelidran</option><option value="418">Discordling</option><option value="419">Girplan</option><option value="420">Minotaur</option><option value="421">Dragorn Box</option><option value="422">Runed Orb</option><option value="423">Dragon Bones</option><option value="424">Muramite Armor Pile</option><option value="425">Crystal Shard</option><option value="426">Portal</option><option value="427">Coin Purse</option><option value="428">Rock Pile</option><option value="429">Murkglider Egg Sack</option><option value="430">Drake</option><option value="431">Dervish</option><option value="432">Drake</option><option value="433">Goblin</option><option value="434">Kirin</option><option value="435">Dragon</option><option value="436">Basilisk</option><option value="437">Dragon</option><option value="438">Dragon</option><option value="439">Puma</option><option value="440">Spider</option><option value="441">Spider Queen</option><option value="442">Animated Statue</option><option value="443">Unknown</option><option value="444">Unknown</option><option value="445">Dragon Egg</option><option value="446">Dragon Statue</option><option value="447">Lava Rock</option><option value="448">Animated Statue</option><option value="449">Spider Egg Sack</option><option value="450">Lava Spider</option><option value="451">Lava Spider Queen</option><option value="452">Dragon</option><option value="453">Giant</option><option value="454">Werewolf</option><option value="455">Kobold</option><option value="456">Sporali</option><option value="457">Gnomework</option><option value="458">Orc</option><option value="459">Corathus</option><option value="460">Coral</option><option value="461">Drachnid</option><option value="462">Drachnid Cocoon</option><option value="463">Fungus Patch</option><option value="464">Gargoyle</option><option value="465">Witheran</option><option value="466">Dark Lord</option><option value="467">Shiliskin</option><option value="468">Snake</option><option value="469">Evil Eye</option><option value="470">Minotaur</option><option value="471">Zombie</option><option value="472">Clockwork Boar</option><option value="473">Fairy</option><option value="474">Witheran</option><option value="475">Air Elemental</option><option value="476">Earth Elemental</option><option value="477">Fire Elemental</option><option value="478">Water Elemental</option><option value="479">Alligator</option><option value="480">Bear</option><option value="481">Scaled Wolf</option><option value="482">Wolf</option><option value="483">Spirit Wolf</option><option value="484">Skeleton</option><option value="485">Spectre</option><option value="486">Bolvirk</option><option value="487">Banshee</option><option value="488">Banshee</option><option value="489">Elddar</option><option value="490">Forest Giant</option><option value="491">Bone Golem</option><option value="492">Horse</option><option value="493">Pegasus</option><option value="494">Shambling Mound</option><option value="495">Scrykin</option><option value="496">Treant</option><option value="497">Vampire</option><option value="498">Ayonae Ro</option><option value="499">Sullon Zek</option><option value="500">Banner</option><option value="501">Flag</option><option value="502">Rowboat</option><option value="503">Bear Trap</option><option value="504">Clockwork Bomb</option><option value="505">Dynamite Keg</option><option value="506">Pressure Plate</option><option value="507">Puffer Spore</option><option value="508">Stone Ring</option><option value="509">Root Tentacle</option><option value="510">Runic Symbol</option><option value="511">Saltpetter Bomb</option><option value="512">Floating Skull</option><option value="513">Spike Trap</option><option value="514">Totem</option><option value="515">Web</option><option value="516">Wicker Basket</option><option value="517">Nightmare/Unicorn</option><option value="518">Horse</option><option value="519">Nightmare/Unicorn</option><option value="520">Bixie</option><option value="521">Centaur</option><option value="522">Drakkin</option><option value="523">Giant</option><option value="524">Gnoll</option><option value="525">Griffin</option><option value="526">Giant Shade</option><option value="527">Harpy</option><option value="528">Mammoth</option><option value="529">Satyr</option><option value="530">Dragon</option><option value="531">Dragon</option><option value="532">Dyn&#39;Leth</option><option value="533">Boat</option><option value="534">Weapon Rack</option><option value="535">Armor Rack</option><option value="536">Honey Pot</option><option value="537">Jum Jum Bucket</option><option value="538">Toolbox</option><option value="539">Stone Jug</option><option value="540">Small Plant</option><option value="541">Medium Plant</option><option value="542">Tall Plant</option><option value="543">Wine Cask</option><option value="544">Elven Boat</option><option value="545">Gnomish Boat</option><option value="546">Barrel Barge Ship</option><option value="547">Goo</option><option value="548">Goo</option><option value="549">Goo</option><option value="550">Merchant Ship</option><option value="551">Pirate Ship</option><option value="552">Ghost Ship</option><option value="553">Banner</option><option value="554">Banner</option><option value="555">Banner</option><option value="556">Banner</option><option value="557">Banner</option><option value="558">Aviak</option><option value="559">Beetle</option><option value="560">Gorilla</option><option value="561">Kedge</option><option value="562">Kerran</option><option value="563">Shissar</option><option value="564">Siren</option><option value="565">Sphinx</option><option value="566">Human</option><option value="567">Campfire</option><option value="568">Brownie</option><option value="569">Dragon</option><option value="570">Exoskeleton</option><option value="571">Ghoul</option><option value="572">Clockwork Guardian</option><option value="573">Mantrap</option><option value="574">Minotaur</option><option value="575">Scarecrow</option><option value="576">Shade</option><option value="577">Rotocopter</option><option value="578">Tentacle Terror</option><option value="579">Wereorc</option><option value="580">Worg</option><option value="581">Wyvern</option><option value="582">Chimera</option><option value="583">Kirin</option><option value="584">Puma</option><option value="585">Boulder</option><option value="586">Banner</option><option value="587">Elven Ghost</option><option value="588">Human Ghost</option><option value="589">Chest</option><option value="590">Chest</option><option value="591">Crystal</option><option value="592">Coffin</option><option value="593">Guardian CPU</option><option value="594">Worg</option><option value="595">Mansion</option><option value="596">Floating Island</option><option value="597">Cragslither</option><option value="598">Wrulon</option><option value="599">Spell Particle 1</option><option value="600">Invisible Man of Zomm</option><option value="601">Robocopter of Zomm</option><option value="602">Burynai</option><option value="603">Frog</option><option value="604">Dracolich</option><option value="605">Iksar Ghost</option><option value="606">Iksar Skeleton</option><option value="607">Mephit</option><option value="608">Muddite</option><option value="609">Raptor</option><option value="610">Sarnak</option><option value="611">Scorpion</option><option value="612">Tsetsian</option><option value="613">Wurm</option><option value="614">Balrog</option><option value="615">Hydra Crystal</option><option value="616">Crystal Sphere</option><option value="617">Gnoll</option><option value="618">Sokokar</option><option value="619">Stone Pylon</option><option value="620">Demon Vulture</option><option value="621">Wagon</option><option value="622">God of Discord</option><option value="623">Wrulon Mount</option><option value="624">Ogre NPC - Male</option><option value="625">Sokokar Mount</option><option value="626">Giant (Rallosian mats)</option><option value="627">Sokokar (w saddle)</option><option value="628">10th Anniversary Banner</option><option value="629">10th Anniversary Cake</option><option value="630">Wine Cask</option><option value="631">Hydra Mount</option><option value="632">Hydra NPC</option><option value="633">Wedding Flowers</option><option value="634">Wedding Arbor</option><option value="635">Wedding Altar</option><option value="636">Powder Keg</option><option value="637">Apexus</option><option value="638">Bellikos</option><option value="639">Brell&#39;s First Creation</option><option value="640">Brell</option><option value="641">Crystalskin Ambuloid</option><option value="642">Cliknar Queen</option><option value="643">Cliknar Soldier</option><option value="644">Cliknar Worker</option><option value="645">Coldain</option><option value="646">Coldain</option><option value="647">Crystalskin Sessiloid</option><option value="648">Genari</option><option value="649">Gigyn</option><option value="650">Greken - Young Adult</option><option value="651">Greken - Young</option><option value="652">Cliknar Mount</option><option value="653">Telmira</option><option value="654">Spider Mount</option><option value="655">Bear Mount</option><option value="656">Rat Mount</option><option value="657">Sessiloid Mount</option><option value="658">Morell Thule</option><option value="659">Marionette</option><option value="660">Book Dervish</option><option value="661">Topiary Lion</option><option value="662">Rotdog</option><option value="663">Amygdalan</option><option value="664">Sandman</option><option value="665">Grandfather Clock</option><option value="666">Gingerbread Man</option><option value="667">Beefeater</option><option value="668">Rabbit</option><option value="669">Blind Dreamer</option><option value="670">Cazic Thule</option><option value="671">Topiary Lion Mount</option><option value="672">Rot Dog Mount</option><option value="673">Goral Mount</option><option value="674">Selyran Mount</option><option value="675">Sclera Mount</option><option value="676">Braxy Mount</option><option value="677">Kangon Mount</option><option value="678">Erudite</option><option value="679">Wurm Mount</option></select>
+        <div class="form-text text-wrap"><label for="race_select">Race</label></div>
+    </div>
+    <div class="col-12 col-md-1">
+        <input class="form-control" id="min_lvl" name="min_lvl" type="number" value="0">
+        <div class="form-text text-wrap"><label for="min_lvl">Min Level</label></div>
+    </div>
+    <div class="col-12 col-md-1">
+        <input class="form-control" id="max_lvl" name="max_lvl" type="number" value="99">
+        <div class="form-text text-wrap"><label for="max_lvl">Max Level</label></div>
+    </div>
+    <div class="col-12 col-md-4">
+        <select class="form-select" id="exp_select" name="exp_select"><option value="Expansion">Expansion</option><option value="0">Vanilla</option><option value="1">Ruins of Kunark</option><option value="2">Scars of Velious</option><option value="3">Shadows of Luclin</option><option value="4">Planes of Power</option></select>
+        <div class="form-text text-wrap"><label for="exp_select">Expansion</label></div>
+    </div>
+    <div class="col-12 col-md-3">
+        <select class="form-select" id="class_select" name="class_select"><option value="Class">Class</option><option value="1">Warrior</option><option value="2">Cleric</option><option value="3">Paladin</option><option value="4">Ranger</option><option value="5">Shadow Knight</option><option value="6">Druid</option><option value="7">Monk</option><option value="8">Bard</option><option value="9">Rogue</option><option value="10">Shaman</option><option value="11">Necromancer</option><option value="12">Wizard</option><option value="13">Magician</option><option value="14">Enchanter</option><option value="15">Beastlord</option><option value="16">Berserker</option><option value="20">GM Warrior</option><option value="21">GM Cleric</option><option value="22">GM Paladin</option><option value="23">GM Ranger</option><option value="24">GM Shadow Knight</option><option value="25">GM Druid</option><option value="26">GM Monk</option><option value="27">GM Bard</option><option value="28">GM Rogue</option><option value="29">GM Shaman</option><option value="30">GM Necromancer</option><option value="31">GM Wizard</option><option value="32">GM Magician</option><option value="33">GM Enchanter</option><option value="34">GM Beastlord</option><option value="35">GM Berserker</option><option value="40">Banker</option><option value="41">Shopkeeper</option></select>
+        <div class="form-text text-wrap"><label for="class_select">Class</label></div>
+    </div>
+    <div class="col-12 col-md-3 form-check">
+        <input class="form-check-input" id="gives_exp" name="gives_exp" type="checkbox" value="y">
+        <label class="form-check-label"><label for="gives_exp">Exclude Merchants/Bankers</label></label>
+    </div>
+    <div class="col-12 col-md-4">
+        <input class="form-control" id="hpmin_int" name="hpmin_int" style="width: 25ch" type="number" value="0">
+        <div class="form-text text-wrap"><label for="hpmin_int">Minimum HP</label></div>
+    </div>
+    <div class="col-12 col-md-4">
+        <input class="form-control" id="hpmax_int" name="hpmax_int" style="width: 25ch" type="number" value="0">
+        <div class="form-text text-wrap"><label for="hpmax_int">Maximum HP</label></div>
+    </div>
+
+    <div class="col-12 col-md-12">
+        <div class="d-grid gap-2">
+            <input class="btn btn-outline-secondary" id="submit" name="submit" type="submit" value="Search">
+        </div>
+    </div>
+    </div>
+</form>
+
+
+
+
+    </div>
+</main>
+
+<script src="/static/popper.min.js"></script>
+<script src="/static/tippy-bundle.umd.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        tippy('.tooltip-link', {
+            content: 'Loading...',
+            allowHTML: true,
+            maxWidth: 'none',
+            onShow(instance) {
+                const url = instance.reference.dataset.url;
+                fetch(`/get-item-tooltip/${encodeURIComponent(url)}`)
+                    .then(response => response.text())
+                    .then(content => {
+                        instance.setContent(content);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching tooltip content:', error);
+                    });
+            },
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        tippy('.spell-tooltip', {
+            content: 'Loading...',
+            allowHTML: true,
+            maxWidth: 'none',
+            onShow(instance) {
+                const url = instance.reference.dataset.url;
+                fetch(`/api/v1/spell/${encodeURIComponent(url)}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const content = formatTooltip(data);
+                        instance.setContent(content);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching tooltip content:', error);
+                    });
+            },
+        });
+
+        function formatTooltip(data) {
+            let effectsList = '';
+
+            if (data.effects && Array.isArray(data.effects)) {
+                effectsList = '<ul>';
+                data.effects.forEach(effect => {
+                    effectsList += `<li>${effect}</li>`;
+                });
+                effectsList += '</ul>';
+            }
+            
+            return `
+                <div class="tooltip-content">
+                    <h3>${data.name}</h3>
+                    <p><strong>Effects:</strong> ${effectsList}</p>
+                </div>
+            `;
+        }
+    });
+</script>
+
+<footer class="footer mt-auto">
+      <div class="container">
+        <p class="text-muted text-center">Database version:    2026-09-07 (see diff by Icestorm on <a href="https://yaqds.cc/database/changes/" target="_blank">YAQDS</a>)</p>
+      </div>
+    </footer>
+</body>
+
+
+</html>

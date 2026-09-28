@@ -1,0 +1,294 @@
+/* ============================================================
+   EverQuest — Planes of Power Guide
+   Theme based on the user's index.html (dark/gold EQ aesthetic)
+   Static site, GitHub Pages compatible.
+   ============================================================ */
+
+:root {
+    --gold: #d4af37;
+    --dark-gold: #b8960c;
+    --dark-bg: #0a0a0a;
+    --panel-bg: #141414;
+    --text: #e0e0e0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Cinzel', 'Times New Roman', serif;
+    background-color: var(--dark-bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+#particles {
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -1; pointer-events: none;
+}
+
+/* ---------- Hero header (home page) ---------- */
+header.hero {
+    min-height: 72vh;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,.82), rgba(10,10,10,.9)), url('../img/hero-bg.png');
+    background-size: cover; background-position: center;
+    text-align: center;
+}
+
+.logo {
+    font-size: 5rem; font-weight: bold;
+    color: var(--gold);
+    text-shadow: 0 0 20px rgba(212,175,55,0.5), 0 0 40px rgba(212,175,55,0.3);
+    animation: glow 3s infinite alternate;
+    margin-bottom: 20px; letter-spacing: 10px;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 20px rgba(212,175,55,0.5); }
+    100% { text-shadow: 0 0 40px rgba(212,175,55,0.8), 0 0 60px rgba(212,175,55,0.4); }
+}
+
+.subtitle { font-size: 1.5rem; color: #ccc; font-style: italic; margin-bottom: 10px; }
+.sub2 { font-size: 1rem; color: #888; margin-bottom: 40px; letter-spacing: 2px; }
+
+.hero-btn {
+    padding: 15px 40px; font-size: 1.1rem;
+    background: linear-gradient(145deg, var(--gold), var(--dark-gold));
+    color: #000; text-decoration: none; border-radius: 5px;
+    font-weight: bold; transition: all 0.3s;
+    border: 2px solid var(--gold);
+    box-shadow: 0 0 15px rgba(212,175,55,0.3);
+}
+.hero-btn:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(212,175,55,0.6); }
+
+/* ---------- Page header (inner pages) ---------- */
+.page-header {
+    padding: 90px 10% 50px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.86)), url('../img/hero-bg.jpg');
+    background-size: cover; background-position: center;
+}
+.page-header h1 {
+    font-size: 3.4rem; color: var(--gold); letter-spacing: 6px;
+    text-shadow: 0 0 20px rgba(212,175,55,0.5), 0 0 40px rgba(212,175,55,0.3);
+}
+.page-header .subtitle { margin-bottom: 6px; }
+
+/* ---------- Sections ---------- */
+section { padding: 80px 10%; }
+.narrow { max-width: 900px; margin-left: auto; margin-right: auto; }
+
+.section-title {
+    text-align: center; font-size: 3rem; color: var(--gold);
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(212,175,55,0.3);
+}
+.section-sub {
+    text-align: center; color: #999; font-size: 1rem;
+    max-width: 800px; margin: 0 auto 50px; line-height: 1.7;
+}
+
+h2.subhead, .cat-label {
+    color: var(--gold); font-size: 1.3rem;
+    margin: 35px 0 18px; padding-left: 14px;
+    border-left: 3px solid var(--gold);
+}
+
+/* ---------- Navigation bar ---------- */
+nav.topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(10,10,10,.96);
+    border-bottom: 1px solid rgba(212,175,55,.35);
+    display: flex; justify-content: center; align-items: center;
+    gap: 4px; padding: 10px 16px; flex-wrap: wrap;
+}
+nav.topbar a {
+    color: #ccc; text-decoration: none; font-size: .82rem;
+    letter-spacing: 1px; padding: 7px 13px; border-radius: 4px;
+    transition: all .25s; white-space: nowrap;
+}
+nav.topbar a:hover { color: var(--gold); background: rgba(212,175,55,.08); }
+nav.topbar a.active {
+    color: #000; background: linear-gradient(145deg, var(--gold), var(--dark-gold));
+    font-weight: bold;
+}
+nav.topbar .sep { color: rgba(212,175,55,.3); }
+
+/* ---------- Cards (from theme) ---------- */
+.classes-grid, .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+.class-card, .boss-card, .plane-card {
+    background: var(--panel-bg);
+    border: 1px solid #333; border-radius: 10px;
+    padding: 20px; transition: all 0.3s; display: block; text-decoration: none;
+}
+.boss-card:hover, .plane-card:hover, .class-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+    box-shadow: 0 10px 30px rgba(212,175,55,0.2);
+}
+.boss-name, .plane-name, .class-name { font-size: 1.2rem; color: var(--gold); margin-bottom: 8px; }
+.boss-desc, .plane-desc { font-size: .86rem; line-height: 1.55; color: #aaa; }
+
+/* ---------- Encounter blocks (boss guides) ---------- */
+.encounter {
+    background: var(--panel-bg);
+    border: 1px solid #333; border-radius: 10px;
+    margin-bottom: 42px; overflow: hidden;
+}
+.enc-head {
+    padding: 18px 26px;
+    background: linear-gradient(90deg, rgba(212,175,55,.14), transparent);
+    border-bottom: 1px solid rgba(212,175,55,.3);
+}
+.enc-head h3 { color: var(--gold); font-size: 1.6rem; letter-spacing: 1px; }
+.enc-head .enc-meta { color: #8a8a8a; font-size: .82rem; margin-top: 6px; line-height: 1.5; }
+.enc-body { padding: 24px 26px; }
+.enc-body p, .enc-body li { color: #bbb; font-size: .97rem; line-height: 1.8; }
+.enc-body ul, .enc-body ol { margin: 0 0 18px 22px; }
+.enc-body h4 {
+    color: var(--gold); font-size: 1.05rem; margin: 26px 0 10px;
+    letter-spacing: 1px; text-transform: uppercase;
+}
+
+/* ---------- Stat tables (PQDI cross-check) ---------- */
+table.stats {
+    width: 100%; border-collapse: collapse; margin: 18px 0 26px;
+    font-size: .9rem;
+}
+table.stats th, table.stats td {
+    border: 1px solid #333; padding: 9px 14px; text-align: left;
+}
+table.stats th { background: rgba(212,175,55,.1); color: var(--gold); letter-spacing: 1px; }
+table.stats td { color: #bbb; }
+table.stats tr:nth-child(even) td { background: rgba(255,255,255,.02); }
+
+/* ---------- Phase blocks (Plane of Time etc.) ---------- */
+.phase-block {
+    border-left: 3px solid var(--gold);
+    padding: 8px 0 8px 26px; margin-bottom: 46px;
+}
+.phase-block h3 { color: var(--gold); font-size: 1.5rem; margin-bottom: 6px; letter-spacing: 1px; }
+.phase-block .phase-meta { color: #8a8a8a; font-size: .82rem; margin-bottom: 14px; line-height: 1.5; }
+
+/* ---------- Checklist (flagging page) ---------- */
+ul.checklist { list-style: none; margin-left: 0; }
+ul.checklist li {
+    padding: 10px 14px 10px 34px; position: relative;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+    color: #bbb; font-size: .95rem; line-height: 1.6;
+}
+ul.checklist li::before {
+    content: '◆'; position: absolute; left: 8px; top: 10px;
+    color: var(--gold); font-size: .8rem;
+}
+
+/* ---------- Figures / images from guides ---------- */
+figure.guide-img { margin: 24px auto; max-width: 760px; }
+figure.guide-img img { width: auto; max-width: 760px; display: block; border-radius: 6px; border: 1px solid #333; }
+figure.guide-img figcaption { color: #8a8a8a; font-size: .78rem; margin-top: 8px; text-align: center; font-style: italic; }
+
+/* ---------- Image rows (side-by-side figures, added by the image script) ---------- */
+.img-row {
+    display: flex; gap: 16px; flex-wrap: wrap;
+    justify-content: center; margin: 24px auto;
+}
+.img-row figure.guide-img { margin: 0; }
+
+/* ---------- Video grid (from theme) ---------- */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+.video-card {
+    background: var(--panel-bg);
+    border: 1px solid #333; border-radius: 10px;
+    overflow: hidden; transition: all 0.3s;
+}
+.video-card:hover { border-color: var(--gold); }
+.video-card iframe, .video-card video-frame { width: 100%; aspect-ratio: 16/9; display: block; border: none; }
+.video-caption { padding: 14px 18px; font-size: .85rem; color: #999; line-height: 1.5; }
+
+/* ---------- Source / attribution boxes ---------- */
+.source-note {
+    background: rgba(212,175,55,.06);
+    border: 1px solid rgba(212,175,55,.3);
+    border-radius: 8px; padding: 14px 18px; margin: 22px 0;
+    font-size: .8rem; color: #9a8a5a; line-height: 1.6;
+}
+.source-note a { color: var(--gold); }
+
+/* ---------- Footer (from theme) ---------- */
+footer {
+    text-align: center; padding: 40px;
+    background: #000; border-top: 1px solid var(--gold);
+}
+footer p { color: #666; font-size: .85rem; line-height: 1.7; max-width: 760px; margin: 0 auto; }
+footer a { color: #9a8a5a; }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--dark-bg); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 5px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .logo { font-size: 3rem; letter-spacing: 5px; }
+    .section-title { font-size: 2rem; }
+    .page-header h1 { font-size: 2.2rem; letter-spacing: 3px; }
+    section { padding: 60px 6%; }
+}
+
+/* ================================================================
+   PQDI links + item hover tooltip (assets/pqdi-tooltip.js)
+   Loot items and boss names link to pqdi.cc; hovering a loot item
+   fetches pqdi.cc's own pre-rendered tooltip HTML.
+   ================================================================ */
+a.pqdi-item, a.pqdi-npc {
+  color: var(--gold);
+  text-decoration: none;
+}
+a.pqdi-item:hover, a.pqdi-npc:hover { text-decoration: underline; }
+h2.section-title a.pqdi-npc, h3 a.pqdi-npc { font-weight: inherit; }
+
+.item-tooltip {
+  position: fixed;
+  z-index: 1200;
+  max-width: min(480px, calc(100vw - 16px));
+  background: var(--panel-bg);
+  border: 1px solid rgba(212, 175, 55, .35);
+  border-radius: 6px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .55);
+  padding: 10px 14px;
+  pointer-events: none; /* pure display — never traps the cursor */
+  font-size: .8rem;
+  line-height: 1.35;
+  color: var(--text); /* pqdi's tooltip HTML has no text colors of its own */
+}
+/* pqdi's root div hard-codes width:450px inline — let it fit our panel instead. */
+.item-tooltip > div:first-child { width: auto !important; max-width: 100%; }
+.item-tooltip h4 {
+  margin: 0 0 6px;
+  font-size: .95rem;
+  color: var(--gold);
+}
+.item-tooltip table { border-collapse: collapse; width: 100%; }
+.item-tooltip td, .item-tooltip th {
+  padding: 1px 8px 1px 0;
+  vertical-align: top;
+  text-align: left;
+}
+.item-tooltip a { color: #7fb3d5; text-decoration: none; }
+.item-tip-loading {
+  padding: 4px 2px;
+  color: #8a8a8a;
+  font-style: italic;
+}
+/* spell tooltips (rendered from pqdi.cc /api/v1/spell JSON) */
+.spell-tip-effects { margin: 6px 0; padding-left: 18px; }
+.spell-tip-meta { margin: 6px 0 0; color: #9a9a9a; font-size: .75rem; }

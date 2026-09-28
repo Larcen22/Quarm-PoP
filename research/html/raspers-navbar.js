@@ -1,0 +1,61 @@
+
+document.write("<div class=\"dropdown\">");
+document.write("<button class=\"dropbtn\">Miscellaneous</button>");
+document.write("<div class=\"dropdown-content\">");
+document.write("<a href=\"index.html\">Main PoP Page</a>");
+document.write("<a href=\"gearSummary.html\">Gear Summary</a>");
+document.write("<a href=\"gearVisibleArmor.html\">Visible Armor</a>");
+document.write("<a href=\"miscSpells.html\">Spells</a>");
+document.write("<a href=\"miscProgression.html\">Progression</a>");
+document.write("</div>");
+document.write("</div>");
+
+
+document.write("<div class=\"dropdown\">");
+document.write("<button class=\"dropbtn\">Static Zones</button>");
+document.write("<div class=\"dropdown-content\">");
+document.write("<div>Tier One</div>");
+document.write("<a href=\"openPoJ.html\">Plane of Justice</a>");
+document.write("<a href=\"openPoI.html\">Plane of Innovation</a>");
+document.write("<a href=\"openPoD.html\">Plane of Disease</a>");
+document.write("<a href=\"openPoN.html\">Plane of Nightmare</a>");
+document.write("<div>Tier Two</div>");
+document.write("<a href=\"openPoS.html\">Plane of Storms</a>");
+document.write("<a href=\"openPoV.html\">Plane of Valor</a>");
+document.write("<a href=\"openCoD.html\">Crypt of Decay</a>");
+document.write("<a href=\"openPoT.html\">Plane of Torment</a>");
+document.write("<div>Tier Three</div>");
+document.write("<a href=\"openBoT.html\">Bastion of Thunder</a>");
+document.write("<a href=\"openHoH.html\">Halls of Honor</a>");
+document.write("<a href=\"openPoTact.html\">Plane of Tactics</a>");
+document.write("<a href=\"openSolRo.html\">Tower of Solusek Ro</a>");
+document.write("<div>Tier Four</div>");
+document.write("<a href=\"openPoW.html\">Plane of Water</a>");
+document.write("<a href=\"openPoE.html\">Plane of Earth</a>");
+document.write("<a href=\"openPoA.html\">Plane of Air</a>");
+document.write("<a href=\"openPoF.html\">Plane of Fire</a>");
+document.write("</div>");
+document.write("</div>");
+
+document.write("<div class=\"dropdown\">");
+document.write("<button class=\"dropbtn\">Raid Instances</button>");
+document.write("<div class=\"dropdown-content\">");
+document.write("<a href=\"raidTime.html\">Plane of Time</a>");
+document.write("</div>");
+document.write("</div>");
+
+document.write("<div class=\"paypal\">");
+document.write("<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">");
+document.write("<input type=\"hidden\" name=\"cmd\" value=\"_donations\">");
+document.write("<input type=\"hidden\" name=\"business\" value=\"Mathadon@gmail.com\">");
+document.write("<input type=\"hidden\" name=\"item_name\" value=\"Rasper's Repository\">");
+document.write("<input type=\"hidden\" name=\"no_shipping\" value=\"0\">");
+document.write("<input type=\"hidden\" name=\"no_note\" value=\"1\">");
+document.write("<input type=\"hidden\" name=\"currency_code\" value=\"USD\">");
+document.write("<input type=\"hidden\" name=\"tax\" value=\"0\">");
+document.write("<input type=\"hidden\" name=\"lc\" value=\"US\">");
+document.write("<input type=\"hidden\" name=\"bn\" value=\"PP-DonationsBF\">");
+document.write("<input type=\"image\" src=\"https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif\" border=\"0\" name=\"submit\" alt=\" \">");
+document.write("<img alt=\"\" border=\"0\" src=\"https://www.paypal.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">");
+document.write("</form>");
+document.write("</div>");

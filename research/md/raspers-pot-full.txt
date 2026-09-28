@@ -1,0 +1,359 @@
+﻿
+Planes of Power: Plane of Time
+The Plane of Time
+Introduction
+The Plane of Time is the final zone.  The raid consists of 6 phases and after each phase is completed you are given extra time to
+complete the raid.  You start in Plane of Time A and when ready send your forces to the portals shown below, the raid begins when
+you click in...
+Z - Zone in/out
+A - Undead
+B - Fire
+C - Earth
+D - Water
+E - Air
+The Five Trials
+For the first phase there are 5 events that need to be completed.  Each event can only have 18 people in them.  You have 1 hour to complete all 5 to
+advance the script.  Lockout for phase 1 is 12 hours.
+Air
+The event starts with 4x An Air Phoenix Noble.  These hit for 900, nothing special.  When defeated 4x Servitor of Xegony spawn, hit for about
+1k and immune to mez but can be rooted.  After those die Neimon of Air spawns.  Neimon hits 1100, flurries, AE rampage, has a 125 pt ds, and
+casts an AE slow, spell slow, and 550 dd.
+Earth
+The event starts with 3x "a pile of living rubble".  They hit for almost 1k and are immune to mez and root.  When each dies they spawn 1-4
+"a rock shaped assassin" which hit for 800 and can be mezzed and rooted.  When a total of 10 mobs are killed Terlok of Earth spawn.  He quads for
+1100 but has no tricks.
+Fire
+In this event you kill fire mephits (I have no data on them) until Kazrok of Fire spawns.  He hits for 1150, flurries, AE rampages, has a 75 pt ds,
+and casts an AE spell slow and 225 dot.
+Water
+This event starts with the boss, Anar of Water, already up along with 2 "a triloun gatherer".  The trilouns hit 900ish and can be rooted while Anar
+hits 1150, flurries, and AE rampages.  At 90% and 50% Anar will cast an AE snare, slow, and 850dd and summon 2 "a deepwater triloun".  These adds hit
+around 1k and can also be rooted.
+Undead
+This event begins with 3x "an undead guardian", hitting for 900ish, mezzable and rootable.  When they die 4 more spawn, these hit a bit harder.  When
+those die a third wave, hitting harder and immune to mez.  When the third wave dies Rythor of the Undead spawns.  He hits 1150, flurries, casts
+an AE that increases spell costs, 350 dot, and 575 dd as well as a 1k dd with stun on tank.
+Each event drops 1 loot from the following list:
+Mask of Conceptual Energy
+Pulsing Emerald Hoop
+Ring of Force
+Smooth Onyx Torque
+Wristguard of Keen Vision
+The Three Branches
+After completing the first phase each area allows you to portal into the phase 2 area.  It is split into 3 branches, Earth and Air being
+together, Water and Fire being together, and Undead being on its own.  Each branch starts with a good chunk of trash appropriate to the
+branch (Earth branch will have Rock mobs and so on).  When the last of the trash is killed a second wave of trash spawns along with a Boss
+at the end.  You are given 1 hour (plus any leftover) to complete all 5 branches.  Lockouts from this point forward are 5.5 days.
+Windshapen Warlord of Air
+Hits for 1200, seems to be pure melee.
+Earthen Overseer
+Hits for 1200, flurries, immune to slow, also pure melee.
+Gutripping War Beast
+Hits for 1500, pure melee.
+War Shapen Emissary
+Hits for 1200 and rampages.
+Ralthos Enrok
+Hits 1100, flurries, and casts Shadowknight spells.
+Each boss drops one loot from the following list:
+Cloak of Ferocity
+Hoop of the Enlightened
+Cudgel of Wrecking
+Shield of the Vortex
+Wand of the Vortex
+Veil of Warmth
+Tiny Jade Ring
+Gauntlets of Disruption
+Glowing Chains
+Drape of the Unending
+Girdle of Restoration
+The Trash Clear
+After completing the second phase all the branches reunite.  This phase is a lengthy clearing fest of 8 waves, each with a bunch of
+trash (pure melee) and 2 bosses.
+A Ferocious Warboar (wave 1)
+Hits up to 2k and flurries, procs a 200dd plus stun.
+Deathbringer Blackheart (wave 1)
+Hits up to 2k and rampages, procs a 2-3.5k dd.
+Xeroan Xi`Geruonask (wave 2)
+Hits up to 2k, procs an AE dot and mana drain.
+Kraksmaal Fir`Dethsin (wave 2)
+Hits up to 2k and flurries, procs a 667 dot.
+A Deadly Warboar (wave 3)
+Hits up to 2k and rampages, procs an AE 1200dd plus stun.
+Deathbringer Skullsmash (wave 3)
+Hits up to 2k, procs a 2k dd with 500 dot and stun.
+Sinrunal Gorgedreal (wave 4)
+Hits up to 2k, procs an AE silence.
+Herlsoakian (wave 4)
+Hits up to 2k, procs an AE attack and armor debuff.
+A Needletusk Warboar (wave 5)
+Hits up to 2k and flurries, procs an AE 500 dot.
+Deathbringer Rianit (wave 5)
+Hits up to 2k and rampages, procs a 1600dd on tank.
+Dersool Fal`Giersnaol (wave 6)
+Hits up to 2k and rampages, procs an AE 600 dd plus stun.
+Xerskel Gerodnsal (wave 6)
+Hits up to 2k and unslowable, procs an AE 1500 mana drain and casts Cleric spells.
+Dark Knight of Terris (wave 7)
+Hits up to 2k, procs an AE slow and small dot (36 disease counters).
+Undead Squad Leader (wave 7)
+Hits up to 2k and rampages, procs 400 pt lifetap.
+Champion of Torment (wave 8)
+Hits up to 2k and flurries, procs an AE 800dd with flux.
+Dreamwarp (wave 8)
+Hits up to 2k, procs an AE 1500dd.
+Each of the 16 bosses can drop
+Time Phased Quintessence
+, a backflag for
+Plane of Time, along with up to one of the following list:
+Elemental Greaves Mold
+Elemental Chain Pant Pattern
+Elemental Leather Pant Pattern
+Elemental Silk Pant Pattern
+Cloak of Wishes
+Dagger of Distraction
+Necklace of Celestial Energy
+Ossein of Limitless Time
+Protective Sleeves
+Time Traveler's Abandoned Notebook
+When the bosses of wave 8 die two massive rock golems spawn at the portal.  You are granted a total of 75 minutes
+(plus any leftover) to complete this phase.
+Supernatural Guardian (Final Boss)
+Hits up to 1700, flurries, and unslowable, procs a 200dd plus stun.
+Avatar of the Elements (Final Boss)
+Hits up to 1700, fairly resistant, and procs an AE snare and 1100dd.
+Both rock bosses can drop
+Time Phased Quintessence
+, a backflag for
+Plane of Time, along with one of the following list:
+Earring of Xaoth Kor
+Pauldrons of Purity
+Ethereal Destroyer
+Faceguard of Frenzy
+Fiery Crystal Guard
+Mask of Strategic Insight
+Timeless Coral Greatsword
+The Lesser Gods
+After completing the third phase you move on to the first big challenges.  To start you need to clear out the trash from the central area
+and then take on Saryn, Terris Thule, Vallon Zek, and Tallon Zek.  You are granted 4 hours (plus any leftover) to defeat them and can do
+so in any order.
+Saryrn
+Saryrn hits for up to 2500 with single target rampage.  Unslowable?  She has 3 spells.
+Torrent of Agony
+- 1500dd, 60% agro reduction, and 40% slow cast on tank. 20 disease counters to cure.
+Horrifying Affliction
+- 375 range AE which drains 500 mana at first and 175 per tick as well as reducing spell damage.  Overwrites KEI line
+Torrential Torment
+- 125 range AE which drain 45 mana per tick.  9 curse counters to cure.  Overwrites Ranger's self buff
+In addition to her mana draining spells Saryn summons four adds at 90%, 50%, and 10%.  They are a random mix of
+A Mouth of Insanity (unrootable), A Mouth of Dementia (rootable, procs root), A Tormentor (unrootable, unmezzable, backstabs),
+and A Twisted Tormentor (rootable, procs root).  These have a decent chunk of hp and do not despawn.  Saryrn drops 3 items of the following:
+Shroud of Provocation
+Time`s Antithesis
+Veil of Lost Hopes
+Gloves of the Unseen
+Runewarded Belt
+Symbol of the Planemasters
+Edge of Eternity
+Ring of Evasion
+Cap of Flowing Time
+Girdle of Intense Durability
+Terris Thule
+Terris Thule hits for up to 2500 with single target rampage.  Unslowable?   She has 2 spells.
+Quivering Nightmares
+- 375 range AE which reduces all primary stats by 200. This overwrites buffs such as Beastlord Ferocity and many pet buffs.
+Phantasmal Torment
+- 375 range AE which is 200 dot and 150 per tick mana drain.  Overwrites Enchanter KEI line.
+She also summons four adds at 90%, 50%, and 10%.  They are a random mix of A Nightmare Knight of Terris (procs a mana drain + mez),
+A Phantasm of Terris (procs a mana drain + mez), A Summoned Guardian of Terris (unmezzable, unrootable), and
+A Summoned Knight of Terris (unmezzable, unrootable).  These do not despawn.
+Terris Thule drops 3 items from the following:
+Earring of Corporeal Essence
+Talisman of Tainted Energy
+Hammer of Hours
+Armguards of the Brute
+Cape of Endless Torment
+Cudgel of Venomous Hatred
+Orb of Clinging Death
+Coif of Flowing Time
+Vanazir, Dreamer`s Despair
+Tallon Zek
+Tallon Zek hits for 3000 and has a single target rampage.  Unslowable?  Tallon has a variety of spells:
+Tallon's Balance
+- Reduces all resists by 300.
+Planeshift
+- 375 range AE which makes all spells cost 50% extra.
+Strategic Blow
+- single target 2k dd, 500 dot, and short stun on the tank.
+Barb of Tallon
+- targeted ice AE, snare, slow, and 2k dd.
+Barb of Tallon
+- targeted fire AE 2500 dd.
+Barb of Tallon
+- targeted disease AE 300 dot, AC debuff, hate debuff.
+Barb of Tallon
+- targeted poison AE 2650 dd.
+Tallon Zek drops 3 items from the following:
+Cloak of the Falling Skies
+Serpent of Vindication
+Hopebringer
+Winged Storm Boots
+Band of Prismatic Focus
+Amulet of Crystal Dreams
+Tactician`s Shield
+Mantle of Deadly Precision
+Bracer of Precision
+Circlet of Flowing Time
+Vallon Zek
+Vallon Zek hits for 3000 and has a single target rampage.  Unslowable?  He has 3 spells in his arsenal.
+Blade of Vallon
+- 4-6k dd on tank about once a minute.
+Vallon's Precision
+- 93 range AE which increases agro generation.
+Tactical Strike
+- 30 second stun and FD on the tank.
+In addition to dealing with tank swaps and agro management at 50% he spawns two Vallon Zek clones.  The clones hit for about 1800,
+can't be mezzed, are very resistant to root, don't despawn, and they have lower hp so it is worth killing them before resuming dps on the real Vallon.
+Vallon Zek drops 3 items from the following:
+Earring of Temporal Solstice
+Cord of Potential
+Hammer of Holy Vengeance
+Wand of Temporal Power
+Shinai of the Ancients
+Globe of Mystical Protection
+Shoes of Fleeting Fury
+Bow of the Tempest
+Helm of Flowing Time
+Temporal Chainmail Sleeves
+The Major Gods
+After completing the fourth phase you move on to the next big challenges.  To start you need to clear out the trash from the central area
+and then take on Bertoxxulous, Innoruuk, Cazic Thule, and Rallos Zek.  You are granted 4 hours (plus any leftover) to defeat them and can do
+so in any order.
+Bertoxxulous
+Bertoxxulous hits for up to 3000 (at the end of the fight) and has AE rampage.  Unslowable?  He has 2 spells.
+Rain of Bile
+- 975dd and 275 mana drain that hits up to 3 times if you don't move.
+Black Plague
+- AE that snares and is a 700pt dot with 18 disease counters.
+At the start of the fight Bertoxxulous is nearly immune to spells.  As his health drops his resistances go down while his damage output
+scales up.
+Bertoxxulous drops 3 items from the following:
+Collar of Catastrophe
+Veil of the Inferno
+Eye of Dreams
+Celestial Cloak
+Belt of Temporal Bindings
+Timeless Leather Tunic Pattern
+Symbol of Ancient Summoning
+Timespinner, Blade of the Hunter
+Boots of Despair
+Greatblade of Chaos
+Pulsing Onyx Ring
+Leggings of Furious Might
+Innoruuk
+Innoruuk hits for up to 3500, AE rampages, and flurries.  Unslowable?  He has a buff and 2 spells:
+Barrier of Hatred
+- 225 damage shield with a 1800 point rune, easy for melee to pincushion themselves if not careful.
+Seething Hatred
+- 200 range 325 dd and agro debuff.
+Seething Hatred
+- 125 range 550 dot, agro debuff, fear.
+He is meant to spawn 3 adds at 66% and another 4 at 20%, but this mechanic may be broken.
+Innoruuk drops 3 items from the following:
+Earring of Celestial Energy
+Necklace of Eternal Visions
+Mantle of Pure Spirit
+Shroud of Survival
+Timeless Chain Tunic Pattern
+Serrated Dart of Energy
+Songblade of the Eternal
+Jagged Timeforged Blade
+Barrier of Freezing Winds
+Gloves of Airy Mists
+Girdle of Stability
+Bracer of Timeless Rage
+Cazic Thule
+Cazic Thule hits for up to 3000 and AE rampages.  Unslowable?  He has 3 potent AEs:
+Aura of Fear
+- 375 range AE 2k dd, 550 dot, stun.
+Call of the Faceless
+- 375 range AE 200 dot, snare, and silence for 30 seconds.
+Timeless Panic
+- 100 range AE 1k dd and fear.
+Cazic Thule drops 3 items from the following:
+Timestone Adorned Ring
+Cloak of Retribution
+Wand of Impenetrable Force
+Belt of Tidal Energy
+Timeless Silk Robe Pattern
+Staff of Transcendence
+Earring of Unseen Horrors
+Mask of Simplicity
+Padded Tigerskin Gloves
+Greaves of Furious Might
+Zealot`s Spiked Bracer
+Wristband of Echoed Thoughts
+Rallos Zek
+Rallos Zek quads for up to 3500, flurries, and AE rampages.  Unslowable?  In addition to melting tanks with melee he has two spells:
+Vindictive Strike
+- 3500 dd and 20 sec stun on the tank.
+Rage of Zek
+- 250 range AE 400 dot, 50 mana dot. 9 curse counters
+Rallos Zek summons a few weak adds at 90%, 75%, 50%, and 25%.
+Rallos Zek drops 3 items from the following:
+Ring of Thunderous Forces
+Platinum Cloak of War
+Timeless Breastplate Mold
+Ton Po`s Mystical Pouch
+Darkblade of the Warlord
+Greatstaff of Power
+Visor of the Berserker
+Band of Primordial Energy
+Shield of Strife
+Pants of Furious Might
+Pauldrons of Devastation
+Sandals of Empowerment
+Quarm
+After completing the fifth phase you move on to the final boss, Quarm.  You are granted 2 hours (plus any leftover) to defeat Quarm.
+Quarm
+Quarm itself hits for up to 4k, flurries, and AE rampages.  He starts the fight with 4 heads and 8 AEs:
+Infernal Flames
+- Fire based 3k dd.
+Glacier Blast
+- Cold based 3k dd
+Plague Seism
+- Magic based 3k dd.
+Venom Blast
+- Poison based 3k dd
+Glacier Breath
+- Cold based 100 dot and snare.
+Epoch Conviction
+- Magic based atttack debuff, spell damage debuff, 100 dot, and 50 mana dot.  36 curse counters.
+Plagued Earth
+- Disease based 500 dot and 50 mana dot.  36 disease counters.
+Venomed Mist
+- Poison based 500 dot and 50 mana dot.  36 poison counters.
+Every 25% one of its heads explode and it loses some of the AEs.  It also dispels and cures itself so will need to be debuffed again
+and again.  In addition to Quarm there are little elementals spawning.  These barely do any damage but proc a slow and spell slow
+(36 disease counters) on anybody they hit.
+Quarm drops 3 items from the following:
+Silver Hoop of Speed
+Earring of Influxed Gravity
+Talisman of the Elements
+Shroud of Eternity
+Cord of Temporal Weavings
+Timeless Chain Tunic Pattern
+Timeless Breastplate Mold
+Timeless Leather Tunic Pattern
+Timeless Silk Robe Pattern
+Spool of Woven Time
+Bracer of the Inferno
+Hammer of the Timeweaver
+Stone of Flowing Time
+Prismatic Ring of Resistance
+Whorl of Unnatural Forces
+Ethereal Silk Leggings
+Shawl of Eternal Forces
+Earthen Bracer of Fortitude
+Wristband of Icy Vengeance
+Once you are done with loot and everybody is ready you can go break the prison holding Zebuxoruk.  This triggers a scene with
+Druzzil Ro that results in "resetting the timeline" and porting the raid to Plane of Knowledge.

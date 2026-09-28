@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Planes of Power: Plane of Tactics</title>
+</head>
+<body onload="createImage('../Maps/potactics.txt', 1, 0, 0, 0, 0, false, 'mapContainer', 500, 500, [
+        [-1370, -35, 128, 0, 0, 9, 240, 240, 240, 'O'],
+        [-1600, 850, 128, 0, 0, 9, 240, 240, 240, 'G'],
+        [-1370, -2120, 128, 0, 0, 9, 240, 240, 240, 'M'],
+        [600, 1975, 128, 0, 0, 9, 240, 240, 240, 'T'],
+        [600, -2000, 128, 0, 0, 9, 240, 240, 240, 'V'],
+        [-1650, -1130, 0, 128, 0, 7, 240, 192, 240, '1'],
+        [-930, 0, 0, 128, 0, 7, 240, 192, 240, '2'],
+        [180, -580, 0, 128, 0, 7, 240, 192, 240, '3'],
+        [200, 850, 0, 128, 0, 7, 240, 192, 240, '4'],
+        [400, 35, 0, 0, 0, 0, 0, 128, 128, 'Zi'],
+        [1100, 35, 0, 0, 0, 0, 0, 128, 128, 'Zo']
+]);">
+    <link href="../Scripts/main.css" rel="stylesheet" type="text/css" />
+    <link href="../Scripts/sideNav.css" rel="stylesheet" type="text/css" />
+    <script src="../Maps/mapImages.js" type="text/javascript"></script>
+    <script src="../Scripts/banner.js" type="text/javascript"></script>
+    <script src="../Scripts/sideNav.js" type="text/javascript"></script>
+    <script src="../Scripts/Tabs.js" type="text/javascript"></script>
+
+    <div class="navbar">
+        <script src="../Scripts/expansionList.js" type="text/javascript"></script>
+        <script src="https://www.magelocdn.com/pack/eq/en/magelo-bar.js#1" type="text/javascript"></script>
+        <script src="NavBar.js" type="text/javascript"></script>
+    </div>
+
+    <div id="content">
+        <p />
+        <h2>Plane of Tactics</h2>
+        <p />
+        <div class="tab">
+            <button class="tablinks" id="Overview" onclick="openTabContent(this)">Overview</button>
+            <button class="tablinks" id="Rares" onclick="openTabContent(this)">Rares</button>
+            <button class="tablinks" id="Tasks" onclick="openTabContent(this)">Events</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="tabOverview" class="tabcontent">
+            <h3>Overview</h3>
+            <p>
+            </p>
+            <div id="mapContainer">
+            </div>
+            <ul>
+                <li>Zi - Zone in</li>
+                <li>Zo - Zone out</li>
+                <li>O - The Diaku Overseer</li>
+                <li>G - Glykus Helmir</li>
+                <li>M - Tagrin Maldric</li>
+                <li>T - Tallon Zek</li>
+                <li>V - Vallon Zek</li>
+                <li>1 - The Diaku Supplier</li>
+                <li>2 - a Stampeding Piglet</li>
+                <li>3 - Anival the Blade</li>
+                <li>4 - Shadow Master Vinta</li>
+            </ul>
+        </div>
+
+        <div id="tabRares" class="tabcontent">
+            <h3><a href="?Tab=Rares">Rare Mobs</a></h3>
+            <dl>
+                <dt><a href="https://eq.magelo.com/npc/103684" target="_">The Diaku Supplier</a></dt>
+                <dd>
+                    Rare ogre that spawns in the basement.  Can flurry.
+                    <br />
+                    Drops - Any of the Ornate Head Patterns, <a href="https://eq.magelo.com/item/19069" target="_">Campaigner's Blessed Boots</a>,
+                    <a href="https://eq.magelo.com/item/27165" target="_">Heavy Doublebound Shield</a>
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/385135" target="_">a Stampeding Piglet</a></dt>
+                <dd>
+                    Every so often a stampede runs through the pit and in the middle is the piglet.  Snare, Root, mez, etc to pull it away from the rest.  Once
+                    separated it is a trivial fight.
+                    <br />
+                    Drops - <a href="https://eq.magelo.com/item/27284" target="_">Tactician's Bulwark</a>,
+                    <a href="https://eq.magelo.com/item/6507" target="_">Blood Earring of Rage</a>,
+                    <a href="https://eq.magelo.com/item/25980" target="_">War Marshall's Bladed Staff</a>,
+                    <a href="https://eq.magelo.com/item/22988" target="_">Adjutant's Saber</a>
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/97153" target="_">an Enraged War Boar</a></dt>
+                <dd>
+                    Rare boar that spawns in the pit.
+                    <br />
+                    Drops - Any of the Ornate Wrist Patterns, <a href="https://eq.magelo.com/item/10947" target="_">War Crested Ring</a>,
+                    <a href="https://eq.magelo.com/item/24693" target="_">Battle Drummer's Main-Gauche</a>
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/96230" target="_">"a frenzied initiate"</a></dt>
+                <dd>
+                    A rare fighter in the pits, can be any race.  Flurries frequently.  Only drop appears to be spectral parchment about a third of the time.
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/162277" target="_">Zelrin Morlock</a></dt>
+                <dd>
+                    A rare imp-thing that spawns in the pit.
+                    <br />
+                    Drops - Any of the Ornate Glove Patterns, <a href="https://eq.magelo.com/item/27271" target="_">War Magus' Arrow Guard</a>,
+                    <a href="https://eq.magelo.com/item/27288" target="_">Zek Crested Buckler</a>
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/96226" target="_">Anival the Blade</a></dt>
+                <dd>
+                    Rare ogre that spawns in the wing headed to Vallon.  Has AE rampage, some time between 70% and 30% will split into two copies, but the copies don't rampage.
+                    <br />
+                    Drops - Any of the Ornate Leg Patterns, <a href="https://eq.magelo.com/item/24583" target="_">Gladiator's Jereed</a>,
+                    <a href="https://eq.magelo.com/item/16096" target="_">Heavy Tooled Weapon Belt</a>,
+                    <a href="https://eq.magelo.com/item/26746" target="_">Wand of the War Wizard</a>
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/98620" target="_">Shadow Master Vinta</a></dt>
+                <dd>
+                    Rare ogre that spawns in the wing headed to Tallon.  Has the same 1 slot dispel and AE DD that common shadow masters have, just more health.
+                    <br />
+                    Drops - Any of the Ornate Leg Patterns, <a href="https://eq.magelo.com/item/6509" target="_">Ear Symbol of the Veteran</a>,
+                    <a href="https://eq.magelo.com/item/10233" target="_">Glowing Golden Band</a>,
+                    <a href="https://eq.magelo.com/item/11072" target="_">Golem Forged Bracer</a>
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/96227" target="_">Hinvat Deathbringer</a></dt>
+                <dd>
+                    Rare ogre that spawns upstairs.  Has AE rampage, but no other tricks.
+                    <br />
+                    Drops - Any of the Ornate Leg Patterns, <a href="https://eq.magelo.com/item/9577" target="_">Crimson Cowl</a>,
+                    <a href="https://eq.magelo.com/item/20603" target="_">Onyx Sphere</a>,
+                    <a href="https://eq.magelo.com/item/22887" target="_">Hammer of the Bloodleacher</a>
+                </dd>
+            </dl>
+        </div>
+        <div id="tabTasks" class="tabcontent">
+            <h3><a href="?Tab=Tasks">Events</a></h3>
+            <dl>
+                <dt>The Diaku Overseer</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 2+ groups suggested</li>
+                        <li>Respawn: 24 hours</li>
+                    </ul>
+                    <p>
+                        The Overseer is not too difficult an encounter, the only real challenge being a dangerous AE Rampage.  Drops a spell or two and up to two
+                        of the following:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/16291" target="_">Ornate Chain Tunic Pattern</a></li>
+                            <li><a href="https://eq.magelo.com/item/24600" target="_">Blood Bladed Dagger</a></li>
+                            <li><a href="https://eq.magelo.com/item/26867" target="_">War Disciple's Focus</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Glykus Helmir</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 2+ groups suggested</li>
+                        <li>Respawn: 24 hours</li>
+                    </ul>
+                    <p>
+                        Glykus flurries, has an AE snare, and spawns 4 boar adds during the fight.  Evidently flees at low health.  Drops a spell or two and up
+                        to two of the following:
+                    </p>
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/16355" target="_">Ornate Silk Robe Pattern</a></li>
+                        <li><a href="https://eq.magelo.com/item/21874" target="_">Blood Runed Battle Wand</a></li>
+                        <li><a href="https://eq.magelo.com/item/22997" target="_">Split Blade of Destruction</a></li>
+                    </ul>
+                </dd>
+                <dt>Tagrin Maldric</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 2+ groups suggested</li>
+                        <li>Respawn: 24 hours</li>
+                    </ul>
+                    <p>
+                        Tagrin spawns 5 animated swords when engaged, swords can be rooted.  He has AE rampage and a 800 damage AE.  Drops a spell or two and up
+                        to two of the following:
+                    </p>
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/16346" target="_">Ornate Breastplate Mold</a></li>
+                        <li><a href="https://eq.magelo.com/item/8787" target="_">Black Plated Collar</a></li>
+                        <li><a href="https://eq.magelo.com/item/9489" target="_">Veil of War Wise Eyes</a></li>
+                    </ul>
+                </dd>
+                <dt>Tallon Zek</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Tallon will shadowstep around the room pelting the raid with "arrows" (they are actually spells named Barb of Tallon) which do a variety of
+                        things: a 1750-3500 damage nuke, a deagro and ac debuff with 300 pr/tick dot, a slow + snare with 1250 to 2750 damage, a short range PBAE of
+                        500 damage, and a short range flux with 1 slot dispel. He also keeps up 350 point resist debuff making resisting his "arrows" a challenge.
+                        Tallon doesn't summon, so either you chase him around and try to melee or avoid him and have the entire raid use ranged attacks.  When
+                        killed hail the planar projection for your flag.  Drops a few spells and two of the following:
+                    </p>
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/7771" target="_">Veteran's Battle Charm</a></li>
+                        <li><a href="https://eq.magelo.com/item/26739" target="_">Battle Fists</a></li>
+                        <li><a href="https://eq.magelo.com/item/9483" target="_">Visor of Endless Sight</a></li>
+                        <li><a href="https://eq.magelo.com/item/27989" target="_">Warmaster's Recurved Longbow</a></li>
+                        <li><a href="https://eq.magelo.com/item/5797" target="_">Tallon's War Charm</a></li>
+                    </ul>
+                </dd>
+                <dt>Vallon Zek</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        While fighting Vallon at various health points he will despawn and respawn in the center of the room with 4 clones.  The clones have much
+                        less health, don't cast, and run slower.  He does this 4 times, so either plan on killing the clones off each time or managing a bunch by
+                        the end.  Vallon also places a deagro on your tank and an AE agro increaser on the raid.  When killed hail the planar projection for your
+                        flag.  Drops a few spells and two of the following:
+                    </p>
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/7768" target="_">Pendant of the Triumphant Victor</a></li>
+                        <li><a href="https://eq.magelo.com/item/22879" target="_">Obsidian Scimitar of War</a></li>
+                        <li><a href="https://eq.magelo.com/item/22907" target="_">Furious Hammer of Zek</a></li>
+                        <li><a href="https://eq.magelo.com/item/25228" target="_">Resplendent War Maul</a></li>
+                        <li><a href="https://eq.magelo.com/item/15872" target="_">Girdle of the Tactician</a></li>
+                    </ul>
+                </dd>
+                <dt>Rallos Zek the Warlord</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        To trigger Rallos first you need to kill Decorin Berik and Decorin Gunthork within 6 minutes of each other.  This starts the script,
+                        spawning the brothers Tallon and Vallon as well as some trash around them.  You have 20 minutes to get both Zeks down.  If you manage
+                        this the fake Rallos spawns with more trash.  Clear to Rallos and start taking his health down.  This Rallos has AE rampage and while
+                        engaged mobs will spawn in the hallways and path to the raid.  At 60% this Rallos despawns and the real Rallos spawns in the pit and
+                        despawns all of the normal pit mobs.  You have 20 minutes to buff up and engage him or the event despawns.  The real Rallos has AE rampage,
+                        an AE mana drain dot (fire resist), and an AC debuff on your tank.  Starting at 90 seconds and roughly every minute thereafter Rallos
+                        spawns adds from the corpses around the pit.  Lots of adds.  The adds don't despawn when Rallos dies, so plan accordingly when dealing
+                        with flags and loot.  Hail the planar projection for your flag (can be invis).  Rallos drops some spells and two of the following:
+                    </p>
+                    <ul>
+                        <li><a href="https://eq.magelo.com/item/19082" target="_">Boots of the Warmaster</a></li>
+                        <li><a href="https://eq.magelo.com/item/7770" target="_">Black Collar of Boundless Might</a></li>
+                        <li><a href="https://eq.magelo.com/item/25989" target="_">Blade of War</a></li>
+                        <li><a href="https://eq.magelo.com/item/5975" target="_">War Charm of Crossed Blades</a></li>
+                        <li><a href="https://eq.magelo.com/item/9436" target="_">Red Eyed Mask of Rage</a></li>
+                        <li><a href="https://eq.magelo.com/item/9485" target="_">Grimfaced Visor</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <script>
+        var tab, ele;
+        tab = getURLVariable("Tab");
+        if (tab) {
+            ele = document.getElementById(tab);
+            if (ele) {
+                ele.click();
+            } else {
+                document.getElementById("Overview").click();
+            }
+        } else {
+            document.getElementById("Overview").click();
+        }
+    </script>
+</body>

@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Planes of Power: Plane of Air</title>
+</head>
+<body onload="createImage('../Maps/poair.txt', 1.05, 30, 200, -200, 600, false, 'mapContainer', 500, 500, [
+        [-1670, -525, 128, 0, 0, 9, 240, 240, 240, 'A1'],
+        [1575, 570, 128, 0, 0, 9, 240, 240, 240, 'A2'],
+        [-1400, 700, 128, 0, 0, 9, 240, 240, 240, 'A3'],
+        [1600, -500, 128, 0, 0, 9, 240, 240, 240, 'A4'],
+        [-1230, -440, 128, 0, 0, 9, 240, 240, 240, 'M1'],
+        [1600, 400, 128, 0, 0, 9, 240, 240, 240, 'M2'],
+        [-1400, 450, 128, 0, 0, 9, 240, 240, 240, 'M3'],
+        [1600, -680, 128, 0, 0, 9, 240, 240, 240, 'M4'],
+        [0, 0, 128, 0, 0, 9, 240, 240, 240, 'B'],
+        [-460, -440, 128, 0, 0, 9, 240, 240, 240, 'C'],
+        [-350, 730, 0, 128, 0, 7, 240, 192, 240, '1'],
+        [-400, -640, 0, 128, 0, 7, 240, 192, 240, '2'],
+        [400, -600, 0, 128, 0, 7, 240, 192, 240, '3'],
+        [395, 1400, 0, 128, 0, 7, 240, 192, 240, '4'],
+        [400, -750, 0, 0, 0, 0, 32, 32, 32, 'Spiders'],
+        [-350, 675, 0, 0, 0, 0, 32, 32, 32, 'Phoenixes'],
+        [430, 1300, 0, 0, 0, 0, 32, 32, 32, 'Elementals'],
+        [375, 675, 0, 0, 0, 0, 32, 32, 32, 'Stormriders'],
+        [-500, -750, 0, 0, 0, 0, 0, 128, 128, 'Z']
+]);">
+    <link href="../Scripts/main.css" rel="stylesheet" type="text/css" />
+    <link href="../Scripts/sideNav.css" rel="stylesheet" type="text/css" />
+    <script src="../Maps/mapImages.js" type="text/javascript"></script>
+    <script src="../Scripts/banner.js" type="text/javascript"></script>
+    <script src="../Scripts/sideNav.js" type="text/javascript"></script>
+    <script src="../Scripts/Tabs.js" type="text/javascript"></script>
+
+    <div class="navbar">
+        <script src="../Scripts/expansionList.js" type="text/javascript"></script>
+        <script src="https://www.magelocdn.com/pack/eq/en/magelo-bar.js#1" type="text/javascript"></script>
+        <script src="NavBar.js" type="text/javascript"></script>
+    </div>
+
+    <div id="content">
+        <p />
+        <h2>Plane of Air</h2>
+        <p />
+        <div class="tab">
+            <button class="tablinks" id="Overview" onclick="openTabContent(this)">Overview</button>
+            <button class="tablinks" id="Rares" onclick="openTabContent(this)">Rares</button>
+            <button class="tablinks" id="Tasks" onclick="openTabContent(this)">Events</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="tabOverview" class="tabcontent">
+            <h3>Overview</h3>
+            <p>
+                The Plane of Air is a Tier 4 zone which requires all flags except Solusek Ro to access.  Unlike the rest of the zones, most of the
+                mobs here have very long respawns, around 3 hours.  There are 5 islands, each with a mob type.  Four of those have a rare mob which
+                can spawn (no Stormrider rare mob), and four of them trigger an avatar when cleared fully (no avatar for armors at zone in).
+                The Avatars reside in their temples and each drop a component to create the key for Xegony.  Each temple also has a mini, an easy
+                target with a single drop.  Xegony is accessed via the rainbow on Spider island.
+            </p>
+            <div id="mapContainer">
+            </div>
+            <ul>
+                <li>Z - Zone in/out</li>
+                <li>R1 - Avatar of Dust (triggered by clearing Spider island)</li>
+                <li>R2 - Avatar of Mist (triggered by clearing Phoenix island)</li>
+                <li>R3 - Avatar of Smoke (triggered by clearing Elemental island)</li>
+                <li>R4 - Avatar of Wind (triggered by clearing Stormrider island)</li>
+                <li>M1 - Rinturion Windblade</li>
+                <li>M2 - Arch Mage Alchtonion</li>
+                <li>M3 - Queen Silandria</li>
+                <li>M4 - Gakamenial Fir`Disralsi</li>
+                <li>B - Baltaldor the Cursed</li>
+                <li>C - Chamberlain Escarladian</li>
+                <li>1 - Calebgrothiel</li>
+                <li>2 - Inlokher the Warlord</li>
+                <li>3 - Lossenmachar</li>
+                <li>4 - Swirling Elemental Force</li>
+            </ul>
+        </div>
+
+        <div id="tabRares" class="tabcontent">
+            <h3><a href="?Tab=Rares">Rare Mobs</a></h3>
+            <dl>
+                <dt><a href="https://eq.magelo.com/npc/450376" target="_">a phoenix breezewing</a></dt>
+                <dd>
+                    Listed as rare, but no loot.
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/450352" target="_">a phoenix searedwing</a></dt>
+                <dd>
+                    Listed as rare, but no loot.
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/99955" target="_">Calebgrothiel</a></dt>
+                <dd>
+                    A rare phoenix.  Has an AE snare + 200 dot.
+                    <br />
+                    Drops - <a href="https://eq.magelo.com/item/16153" target="_">Prismatic Belt of the Queztocatal</a>
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/413501" target="_">Inlokher the Warlord</a></dt>
+                <dd>
+                    A rare animated suit of armor, spawns randomly on the death of a Castellan of Air.  Shadowsteps around so be mindful of adds.
+                    <br />
+                    Drops - <a href="https://eq.magelo.com/item/20617" target="_">Symbol of the Swirling Maelstrom</a>
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/385491" target="_">Lossenmachar</a></dt>
+                <dd>
+                    A rare crystal spider.  Only thing of interest in a single target slow.
+                    <br />
+                    Drops - <a href="https://eq.magelo.com/item/19437" target="_">Spiked Toe Boots</a>
+                </dd>
+                <dt><a href="https://eq.magelo.com/npc/451697" target="_">Swirling Elemental Force</a></dt>
+                <dd>
+                    A rare air elemental.  Has an AE armor debuff and an AE stun.
+                    <br />
+                    Drops - <a href="https://eq.magelo.com/item/24784" target="_">Crystal Tipped Onyxwood Staff</a>
+                </dd>
+            </dl>
+        </div>
+        <div id="tabTasks" class="tabcontent">
+            <h3><a href="?Tab=Tasks">Events</a></h3>
+            <dl>
+                <dt>Arch Mage Alchtonion</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 1-2 groups suggested</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Has an AE with a 10 second stun.
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/20609" target="_">Radiant Feather</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Gakamenial Fir'Disralsi</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 1-2 groups suggested</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Has a 500pt AE with single slot dispel.
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/9586" target="_">Exquisite Leather Cap</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Queen Silandria</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 1-2 groups suggested</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Casts a 500 dd with levitate and spinstun.
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/9468" target="_">Scintillating Feather Mask</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Rinturion Windblade</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 1-2 groups suggested</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Casts an AE long duration stun with pushback, range of 75.
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/16567" target="_">Sparkling Satin Pantaloons</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Baltaldor the Cursed</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 2-3 groups suggested</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Apparently is inactive during "night" in game time (7pm to 7am).  Casts an AE slow with 1250dd as well as procs an short range AE stun.
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/22969" target="_">Sparkling Shortsword</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Chamberlain Escarladian</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 2-3 groups suggested</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        Killing mobs on the island will randomly spawn a Constable.  When the last of the armors are killed
+                        you get Constable Alranderisan and when he dies, if 3 days have passed since last done, Chamberlain Escarladian spawns.
+                        He can flurry, rampage, small AE dd, and can mem blur itself.  Seems to drop either a spell or one of the following:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/27309" target="_">Defender of the Ancestral Spirit</a></li>
+                            <li><a href="https://eq.magelo.com/item/26795" target="_">Grimoire of Extraplanar Wisdom</a></li>
+                        </ul>
+                    </p>
+                    <p>
+                        Be aware that the group named, Inlokher the Warlord, also randomly spawns on this island.
+                    </p>
+                </dd>
+                <dt>Avatar of Dust</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        One of the four ring events required to reach Xegony.  Head to the Spider Island and start clearing trash.  When cleared 15
+                        "an erratic arachnid" will spawn, these need to be locked down for the duration as they instantly respawn if killed.  While you lock down
+                        those you'll get a larger spider, 'a vorladien archwalker', which you need to kill.  When it dies 3 'a vorladien spawn' will pop.  Kill
+                        those for another archwalker, then 3 more 'a vorladien spawn', then a third archwalker.  When the final archwalker goes down the mini-boss
+                        'Sigismond Windwalker' activates.  He flurries, AE rampage, procs a 3500dd, and casts a 100 range PBAE 6 second silence.  Sigismond drops
+                        one loot:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/8772" target="_">Gleaming Pendant of Xegony</a></li>
+                            <li><a href="https://eq.magelo.com/item/27992" target="_">The Rhythm of Xegony</a></li>
+                        </ul>
+                    </p>
+                    <p>
+                        Upon its death the Avatar of Dust spawns in its temple and you have just 45 minutes to engage it before it despawns.  The Avatar flurries,
+                        AE rampages, casts an AE armor debuff, an AE 6-second silence, and a small AE with 500 dd and mana drain.  The Avatar drops
+                        5 <a href="https://eq.magelo.com/item/28642" target="_">Mystical Essence of Dust</a> for the Xegony key, 1 Elemental Sleeve Mold,
+                        and 1 of the following:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/27273" target="_">Bulwark of Shimmering Steel</a></li>
+                            <li><a href="https://eq.magelo.com/item/24587" target="_">Ivory Hilted Cleaver</a></li>
+                            <li><a href="https://eq.magelo.com/item/24569" target="_">Rune Stamped Blade</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Avatar of Mist</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        One of the four ring events required to reach Xegony.  Head to the Phoenix Island and start clearing trash.  When the trash is cleared you
+                        will get more spawns, Breezewings, Gustlets, Firesurgers, and Windsurgers.  Once all are killed the mini-boss Melernil Faal`Armanna
+                        activates.  He procs a 3500dd and casts a 100 range PBAE 6 second silence.  Melernil drops one loot:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/13668" target="_">Resplendent Epaulets</a></li>
+                            <li><a href="https://eq.magelo.com/item/13690" target="_">Puresteel Mantle</a></li>
+                        </ul>
+                    </p>
+                    <p>
+                        Upon its death the Avatar of Mist spawns in its temple and you have just 45 minutes to engage it before it despawns.  The Avatar procs a
+                        stun as well as casting an AE 1500dd plus stun.  It drops 5
+                        <a href="https://eq.magelo.com/item/28641" target="_">Mystical Essence of Mist</a> for the Xegony key, 1 Elemental Hat Mold, and 1 of the
+                        following:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/2630" target="_">Whispering Air Bangle</a></li>
+                            <li><a href="https://eq.magelo.com/item/9959" target="_">Band of Swirling Air</a></li>
+                            <li><a href="https://eq.magelo.com/item/22889" target="_">Heavy Bludgeoner</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Avatar of Smoke</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        One of the four ring events required to reach Xegony.  Head to the island of elementals and slaughter them all.  A few stronger ones will
+                        spawn with a resist debuff, kill them too.  After all are dead An Elemental Masterpiece spawns which drops one loot:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/15812" target="_">Tethered Air Cape</a></li>
+                            <li><a href="https://eq.magelo.com/item/24773" target="_">Bejeweled Dagger of Summoning</a></li>
+                        </ul>
+                    </p>
+                    <p>
+                        Upon its death the Avatar of Smoke spawns in its temple and you have just 45 minutes to engage it before it despawns.  The Avatar procs a
+                        deagro and a stun on the tank as well as casting an AE 1500dd plus stun.  It drops 5
+                        <a href="https://eq.magelo.com/item/28640" target="_">Mystical Essence of Smoke</a> for the Xegony key, 1 Elemental Glove Mold, and 1 of
+                        the following:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/15871" target="_">Woven Steel Sash</a></li>
+                            <li><a href="https://eq.magelo.com/item/10231" target="_">Puremetal Band</a></li>
+                            <li><a href="https://eq.magelo.com/item/27986" target="_">Alabaster Hilted Wind Bow</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Avatar of Wind</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        One of the four ring events required to reach Xegony.  Head to the island of stormriders and slaughter them all.  This triggers Stormrider
+                        Priest of Destruction, then 3 "a sporadic stormrider", and then 5 Pherlondien Clawpike.  One of these is bigger and is the real one, the
+                        others are easier.  The fakes despawn when the real one dies. The real Clawpike procs a 1900dd on tank and drops one loot:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/26095" target="_">Crow Footed Lance</a></li>
+                            <li><a href="https://eq.magelo.com/item/16152" target="_">Band of Fortitude</a></li>
+                        </ul>
+                    </p>
+                    <p>
+                        Upon its death the Avatar of Wind spawns in its temple and you have just 45 minutes to engage it before it despawns.  The Avatar procs a
+                        stun on the tank as well as casting an AE stun with 1 slot dispel.  It drops 5
+                        <a href="https://eq.magelo.com/item/28639" target="_">Mystical Essence of Wind</a> for the Xegony key, 1 Elemental Wrist Mold, and 1 of
+                        the following:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/9480" target="_">Fine Hammered Faceguard</a></li>
+                            <li><a href="https://eq.magelo.com/item/15841" target="_">Ensorcelled Metalcloth Cape</a></li>
+                            <li><a href="https://eq.magelo.com/item/20896" target="_">Air Fetish</a></li>
+                        </ul>
+                    </p>
+                </dd>
+                <dt>Xegony the Queen of Air</dt>
+                <dd>
+                    <ul>
+                        <li>Size: 54, one key per group</li>
+                        <li>Respawn: 3 days</li>
+                    </ul>
+                    <p>
+                        The big boss of Plane of Air.  To reach her you'll need to have one key per group.  To get the key speak with Sarhya the Dawnbreeze in
+                        Tranquility to get a pouch.  Combine the drops from the 4 Avatars in to get a
+                        <a href="https://eq.magelo.com/item/28638" target="_">Wind Etched Key</a>.  Head to the spider island and click the rainbow, the
+                        key will go on your keyring and your group gets ported up.  Once you port up you are met by Muzlakh the Chosen so you'll need a decent
+                        squad up right at the start.  Once it is defeated you get a bit to get setup.
+                    </p>
+                    <p>
+                        First is 3 High Councilman of the Queen, each with a 1k AE and a 3k AE with 90% slow and like nearly everything here can memblur.
+                        Next up you'll deal with 6 A Prismatic Guardian of Xegony.  With the guards taken care of you can start on Xegony.  She has a 125 range
+                        PBAE that is a 1k dd, 200pt dot, melee silence, and melee slow with 13 curse counters.  Once she hits 99% she spawns the first wave of adds,
+                        the raid needs to focus on them before taking Xegony down.  Every 15% you get another wave of adds.  The adds do not despawn when Xegony
+                        dies so you need to handle them, and they can memblur frequently making it near impossible to simply kite them. When Xegony dies you wil
+                        get an <a href="https://eq.magelo.com/item/29164" target="_">Amorphous Cloud of Air</a>, one of the 4 pieces needed for Plane of Time key.
+                        Has a chance of dropping an Elemental Leg pattern as a bonus along with 2 of the following:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><a href="https://eq.magelo.com/item/26737" target="_">Exquisite Puresteel Wraps</a></li>
+                            <li><a href="https://eq.magelo.com/item/10234" target="_">Simple Ring of Purity</a></li>
+                            <li><a href="https://eq.magelo.com/item/26788" target="_">Xephyrus, Wand of the Flowing Wind</a></li>
+                            <li><a href="https://eq.magelo.com/item/14747" target="_">Vest of Phoenix Feathers</a></li>
+                            <li><a href="https://eq.magelo.com/item/13672" target="_">Exquisite Phoenix Feather Mantle</a></li>
+                        </ul>
+                    </p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <script>
+        var tab, ele;
+        tab = getURLVariable("Tab");
+        if (tab) {
+            ele = document.getElementById(tab);
+            if (ele) {
+                ele.click();
+            } else {
+                document.getElementById("Overview").click();
+            }
+        } else {
+            document.getElementById("Overview").click();
+        }
+    </script>
+</body>
