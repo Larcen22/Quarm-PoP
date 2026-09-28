@@ -6,7 +6,7 @@ You are building ONE page of a static fan-guide website. Follow these rules exac
 - Pure static HTML/CSS/JS. Relative paths only (`assets/style.css`, `img/...`, sibling `.html` files). No build step, no absolute `file://` or `http://localhost` references. Must work when the repo is served from any subdirectory via GitHub Pages.
 
 ## 2. Page skeleton
-Read `/home/larcen/Code/PoP/site/assets/page-template.html`. Copy its structure verbatim into your page: `<head>` (fonts + style.css), particles canvas, nav bar, footer, particles script. Then:
+Read `/home/larcen/Code/PoP/assets/page-template.html`. Copy its structure verbatim into your page: `<head>` (fonts + style.css), particles canvas, nav bar, footer, particles script. Then:
 - Replace `[PAGE TITLE]` and the subtitle with the values from your assignment.
 - Mark EXACTLY ONE link in `nav.topbar` with `class="active"` — the one matching your page.
 - Keep the `<footer>` text exactly as in the template.
@@ -30,7 +30,7 @@ A source line like `[IMG] https://www.eqprogression.com/wp-content/uploads/<PATH
 ```html
 <figure class="guide-img"><img src="img/<PATH>" alt="<TEXT>"><figcaption><TEXT></figcaption></figure>
 ```
-Before writing the page, batch-check every image path you plan to use exists under `/home/larcen/Code/PoP/site/img/` (one bash command listing them). Omit any figure whose file is missing.
+Before writing the page, batch-check every image path you plan to use exists under `/home/larcen/Code/PoP/img/` (one bash command listing them). Omit any figure whose file is missing.
 
 ## 6. PQDI stats tables (hard requirement — user explicitly asked for special abilities)
 Read `/home/larcen/Code/PoP/research/pqdi_bosses.json` (keyed by NPC id string). For EACH boss on your page, add a `<table class="stats">` inside its encounter block with rows:
@@ -54,7 +54,7 @@ A `.source-note` box listing the exact sources used: eqprogression.com guide pag
 
 ## 9. Verify before finishing
 - `bash ls` every img path you included.
-- Confirm internal links match real filenames in `/home/larcen/Code/PoP/site/`.
+- Confirm internal links match real filenames in `/home/larcen/Code/PoP/`.
 - Write the final file with the write tool to your assigned output path.
 
 ## 10. Exclusions (hard requirement)
