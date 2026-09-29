@@ -248,7 +248,12 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poeartha/Tantisala_Jaggedtooth.lua</code>, SecretsOTheP/quests): Hate-drop/warp-heal mechanic only — warps back + heals 30% when aggro is lost (anti-Memory-Blur); periodic hate reduction to 5%.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poeartha/Tantisala_Jaggedtooth.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>When her hate list is wiped (for example by Memory Blur), she warps back to her guard point and heals for 30% of her max HP. This is certain below 50% HP; at higher HP it happens on a random roll with odds equal to 100% minus her current HP%. It is a deliberate anti-Memory-Blur measure so the fight cannot be trivialized.</li>
+                        <li>A 1-second "drophate" timer starts when combat begins and stops when it ends.</li>
+                        <li>Each second of combat, with a 1-in-60 chance (about once per minute on average), she reduces her current target's hate to 5% of its current value (minimum 1), mimicking live-server hate behavior.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>73</td></tr>
                         <tr><th>HP</th><td>600,000</td></tr>
@@ -288,7 +293,13 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poeartha/A_Mystical_Arbitor_of_Earth.lua</code>, SecretsOTheP/quests): Same warp+heal hate-drop as Tantisala, plus a 50-minute despawn timer paused during combat; on death spawns a Planar Projection.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poeartha/A_Mystical_Arbitor_of_Earth.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Same aggro-loss mechanic as Tantisala: when her hate list is wiped (for example by Memory Blur), she warps back to her guard point and heals 30% of max HP — certain below 50% HP, otherwise on a random roll with odds of 100% minus her current HP% — keeping Memory Blur from trivializing the fight.</li>
+                        <li>Each second of combat, with a 1-in-20 chance (about once every 20 seconds on average), she reduces her current target's hate to 5% of its current value (minimum 1).</li>
+                        <li>A 50-minute despawn timer starts when she spawns and keeps running even during combat; when it expires she despawns.</li>
+                        <li>On death she spawns a Planar Projection (NPC 218398) at the death location and signals it with the killer's character ID — the killer with kill rights, not necessarily the one who landed the killing blow — so the projection acknowledges that raid or group and can be hailed for the Plane of Earth B flag.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>74</td></tr>
                         <tr><th>HP</th><td>600,000</td></tr>
@@ -332,7 +343,12 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poearthb/#War_Chieftan_Awisano.lua</code>, SecretsOTheP/quests): Death is tracked via invisible marker NPCs (crash-safe); killing him progresses the event toward Warlord Gintolaken.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poearthb/#War_Chieftan_Awisano.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>One second after spawning, the script checks whether a Myrmidon of Stone (NPC type 222008) is still spawned; if so, Awisano depops with a respawn timer — a crash-recovery guard, since the chieftan should only exist after the trash has been cleared.</li>
+                        <li>On death, the script depops an invisible marker NPC (spawn ID 369489). The depop persists across zone crashes, so the kill is remembered even if the server goes down mid-event.</li>
+                        <li>On death it also signals NPC 222034, the event controller: once all three chieftan markers are gone, Warlord Gintolaken spawns.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>75</td></tr>
                         <tr><th>HP</th><td>400,000</td></tr>
@@ -369,7 +385,12 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poearthb/#War_Chieftan_Birak.lua</code>, SecretsOTheP/quests): Death is tracked via invisible marker NPCs (crash-safe); killing him progresses the event toward Warlord Gintolaken.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poearthb/#War_Chieftan_Birak.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>One second after spawning, the script checks whether a Stonefist Clansman (NPC type 222009) is still spawned; if so, Birak depops with a respawn timer — a crash-recovery guard, since the chieftan should only exist after the trash has been cleared.</li>
+                        <li>On death, the script depops an invisible marker NPC (spawn ID 369487). The depop persists across zone crashes, so the kill is remembered even if the server goes down mid-event.</li>
+                        <li>On death it also signals NPC 222034, the event controller: once all three chieftan markers are gone, Warlord Gintolaken spawns.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>75</td></tr>
                         <tr><th>HP</th><td>350,000</td></tr>
@@ -406,7 +427,12 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poearthb/#War_Chieftan_Galronar.lua</code>, SecretsOTheP/quests): Death is tracked via invisible marker NPCs (crash-safe); killing him progresses the event toward Warlord Gintolaken.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poearthb/#War_Chieftan_Galronar.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>One second after spawning, the script checks whether a Rock Studded Champion (NPC type 222010) is still spawned; if so, Galronar depops with a respawn timer — a crash-recovery guard, since the chieftan should only exist after the trash has been cleared.</li>
+                        <li>On death, the script depops an invisible marker NPC (spawn ID 369488). The depop persists across zone crashes, so the kill is remembered even if the server goes down mid-event.</li>
+                        <li>On death it also signals NPC 222034, the event controller: once all three chieftan markers are gone, Warlord Gintolaken spawns.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>75</td></tr>
                         <tr><th>HP</th><td>300,000</td></tr>
@@ -446,7 +472,14 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poearthb/#Warlord_Gintolaken.lua</code>, SecretsOTheP/quests): Spawns only after all three chieftains are dead; hate-drop + boundary check (teleport back, wipe hate, Balance of the Nameless); on death → 84-hour respawn timer.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poearthb/#Warlord_Gintolaken.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Gintolaken is a persistent spawn, so he survives zone crashes. One second after spawning, the script checks whether any of the six tracked mobs are still spawned — the three chieftans or the three trash groups (Myrmidon of Stone, Stonefist Clansman, Rock Studded Champion); if any is, he depops with a respawn timer. He should only exist after all three chieftans are dead.</li>
+                        <li>Same aggro-loss mechanic as the other bosses: when his hate list is wiped (for example by Memory Blur), he warps back to his spawn point and heals 30% of max HP — certain below 50% HP, otherwise on a random roll with odds of 100% minus his current HP% — keeping Memory Blur from trivializing the fight.</li>
+                        <li>Every second while in combat, a boundary check runs: if he has wandered out of bounds (X coordinate below -137), the script teleports him back to his spawn point, wipes his hate list, and casts Balance of the Nameless (spell 3230) on him.</li>
+                        <li>Each second of combat, with a 1-in-45 chance (about once every 45 seconds on average), he reduces his current target's hate to 5% of its current value (minimum 1).</li>
+                        <li>On death, the invisible marker NPC (spawn ID 369490) depops — recording the kill across crashes — and his respawn timer is set to 302,400,000 ms, i.e. 84 hours (3.5 days).</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>77</td></tr>
                         <tr><th>HP</th><td>1,050,000</td></tr>
@@ -520,7 +553,13 @@
                     <p>Once dead, Essence of Earth will spawn. Hail it for your flag item (Mound of Living Stone).</p>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poearthb/#Avatar_of_Earth.lua</code>, SecretsOTheP/quests): On death → Essence of Earth loot container; Rathe Council respawns after 5 days 18 hours; failed attempts restore the council in 15 minutes; 2.5-hour despawn timer paused during combat.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poearthb/#Avatar_of_Earth.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>On death, an Essence of Earth (NPC 222041) spawns at the death location and is signaled with the killer's character ID — the killer with kill rights, not necessarily the one who landed the killing blow — so it acknowledges that raid or group and can be hailed for the Mound of Living Stone flag item.</li>
+                        <li>On death, the respawn timers of all twelve Rathe Councilman spawns are reset to 496,800 seconds (5 days 18 hours), bringing the full council back after the Avatar is killed.</li>
+                        <li>The Avatar has a 2.5-hour despawn timer that pauses while he is in combat and resumes when he drops aggro.</li>
+                        <li>If the 2.5-hour timer fires (the raid failed or stopped fighting), the Avatar despawns and the Rathe Council's respawn is set to just 900 seconds (15 minutes) — a failed attempt restores the council quickly.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>80</td></tr>
                         <tr><th>HP</th><td>500,000</td></tr>
