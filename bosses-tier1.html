@@ -25,8 +25,6 @@
         <a href="plane-of-fire.html">Fire</a>
         <a href="plane-of-water.html">Water</a>
         <a href="plane-of-time.html">Time</a><span class="sep">·</span>
-        <a href="quests-items.html">Quests &amp; Items</a>
-        <a href="gear-tradeskills.html">Gear &amp; Tradeskills</a>
         <a href="videos.html">Videos</a>
     </nav>
 
@@ -214,7 +212,15 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pojustice/The_Severh_Hammer.lua</code> → <code>The_Seventh_Hammer.lua</code>, SecretsOTheP/quests): The challenge begins via dialogue with the hammer (“Hail” / “Ready to face”). During combat the Tribunal periodically casts Verdict of Eternity and Tremor of Judgment (~every 3 minutes) with animations; timers stop after 10 minutes out of combat.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pojustice/The_Severh_Hammer.lua</code> → <code>The_Seventh_Hammer.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>The challenge begins via dialogue with the hammer: saying “Hail” gets a greeting, and saying “Ready to face” starts the fight (“Very well mortals, Now begins the test of your very souls!”), adding you to its hate list.</li>
+                        <li>If you attack the hammer without using the dialogue, it shouts “Prepare for judgement mortals!”</li>
+                        <li>The visible Tribunal (NPC 201427) plays animations while the invisible Tribunal (NPC 201423) casts the spells.</li>
+                        <li>Verdict of Eternity (spell 1108): first cast 181–190 seconds after combat begins, then every 187 seconds (~3 minutes).</li>
+                        <li>Tremor of Judgment (spell 1107): first cast 86–95 seconds after combat begins, then every 187 seconds (~3 minutes).</li>
+                        <li>When you leave combat, a 10-minute timer starts; after 10 minutes out of combat, both casting timers stop. Re-entering combat cancels the out-of-combat timer and restarts both casting timers.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>73</td></tr>
                         <tr><th>HP</th><td>1,080,000</td></tr>
@@ -270,7 +276,11 @@
                         <li><a class="pqdi-item" href="https://www.pqdi.cc/item/29131" target="_blank" rel="noopener" data-pqdi-id="29131">Spectral Parchment</a></li>
                     </ul>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>podisease/#Grummus.lua</code>, SecretsOTheP/quests): No scripted combat mechanics. On death he spawns a Planar Projection loot container and hands it to the killer — this is the flag pickup point for Plane of Disease progression.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>podisease/#Grummus.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>No scripted combat mechanics (no HP events, timers, or summons) — the fight is a standard melee encounter.</li>
+                        <li>On death he spawns a Planar Projection (NPC 205156) loot container at his location and hands it to the killer — this is the flag pickup point for Plane of Disease progression.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>70</td></tr>
                         <tr><th>HP</th><td>500,000</td></tr>
@@ -326,7 +336,15 @@
                     <p>Kill the Gargoyles off after she is dead and Hail the Planar Projection for your flag!</p>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>nightmareb/Terris_Thule.lua</code>, SecretsOTheP/quests): At 95% HP she utters a nightmare message; at 79% and 69%, one Dream Defiler per damaging player spawns (small/large); at 50% she casts the slowing debuff Direption of Dreams on herself; at 40% she summons gargoyles from the statues. If she leaves the chamber, teleports back and casts Balance of the Nameless (“cleansed of your magic"). On death spawns a Planar Projection.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>nightmareb/Terris_Thule.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>At 95% HP she speaks a nightmare message to nearby players (“The sound of a thousand terrified screams…”).</li>
+                        <li>At 79% and 69% HP she spawns one Dream Defiler per player who has dealt damage to her — each defiler is a random small (NPC 221045) or large (NPC 221044) variant, and the larger defiler is immune to several effects.</li>
+                        <li>At 50% HP she speaks a second nightmare message and casts Direption of Dreams (spell 3150), a slowing debuff, on herself.</li>
+                        <li>At 40% HP she shouts a taunt (“You will not escape my realm so easily!”) and 4 gargoyles (NPC 221043) emerge from the statues (the statues then depop).</li>
+                        <li>Bounds check: if she moves outside the arena she teleports back to the center of the chamber, casts Balance of the Nameless (spell 3230, which clears DoTs/magic), and announces she is “cleansed of your magic.”</li>
+                        <li>On death she spawns a Planar Projection (NPC 221042) loot container for the killer.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>71</td></tr>
                         <tr><th>HP</th><td>1,100,000</td></tr>
@@ -384,7 +402,15 @@
                     <p>Giwin Mirakon will spawn again at East door of Behemoths room, make sure to hail him for your flag. This will grant you access to Plane of Tactics!</p>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poinnovation/encounters/Behemoth.lua</code>, SecretsOTheP/quests): A controller spawns waves of Clockwork Devices every 48 seconds at one of six clock positions; devices that reach the core explode unless engaged. The Behemoth is dormant until 10 devices are killed, then awakens and gains one random special ability (Gas Leak / Deathfog IV / Biomelt IX / Liquid Hydrokill). If he leaves the arena → teleports back, wipes hate, fully heals + Balance of the Nameless. On death: waves stop, remaining devices despawn, Giwin Mirakon spawns.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poinnovation/encounters/Behemoth.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>A controller (Weapon_Event_Master, NPC 206197) spawns a wave of Clockwork Devices (NPC 206001) every 48 seconds, each wave appearing at one of six clock positions (12:00, 2:30, 4:30, 6:00, 7:30, 10:30).</li>
+                        <li>Clockwork Devices that reach the core explode (spell 2321); a device that is being attacked is held as an “exploder” and explodes when it drops out of combat.</li>
+                        <li>The Behemoth (NPC 206046) is dormant (Will Not Aggro / No Harm from Players) until 10 devices have been killed.</li>
+                        <li>After 10 kills the Behemoth awakens: it becomes attackable and gains one of four random special abilities — Gas Leak (1080), Deathfog IV (1081), Biomelt IX (1082), or Liquid Hydrokill (1083).</li>
+                        <li>Bounds check: if the Behemoth leaves the arena it teleports back, wipes its hate list, fully heals, and casts Balance of the Nameless (3230).</li>
+                        <li>On death: the waves stop, all remaining Clockwork Devices despawn, and Giwin Mirakon (NPC 206203) spawns and signals the killer (the flag).</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>70</td></tr>
                         <tr><th>HP</th><td>150,000</td></tr>
@@ -449,7 +475,12 @@
                     <figure class="guide-img"><img src="img/PoInnovation-Manaetic_Behemoth/Nitram-Anizok.jpg" alt=""><figcaption></figcaption></figure>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poinnovation/#Xanamech_Nezmirthafen.lua</code>, SecretsOTheP/quests): A dormant construct with a 30-minute despawn timer (paused during combat). Awakens and becomes attackable/aggro-capable about 3.5 seconds after being triggered; on death signals NPC 206033.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poinnovation/#Xanamech_Nezmirthafen.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Xanamech is a dormant construct with a 30-minute despawn timer that is paused during combat.</li>
+                        <li>When triggered (signal 1), he awakens: about 3.5 seconds later he becomes attackable and aggro-capable (Will Not Aggro, Immune to Aggro, and No Harm from Players are all switched off) and becomes a construct body type.</li>
+                        <li>On death he signals Nitram_Anizok (NPC 206033) to continue the quest.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>66</td></tr>
                         <tr><th>HP</th><td>220,000</td></tr>
