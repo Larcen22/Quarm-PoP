@@ -1,2 +1,8 @@
 archive/*
 research/*
+quests-items.html
+gear-tradeskills.html
+npcs.json
+.gitignore
+items.json
+docs/*

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane of Water — EverQuest Planes of Power Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <!-- NAV: mark the current page's link with class="active" -->
+    <nav class="topbar">
+        <a href="index.html">Home</a><span class="sep">·</span>
+        <a href="flagging.html">Flagging</a><span class="sep">·</span>
+        <a href="bosses-tier1.html">Bosses T1</a>
+        <a href="bosses-tier2.html">T2</a>
+        <a href="bosses-tier3.html">T3</a>
+        <a href="solusek-ro-tower.html">Solusek Ro Tower</a><span class="sep">·</span>
+        <a href="plane-of-air.html">Air</a>
+        <a href="plane-of-earth.html">Earth</a>
+        <a href="plane-of-fire.html">Fire</a>
+        <a href="plane-of-water.html" class="active">Water</a>
+        <a href="plane-of-time.html">Time</a><span class="sep">·</span>
+        <a href="videos.html">Videos</a>
+    </nav>
+
+    <!-- PAGE HEADER (inner pages only — index uses the big hero instead) -->
+    <div class="page-header">
+        <h1>Plane of Water</h1>
+        <p class="subtitle">The plane bosses, the Fishlord summoning events, and Coirnav the Avatar of Water</p>
+    </div>
+
+    <main>
+        <!-- ==================== OVERVIEW ==================== -->
+        <section>
+            <h2 class="section-title">Overview</h2>
+            <p><strong>All Plane of Water bosses covered here are Immune to Cold</strong> (CR 1000 per PQDI).</p>
+            <p>The plane bosses are covered in their own sections below; the Fishlord summoning events are covered in the <a href="#ring-events">Ring Events</a> section, and Coirnav the Avatar of Water is covered in the <a href="#coirnav">Coirnav</a> section.</p>
+        </section>
+
+        <!-- ==================== RING EVENTS (eqprogression.com + Quarm scripts) ==================== -->
+        <section id="ring-events">
+            <h2 class="section-title">Ring Events</h2>
+            <p class="section-sub">The Fish Summoning Event</p>
+
+            <figure class="guide-img"><img src="img/Coirnav_Guide/Fishlord-Craiyk.jpg" alt=""><figcaption></figcaption></figure>
+            <figure class="guide-img"><img src="img/Coirnav_Guide/Fishlord-Lezom.jpg" alt=""><figcaption></figcaption></figure>
+            <figure class="guide-img"><img src="img/Coirnav_Guide/Fishlord-Map.jpg" alt=""><figcaption></figcaption></figure>
+
+            <ul>
+                <li>Give 100pp to either Fishlord to start the event. These events are separate and take place in each Fishlord’s respective tunnel. This means you can do the event twice back to back (Once per Fishlord) if you choose. These can be done with much less than a full raid. 1-2 geared groups can easily do these. Even less than 1 group if you are really geared and have an Enchanter. Your goal is to kill the mobs that spawn while keeping the Fishlord alive. If the Fishlord dies, you’ll fail. Respawn seems less than 12 hours — not sure exact time.</li>
+                <li>Waves of trash mobs spawn with named fish eventually spawning throughout the event. Having an Enchanter is highly recommended in smaller or lower dps groups (1-2) as mobs will keep coming. All mobs are slowable and mezzable, with the exception of the named fish, which may not be mezzable.</li>
+                <li>Keep killing fish until the final named spawns. The named that spawn are random but scale up in difficultly as you get further into the event. The whole event can take 45 min – 1 hour.</li>
+            </ul>
+
+            <p>Named can be any of the following:</p>
+            <ul>
+                <li>a hungry anglerfish</li>
+                <li>a stringy anglerfish</li>
+                <li>a toughened anglerfish</li>
+                <li>a dark anglerfish</li>
+                <li>a foul anglerfish</li>
+                <li>a wicked anglerfish</li>
+                <li>a prime anglerfish</li>
+                <li>a prismatic anglerfish</li>
+                <li>a superior anglerfish</li>
+                <li>a king anglerfish</li>
+                <li>a master anglerfish</li>
+                <li>a supreme anglerfish</li>
+            </ul>
+
+            <h4>Quarm Script</h4>
+            <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>powater/encounters/Fishlords.lua</code>, SecretsOTheP/quests): Trading 100 platinum to a Fishlord (Fishlord Craiyk or Fishlord Lezom) starts the event — the Fishlord walks to his summoning point and begins the chant, enabling the trash spawns in his tunnel. The script tracks kills of three trash families (ferocious/fierce/furious anglerfish) and spawns a named anglerfish at the 5th, 10th, 15th, and 25th kill of each family, escalating in power. The event ends at 25 kills (or immediately if the Fishlord dies); the Fishlord then re-enables with a 25-minute respawn timer. Trash despawns 3 minutes out of combat.</p>
+        </section>
+
+        <!-- ==================== GRIOIHLIN THE WISE (eqprogression.com + pqdi.cc) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/216042" target="_blank" rel="noopener">Grioihin the Wise</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/216042" target="_blank" rel="noopener">Grioihin the Wise</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Water · Level: 75</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Grioihin-the-Wise.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Wise-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>550,000 HP (PQDI; eqprogression estimated ~650K)</li>
+                        <li>Hits 693–1662 (PQDI; eqprogression estimated 2,000+)</li>
+                        <li>Rampages</li>
+                        <li>Slowable</li>
+                        <li>Casts Tidal Freeze (PBAE, 2,000 DD + 5 sec stun, -350 Cold Based, 60 sec recast)</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>75</td></tr>
+                        <tr><th>HP</th><td>550,000</td></tr>
+                        <tr><th>Hits</th><td>693 - 1662</td></tr>
+                        <tr><th>Resistances</th><td>MR 165 / CR 1000 / FR 165 / DR 95 / PR 95</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Rampage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3057" target="_blank" rel="noopener" data-pqdi-spell="3057">Tidal Freeze</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== HYDROTHA (eqprogression.com + pqdi.cc) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/216043" target="_blank" rel="noopener">Hydrotha</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/216043" target="_blank" rel="noopener">Hydrotha</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Water · Level: 75</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Hydrotha.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Hydrotha-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>650,000 HP (PQDI; eqprogression estimated ~700K)</li>
+                        <li>Hits 467–2017 (PQDI; eqprogression estimated 2,200+)</li>
+                        <li>Flurries</li>
+                        <li>Slowable</li>
+                        <li>Casts Engulfing Ink (Single Target, Blind -500 HP DoT, -350 Magic Based, 30 sec recast)</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>75</td></tr>
+                        <tr><th>HP</th><td>650,000</td></tr>
+                        <tr><th>Hits</th><td>467 - 2017</td></tr>
+                        <tr><th>Resistances</th><td>MR 165 / CR 1000 / FR 165 / DR 95 / PR 95</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Flurry, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3058" target="_blank" rel="noopener" data-pqdi-spell="3058">Engulfing Ink</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== KRZIIK THE MIGHTY (eqprogression.com + pqdi.cc) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/216041" target="_blank" rel="noopener">Krziik the Mighty</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/216041" target="_blank" rel="noopener">Krziik the Mighty</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Water · Level: 77</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Krziik-the-Mighty.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Krziik-the-Mighty-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>900,000 HP (PQDI; eqprogression estimated ~1 Million)</li>
+                        <li>Hits 714–2166 (PQDI; eqprogression estimated 2,200+)</li>
+                        <li>Rampages</li>
+                        <li>Unslowable (PQDI; eqprogression called him slowable)</li>
+                        <li>Casts Battle Cry of Regrua (Single Target, 3000 DD + Increases his movement speed 20%, 60 sec recast, Unresistable)</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>77</td></tr>
+                        <tr><th>HP</th><td>900,000</td></tr>
+                        <tr><th>Hits</th><td>714 - 2166</td></tr>
+                        <tr><th>Resistances</th><td>MR 115 / CR 1000 / FR 165 / DR 95 / PR 95</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Rampage, Dual Wield, Do Not Equip, Magical Attack, Unslowable, Unmezzable, Uncharmable, Unstunable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3059" target="_blank" rel="noopener" data-pqdi-spell="3059">Battle Cry of Regrua</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== OFOSSAA THE ENLIGHTENED (eqprogression.com + pqdi.cc) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/216040" target="_blank" rel="noopener">Ofossaa the Enlightened</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/216040" target="_blank" rel="noopener">Ofossaa the Enlightened</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Water · Level: 78</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Ofossaa-the-Enlightened.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Ofossaa-the-Enlightened-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>800,000 HP (PQDI; eqprogression estimated ~900K)</li>
+                        <li>Hits 548–1832 (PQDI; eqprogression estimated 2,100+)</li>
+                        <li>Flurries</li>
+                        <li>Slowable</li>
+                        <li>Casts Mists of Enlightenment (PBAE, -250 HP DoT/-100 Mana Drain DoT/-450AC/-20% Slow, -275 Cold Based, Curse Cure (18), 60 sec recast)</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>800,000</td></tr>
+                        <tr><th>Hits</th><td>548 - 1832</td></tr>
+                        <tr><th>Resistances</th><td>MR 175 / CR 1000 / FR 115 / DR 95 / PR 95</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Flurry, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3060" target="_blank" rel="noopener" data-pqdi-spell="3060">Mists of Enlightenment</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== COIRNAV THE AVATAR OF WATER (eqprogression.com + pqdi.cc + Quarm scripts) ==================== -->
+        <section id="coirnav">
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/216048" target="_blank" rel="noopener">Coirnav the Avatar of Water</a></h2>
+
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3>Guardian of Coirnav</h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Water · Phase 1</p>
+                </div>
+                <div class="enc-body">
+                    <h4>Starting the Event</h4>
+                    <p>This event is timed and must be completed within 14 minutes of the initial trigger. You start the event (and the timer) by killing Guardian of Coirnav.</p>
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Guardian-of-Coirnav.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>Approx. 100K HP</li>
+                        <li>Hits at least 1200+</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>HP</th><td>100,000 (eqprogression estimate)</td></tr>
+                        <tr><th>Hits</th><td>1200+</td>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">No pqdi.cc entry — statistics from the eqprogression.com guide</p>
+                </div>
+            </div>
+
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3>The Three Waves</h3>
+                    <p class="enc-meta">Phases 1–2 · Pwelon of Vapor, Nrinda of Ice, Vamuil of Water</p>
+                </div>
+                <div class="enc-body">
+                    <h4>Fight Overview</h4>
+                    <p>There’s more than 1 way to do this event. Your strategy might vary based on guild experience/level/gear so feel free to do what they you’re most comfortable with. The idea of this guide is show general mechanics. You must be fast to complete this event. If you take longer than 14 minutes you’ll fail and everyone will get ported to Plane of Knowledge. The Coirnav encounter involves killing 3 waves of mobs then killing Coirnav at the end.</p>
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Coirnav-Map.jpg" alt=""><figcaption></figcaption></figure>
+
+                    <h4>Wave 1</h4>
+                    <p>After Guardian of Coirnav dies Pwelon of Vapor will spawn along with 20-25 “vaporfiend” adds. You can use a Paladin to root Pwelon of Vapor away from the raid while the raid kills the adds. You should debuff him while he’s rooted but don’t put him into summon. He rampages. AE is recommended for killing the adds. You can have pullers use Coral Hilted Tulwar to help pull all the adds into the raid quickly.</p>
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Coral-Hilted-Tulwar.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/pwelon-of-vapor.jpg" alt=""><figcaption></figcaption></figure>
+
+                    <h4>Wave 2</h4>
+                    <p>Generally the same thing happens for Wave 2. A few minutes after Wave 1 Nrinda of Ice will spawn along with 20-25 “icefiend” adds. AE and kill the adds while rooting/debuffing Nrinda of Ice away from the raid.</p>
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Nrinda-of-Ice.jpg" alt=""><figcaption></figcaption></figure>
+
+                    <h4>Wave 3</h4>
+                    <p>Repeat for Wave 3. A few minutes after Wave 2 Vamuil of Water will spawn along with 20-25 “waterfiend” adds. Again root/debuff Vamuil of Water away from the raid while killing/AEing the adds.</p>
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Vamuil-of-Water.jpg" alt=""><figcaption></figcaption></figure>
+
+                    <h4>Mini Bosses</h4>
+                    <p>After the 3 waves of trash are dead the three named will respawn where Coirnav is at. Pull them out and kill them. CC/offtank them where necessary. They have low HP should die quickly.</p>
+                    <ul>
+                        <li>Nrinda of Ice Hits 1900+, 150K HP, Flurry, Slowable</li>
+                        <li>Pwelon of Vapor Hits 1700+ , 150K HP, Rampage, Slowable</li>
+                        <li>Vamuil of Water Hits 1200+, 180K HP, Rampage, Slowable</li>
+                    </ul>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">No pqdi.cc entry — statistics from the eqprogression.com guide</p>
+                </div>
+            </div>
+
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/216048" target="_blank" rel="noopener">Coirnav the Avatar of Water</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Water · Level: 80</p>
+                </div>
+                <div class="enc-body">
+                    <h4>Killing Coirnav</h4>
+                    <p>Once everything is dead Coirnav will become targetable and a lot of additional adds will spawn. Burn all discs and zerg down Coirnav ASAP. Have tanks offtank adds until Coirnav is dead. He will have low HP so should die quickly. Once dead, Essence of Water will spawn for your flag.</p>
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/coirnav2.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/Coirnav_Guide/Essence-of-Water.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>3,000,000 HP (PQDI; eqprogression estimated ~270K)</li>
+                        <li>Hits 511–1653 (PQDI; eqprogression estimated 1700+)</li>
+                        <li>AE Rampage</li>
+                        <li>Casts Curse of the Triumvirate (PBAE, -2000 DD, dispel, -500 Attack, Cold Based, Curse Counter)</li>
+                    </ul>
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>powater/encounters/Coirnav.lua</code>, SecretsOTheP/quests): Killing the Guardian of Coirnav starts the event and the failure timer. Wave 1 spawns 25 vaporfiends plus Pwelon of Vapor; Wave 2 (after 3 minutes) spawns 25 icefiends plus Nrinda of Ice; Wave 3 (after 5 minutes) spawns 25 waterfiends plus Vamuil of Water. Once 75 adds are dead (all three waves), the three named respawn at Coirnav's location with fixed HP pools (Pwelon 130,000, Nrinda 120,000, Vamuil 155,000); killing the trio makes Coirnav targetable, resets him to a fixed 250,000 HP pool, fades his buffs, and begins spawning waves of random “ling” adds every ~49 seconds. Zone-wide glow warnings fire at 10, 12, and 14 minutes; at 15 minutes the failure timer banishes the raid and all event mobs depop with a 10-minute recovery. On success the Essence of Water spawns at Coirnav's location (say “hail” for Sphere of Coalesced Water or Quintessence of Elements, up to 72 flags, despawns 20 minutes out of combat).</p>
+                    <table class="stats">
+                        <tr><th>Level</th><td>80</td></tr>
+                        <tr><th>HP</th><td>3,000,000</td></tr>
+                        <tr><th>Hits</th><td>511 - 1653</td></tr>
+                        <tr><th>Resistances</th><td>MR 140 / CR 1000 / FR 175 / DR 115 / PR 115</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Area Rampage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unfearable, Immune to fleeing, Immune to melee except magical, Will not Aggro, Immune to Aggro, Immune to lull effects, No Harm from Players, Proximity Aggro, Always Calls for Help, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3061" target="_blank" rel="noopener" data-pqdi-spell="3061">Curse of the Triumvirate</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+
+                    <h4>Loot</h4>
+                    <ul>
+                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/29163" target="_blank" rel="noopener" data-pqdi-id="29163">Sphere of Coalesced Water</a></li>
+                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/29165" target="_blank" rel="noopener" data-pqdi-id="29165">Quintessence of Elements</a></li>
+                    </ul>
+                    <p class="section-sub">Reward items sourced from the Essence of Water (Quarm script: <code>powater/Essence_of_Water.lua</code>).</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="source-note">
+            <p>Sources: eqprogression.com guide pages — Plane of Water Boss Guide and Coirnav the Avatar of Water Raid Guide; pqdi.cc for boss statistics (Grioihin the Wise, Hydrotha, Krziik the Mighty, Ofossaa the Enlightened, Coirnav the Avatar of Water); Quarm server Lua scripts (SecretsOTheP/quests, powater/) for event mechanics.</p>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>
+            A fan guide to EverQuest's Planes of Power expansion (2003). Not affiliated with
+            Daybreak Game Company or Sony. Guide text sourced from eqprogression.com and
+            raspersrealm.com; boss statistics cross-checked against pqdi.cc (Project Quarm
+            Database Interface, DB 2026-09-07); videos embedded from YouTube.
+        </p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        for (let i = 0; i < 60; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                vx: (Math.random() - 0.5) * 0.3,
+                vy: -(Math.random() * 0.5 + 0.2),
+                size: Math.random() * 2 + 0.5,
+                alpha: Math.random() * 0.5 + 0.2
+            });
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.x += p.vx; p.y += p.vy;
+                if (p.y < -10) { p.y = canvas.height + 10; p.x = Math.random() * canvas.width; }
+                if (p.x < -10) p.x = canvas.width + 10;
+                if (p.x > canvas.width + 10) p.x = -10;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(212, 175, 55, ${p.alpha})`;
+                ctx.fill();
+            });
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+
+    <script>
+    // Image sizing + side-by-side grouping for guide screenshots
+    (function () {
+      const figs = Array.from(document.querySelectorAll('figure.guide-img'));
+      if (!figs.length) return;
+      function sizeFigure(f) {
+        const img = f.querySelector('img');
+        if (!img || !img.naturalWidth) return;
+        const n = img.naturalWidth, h = img.naturalHeight;
+        let s = Math.min(3.5, 760 / n, 350 / h); // small images scale up to ~3.5x; nothing exceeds 760 wide or 350 tall
+        if (n >= 500) s = Math.min(s, 1);        // medium/large: never bigger than natural size
+        const w = Math.round(n * s);
+        img.style.width = w + 'px';
+        f.style.maxWidth = (w + 40) + 'px';
+      }
+      figs.forEach(f => {
+        const img = f.querySelector('img');
+        if (!img) return;
+        if (img.complete && img.naturalWidth) sizeFigure(f);
+        else img.addEventListener('load', () => sizeFigure(f));
+      });
+      // Group consecutive figures side-by-side (up to 3 per row)
+      function immediatelyFollows(a, b) {
+        let n = a.nextSibling;
+        while (n && n !== b) {
+          if (n.nodeType === 3 && !/\S/.test(n.textContent)) { n = n.nextSibling; continue; }
+          return false;
+        }
+        return !!n;
+      }
+      let i = 0;
+      while (i < figs.length) {
+        const f = figs[i];
+        if (f.parentElement && f.parentElement.classList.contains('img-row')) { i++; continue; }
+        const group = [f];
+        let j = i;
+        while (group.length < 3 && j + 1 < figs.length && immediatelyFollows(figs[j], figs[j + 1])) {
+          j++; group.push(figs[j]);
+        }
+        if (group.length >= 2) {
+          const row = document.createElement('div');
+          row.className = 'img-row';
+          f.parentNode.insertBefore(row, f);
+          group.forEach(g => row.appendChild(g));
+        }
+        i = j + 1;
+      }
+    })();
+    </script>
+
+    <script src="assets/pqdi-tooltip.js"></script>
+</body>
+</html>

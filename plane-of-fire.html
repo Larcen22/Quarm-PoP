@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane of Fire — EverQuest Planes of Power Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <!-- NAV: mark the current page's link with class="active" -->
+    <nav class="topbar">
+        <a href="index.html">Home</a><span class="sep">·</span>
+        <a href="flagging.html">Flagging</a><span class="sep">·</span>
+        <a href="bosses-tier1.html">Bosses T1</a>
+        <a href="bosses-tier2.html">T2</a>
+        <a href="bosses-tier3.html">T3</a>
+        <a href="solusek-ro-tower.html">Solusek Ro Tower</a><span class="sep">·</span>
+        <a href="plane-of-air.html">Air</a>
+        <a href="plane-of-earth.html">Earth</a>
+        <a href="plane-of-fire.html" class="active">Fire</a>
+        <a href="plane-of-water.html">Water</a>
+        <a href="plane-of-time.html">Time</a><span class="sep">·</span>
+        <a href="videos.html">Videos</a>
+    </nav>
+
+    <!-- PAGE HEADER (inner pages only — index uses the big hero instead) -->
+    <div class="page-header">
+        <h1>Plane of Fire</h1>
+        <p class="subtitle">The plane bosses, the Fennin Ro army event, and Fennin Ro the Tyrant of Fire</p>
+    </div>
+
+    <main>
+        <!-- ==================== OVERVIEW (eqprogression.com) ==================== -->
+        <section>
+            <h2 class="section-title">Overview</h2>
+            <figure class="guide-img"><img src="img/PoFire_Bosses/front-title-fire.jpg" alt=""><figcaption></figcaption></figure>
+            <p><strong>All Plane of Fire bosses are Immune to Fire</strong></p>
+            <p>The ten plane bosses are covered in their own sections below; the Fennin Ro army event and the Tyrant of Fire himself are covered in the <a href="#fennin-ro">Ring Events</a> and <a href="#fennin-ro">Fennin Ro</a> sections.</p>
+        </section>
+
+        <!-- ==================== RING EVENTS (eqprogression.com + pqdi.cc + Quarm scripts) ==================== -->
+        <section>
+            <h2 class="section-title">Ring Events</h2>
+            <p class="section-sub">The Fennin Ro Event</p>
+
+            <figure class="guide-img"><img src="img/PoFire_Bosses/Fennin-Ro.jpg" alt=""><figcaption></figcaption></figure>
+            <p>Below is a map of the general layout of the event.</p>
+            <figure class="guide-img"><img src="img/PoFire_Bosses/Fennin-PofireMap.jpg" alt=""><figcaption></figcaption></figure>
+
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217050" target="_blank" rel="noopener">Guardian of Doomfire</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Fire · Level: 70 · Phase 1</p>
+                </div>
+                <div class="enc-body">
+                    <p>Kill Guardian of Doomfire to start the event. He has approx 3 day respawn.</p>
+
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>150,000 HP (PQDI; eqprogression estimated ~175K)</li>
+                        <li>Hits 238–1515 (PQDI; eqprogression estimated 1500+)</li>
+                        <li>Slowable</li>
+                        <li>Flurries</li>
+                    </ul>
+
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Guardian-of-Doomfire-1.jpg" alt=""><figcaption></figcaption></figure>
+
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 1 of the army event — defeating the Guardian triggers the first army wave (Rage Reavers, Chaos Healers, Dark Magi, and Doomfire Fiends) and starts the event's failure timer (~4h52m, paused while the raid is in combat). On event failure the Guardian's respawn is set to 18 hours; on success (Fennin Ro defeated) it is set to 5 days 18 hours.</p>
+                    <table class="stats">
+                        <tr><th>Level</th><td>70</td></tr>
+                        <tr><th>HP</th><td>150,000</td></tr>
+                        <tr><th>Hits</th><td>238 - 1515</td></tr>
+                        <tr><th>Resistances</th><td>MR 125 / CR 50 / FR 1000 / DR 90 / PR 110</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Flurry, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3>Trash Packs</h3>
+                    <p class="enc-meta">Phase 2 · 9 packs</p>
+                </div>
+                <div class="enc-body">
+                    <p>Kill the trash packs (smaller yellow circles on the above map). They have a small aggro radius so in some cases they won’t all aggro at once. The doomfire “demon models” are rootable. They rampage and can hit for 2000+. The packs are all slowable. There are 9 packs (if I counted right).</p>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Trash-Pack.jpg" alt=""><figcaption></figcaption></figure>
+
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/SnareImmunity.lua</code>, SecretsOTheP/quests): Field 1 trash (obsidian tree spiders, fiery spirit steeds, jopal hunters and gatherers, flame lords and lordlings, jopal lavahurlers) has a 20% chance to spawn snare-immune.</p>
+                </div>
+            </div>
+
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3>The Four Lords</h3>
+                    <p class="enc-meta">Phase 3 · Level 78</p>
+                </div>
+                <div class="enc-body">
+                    <p>Once you clear all the trash packs 4x named and some additional trash will spawn. Keep the raid away from them so the pullers have room to split.</p>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/demons-4-fennin.jpg" alt=""><figcaption></figcaption></figure>
+
+                    <h4><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217425" target="_blank" rel="noopener">Azobian the Darklord</a></h4>
+                    <ul>
+                        <li>190,000 HP (PQDI; eqprogression estimated 220K)</li>
+                        <li>Slowable</li>
+                        <li>Hit me for 1100 max only on 35 Hstam Warrior, but likely hits harder</li>
+                        <li>Casts Infernal Darkness (PBAE, Blind, Unresistable, 30 sec recast)</li>
+                    </ul>
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 2 of the army event — Azobian spawns with his three fellow lords and the second army wave (rage reavers, chaos healers, dark magi, and doomfire fiends). Once all the lords and the wave's remaining mobs are dead, the event advances to the Council of Fire.</p>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>190,000</td></tr>
+                        <tr><th>Hits</th><td>503 - 930</td></tr>
+                        <tr><th>Resistances</th><td>MR 125 / CR 50 / FR 1000 / DR 100 / PR 115</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3049" target="_blank" rel="noopener" data-pqdi-spell="3049">Infernal Darkness</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+
+                    <h4><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217453" target="_blank" rel="noopener">Hebabbilys the Ragelord</a></h4>
+                    <ul>
+                        <li>200,000 HP (PQDI; eqprogression estimated 220K)</li>
+                        <li>Slowable</li>
+                        <li>Hits 615–3186 (PQDI; eqprogression estimated 3500+)</li>
+                        <li>Self-buffs Ravaging Rage of the Fiends (Haste/Attack buff). Dispel/slow him ASAP.</li>
+                    </ul>
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 2 of the army event — Hebabbilys spawns with the other three lords and the second army wave. Once all the lords and the wave's remaining mobs are dead, the event advances to the Council of Fire.</p>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>200,000</td></tr>
+                        <tr><th>Hits</th><td>615 - 3186</td></tr>
+                        <tr><th>Resistances</th><td>MR 125 / CR 50 / FR 1000 / DR 100 / PR 115</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, Does NOT buff/heal friends</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3050" target="_blank" rel="noopener" data-pqdi-spell="3050">Ravaging Rage of the Fiends</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+
+                    <h4><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217426" target="_blank" rel="noopener">Javonn the Overlord</a></h4>
+                    <ul>
+                        <li>205,000 HP (PQDI; eqprogression estimated 220K)</li>
+                        <li>Slowable</li>
+                        <li>Hit me for 2000+ on 35 Hstam Warrior, may hit even harder</li>
+                        <li>Casts Fiery Assault (PBAE, 2 sec stun/500 DD/Spin Stun, -400 Fire Based)</li>
+                    </ul>
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 2 of the army event — Javonn spawns with the other three lords and the second army wave. Once all the lords and the wave's remaining mobs are dead, the event advances to the Council of Fire.</p>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>205,000</td></tr>
+                        <tr><th>Hits</th><td>672 - 2042</td></tr>
+                        <tr><th>Resistances</th><td>MR 125 / CR 50 / FR 1000 / DR 100 / PR 115</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3051" target="_blank" rel="noopener" data-pqdi-spell="3051">Fiery Assault</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+
+                    <h4><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217427" target="_blank" rel="noopener">Reaxnous the Chaoslord</a></h4>
+                    <ul>
+                        <li>200,000 HP (PQDI; eqprogression estimated 220K)</li>
+                        <li>Slowable</li>
+                        <li>Hits 701–1668 (PQDI; eqprogression estimated 2000+)</li>
+                        <li>Casts Rain of Burning Fire (Targeted AE, 1000 DD rain, -400 Fire Based)</li>
+                    </ul>
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 2 of the army event — Reaxnous spawns with the other three lords and the second army wave. Once all the lords and the wave's remaining mobs are dead, the event advances to the Council of Fire.</p>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>200,000</td></tr>
+                        <tr><th>Hits</th><td>701 - 1668</td></tr>
+                        <tr><th>Resistances</th><td>MR 125 / CR 50 / FR 1000 / DR 100 / PR 115</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3020" target="_blank" rel="noopener" data-pqdi-spell="3020">Rain of Burning Fire</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3>Council of Fire</h3>
+                    <p class="enc-meta">Phase 4 · Level 78</p>
+                </div>
+                <div class="enc-body">
+                    <p>At this point your raid can move up to the entrance of Fennin Ro’s castle. This phase consists of killing another 4x named mobs (pretty trivial) that can be pulled out of Fennin’s castle.</p>
+                    <p>Once the 4th mob dies two things happen:</p>
+                    <ol>
+                        <li>Fennin Ro spawns on his throne</li>
+                        <li>Some demons will spawn blocking the bridge preventing further players from running in. You can still Call of Hero or corpse drag.</li>
+                    </ol>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/fennin-guardians-4.jpg" alt=""><figcaption></figcaption></figure>
+
+                    <h4><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217432" target="_blank" rel="noopener">Chancellor Kirtra</a></h4>
+                    <ul>
+                        <li>230,000 HP (PQDI; eqprogression estimated 250K)</li>
+                        <li>Hits 551–1450 (PQDI; eqprogression estimated 1500+)</li>
+                        <li>Slowable</li>
+                        <li>Casts Web of Flame (PBAE, Root/-50 Mana Drain DoT, -150 Fire Based) 1 min CD</li>
+                    </ul>
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 3 of the army event — the Council of Fire is the final army wave. When all four council guardians and the remaining trash are dead, Fennin Ro spawns on his throne and ten elite guardians are enabled to hold the bridge.</p>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>230,000</td></tr>
+                        <tr><th>Hits</th><td>551 - 1450</td></tr>
+                        <tr><th>Resistances</th><td>MR 125 / CR 50 / FR 1000 / DR 80 / PR 110</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3053" target="_blank" rel="noopener" data-pqdi-spell="3053">Web of Flame</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+
+                    <h4><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217433" target="_blank" rel="noopener">Chancellor Traxom</a></h4>
+                    <ul>
+                        <li>230,000 HP (PQDI; eqprogression estimated 250K)</li>
+                        <li>Hits 476–1546 (PQDI; eqprogression estimated 1600+)</li>
+                        <li>Slowable</li>
+                        <li>Casts Rising Suns (Single Target, Blind/500 DoT, -300 Fire Based), 1 min CD</li>
+                    </ul>
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 3 of the army event — the Council of Fire is the final army wave. When all four council guardians and the remaining trash are dead, Fennin Ro spawns on his throne and ten elite guardians are enabled to hold the bridge.</p>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>230,000</td></tr>
+                        <tr><th>Hits</th><td>476 - 1546</td></tr>
+                        <tr><th>Resistances</th><td>MR 125 / CR 50 / FR 1000 / DR 80 / PR 110</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3052" target="_blank" rel="noopener" data-pqdi-spell="3052">Rising Suns</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+
+                    <h4><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217429" target="_blank" rel="noopener">Omni Magus Crato</a></h4>
+                    <ul>
+                        <li>215,000 HP (PQDI; eqprogression estimated 250K)</li>
+                        <li>Hit me for 600 max only on 35 Hstam Warrior, but likely hits harder.</li>
+                        <li>Slowable</li>
+                        <li>Casts Comet of Flames (Targeted AE, 3300 DD/-500 Mana, -400 Fire Resist)</li>
+                    </ul>
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 3 of the army event — the Council of Fire is the final army wave. When all four council guardians and the remaining trash are dead, Fennin Ro spawns on his throne and ten elite guardians are enabled to hold the bridge.</p>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>215,000</td></tr>
+                        <tr><th>Hits</th><td>431 - 644</td></tr>
+                        <tr><th>Resistances</th><td>MR 125 / CR 50 / FR 1000 / DR 105 / PR 110</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3054" target="_blank" rel="noopener" data-pqdi-spell="3054">Comet of Flames</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+
+                    <h4><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217428" target="_blank" rel="noopener">Warlord Prollaz</a></h4>
+                    <ul>
+                        <li>250,000 HP</li>
+                        <li>Hits 971–1184 (PQDI; eqprogression estimated 1500+)</li>
+                        <li>Slowable</li>
+                        <li>Rampage</li>
+                    </ul>
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 3 of the army event — the Council of Fire is the final army wave. When all four council guardians and the remaining trash are dead, Fennin Ro spawns on his throne and ten elite guardians are enabled to hold the bridge.</p>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>250,000</td></tr>
+                        <tr><th>Hits</th><td>971 - 1184</td></tr>
+                        <tr><th>Resistances</th><td>MR 125 / CR 50 / FR 1000 / DR 105 / PR 110</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Rampage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== GENERAL DRUAV FLAMESINGER (eqprogression.com) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217036" target="_blank" rel="noopener">General Druav Flamesinger</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217036" target="_blank" rel="noopener">General Druav Flamesinger</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Fire · Level: 75</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/General-Druav-Flamesinger.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/General-Druav-Flamesinger-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>600,000 HP (PQDI; eqprogression estimated 650K)</li>
+                        <li>Hits 520 - 2264 (PQDI; eqprogression estimated 3,300+)</li>
+                        <li>Slowable</li>
+                        <li>Procs Fiery Strike (Single Target, 3000 DD + 5 sec stun, -350 Fire Based)</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>75</td></tr>
+                        <tr><th>HP</th><td>600,000</td></tr>
+                        <tr><th>Hits</th><td>520 - 2264</td></tr>
+                        <tr><th>Resistances</th><td>MR 115 / CR 165 / FR 1000 / DR 155 / PR 150</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Procs</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3013" target="_blank" rel="noopener" data-pqdi-spell="3013">Fiery Strike</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== JAXOLIZ DAWNEYES (eqprogression.com) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217049" target="_blank" rel="noopener">Jaxoliz Dawneyes</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217049" target="_blank" rel="noopener">Jaxoliz Dawneyes</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Fire · Level: 75</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Jaxoliz-Dawneyes.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Jaxoliz-Dawneyes-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>625,000 HP (PQDI; eqprogression estimated 700K)</li>
+                        <li>Hits 490 - 2698 (PQDI; eqprogression estimated 3,100+)</li>
+                        <li>Slowable</li>
+                        <li>Casts Phoenix Charm (Single Target, Charm, Unresistable, 120 sec recast)</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>75</td></tr>
+                        <tr><th>HP</th><td>625,000</td></tr>
+                        <tr><th>Hits</th><td>490 - 2698</td></tr>
+                        <tr><th>Resistances</th><td>MR 165 / CR 165 / FR 1000 / DR 90 / PR 140</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3014" target="_blank" rel="noopener" data-pqdi-spell="3014">Phoenix Charm</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CRIARE SUNMANE (eqprogression.com) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217051" target="_blank" rel="noopener">Criare Sunmane</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217051" target="_blank" rel="noopener">Criare Sunmane</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Fire · Level: 75</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Criare-Sunmane.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Criare-Sunmane-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>625,000 HP (PQDI; eqprogression estimated 700K)</li>
+                        <li>Hits 573 - 2317 (PQDI; eqprogression estimated 3,100+)</li>
+                        <li>Slowable</li>
+                        <li>Casts Phoenix Charm (Single Target, Charm, Unresistable, 120 sec recast)</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>75</td></tr>
+                        <tr><th>HP</th><td>625,000</td></tr>
+                        <tr><th>Hits</th><td>573 - 2317</td></tr>
+                        <tr><th>Resistances</th><td>MR 165 / CR 165 / FR 1000 / DR 150 / PR 90</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3014" target="_blank" rel="noopener" data-pqdi-spell="3014">Phoenix Charm</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== QUAVONIS FIRETAIL (eqprogression.com) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217056" target="_blank" rel="noopener">Quavonis Firetail</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217056" target="_blank" rel="noopener">Quavonis Firetail</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Fire · Level: 78</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Quavonis-Firetail.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Quavonis-Firetail-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>825,000 HP (PQDI; eqprogression estimated 800K – 900K)</li>
+                        <li>Hits 644 - 3300 (PQDI; eqprogression estimated 3,500+)</li>
+                        <li>Slowable</li>
+                        <li>Casts Juxyapose of Fire (PBAE, 500 DD + Shadowstep, -350 Fire Based, 24 sec recast)</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>825,000</td></tr>
+                        <tr><th>Hits</th><td>644 - 3300</td></tr>
+                        <tr><th>Resistances</th><td>MR 170 / CR 50 / FR 1000 / DR 110 / PR 110</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3015" target="_blank" rel="noopener" data-pqdi-spell="3015">Juxtapose of Fire</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAGMATON (eqprogression.com) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217059" target="_blank" rel="noopener">Magmaton</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217059" target="_blank" rel="noopener">Magmaton</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Fire · Level: 75</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/magmaton.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Magmaton-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>800,000 HP (PQDI; eqprogression estimated 900K)</li>
+                        <li>Hits 603 - 2929 (PQDI; eqprogression estimated 3,400+)</li>
+                        <li>Slowable</li>
+                        <li>Rampages</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>75</td></tr>
+                        <tr><th>HP</th><td>800,000</td></tr>
+                        <tr><th>Hits</th><td>603 - 2929</td></tr>
+                        <tr><th>Resistances</th><td>MR 170 / CR 50 / FR 1000 / DR 150 / PR 165</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Area Rampage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING, Reverse Slow</td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== BABNOXIS THE SPIDER QUEEN (eqprogression.com) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217005" target="_blank" rel="noopener">Babnoxis the Spider Queen</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217005" target="_blank" rel="noopener">Babnoxis the Spider Queen</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Fire · Level: 75</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/babs.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Magmaton-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>625,000 HP (PQDI; eqprogression estimated 700K)</li>
+                        <li>Hits 441 - 2107 (PQDI; eqprogression estimated 2,400+)</li>
+                        <li>Slowable</li>
+                        <li>Casts Poisoned Flames (PBAE, 500 DoT/125 Mana Drain, -350 Poison Based, 18 Poison Counter, 30 sec recast)</li>
+                        <li>Flurries</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>75</td></tr>
+                        <tr><th>HP</th><td>625,000</td></tr>
+                        <tr><th>Hits</th><td>441 - 2107</td></tr>
+                        <tr><th>Resistances</th><td>MR 115 / CR 165 / FR 1000 / DR 165 / PR 1000</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Flurry, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3016" target="_blank" rel="noopener" data-pqdi-spell="3016">Poisoned Flames</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PYRONIS (eqprogression.com) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217063" target="_blank" rel="noopener">Pyronis</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217063" target="_blank" rel="noopener">Pyronis</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Fire · Level: 75</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Pyronis.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Magmaton-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>650,000 HP (PQDI; eqprogression estimated 750K)</li>
+                        <li>Hits 518 - 2650 (PQDI; eqprogression estimated 2,900+)</li>
+                        <li>Slowable</li>
+                        <li>Casts Mighty Bellow of Fire (PBAE, 1500 DD + 1 sec stun, -350 Fire based, 60 sec recast)</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>75</td></tr>
+                        <tr><th>HP</th><td>650,000</td></tr>
+                        <tr><th>Hits</th><td>518 - 2650</td></tr>
+                        <tr><th>Resistances</th><td>MR 115 / CR 165 / FR 1000 / DR 165 / PR 155</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3017" target="_blank" rel="noopener" data-pqdi-spell="3017">Mighty Bellow of Fire</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== BLAZZAX THE OMNIFIEND (eqprogression.com) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217003" target="_blank" rel="noopener">Blazzax the Omnifiend</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217003" target="_blank" rel="noopener">Blazzax the Omnifiend</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Fire · Level: 78</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/blazz.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Magmaton-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>850,000 HP (PQDI; eqprogression estimated 1 Million)</li>
+                        <li>Hits 542 - 3540 (PQDI; eqprogression estimated 4,000+)</li>
+                        <li>Slowable</li>
+                        <li>Casts Nova Inferno (PBAE, 2000 DD, -350 Fire based, 30 sec recast)</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>850,000</td></tr>
+                        <tr><th>Hits</th><td>542 - 3540</td></tr>
+                        <tr><th>Resistances</th><td>MR 170 / CR 165 / FR 1000 / DR 90 / PR 90</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3018" target="_blank" rel="noopener" data-pqdi-spell="3018">Nova Inferno</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== GENERAL REPARM (eqprogression.com) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217032" target="_blank" rel="noopener">General Reparm</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217032" target="_blank" rel="noopener">General Reparm</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Fire · Level: 78</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/General-Reparm.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/General-Reparm-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>850,000 HP (PQDI; eqprogression estimated 900K – 1 Million)</li>
+                        <li>Hits 603 - 3174 (PQDI; eqprogression estimated 3,300+)</li>
+                        <li>Unslowable (PQDI; eqprogression listed Slowable)</li>
+                        <li>Procs Fiery Strike (Single Target, 3000 DD + 5 sec stun, -350 Fire Based)</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>850,000</td></tr>
+                        <tr><th>Hits</th><td>603 - 3174</td></tr>
+                        <tr><th>Resistances</th><td>MR 170 / CR 165 / FR 1000 / DR 90 / PR 140</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unslowable, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Procs</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3013" target="_blank" rel="noopener" data-pqdi-spell="3013">Fiery Strike</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ARCH MAGE YOZANNI (eqprogression.com) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217019" target="_blank" rel="noopener">Arch Mage Yozanni</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217019" target="_blank" rel="noopener">Arch Mage Yozanni</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Fire · Level: 78</p>
+                </div>
+                <div class="enc-body">
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/arch-mage-yozanni.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/arch-mage-yozanni-Map.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>800,000 HP (PQDI; eqprogression estimated 850-900K)</li>
+                        <li>Hits 570 - 2968 (PQDI; eqprogression estimated 3,300+)</li>
+                        <li>Slowable</li>
+                        <li>Casts Disjunction of Flame (PBAE, -250 Mana Drain DoT/-450AC/-200 Attack, 18 curse counter, -350 Fire Based, 60 sec recast)</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>78</td></tr>
+                        <tr><th>HP</th><td>800,000</td></tr>
+                        <tr><th>Hits</th><td>570 - 2968</td></tr>
+                        <tr><th>Resistances</th><td>MR 170 / CR 165 / FR 1000 / DR 150 / PR 95</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unmezzable, Uncharmable, Unstunable, Unsnarable, Unfearable, Immune to fleeing, Immune to melee except magical, NO LOITERING</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3019" target="_blank" rel="noopener" data-pqdi-spell="3019">Disjunction of Flame</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FENNIN RO THE TYRANT OF FIRE (eqprogression.com + pqdi.cc + Quarm scripts) ==================== -->
+        <section id="fennin-ro">
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217440" target="_blank" rel="noopener">Fennin Ro the Tyrant of Fire</a></h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/217440" target="_blank" rel="noopener">Fennin Ro the Tyrant of Fire</a></h3>
+                    <p class="enc-meta">Expansion: Planes of Power · Zone: Plane of Fire · Level: 80</p>
+                </div>
+                <div class="enc-body">
+                    <h4>Phase 5 — The Final Fight</h4>
+                    <p>Time to kill Fennin Ro! Most guilds tank him in the outside corner of the steps. This is due to his AE rampage. New PoP guilds might want to consider a Complete Heal chain. Overgeared guilds can spam heals on the tank. Melee should stay max range. He has an AE DD and Mana Drain as well (see below).</p>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Fennin-Map-Setup.jpg" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/PoFire_Bosses/Fennin-Ro.jpg" alt=""><figcaption></figcaption></figure>
+                    <h4>Fight Info</h4>
+                    <ul>
+                        <li>1,000,000 HP (PQDI; eqprogression estimated 1.1 Million)</li>
+                        <li>Hits 1048–1962 (PQDI; eqprogression estimated 2500+)</li>
+                        <li>Slowable</li>
+                        <li>AE Rampage</li>
+                        <li>Casts Cataclysm of Ro (PBAE, 3300 DD/-100 Mana Drain DoT/100 HP DoT, -1000 Fire Based, 18 curse cure)</li>
+                    </ul>
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): The 4-phase army event concludes here — Guardian of Doomfire → army waves → four lords → Council of Fire → Fennin Ro. A failure timer (~4h52m, paused during combat) starts when the Guardian falls and gains a one-time +2h extension when Fennin spawns. On failure, all event mobs depop and the event retries in 18 hours; on success, Fennin respawns in 5 days 18 hours and leaves an Essence of Fire that flags the killing raid or group (say “hail” for Globe of Dancing Flame or Quintessence of Elements, up to 72 flags, despawns 20 min out of combat).</p>
+                    <table class="stats">
+                        <tr><th>Level</th><td>80</td></tr>
+                        <tr><th>HP</th><td>1,000,000</td></tr>
+                        <tr><th>Hits</th><td>1048 - 1962</td></tr>
+                        <tr><th>Resistances</th><td>MR 115 / CR 115 / FR 1000 / DR 75 / PR 130</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Area Rampage, Dual Wield, Do Not Equip, Unmezzable, Uncharmable, Unstunable, Unsnarable, Immune to fleeing, Immune to melee except magical, NO LOITERING, Reverse Slow</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/3055" target="_blank" rel="noopener" data-pqdi-spell="3055">Cataclysm of Ro</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+
+                    <h4>Loot</h4>
+                    <ul>
+                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/29147" target="_blank" rel="noopener" data-pqdi-id="29147">Globe of Dancing Flame</a></li>
+                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/29165" target="_blank" rel="noopener" data-pqdi-id="29165">Quintessence of Elements</a></li>
+                    </ul>
+                    <p class="section-sub">Reward items sourced from the Essence of Fire (Quarm script: <code>pofire/Essence_of_Fire.lua</code>).</p>
+
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/ULf99GQpvFc" title="Everquest - Fennin Ro Event Guide (Plane of Fire)" allowfullscreen></iframe>
+                            <div class="video-caption"><strong>Everquest - Fennin Ro Event Guide (Plane of Fire)</strong> — EQProgression</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="source-note">
+            <p>Sources: eqprogression.com guide pages — Plane of Fire Boss Guide and Fennin Ro the Tyrant of Fire guide; pqdi.cc for boss statistics (Fennin Ro the Tyrant of Fire, Guardian of Doomfire, Azobian the Darklord, Hebabbilys the Ragelord, Javonn the Overlord, Reaxnous the Chaoslord, Chancellor Kirtra, Chancellor Traxom, Omni Magus Crato, Warlord Prollaz); Quarm server Lua scripts (SecretsOTheP/quests, poFire/) for event mechanics. Videos embedded from YouTube.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            A fan guide to EverQuest's Planes of Power expansion (2003). Not affiliated with
+            Daybreak Game Company or Sony. Guide text sourced from eqprogression.com and
+            raspersrealm.com; boss statistics cross-checked against pqdi.cc (Project Quarm
+            Database Interface, DB 2026-09-07); videos embedded from YouTube.
+        </p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        for (let i = 0; i < 60; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                vx: (Math.random() - 0.5) * 0.3,
+                vy: -(Math.random() * 0.5 + 0.2),
+                size: Math.random() * 2 + 0.5,
+                alpha: Math.random() * 0.5 + 0.2
+            });
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.x += p.vx; p.y += p.vy;
+                if (p.y < -10) { p.y = canvas.height + 10; p.x = Math.random() * canvas.width; }
+                if (p.x < -10) p.x = canvas.width + 10;
+                if (p.x > canvas.width + 10) p.x = -10;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(212, 175, 55, ${p.alpha})`;
+                ctx.fill();
+            });
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+
+    <script>
+    // Image sizing + side-by-side grouping for guide screenshots
+    (function () {
+      const figs = Array.from(document.querySelectorAll('figure.guide-img'));
+      if (!figs.length) return;
+      function sizeFigure(f) {
+        const img = f.querySelector('img');
+        if (!img || !img.naturalWidth) return;
+        const n = img.naturalWidth, h = img.naturalHeight;
+        let s = Math.min(3.5, 760 / n, 350 / h); // small images scale up to ~3.5x; nothing exceeds 760 wide or 350 tall
+        if (n >= 500) s = Math.min(s, 1);        // medium/large: never bigger than natural size
+        const w = Math.round(n * s);
+        img.style.width = w + 'px';
+        f.style.maxWidth = (w + 40) + 'px';
+      }
+      figs.forEach(f => {
+        const img = f.querySelector('img');
+        if (!img) return;
+        if (img.complete && img.naturalWidth) sizeFigure(f);
+        else img.addEventListener('load', () => sizeFigure(f));
+      });
+      // Group consecutive figures side-by-side (up to 3 per row)
+      function immediatelyFollows(a, b) {
+        let n = a.nextSibling;
+        while (n && n !== b) {
+          if (n.nodeType === 3 && !/\S/.test(n.textContent)) { n = n.nextSibling; continue; }
+          return false;
+        }
+        return !!n;
+      }
+      let i = 0;
+      while (i < figs.length) {
+        const f = figs[i];
+        if (f.parentElement && f.parentElement.classList.contains('img-row')) { i++; continue; }
+        const group = [f];
+        let j = i;
+        while (group.length < 3 && j + 1 < figs.length && immediatelyFollows(figs[j], figs[j + 1])) {
+          j++; group.push(figs[j]);
+        }
+        if (group.length >= 2) {
+          const row = document.createElement('div');
+          row.className = 'img-row';
+          f.parentNode.insertBefore(row, f);
+          group.forEach(g => row.appendChild(g));
+        }
+        i = j + 1;
+      }
+    })();
+    </script>
+
+    <script src="assets/pqdi-tooltip.js"></script>
+</body>
+</html>
