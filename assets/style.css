@@ -67,7 +67,7 @@ header.hero {
 .page-header {
     padding: 90px 10% 50px;
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.86)), url('../img/hero-bg.jpg');
+    background-image: linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.86)), url('../img/hero-bg.png');
     background-size: cover; background-position: center;
 }
 .page-header h1 {
@@ -254,6 +254,8 @@ a.pqdi-item, a.pqdi-npc {
   text-decoration: none;
 }
 a.pqdi-item:hover, a.pqdi-npc:hover { text-decoration: underline; }
+a.pqdi-spell { color: var(--gold); text-decoration: none; }
+a.pqdi-spell:hover { text-decoration: underline; }
 h2.section-title a.pqdi-npc, h3 a.pqdi-npc { font-weight: inherit; }
 
 .item-tooltip {
@@ -289,6 +291,10 @@ h2.section-title a.pqdi-npc, h3 a.pqdi-npc { font-weight: inherit; }
   color: #8a8a8a;
   font-style: italic;
 }
+/* Quarm Script notes (sourced from SecretsOTheP/quests Lua scripts) */
+.script-note { color: #b8a06a; font-size: .85rem; line-height: 1.55; border-left: 3px solid var(--dark-gold); padding-left: .75rem; margin: 1rem 0 .25rem; }
+.script-note code { background: #1e1e1e; color: var(--gold); padding: .1em .4em; font-size: .95em; word-break: break-all; }
+
 /* spell tooltips (rendered from pqdi.cc /api/v1/spell JSON) */
 .spell-tip-effects { margin: 6px 0; padding-left: 18px; }
 .spell-tip-meta { margin: 6px 0 0; color: #9a9a9a; font-size: .75rem; }
