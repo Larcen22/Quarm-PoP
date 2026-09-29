@@ -25,8 +25,6 @@
         <a href="plane-of-fire.html">Fire</a>
         <a href="plane-of-water.html">Water</a>
         <a href="plane-of-time.html">Time</a><span class="sep">·</span>
-        <a href="quests-items.html">Quests &amp; Items</a>
-        <a href="gear-tradeskills.html">Gear &amp; Tradeskills</a>
         <a href="videos.html">Videos</a>
     </nav>
 
@@ -90,7 +88,12 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>solrotower/Arlyxir.lua</code>, SecretsOTheP/quests): Every 75 seconds “is immolated in flames and is reborn!” → full heal + Searing Flames. Boundary check → teleport back, wipe hate, Annul Self; on death spawns a flaming cauldron + 3 warders.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>solrotower/Arlyxir.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Every 75 seconds during combat he says “is immolated in flames, and is reborn!” — a full heal plus Searing Flames (spell 1281) on his current target.</li>
+                        <li>A boundary check runs every 6 seconds; if he strays below Y = 1230 he is teleported back to his spawn point, his hate list is wiped, and he casts Annul Self (spell 2830).</li>
+                        <li>On death a flaming cauldron (NPC 212411) and three warders of Arlyxir (NPC 212416) are spawned.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>75</td></tr>
                         <tr><th>HP</th><td>750,000</td></tr>
@@ -143,7 +146,12 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>solrotower/Jiva.lua</code> + <code>encounters/JivaAdds.lua</code>, SecretsOTheP/quests): Every 45 seconds summons one of eight named adds in rotation at fixed locations (“Makin, come to my aid!” etc.). On death → cauldron + 3 warders.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>solrotower/Jiva.lua</code> + <code>encounters/JivaAdds.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Every 45 seconds during combat he summons the next add in a fixed rotation of eight — Makin, Adeel, Jiri, Seif, Nabil, Aydin, Cemal, Fahim (NPC IDs 212399–212406) — each appearing at one of eight preset locations.</li>
+                        <li>Each summon is announced with a unique taunt: “Makin, come to my aid!”, “Adeel, I require your assistance!”, and so on through the eight lines.</li>
+                        <li>On death a flaming cauldron (NPC 212412) and three warders of Jiva (NPC 212417) are spawned.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>75</td></tr>
                         <tr><th>HP</th><td>700,000</td></tr>
@@ -198,7 +206,13 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>solrotower/Rizlona.lua</code> + <code>#Rizlona.lua</code>, SecretsOTheP/quests): Two phases — first form's death spawns the second (#Rizlona). Both have boundary checks (teleport back, wipe hate, Annul Self) and a 2.5-hour despawn timer paused during combat; on final death → cauldron + 3 warders.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>solrotower/Rizlona.lua</code> + <code>#Rizlona.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Two phases — the first form's death spawns the second form (#Rizlona, NPC 212407) at the same location.</li>
+                        <li>Both forms run a boundary check every 6 seconds during combat; if Y falls below 2047 or above 2538 they are teleported back to their spawn point (the second form also re-anchors its guard spot there), their hate list is wiped, and Annul Self (spell 2830) is cast.</li>
+                        <li>The second form carries a 2.5-hour despawn timer that pauses during combat; when it fires the boss despawns and its respawn point is reset to a 10-minute timer.</li>
+                        <li>On final death a flaming cauldron (NPC 212413) and three warders of Rizlona (NPC 212418) are spawned.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>70</td></tr>
                         <tr><th>HP</th><td>300,000</td></tr>
@@ -253,7 +267,12 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>solrotower/The_Protector_of_Dresolik.lua</code>, SecretsOTheP/quests): Boundary check (X &gt; 978 or &lt; 558) → teleport back, wipe hate, Annul Self; 2.5-hour despawn timer paused during combat; on death → cauldron + 3 warders of Dresolik.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>solrotower/The_Protector_of_Dresolik.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>A boundary check runs every 6 seconds during combat; if X exceeds 978 or falls below 558 he is teleported back to his spawn point, his hate list is wiped, and Annul Self (spell 2830) is cast.</li>
+                        <li>He carries a 2.5-hour despawn timer that pauses during combat; when it fires the boss despawns and all four Guardian of Dresolik spawn points are reset to a 10-minute respawn timer.</li>
+                        <li>On death a flaming cauldron (NPC 212414) and three warders of Dresolik (NPC 212419) are spawned.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>75</td></tr>
                         <tr><th>HP</th><td>800,000</td></tr>
@@ -306,7 +325,12 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>solrotower/Xuzl.lua</code>, SecretsOTheP/quests): Boundary check (Y &lt; -914) → “You shall not distract me from my conjurings!” + teleport back, wipe hate, Annul Self; on death → cauldron + 3 warders.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>solrotower/Xuzl.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>A boundary check runs every 6 seconds during combat; if Y falls below -914 he bellows in a deep voice, “You shall not distract me from my conjurings!” and is teleported back to his spawn point.</li>
+                        <li>The same out-of-bounds event wipes his hate list and casts Annul Self (spell 2830).</li>
+                        <li>On death a flaming cauldron (NPC 212410) and three warders of Xuzl (NPC 212415) are spawned.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>75</td></tr>
                         <tr><th>HP</th><td>600,000</td></tr>
@@ -389,7 +413,11 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>solrotower/Solusek_Ro.lua</code>, SecretsOTheP/quests): Anti-cheat every 30 seconds — if he's below the arena floor with HP &lt; 50%, unengaged Guardians of Fire teleport to him and he heals 100,000. On death spawns a loot container.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>solrotower/Solusek_Ro.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>An anti-cheat check runs every 30 seconds during combat; if he drops below the arena floor (Z &lt; 240) while under 50% HP, all unengaged Guardians of Fire (NPC type 212041) teleport to him and he heals for 100,000.</li>
+                        <li>On death a loot container (NPC 212420) is spawned and signaled with the ID of whoever had kill rights.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>80</td></tr>
                         <tr><th>HP</th><td>850,000</td></tr>

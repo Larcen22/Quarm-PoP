@@ -25,8 +25,6 @@
         <a href="plane-of-fire.html">Fire</a>
         <a href="plane-of-water.html">Water</a>
         <a href="plane-of-time.html">Time</a><span class="sep">·</span>
-        <a href="quests-items.html">Quests &amp; Items</a>
-        <a href="gear-tradeskills.html">Gear &amp; Tradeskills</a>
         <a href="videos.html">Videos</a>
     </nav>
 
@@ -139,7 +137,14 @@
                     <figure class="guide-img"><img src="img/Raid_Guides/Agnarr/Karana.jpg" alt=""><figcaption></figcaption></figure>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>bothunder/Agnarr_the_Storm_Lord.lua</code>, SecretsOTheP/quests): On engage: emote + Jolur Sandstorm spawns within seconds; adds spawn at 75/50/25% (Ekil Thundercall, Oljin Stormtide, Hibdin Cyclone); storm portals spawn every 2 minutes (faster below 50%/25% HP). All adds are linked to the tank's target and kept in bounds. On death spawns Karana loot container.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>bothunder/Agnarr_the_Storm_Lord.lua</code>, SecretsOTheP/quests):SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>When the fight begins, Agnarr taunts (“Fool! This is the realm of the Storm Giants now…”) and Jolur Sandstorm spawns within a few seconds.</li>
+                        <li>At 75%, 50%, and 25% HP he summons named storm giants — Ekil Thundercall (75%), Oljin Stormtide (50%), Hibdin Cyclone (25%).</li>
+                        <li>Storm portals spawn every two minutes; below 50% HP the interval shortens to 90 seconds, and below 25% HP to 60 seconds.</li>
+                        <li>All adds are linked to the tank: about every 45 seconds each add is forced to attack the tank (hate added), and any add that wanders out of bounds is teleported back.</li>
+                        <li>On death he spawns a Karana loot container for the killer.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>75</td></tr>
                         <tr><th>HP</th><td>1,050,000</td></tr>
@@ -209,7 +214,12 @@
                     <p>Once dead, a planar projection will spawn in the middle of his room for a flag.</p>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>hohonorb/Lord_Mithaniel_Marr.lua</code>, SecretsOTheP/quests): Gated — three named mobs must spawn, and he only becomes targetable/aggro-capable/vulnerable after all three are killed. Boundary check → teleport back + wipe hate + Balance of the Nameless; on death spawns a Planar Projection.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>hohonorb/Lord_Mithaniel_Marr.lua</code>, SecretsOTheP/quests):SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Gated encounter: three named guards are force-spawned at the start, and Lord Mithaniel Marr only becomes targetable / aggro-capable / vulnerable after all three have been killed (checked about 3 seconds later).</li>
+                        <li>A bounds check runs every few seconds: if Marr moves out of bounds he is teleported back to his spawn point, his hate list is wiped, and he casts Balance of the Nameless (spell 3230).</li>
+                        <li>On death he spawns a Planar Projection (NPC 220025) loot container for the killer.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>77</td></tr>
                         <tr><th>HP</th><td>1,200,000</td></tr>
@@ -274,7 +284,14 @@
                     <p>Hail A Planar Projection for your flag! Click on the door in his room to port back to the zone in area.</p>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potactics/#Rallos_Zek_.lua</code> + <code>encounters/Rallos.lua</code>, SecretsOTheP/quests): Part of the Rallos arena event — door guards (Decorin Berik/Grunhork) → Tallon Zek and Vallon Zek spawn and run in (“The Warlord stirs"); kill both brothers to progress. Corpses periodically resurrect as gladiators/tormented souls, or are consumed by the war wraiths (15–180 second random timer). On success: 66-hour respawn.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potactics/#Rallos_Zek_.lua</code> + <code>encounters/Rallos.lua</code>, SecretsOTheP/quests):SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Part of phase 1 of the Rallos arena event: after both door guards (Decorin Berik and Decorin Grunhork) are killed, Tallon Zek and Vallon Zek spawn and run to their rooms (“The Warlord stirs”).</li>
+                        <li>On reaching his room, Tallon becomes attackable and spawns four Gindan Flayer adds.</li>
+                        <li>Killing both brothers (Tallon + Vallon) advances the event — Rallos Zek is summoned.</li>
+                        <li>Arena corpses periodically resurrect as gladiators or tormented souls, or are consumed by war wraiths (random 15–180 second timer).</li>
+                        <li>On success: the door guards respawn in 66 hours.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>71</td></tr>
                         <tr><th>HP</th><td>1,400,000</td></tr>
@@ -329,7 +346,14 @@
                     <p>Hail the A Planar Projection for your flag! Click on the door behind where Vallon Zek stands to port back to the zone in area.</p>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potactics/#Rallos_Zek_.lua</code> + <code>encounters/Rallos.lua</code>, SecretsOTheP/quests): One of the two brothers spawned in phase 1 of the Rallos arena event — he and Tallon Zek run in together after the door guards (Decorin Berik/Grunhork) are cleared. Killing both brothers spawns Rallos Zek. Corpses periodically resurrect as gladiators/tormented souls, or are consumed by the war wraiths (15–180 second random timer). On success: 66-hour respawn.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potactics/#Rallos_Zek_.lua</code> + <code>encounters/Rallos.lua</code>, SecretsOTheP/quests):SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>One of the two brothers spawned in phase 1; he and Tallon Zek run in together after the door guards are cleared.</li>
+                        <li>On reaching his room, Vallon becomes attackable and spawns four Hendin Shadow Master adds; at 50% HP he summons two more (unsarable / unslowable) versions of himself.</li>
+                        <li>Killing both brothers spawns Rallos Zek.</li>
+                        <li>Arena corpses periodically resurrect as gladiators or tormented souls, or are consumed by war wraiths (random 15–180 second timer).</li>
+                        <li>On success: the door guards respawn in 66 hours.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>71</td></tr>
                         <tr><th>HP</th><td>34,867</td></tr>
@@ -400,7 +424,13 @@
                     <figure class="guide-img"><img src="img/PoTactics_Zek_Bros/realRZMapEQProg.jpg" alt=""><figcaption></figcaption></figure>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potactics/encounters/Rallos.lua</code>, SecretsOTheP/quests): Phase 2 boss of the arena event — spawns after both Tallon and Vallon Zek are killed, fighting with waves of Decorin Elites and Chaos Wraiths. Corpses periodically resurrect as gladiators/tormented souls, or are consumed by the war wraiths (15–180 second random timer). On success: 66-hour respawn.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potactics/encounters/Rallos.lua</code>, SecretsOTheP/quests):SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>The final phase of the arena event: regular Rallos Zek is summoned when both brothers die and fights with waves of Decorin Elites; at 50% HP he leaps into the arena pit and becomes Rallos Zek the Warlord (depoping himself).</li>
+                        <li>In the pit, every ~55 seconds the Warlord summons waves of Chaos Boars and Chaos Wraiths from the corpses (“the corpses twitch”).</li>
+                        <li>Bounds check: if he leaves the pit he is teleported back, casts Balance of the Nameless (spell 3230), and wipes his hate list.</li>
+                        <li>On death: a Planar Projection loot container spawns for the killer; the door guards respawn in 66 hours.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>75</td></tr>
                         <tr><th>HP</th><td>1,050,000</td></tr>
