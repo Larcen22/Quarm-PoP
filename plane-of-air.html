@@ -38,6 +38,12 @@
         <!-- ==================== OVERVIEW (eqprogression.com) ==================== -->
         <section>
             <h2 class="section-title">Overview</h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3>Overview</h3>
+                    <p class="enc-meta">Four Ring Events, each spawning an Avatar</p>
+                </div>
+                <div class="enc-body">
             <figure class="guide-img"><img src="img/Wind_Etched_Key_Xegony/Xegony-Key-Map2.jpg" alt=""><figcaption></figcaption></figure>
             <p>There are a total of 4 ring events in Plane of Air. At the end of each event an “Avatar” spawns.</p>
             <p>Use the map above to correlate the ring events to their respective Avatar. They are in the following order:</p>
@@ -47,6 +53,8 @@
                 <li>Phoenix Ring Event – Spawns Avatar of Mist</li>
                 <li>Spider Ring Event – Spawns Avatar of Dust</li>
             </ol>
+                </div>
+            </div>
         </section>
 
         <!-- ==================== BALTALDOR THE CURSED (eqprogression.com + pqdi.cc) ==================== -->
@@ -73,7 +81,12 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poair/#Baltaldor_the_Cursed.lua</code>, SecretsOTheP/quests): Hate-drop mechanic — warps back + heals 30% when aggro is lost (anti-Memory-Blur); periodic hate reduction to 5%.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poair/#Baltaldor_the_Cursed.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>On entering combat, a 1-second "drophate" timer starts; it stops when combat ends.</li>
+                        <li>When combat ends: if her HP is below 50%, or on a random roll (odds equal to her current HP percentage), she warps to her guard point and heals 30% of her max HP.</li>
+                        <li>The "drophate" timer ticks every second; with a 1-in-60 chance per tick (about once per minute) she reduces her current target's hate to 5% (minimum 1).</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>67</td></tr>
                         <tr><th>HP</th><td>265,000</td></tr>
@@ -216,7 +229,12 @@
                 </div>
             </div>
 
-            <h2 class="subhead">The Avatars</h2>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3>The Avatars</h3>
+                    <p class="enc-meta">Spawned by the four Ring Events</p>
+                </div>
+                <div class="enc-body">
 
             <figure class="guide-img"><img src="img/Wind_Etched_Key_Xegony/Avatar-of-Wind.jpg" alt=""><figcaption></figcaption></figure>
             <figure class="guide-img"><img src="img/Wind_Etched_Key_Xegony/Avatar-of-Smoke-elementals.jpg" alt=""><figcaption></figcaption></figure>
@@ -271,14 +289,38 @@
             </ul>
 
             <h4>Quarm Script — Ring Events</h4>
-            <p class="script-note"><strong>Sourced from the Quarm server Lua scripts</strong> (<code>poair/encounters/Wind.lua</code>, <code>Smoke.lua</code>, <code>Mist.lua</code>, <code>Dust.lua</code>, SecretsOTheP/quests): Each ring event is a controller-driven island — clear the island trash, defeat the event boss (Pherlondien Clawpike / Elemental Masterpiece / Melernil Faal'Armanna / Lossenmachar), and the Avatar spawns. Events expire in 66 hours on success or repop in 18 minutes on failure; avatars despawn after 2.5 hours out of combat.</p>
+            <p class="script-note"><strong>Sourced from the Quarm server Lua scripts</strong> (<code>poair/encounters/Wind.lua</code>, <code>Smoke.lua</code>, <code>Mist.lua</code>, <code>Dust.lua</code>, SecretsOTheP/quests):</p>
+            <ul class="script-list">
+                <li>Each ring event is a controller-driven island: clear the island trash to trigger the event, then defeat the event boss to spawn the Avatar.</li>
+                <li>While any island trash is alive, the event timer runs at 18 minutes (repop); once the island is fully cleared, the timer is set to 66 hours (event expiry).</li>
+                <li>When the timer expires, if the event was active all event mobs are depopped and the event resets, then all island trash repops.</li>
+                <li>Wind: clearing the island spawns 8 Menacing Stormriders with staggered 60/120/180/240-second wake timers, plus a Stormrider Priest of Destruction; the menacing chase the priest (if engaged) or the kill location, re-pathing every 10 seconds while out of combat.</li>
+                <li>Wind: the priest's death depops all menacing and spawns 4 storm traps; attacking a trap spawns a Sporadic Stormrider and the trap despawns.</li>
+                <li>Wind: killing the Sporadic spawns 5 Pherlondien Clawpike (1 real boss + 4 fakes) if the zone guy is present, otherwise a Loathesome Stormclaw; the boss's death spawns the Avatar of Wind.</li>
+                <li>Smoke: island kills spawn Elemental Champions in stages (at kills 5, 10, 15, and 21); the champions only become aggro-capable once all 21 island spawns are cleared.</li>
+                <li>Smoke: killing the last champion spawns the Elemental Masterpiece (if the zone guy is present) or an Elemental Anomaly; the boss's death spawns the Avatar of Smoke.</li>
+                <li>Mist: clearing the island spawns 4 Phoenix Firesurges; killing them spawns 4 Phoenix Windsurges; killing the Windsurges spawns Melernil Faal'Armanna (or a Firewing Imitator if the guy is absent); the boss's death spawns the Avatar of Mist.</li>
+                <li>Dust: Sigismond Windwalker grows with each island kill (every 3 kills; at size 16 when the island is fully cleared).</li>
+                <li>Dust: clearing the island spawns a Vorladien Archwalker and enables 15 Erratic Arachnid spawns under a 1-hour despawn timer.</li>
+                <li>Dust: each Archwalker death spawns 3 Vorladien Spawns; after 3 archwalkers fall, Sigismond becomes aggro-capable (or an Ominous Recluse spawns if he is absent); the boss's death spawns the Avatar of Dust.</li>
+                <li>All avatars despawn after 2.5 hours out of combat — the timer pauses while in combat.</li>
+                <li>Avatars (and Smoke's Elemental Masterpiece) run a hate-reduction timer: every second, with a 1-in-60 chance they reduce their target's hate to 5%.</li>
+                <li>Wind, Mist, and Dust avatars: when combat ends, if below 50% HP or on a random roll, they warp to the guard point and heal 30% of max HP.</li>
+            </ul>
             <figure class="guide-img"><img src="img/Wind_Etched_Key_Xegony/Xegony-Key-Map2.jpg" alt=""><figcaption></figcaption></figure>
+                </div>
+            </div>
         </section>
 
         <!-- ==================== WIND ETCHED KEY (eqprogression.com) ==================== -->
         <section>
             <h2 class="section-title">Wind Etched Key</h2>
-            <p class="section-sub">Key to Xegony’s Island</p>
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3>Wind Etched Key</h3>
+                    <p class="enc-meta">Key to Xegony’s Island</p>
+                </div>
+                <div class="enc-body">
 
             <figure class="guide-img"><img src="img/Wind_Etched_Key_Xegony/Wind-Etched-Key.jpg" alt=""><figcaption></figcaption></figure>
 
@@ -339,6 +381,8 @@
             <figure class="guide-img"><img src="img/Wind_Etched_Key_Xegony/Avatar-of-Smoke-elementals.jpg" alt=""><figcaption></figcaption></figure>
             <figure class="guide-img"><img src="img/Wind_Etched_Key_Xegony/Avatar-of-Mist.png" alt=""><figcaption></figcaption></figure>
             <figure class="guide-img"><img src="img/Wind_Etched_Key_Xegony/Avatar-of-Dust.jpg" alt=""><figcaption></figcaption></figure>
+                </div>
+            </div>
         </section>
 
         <!-- ==================== XEGONY THE QUEEN OF AIR (eqprogression.com + pqdi.cc) ==================== -->
@@ -395,7 +439,17 @@
 
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poair/encounters/Xegony.lua</code>, SecretsOTheP/quests): Six waves of named adds at 99/85/70/55/40/25% HP; adds run to her and drop hate when far from her. If combat ends after 120+ seconds → teleports back and all adds repop (full reset). On death spawns Essence of Air.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poair/encounters/Xegony.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>On spawn she repops all 36 add spawn slots and depops any lingering adds.</li>
+                        <li>On entering combat, a 6-second HP-check timer starts and all six wave states reset.</li>
+                        <li>Six waves of named adds spawn at 99/85/70/55/40/25% HP, in random order: Nuquernal + Djinni, Wesreh + Servant, Rindaler + Knight, Elemental Arbitor + Air Infused Defender, Weruis + Phoenix Scout, Huridaf + Deadly Cloudwalker.</li>
+                        <li>When a wave spawns, the named boss is summoned at a fixed location, and the unnamed adds are moved to Xegony, made aggro-capable, humanoid, and sent running at her.</li>
+                        <li>Adds manage hate: every second, with a 1-in-15 chance (about every 15 seconds), if within 30 of Xegony they reset their hate on the current target to 1; otherwise they remove the target from the hate list entirely.</li>
+                        <li>If combat ends after 120+ seconds, Xegony warps back to her spawn point.</li>
+                        <li>When combat ends, all 36 add slots repop and all adds depop — a full reset.</li>
+                        <li>On death she spawns the Essence of Air at her location and signals it with the killer's ID.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>80</td></tr>
                         <tr><th>HP</th><td>1,500,000</td></tr>
