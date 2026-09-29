@@ -74,7 +74,15 @@
             </ul>
 
             <h4>Quarm Script</h4>
-            <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>powater/encounters/Fishlords.lua</code>, SecretsOTheP/quests): Trading 100 platinum to a Fishlord (Fishlord Craiyk or Fishlord Lezom) starts the event — the Fishlord walks to his summoning point and begins the chant, enabling the trash spawns in his tunnel. The script tracks kills of three trash families (ferocious/fierce/furious anglerfish) and spawns a named anglerfish at the 5th, 10th, 15th, and 25th kill of each family, escalating in power. The event ends at 25 kills (or immediately if the Fishlord dies); the Fishlord then re-enables with a 25-minute respawn timer. Trash despawns 3 minutes out of combat.</p>
+            <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>powater/encounters/Fishlords.lua</code>, SecretsOTheP/quests):</p>
+            <ul class="script-list">
+                <li>Trading 100 platinum to a Fishlord (Fishlord Lezom, type 216020, or Fishlord Craiyk, type 216019) starts the event — the Fishlord walks to his summoning point, chants, and enables the four trash spawns in his tunnel (spawnids 369521–369528).</li>
+                <li>The script tracks kills of three trash families — ferocious, fierce, and furious anglerfish (types 216268–216270).</li>
+                <li>At the 5th, 10th, 15th, and 25th kill of each family, a named anglerfish spawns, escalating in power (ferocious: stringy/dark/prismatic/master; fierce: hungry/wicked/superior/king; furious: toughened/foul/prime/supreme).</li>
+                <li>The event ends at 25 kills, or immediately if the Fishlord dies.</li>
+                <li>On end, trash spawns are disabled and the Fishlord re-enables with a 25-minute respawn timer (1,500,000 ms).</li>
+                <li>Trash despawns 3 minutes (180,000 ms) out of combat; the timer pauses while in combat.</li>
+            </ul>
         </section>
 
         <!-- ==================== GRIOIHLIN THE WISE (eqprogression.com + pqdi.cc) ==================== -->
@@ -283,7 +291,17 @@
                         <li>Casts Curse of the Triumvirate (PBAE, -2000 DD, dispel, -500 Attack, Cold Based, Curse Counter)</li>
                     </ul>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>powater/encounters/Coirnav.lua</code>, SecretsOTheP/quests): Killing the Guardian of Coirnav starts the event and the failure timer. Wave 1 spawns 25 vaporfiends plus Pwelon of Vapor; Wave 2 (after 3 minutes) spawns 25 icefiends plus Nrinda of Ice; Wave 3 (after 5 minutes) spawns 25 waterfiends plus Vamuil of Water. Once 75 adds are dead (all three waves), the three named respawn at Coirnav's location with fixed HP pools (Pwelon 130,000, Nrinda 120,000, Vamuil 155,000); killing the trio makes Coirnav targetable, resets him to a fixed 250,000 HP pool, fades his buffs, and begins spawning waves of random “ling” adds every ~49 seconds. Zone-wide glow warnings fire at 10, 12, and 14 minutes; at 15 minutes the failure timer banishes the raid and all event mobs depop with a 10-minute recovery. On success the Essence of Water spawns at Coirnav's location (say “hail” for Sphere of Coalesced Water or Quintessence of Elements, up to 72 flags, despawns 20 minutes out of combat).</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>powater/encounters/Coirnav.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Killing the Guardian of Coirnav (type 216053) starts the event and the failure timer; Coirnav (type 216048) drops his Will Not Aggro / Immune to Aggro specials.</li>
+                        <li>Wave 1 spawns 25 vaporfiends plus Pwelon of Vapor (type 216236); Wave 2 (3 minutes) spawns 25 icefiends plus Nrinda of Ice (type 216245); Wave 3 (5 minutes) spawns 25 waterfiends plus Vamuil of Water (type 216247).</li>
+                        <li>Once all 75 adds are dead, the three named respawn at Coirnav's location with fixed HP pools (Pwelon 130,000, Nrinda 120,000, Vamuil 155,000).</li>
+                        <li>Killing the trio makes Coirnav targetable — he resets to a fixed 250,000 HP pool, his buffs fade, and his hate list clears.</li>
+                        <li>Phase 3 then spawns waves of 25 random “ling” adds (vaporling/iceling/waterling) every ~49 seconds (49,000 ms).</li>
+                        <li>Zone-wide glow warnings fire at 10, 12, and 14 minutes (600,000 / 720,000 / 840,000 ms).</li>
+                        <li>At 15 minutes (900,000 ms) the failure timer banishes the raid; all event mobs depop and Coirnav re-enables with a 10-minute recovery (600,000 ms).</li>
+                        <li>On success the Essence of Water (type 216266) spawns at Coirnav's location, credited to the killer with kill rights (say “hail” for Sphere of Coalesced Water or Quintessence of Elements, up to 72 flags, despawns 20 minutes out of combat).</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>80</td></tr>
                         <tr><th>HP</th><td>3,000,000</td></tr>

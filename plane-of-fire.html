@@ -71,7 +71,13 @@
                     <figure class="guide-img"><img src="img/PoFire_Bosses/Guardian-of-Doomfire-1.jpg" alt=""><figcaption></figcaption></figure>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 1 of the army event — defeating the Guardian triggers the first army wave (Rage Reavers, Chaos Healers, Dark Magi, and Doomfire Fiends) and starts the event's failure timer (~4h52m, paused while the raid is in combat). On event failure the Guardian's respawn is set to 18 hours; on success (Fennin Ro defeated) it is set to 5 days 18 hours.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Phase 1 of the army event — defeating the Guardian of Doomfire (217050) triggers the first army wave: 17 Rage Reavers of Flame (217417), 6 Chaos Healers of Flame (217418), 8 Dark Magi of Flame (217419), and 3 each of Doomfire Darkfiend (217421), Doomfire Chaosfiend (217420), and Doomfire Ragefiend (217422), spawned at fixed locations along the field.</li>
+                        <li>The Guardian's death also starts the event failure timer (~4 hours 52 minutes), which pauses while any event mob is in combat and resumes once combat ends.</li>
+                        <li>On timer expiry (failure), all event mobs are depop'd and the Guardian's spawn (367088) is set to respawn in 18 hours.</li>
+                        <li>On event success (Fennin Ro defeated), the same spawn is instead set to respawn in 5 days 18 hours.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>70</td></tr>
                         <tr><th>HP</th><td>150,000</td></tr>
@@ -93,7 +99,12 @@
                     <figure class="guide-img"><img src="img/PoFire_Bosses/Trash-Pack.jpg" alt=""><figcaption></figcaption></figure>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/SnareImmunity.lua</code>, SecretsOTheP/quests): Field 1 trash (obsidian tree spiders, fiery spirit steeds, jopal hunters and gatherers, flame lords and lordlings, jopal lavahurlers) has a 20% chance to spawn snare-immune.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/SnareImmunity.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Covers 8 field trash types: obsidian tree spiders (217048, 217455), obsidian tree spiderling (217002), fiery spirit steed (217423), jopal hunter (217007), jopal gatherer (217028), flame lord (217029), flame lordling (217006), and jopal lavahurler (217047).</li>
+                        <li>On spawn, each mob has a 20% chance to gain special ability 16 (snare) set to 1, making it immune to snares.</li>
+                        <li>A single shared spawn handler applies the check to all eight types rather than duplicating the mechanic per mob.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -114,7 +125,12 @@
                         <li>Casts Infernal Darkness (PBAE, Blind, Unresistable, 30 sec recast)</li>
                     </ul>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 2 of the army event — Azobian spawns with his three fellow lords and the second army wave (rage reavers, chaos healers, dark magi, and doomfire fiends). Once all the lords and the wave's remaining mobs are dead, the event advances to the Council of Fire.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Phase 2 of the army event — Azobian the Darklord (217425) spawns at a fixed location along the bridge once all phase 1 trash are dead.</li>
+                        <li>Spawned alongside his three fellow lords (Javonn the Overlord, Hebabbilys the Ragelord, Reaxnous the Chaoslord) and the second army wave: 7 Rage Reavers of Flame, 5 Chaos Healers of Flame, and 4 Dark Magi of Flame.</li>
+                        <li>Once all phase 2 mobs (all four lords and the wave's remaining mobs) are dead, the event advances to the Council of Fire.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>78</td></tr>
                         <tr><th>HP</th><td>190,000</td></tr>
@@ -133,7 +149,12 @@
                         <li>Self-buffs Ravaging Rage of the Fiends (Haste/Attack buff). Dispel/slow him ASAP.</li>
                     </ul>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 2 of the army event — Hebabbilys spawns with the other three lords and the second army wave. Once all the lords and the wave's remaining mobs are dead, the event advances to the Council of Fire.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Phase 2 of the army event — Hebabbilys the Ragelord (217453) spawns at a fixed location along the bridge once all phase 1 trash are dead.</li>
+                        <li>Spawned alongside the other three lords (Azobian the Darklord, Javonn the Overlord, Reaxnous the Chaoslord) and the second army wave: 7 Rage Reavers of Flame, 5 Chaos Healers of Flame, and 4 Dark Magi of Flame.</li>
+                        <li>Once all phase 2 mobs (all four lords and the wave's remaining mobs) are dead, the event advances to the Council of Fire.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>78</td></tr>
                         <tr><th>HP</th><td>200,000</td></tr>
@@ -152,7 +173,12 @@
                         <li>Casts Fiery Assault (PBAE, 2 sec stun/500 DD/Spin Stun, -400 Fire Based)</li>
                     </ul>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 2 of the army event — Javonn spawns with the other three lords and the second army wave. Once all the lords and the wave's remaining mobs are dead, the event advances to the Council of Fire.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Phase 2 of the army event — Javonn the Overlord (217426) spawns at a fixed location along the bridge once all phase 1 trash are dead.</li>
+                        <li>Spawned alongside the other three lords (Azobian the Darklord, Hebabbilys the Ragelord, Reaxnous the Chaoslord) and the second army wave: 7 Rage Reavers of Flame, 5 Chaos Healers of Flame, and 4 Dark Magi of Flame.</li>
+                        <li>Once all phase 2 mobs (all four lords and the wave's remaining mobs) are dead, the event advances to the Council of Fire.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>78</td></tr>
                         <tr><th>HP</th><td>205,000</td></tr>
@@ -171,7 +197,12 @@
                         <li>Casts Rain of Burning Fire (Targeted AE, 1000 DD rain, -400 Fire Based)</li>
                     </ul>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 2 of the army event — Reaxnous spawns with the other three lords and the second army wave. Once all the lords and the wave's remaining mobs are dead, the event advances to the Council of Fire.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Phase 2 of the army event — Reaxnous the Chaoslord (217427) spawns at a fixed location along the bridge once all phase 1 trash are dead.</li>
+                        <li>Spawned alongside the other three lords (Azobian the Darklord, Hebabbilys the Ragelord, Javonn the Overlord) and the second army wave: 7 Rage Reavers of Flame, 5 Chaos Healers of Flame, and 4 Dark Magi of Flame.</li>
+                        <li>Once all phase 2 mobs (all four lords and the wave's remaining mobs) are dead, the event advances to the Council of Fire.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>78</td></tr>
                         <tr><th>HP</th><td>200,000</td></tr>
@@ -206,7 +237,12 @@
                         <li>Casts Web of Flame (PBAE, Root/-50 Mana Drain DoT, -150 Fire Based) 1 min CD</li>
                     </ul>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 3 of the army event — the Council of Fire is the final army wave. When all four council guardians and the remaining trash are dead, Fennin Ro spawns on his throne and ten elite guardians are enabled to hold the bridge.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Phase 3 of the army event — Chancellor Kirtra (217432) spawns at a fixed location near Fennin's castle once all phase 2 mobs (the Four Lords and their wave) are dead.</li>
+                        <li>Spawned alongside the other three council guardians: Chancellor Traxom (217433), Omni Magus Crato (217429), and Warlord Prollaz (217428).</li>
+                        <li>When all four council guardians are dead, Fennin Ro (217440) spawns on his throne and ten elite guardian spawns (369529–369538) are enabled to hold the bridge.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>78</td></tr>
                         <tr><th>HP</th><td>230,000</td></tr>
@@ -225,7 +261,12 @@
                         <li>Casts Rising Suns (Single Target, Blind/500 DoT, -300 Fire Based), 1 min CD</li>
                     </ul>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 3 of the army event — the Council of Fire is the final army wave. When all four council guardians and the remaining trash are dead, Fennin Ro spawns on his throne and ten elite guardians are enabled to hold the bridge.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Phase 3 of the army event — Chancellor Traxom (217433) spawns at a fixed location near Fennin's castle once all phase 2 mobs (the Four Lords and their wave) are dead.</li>
+                        <li>Spawned alongside the other three council guardians: Chancellor Kirtra (217432), Omni Magus Crato (217429), and Warlord Prollaz (217428).</li>
+                        <li>When all four council guardians are dead, Fennin Ro (217440) spawns on his throne and ten elite guardian spawns (369529–369538) are enabled to hold the bridge.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>78</td></tr>
                         <tr><th>HP</th><td>230,000</td></tr>
@@ -244,7 +285,12 @@
                         <li>Casts Comet of Flames (Targeted AE, 3300 DD/-500 Mana, -400 Fire Resist)</li>
                     </ul>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 3 of the army event — the Council of Fire is the final army wave. When all four council guardians and the remaining trash are dead, Fennin Ro spawns on his throne and ten elite guardians are enabled to hold the bridge.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Phase 3 of the army event — Omni Magus Crato (217429) spawns at a fixed location near Fennin's castle once all phase 2 mobs (the Four Lords and their wave) are dead.</li>
+                        <li>Spawned alongside the other three council guardians: Chancellor Kirtra (217432), Chancellor Traxom (217433), and Warlord Prollaz (217428).</li>
+                        <li>When all four council guardians are dead, Fennin Ro (217440) spawns on his throne and ten elite guardian spawns (369529–369538) are enabled to hold the bridge.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>78</td></tr>
                         <tr><th>HP</th><td>215,000</td></tr>
@@ -263,7 +309,12 @@
                         <li>Rampage</li>
                     </ul>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): Phase 3 of the army event — the Council of Fire is the final army wave. When all four council guardians and the remaining trash are dead, Fennin Ro spawns on his throne and ten elite guardians are enabled to hold the bridge.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Phase 3 of the army event — Warlord Prollaz (217428) spawns at a fixed location near Fennin's castle once all phase 2 mobs (the Four Lords and their wave) are dead.</li>
+                        <li>Spawned alongside the other three council guardians: Chancellor Kirtra (217432), Chancellor Traxom (217433), and Omni Magus Crato (217429).</li>
+                        <li>When all four council guardians are dead, Fennin Ro (217440) spawns on his throne and ten elite guardian spawns (369529–369538) are enabled to hold the bridge.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>78</td></tr>
                         <tr><th>HP</th><td>250,000</td></tr>
@@ -608,7 +659,14 @@
                         <li>Casts Cataclysm of Ro (PBAE, 3300 DD/-100 Mana Drain DoT/100 HP DoT, -1000 Fire Based, 18 curse cure)</li>
                     </ul>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests): The 4-phase army event concludes here — Guardian of Doomfire → army waves → four lords → Council of Fire → Fennin Ro. A failure timer (~4h52m, paused during combat) starts when the Guardian falls and gains a one-time +2h extension when Fennin spawns. On failure, all event mobs depop and the event retries in 18 hours; on success, Fennin respawns in 5 days 18 hours and leaves an Essence of Fire that flags the killing raid or group (say “hail” for Globe of Dancing Flame or Quintessence of Elements, up to 72 flags, despawns 20 min out of combat).</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>pofire/encounters/Fennin.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>The 4-phase army event concludes here: Guardian of Doomfire → army waves → Four Lords → Council of Fire → Fennin Ro. Fennin (217440) spawns on his throne when all four council guardians are dead, and ten elite guardian spawns (369529–369538) are enabled to hold the bridge.</li>
+                        <li>The failure timer started by the Guardian's death (~4 hours 52 minutes, paused during combat) gains a one-time +2 hour extension (once per encounter) when Fennin spawns.</li>
+                        <li>On timer expiry (failure), all event mobs are depop'd, the elites are disabled, and the Guardian's spawn (367088) is set to respawn in 18 hours.</li>
+                        <li>On success, the Guardian's spawn is instead set to respawn in 5 days 18 hours.</li>
+                        <li>Fennin's death ends the event and spawns the Essence of Fire (217454) at his position, flagged to the killer with kill rights (say “hail” for Globe of Dancing Flame or Quintessence of Elements, up to 72 flags, despawns 20 min out of combat).</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>80</td></tr>
                         <tr><th>HP</th><td>1,000,000</td></tr>
