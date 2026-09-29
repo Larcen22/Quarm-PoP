@@ -25,8 +25,6 @@
         <a href="plane-of-fire.html">Fire</a>
         <a href="plane-of-water.html">Water</a>
         <a href="plane-of-time.html">Time</a><span class="sep">·</span>
-        <a href="quests-items.html">Quests &amp; Items</a>
-        <a href="gear-tradeskills.html">Gear &amp; Tradeskills</a>
         <a href="videos.html">Videos</a>
     </nav>
 
@@ -84,7 +82,15 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>povalor/#Aerin-Dar.lua</code>, SecretsOTheP/quests): At 85/65/45/25% HP he awakens pairs/triples of dormant adds (Mindless Minions + Rahlgon). If healed to full outside combat, resets add state; boundary check teleports him back. On death spawns a Planar Projection.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>povalor/#Aerin-Dar.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>Aerin'Dar fights with dormant adds (Mindless Minions and Rahlgon) placed around the arena.</li>
+                        <li>The adds are dormant (Will Not Aggro / No Harm from Players) until awakened.</li>
+                        <li>At 85%, 65%, and 45% HP he awakens two of the dormant adds each; at 25% HP he awakens the final three (nine total).</li>
+                        <li>If Aerin'Dar moves outside the arena, a bounds check teleports him back to his spawn point.</li>
+                        <li>If he is healed to full HP outside combat, the fight resets — all adds despawn, the add spawn points are re-armed, and the HP event chain restarts at 85%.</li>
+                        <li>On death he spawns a Planar Projection (NPC 208207) loot container for the killer.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>70</td></tr>
                         <tr><th>HP</th><td>300,000</td></tr>
@@ -275,7 +281,16 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>codecay/encounters/Bertox.lua</code>, SecretsOTheP/quests): Multi-stage event — kill the Spectre of Corruption → 5 Summoners spawn + 2-hour timer; trash kills summon bosses in order (Darwol, Feig, Xhut, Kavilis Adan → Raddi, Wavadozzik, Zandal, Akkapan Adan); after the first 8 are killed, the final four (Meedo, Qezzin, Pzo, Bhaly Adan) spawn; after a total of 12 boss kills Bertoxxulous spawns. On death → victory emote + Planar Projection; spectre respawns in 66 hours.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>codecay/encounters/Bertox.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>The event begins when the Spectre of Corruption (NPC 200016) is killed; this spawns five Summoners of Bertoxxulous and starts the event timers.</li>
+                        <li>About four minutes later, waves of trash — Knights, Priests, and Necromancers of Decay (plus their Elite variants) — begin spawning throughout the crypt.</li>
+                        <li>The event has a total time limit of about two hours three minutes (a warning emote sounds about five minutes before it ends); if time runs out, the event fails and the Spectre respawns in five minutes.</li>
+                        <li>Killing trash summons the first eight Adan bosses in a fixed order: Darwol, Feig, Xhut, and Kavilis Adan, followed by Raddi, Wavadozzik, Zandal, and Akkapan Adan.</li>
+                        <li>After those eight bosses are defeated, the final four — Meedo, Qezzin, Pzo, and Bhaly Adan — spawn at once.</li>
+                        <li>After a total of twelve Adan boss kills, Bertoxxulous (NPC 200226) is summoned.</li>
+                        <li>On Bertoxxulous's death: a victory emote plays and a Planar Projection (NPC 200269) loot container is handed to the killer; the Spectre of Corruption respawns in 66 hours.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>75</td></tr>
                         <tr><th>HP</th><td>1,700,000</td></tr>
@@ -341,7 +356,12 @@
                     <p>The bosses in this event drop group level loot.</p>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>codecay/#_Carprin_Deatharn.lua</code>, SecretsOTheP/quests): On combat start he summons three named adds (#Breddan_Rutyl, #Fran_Prisoal, #Abroan_Drian) with flavor text referencing Bertoxxulous. When hate drops he warps back and heals 30% (anti-Memory-Blur); periodic hate reduction.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>codecay/#_Carprin_Deatharn.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>When the fight begins, Carprin summons three named adds — Breddan Rutyl, Fran Prisoal, and Abroan Drian — with a dark chant referencing Bertoxxulous.</li>
+                        <li>About once per minute, Carprin reduces the tank's hate to 5% of its current value (periodic hate reduction).</li>
+                        <li>If Carprin loses aggro (e.g. Memory Blanket), he warps back to his spawn point and heals 30% of his max HP — a built-in anti-Memory-Blur mechanic.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>70</td></tr>
                         <tr><th>HP</th><td>160,000</td></tr>
@@ -410,7 +430,16 @@
                     </ul>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potorment/Saryrn.lua</code>, SecretsOTheP/quests): Forces Sorrowsong to spawn on engage; at 99%: Sorrowsong begins silencing + spawns 5 wolf/boarman adds; every HP threshold below that (90–30%) spawns 3 summoned servants/twisted spirits; at 25%: Sorrowsong becomes targetable and attacks. If healed to full, resets to stage 1; boundary check → teleport back + Balance of the Nameless. On death spawns a Planar Projection.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potorment/Saryrn.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>When the fight begins, Sorrowsong (NPC 207052) is force-spawned.</li>
+                        <li>At 99% HP, Saryrn calls Sorrowsong (which begins its silencing ability) and five wolf/boarman adds spawn on the stairs and under the floor.</li>
+                        <li>At each HP threshold (90%, 80%, 70%, 60%, 50%, 40%, 30%, 20%, 10%) Saryrn spawns three summoned servants / twisted spirits.</li>
+                        <li>At 25% HP, Saryrn commands Sorrowsong to attack — Sorrowsong becomes targetable and joins the fight.</li>
+                        <li>If Saryrn drops below the arena floor level, a bounds check teleports her back, wipes her hate list, and she casts Balance of the Nameless (spell 3230).</li>
+                        <li>If Saryrn is healed to full HP outside combat, the fight resets to stage 1 — Sorrowsong reverts to untargetable and the HP event chain restarts at 99%.</li>
+                        <li>On death she spawns a Planar Projection (NPC 207317) loot container for the killer.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>71</td></tr>
                         <tr><th>HP</th><td>1,400,000</td></tr>
@@ -533,7 +562,10 @@
                     <figure class="guide-img"><img src="img/Saryrn_Guide/tylis-newleaf2.jpg" alt=""><figcaption></figcaption></figure>
 
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potorment/The_Keeper_of_Sorrows.lua</code>, SecretsOTheP/quests): On death, despawns Tylis Newleaf and respawns #Tylis_Newleaf at fixed coordinates.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potorment/The_Keeper_of_Sorrows.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>On death, the Keeper of Sorrows despawns the current Tylis Newleaf (NPC 207014) and spawns a replacement (#Tylis_Newleaf, NPC 207318) at a fixed location near the arena.</li>
+                    </ul>
                     <table class="stats">
                         <tr><th>Level</th><td>66</td></tr>
                         <tr><th>HP</th><td>100,000</td></tr>
