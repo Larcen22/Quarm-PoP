@@ -88,7 +88,16 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase1Air.lua</code>): Four Air Phoenix Nobles spawn (random warrior/rogue/wizard variants); each noble’s death spawns a Servitor of Xegony at one of four fixed back-wall locations. After the fourth noble dies, all four servitors become targetable (their aggro flags are cleared) and Neimon of Air spawns, immediately casting Caustic Aura. The trial succeeds at 9 total kills (four nobles + four servitors + Neimon). The TargetChange handler resets the trial — repositioning mobs, wiping hate, and healing them.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase1Air.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 121 starts the trial, spawning four Air Phoenix Nobles (random warrior/rogue/wizard variants, IDs 223038–223040) at fixed positions.</li>
+                        <li>Each noble’s death spawns a Servitor of Xegony (223041–223043) at one of four fixed back-wall locations.</li>
+                        <li>Fourth noble’s death: all four servitors become targetable (Will Not Aggro, Immune Aggro, and No Harm from Players cleared) and Neimon of Air (223044) spawns.</li>
+                        <li>Neimon casts Caustic Aura (spell 3745) roughly 100 ms after spawning (timer-based, since casting is refused at spawn).</li>
+                        <li>If previously defeated (bossStatus 1), the boss respawns as “Shadow_of_Neimon” with a cleared item list.</li>
+                        <li>The trial succeeds at the 9th kill (four nobles + four servitors + Neimon), signaling controller 223077.</li>
+                        <li>TargetChange: a mob that aggros a player outside the trial (Y &gt; 1500, Y &lt; 1250, or X &gt; 100) teleports back to its spawn, wipes hate, heals, and casts Balance of the Nameless (3230).</li>
+                    </ul>
                 </div>
             </div>
 
@@ -118,7 +127,15 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase1Earth.lua</code>): Three piles of living rubble spawn; each rubble death spawns 2–4 rock shaped assassins at random positions. After the sixth assassin dies, Terlok of Earth spawns. Victory requires the boss plus all rubble and assassins to be dead. If the boss is flagged as defeated (bossStatus), he respawns with a shadow name and a cleared item list.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase1Earth.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 111 starts the trial, spawning three piles of living rubble (223030).</li>
+                        <li>Each rubble death spawns 2–4 rock shaped assassins (223031) at random positions.</li>
+                        <li>After the sixth assassin dies, Terlok of Earth (223032) spawns.</li>
+                        <li>Victory requires every spawned rubble, assassin, and the boss to be dead (kill counter matches spawn counter), then the controller is signaled.</li>
+                        <li>If previously defeated (bossStatus 1), the boss respawns as “Shadow_of_Terlok” with a cleared item list.</li>
+                        <li>TargetChange: a mob that aggros a player outside the trial (Y &lt; 1500 or X &gt; 100) teleports back to its spawn, wipes hate, heals, and casts Balance of the Nameless (3230).</li>
+                    </ul>
                 </div>
             </div>
 
@@ -155,7 +172,16 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase1Fire.lua</code>): The boss spawns immune (no aggro, no harm). Three flame mephits spawn; each one killed spawns two inferno mephits. The trial succeeds at 16 total kills (three flame mephits + twelve inferno mephits + Kazrok). Adds respawn at 75%, 50%, and 25% boss HP.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase1Fire.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 151 starts the trial, spawning Kazrok of Fire (223018) immune (Will Not Aggro, Immune Aggro, No Harm from Players) plus three flame mephits (223009–223011).</li>
+                        <li>Each flame mephit death spawns two inferno mephits (223012–223016, random class variants) at random positions.</li>
+                        <li>At the 9th kill (three flame + six inferno), Kazrok becomes targetable and casts Pyrokinetic Aura (3741).</li>
+                        <li>At 75%, 50%, and 25% boss HP, two boss-add mephits each spawn (223011/223017).</li>
+                        <li>The trial succeeds at the 16th kill (three flame + twelve inferno + Kazrok), signaling the controller.</li>
+                        <li>If previously defeated (bossStatus 1), the boss spawns as “Shadow_of_Kazrok” with a cleared item list.</li>
+                        <li>TargetChange: a mob that aggros a player outside the trial (Y &gt; 750 or X &gt; 100) teleports back to its spawn, wipes hate, heals, and casts Balance of the Nameless (3230).</li>
+                    </ul>
                 </div>
             </div>
 
@@ -197,7 +223,16 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase1Undead.lua</code>): Three waves of undead guardians and protectors spawn across four waves; 11 kills activate the boss and 14 kills complete the trial. Rythor of the Undead spawns with the final undead protectors.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase1Undead.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 131 starts the trial, spawning Rythor of the Undead (223029) immediately along with three wave-1 undead guardians (lvl 64, 223019).</li>
+                        <li>3rd kill: an undead protector (223028) and four wave-2 guardians (lvl 65, 223020–223023 random variants) spawn.</li>
+                        <li>7th kill: a second undead protector and four wave-3 guardians (lvl 66, 223024–223027 random variants) spawn.</li>
+                        <li>11th kill: the protectors and boss become targetable (Will Not Aggro, Immune Aggro, and No Harm from Players cleared).</li>
+                        <li>The trial succeeds at the 14th kill (thirteen adds + Rythor), signaling the controller.</li>
+                        <li>If previously defeated (bossStatus 1), the boss spawns as “Shadow_of_Rythor” with a cleared item list.</li>
+                        <li>TargetChange: a mob that aggros a player outside the trial (Y &gt; 1250, Y &lt; 1000, or X &gt; 100) teleports back to its spawn, wipes hate, heals, and casts Balance of the Nameless (3230).</li>
+                    </ul>
                 </div>
             </div>
 
@@ -229,7 +264,16 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase1Water.lua</code>): Two triloun gatherers spawn with the boss; additional deepwater trilouns spawn at 90% and 50% boss HP. The trial succeeds at 7 total kills (two initial gatherers + four deepwater trilouns + Anar).</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase1Water.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 141 starts the trial, spawning Anar of Water (223037) with two triloun gatherers (wizard 223035, enchanter 223036).</li>
+                        <li>At 90% and 45% boss HP, two deepwater trilouns each spawn (monk 223033, rogue 223034) at the boss’s location.</li>
+                        <li>At 20% boss HP, Anar emotes about “newfound power” and its hit range increases from 295–1150 to 350–1300.</li>
+                        <li>On combat join above 91% HP, the 90% add-spawn HP event is re-armed.</li>
+                        <li>The trial succeeds at the 7th kill (two gatherers + four deepwater trilouns + Anar) with all mobs dead, signaling the controller.</li>
+                        <li>If previously defeated (bossStatus 1), the boss spawns as “Shadow_of_Anar” with a cleared item list.</li>
+                        <li>TargetChange: a mob that aggros a player outside the trial (Y &gt; 1000, Y &lt; 750, or X &gt; 100) teleports back to its spawn, wipes hate, heals, and casts Balance of the Nameless (3230).</li>
+                    </ul>
                 </div>
             </div>
 
@@ -271,7 +315,15 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase2.lua</code>): The Windshapen Warlord of Air spawns at the end of the Air branch after its trash waves are cleared. He is a pure melee boss with no spells or procs.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase2.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 201 spawns the entire phase (all three branches at once); the Warlord walks a fixed 4-waypoint path, activating trash pairs at waypoints 1–3 and itself at waypoint 4.</li>
+                        <li>The Air branch shares the top-region trash pool: four Elemental Stonefist (223047–223050), two Unholy Rock Fiends (223045–223046), and four Champions of Korascian (223051–223054).</li>
+                        <li>Activation order: two Champions of Korascian (wp1) → two Unholy Rock Fiends (wp2) → two Elemental Stonefists (wp3); each activation clears Will Not Aggro, Immune Aggro, and No Harm from Players.</li>
+                        <li>The boss (223075) becomes targetable at waypoint 4 (body type set to Summoned2) and stops pathing.</li>
+                        <li>If previously defeated, the boss respawns as “Shadow_of_the_Warlord” with a cleared item list.</li>
+                        <li>Boss death signals controller 223077 with “2;1”; the phase completes once all five branch bosses are dead.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -297,7 +349,15 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase2.lua</code>): The Earthen Overseer spawns at the end of the Earth branch after its trash waves are cleared. He is a pure melee boss that flurries and is immune to slow.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase2.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 201 spawns the entire phase (all three branches at once); the Overseer walks a fixed 4-waypoint path, activating trash pairs at waypoints 1–3 and itself at waypoint 4.</li>
+                        <li>The Earth branch shares the top-region trash pool: four Elemental Stonefist (223047–223050), two Unholy Rock Fiends (223045–223046), and four Champions of Korascian (223051–223054).</li>
+                        <li>Activation order: two Elemental Stonefists (wp1) → two Unholy Rock Fiends (wp2) → two Champions of Korascian (wp3); each activation clears Will Not Aggro, Immune Aggro, and No Harm from Players.</li>
+                        <li>The boss (223072) becomes targetable at waypoint 4 (body type set to Monster) and stops pathing.</li>
+                        <li>If previously defeated, the boss respawns as “Shadow_of_the_Overseer” with a cleared item list.</li>
+                        <li>Boss death signals controller 223077 with “2;2”; the phase completes once all five branch bosses are dead.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -322,7 +382,15 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase2.lua</code>): The Gutripping War Beast spawns at the end of the Water branch after its trash waves are cleared. He is a pure melee boss with no spells or procs.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase2.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 201 spawns the entire phase (all three branches at once); the War Beast walks a fixed 4-waypoint path, activating trash pairs at waypoints 1–3 and itself at waypoint 4.</li>
+                        <li>The Water branch shares the bottom-region trash pool: two each of Crustacean Champion, Deepwater Assassin, Ferocious Warboar, Fire-Etched Doombringer, Smoldering Elemental, and Watercrafted Hunter (223060–223069, 223070–223071).</li>
+                        <li>Activation order: two Fire-Etched Doombringers (wp1) → two Smoldering Elementals (wp2) → two Ferocious Warboars (wp3); each activation clears Will Not Aggro, Immune Aggro, and No Harm from Players.</li>
+                        <li>The boss (223073) becomes targetable at waypoint 4 (body type set to Monster) and stops pathing.</li>
+                        <li>If previously defeated, the boss respawns as “Shadow_of_the_War_Beast” with a cleared item list.</li>
+                        <li>Boss death signals controller 223077 with “2;5”; the phase completes once all five branch bosses are dead.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -347,7 +415,15 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase2.lua</code>): The War Shapen Emissary spawns at the end of the Fire branch after its trash waves are cleared. He is a melee boss that rampages, with no spells or procs.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase2.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 201 spawns the entire phase (all three branches at once); the Emissary walks a fixed 4-waypoint path, activating trash pairs at waypoints 1–3 and itself at waypoint 4.</li>
+                        <li>The Fire branch shares the bottom-region trash pool: two each of Crustacean Champion, Deepwater Assassin, Ferocious Warboar, Fire-Etched Doombringer, Smoldering Elemental, and Watercrafted Hunter (223060–223069, 223070–223071).</li>
+                        <li>Activation order: two Crustacean Champions (wp1) → two Watercrafted Hunters (wp2) → two Deepwater Assassins (wp3); each activation clears Will Not Aggro, Immune Aggro, and No Harm from Players.</li>
+                        <li>The boss (223074) becomes targetable at waypoint 4 (body type set to Monster) and stops pathing.</li>
+                        <li>If previously defeated, the boss respawns as “Shadow_of_the_Emissary” with a cleared item list.</li>
+                        <li>Boss death signals controller 223077 with “2;4”; the phase completes once all five branch bosses are dead.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -374,7 +450,15 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase2.lua</code>): Ralthos Enrok spawns at the end of the Undead branch after its trash waves are cleared. He is a Shadowknight that flurries, is unslowable, and casts a rotation of Shadowknight abilities.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase2.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>The Undead branch runs a wave chain: two undead guardians (lvl 64, ~100k HP, 223055) → two more (lvl 64, ~110k, 223056) → four guardians (lvl 66, ~100k, 223058) plus one wizard guardian (lvl 65, ~120k, 223057); each wave spawns when the prior one is fully cleared.</li>
+                        <li>Ralthos Enrok (223076) spawns once the final five-guardian wave is cleared.</li>
+                        <li>At 75% and 25% boss HP, two summoned guardians each spawn (223059) at fixed locations near the boss.</li>
+                        <li>If previously defeated, the boss respawns as “Shadow_of_Ralthos” with a cleared item list.</li>
+                        <li>Boss death signals controller 223077 with “2;3”; the phase completes once all five branch bosses are dead.</li>
+                        <li>When a trash mob type is fully cleared, the zone emotes “Ethereal mists gather at the far wall, causing it fade in and out of focus.”</li>
+                    </ul>
                 </div>
             </div>
 
@@ -401,7 +485,15 @@
             <h2 class="section-title">Phase 3 — The Trash Clear</h2>
             <p>After completing the second phase all the branches reunite. This phase is a lengthy clearing fest of 8 waves, each with a bunch of trash (pure melee) and 2 bosses. When the bosses of wave 8 die, two massive rock golems spawn at the portal. You are granted a total of 75 minutes (plus any leftover) to complete this phase.</p>
             <h4>Quarm Script</h4>
-            <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase3.lua</code>): Eight waves spawn in sequence, each with two bosses plus a group of adds. The two wave-8 bosses are the massive rock golems (Supernatural Guardian and Avatar of the Elements). Shadow names are defined for all 18 bosses; killing the wave-8 bosses at the portal completes the phase.</p>
+            <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase3.lua</code>):</p>
+            <ul class="script-list">
+                <li>Signal 301 spawns all sixteen wave bosses (two per wave × eight waves) untargetable at fixed locations, then activates wave 1 (both bosses moved to spawn points, Will Not Aggro and No Harm from Players cleared, set running) plus eight adds.</li>
+                <li>Each wave is exactly 10 kills (two bosses + eight adds); the 10th kill spawns the next wave.</li>
+                <li>Clearing wave 8 spawns the final two golems — Avatar of the Elements (223134) and Supernatural Guardian (223133) — at the portal.</li>
+                <li>All 18 bosses have shadow names (e.g., Shadow_of_the_Ferocious_Warboar, Shadow_of_Blackheart, Shadow_of_the_Avatar, Shadow_of_the_Guardian); previously defeated bosses respawn under those names.</li>
+                <li>Anti-kite: on combat join a 2-second timer checks the wave; if more than 4 mobs are aggroed and all wave mobs are engaged, mobs out of combat range with &gt;95% HP have their top hate copied to the wave’s current top hater.</li>
+                <li>Boss deaths signal controller 223077 with “3;&lt;boss ID&gt;” (1–18).</li>
+            </ul>
 
             <div class="encounter">
                 <div class="enc-head">
@@ -913,7 +1005,14 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase4.lua</code>): Saryrn spawns at a fixed location in the central area with four add spawn locations. She summons a random mix of adds at 90%, 50%, and 10% HP; the adds do not despawn.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase4.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 401 spawns Saryrn (223003) at a fixed central-arena location; a 3-second leash timer pulls her back to spawn, wipes hate, and casts Balance of the Nameless (3230) if she strays more than 140 units from spawn.</li>
+                        <li>At 95% HP: two A Mouth of Insanity (223136) and two A Mouth of Dementia (223137) spawn at fixed add locations.</li>
+                        <li>At 50% HP: two A Tormentor (223139) and two A Twisted Tormentor (223138) spawn at fixed add locations.</li>
+                        <li>At 10% HP: one of each add type spawns at all four add locations; the adds never despawn, and each has a 6-second leash timer that pulls it back to the boss if it strays more than 200 units.</li>
+                        <li>If combat leaves while Saryrn is above 98% HP, all four add types depop (reset).</li>
+                    </ul>
                     <h4>Loot</h4>
                     <p>Drops 3 items from the following:</p>
                     <ul>
@@ -958,7 +1057,14 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase4.lua</code>): Terris-Thule spawns at a fixed location in the central area with four add spawn locations. She summons a random mix of adds at 90%, 50%, and 10% HP; the adds do not despawn.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase4.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 401 spawns Terris-Thule (223002) at a fixed central-arena location; a 3-second leash timer pulls her back to spawn, wipes hate, and casts Balance of the Nameless (3230) if she strays more than 130 units from spawn.</li>
+                        <li>At 90% HP: two A Summoned Guardian of Terris (223141) and two A Phantasm of Terris (223140) spawn at fixed add locations.</li>
+                        <li>At 50% HP: two A Summoned Knight of Terris (223142) and two A Nightmare Knight of Terris (223143) spawn at fixed add locations.</li>
+                        <li>At 10% HP: one of each add type spawns at all four add locations; the adds never despawn, and each has a 6-second leash timer that pulls it back to the boss if it strays more than 200 units.</li>
+                        <li>If combat leaves while Terris is above 98% HP, all four add types depop (reset).</li>
+                    </ul>
                     <h4>Loot</h4>
                     <p>Drops 3 items from the following:</p>
                     <ul>
@@ -1002,7 +1108,13 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase4.lua</code>): Tallon Zek spawns at a fixed location in the central area. He is a melee duelist with a rotation of targeted and area spells.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase4.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 401 spawns Tallon Zek (223001) at a fixed central-arena location with a 75% detrimental cast rate (his barbs average about 3.5 seconds apart).</li>
+                        <li>No summons — he is a melee duelist with a rotation of targeted and area spells.</li>
+                        <li>A 6-second leash timer pulls him back to spawn, wipes hate, and casts Balance of the Nameless (3230) if he wanders west past x = 250.</li>
+                        <li>If combat leaves while Tallon is above 98% HP, any spawned fake Vallons depop (reset).</li>
+                    </ul>
                     <h4>Loot</h4>
                     <p>Drops 3 items from the following:</p>
                     <ul>
@@ -1045,7 +1157,13 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase4.lua</code>): Vallon Zek spawns at a fixed location in the central area. A fake Vallon (223144) is also defined. At 50% HP he spawns two Vallon Zek clones that do not despawn.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase4.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 401 spawns Vallon Zek (223000) at a fixed central-arena location; he shares Tallon's leash timer (6 seconds, pulled back to spawn with hate wiped and Balance of the Nameless cast if he wanders past x = 250).</li>
+                        <li>At 50% HP, two fake Vallons (223144) spawn at random positions in the arena, run to the boss, and never despawn.</li>
+                        <li>Each fake Vallon has a 6-second leash timer that pulls it back to the boss and wipes hate, but (unlike the real boss) it does not cast Balance of the Nameless.</li>
+                        <li>If combat leaves while Vallon is above 98% HP, all fake Vallons depop (reset).</li>
+                    </ul>
                     <h4>Loot</h4>
                     <p>Drops 3 items from the following:</p>
                     <ul>
@@ -1098,7 +1216,13 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase5.lua</code>): Cazic-Thule spawns at a fixed location in the central area. He is a melee boss with three potent area spells and a fear proc.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase5.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 501 spawns Cazic-Thule (223004) at a fixed location, initially untargetable (Will Not Aggro + No Harm from Players, non-humanoid body type).</li>
+                        <li>His trash pile — six Phoboplasm (223148) and six Amygdalan Knights (223149) — fully cleared clears Will Not Aggro and No Harm from Players, converts him to a humanoid body type, and makes him targetable.</li>
+                        <li>No leash timer (the script skips leash handling for Cazic-Thule and Bertoxxulous).</li>
+                        <li>Death signals the instance controller to advance the phase ("5;1").</li>
+                    </ul>
                     <h4>Loot</h4>
                     <p>Drops 3 items from the following:</p>
                     <ul>
@@ -1144,7 +1268,17 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase5.lua</code>): Bertoxxulous cycles through 5 states as his health drops, with resistances and damage scaling per state. State 1 (full HP): MR 450 / FR 375 / CR 375 / PR 360 / DR 360, hit 935–1600, AC 200. State 2: MR 350 / FR 300 / CR 300 / PR 275 / DR 275, hit 1040–1800, AC 300. State 3: MR 250 / FR 200 / CR 200 / PR 180 / DR 180, hit 1145–2000, AC 500. State 4: MR 150 / FR 150 / CR 150 / PR 130 / DR 130, hit 1250–2200, AC 600. State 5: MR 200 / FR 175 / CR 175 / PR 160 / DR 160, hit 1145–2000, AC 650.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase5.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 501 spawns Bertoxxulous (223005) at a fixed location, initially untargetable; clearing his trash pile (two Guardian of the Crypt 223147, five Guardian Knights of Pestilence 223145, five Firebone Casters 223146) makes him targetable.</li>
+                        <li>No leash timer (skipped in the script).</li>
+                        <li>Cycles through 7 states as his HP drops at 91%, 71%, 56%, 46%, 31%, and 11%.</li>
+                        <li>State 1 (full HP): MR 450 / FR 375 / CR 375 / PR 360 / DR 360, hits 935–1600, AC 200, accuracy −50.</li>
+                        <li>States 2–4 (91%→46%): resistances fall to MR 350/300/300/275/275 (AC 300), MR 250/200/200/180/180 (AC 500), and MR 150/150/150/130/130 (AC 600) while his hits climb to 1040–1800, 1145–2000, and 1250–2200.</li>
+                        <li>States 5–7 (46%→11%): resistances climb again — MR 200/175/175/160/160 (AC 650, hits 1145–2000), MR 250/200/200/180/180 (AC 600, hits 1040–1800), and MR 300/250/250/230/230 (AC 500, hits 940–1700).</li>
+                        <li>If combat leaves while he is above 98% HP, he resets to state 1 with full stats.</li>
+                        <li>Death only counts if he reaches state 7 at AC 500; otherwise the corpse depops with no loot.</li>
+                    </ul>
                     <h4>Loot</h4>
                     <p>Drops 3 items from the following:</p>
                     <ul>
@@ -1190,7 +1324,17 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase5.lua</code>): Rallos Zek spawns at a fixed location in the central area. He is a melee berserker that summons weak adds at 90%, 75%, 50%, and 25% HP.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase5.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 501 spawns Rallos Zek (223006) at a fixed location, initially untargetable; clearing his trash pile (six A Fierce War Boar 223150, six Decorin Brawlers 223151) makes him targetable.</li>
+                        <li>A 3-second leash timer with a 100-unit box pulls him back to spawn, wipes hate, and casts Balance of the Nameless (3230).</li>
+                        <li>Cycles through 5 states as his HP drops at 91%, 76%, 51%, and 26%.</li>
+                        <li>At each state threshold, four random Summoned Boars (223155) / Summoned Minions (223154) spawn at a fixed add location (six at 26%); each add has a 3-second leash timer.</li>
+                        <li>State 1: flurry and wild rampage disabled, rampage 5%; MR 250 / FR 170 / CR 170 / PR 155 / DR 155, attack −100, AC 350.</li>
+                        <li>States 2–3 (91%→76%): resistances 250/190/190/180/180 (AC 450, attack 200) then 300/225/225/200/200 (AC 550, attack 400, wild rampage 1% enabled).</li>
+                        <li>States 4–5 (51%→26%): flurry 5% enabled, rampage disabled; resistances 350/250/250/230/230 (AC 650, attack 600) then 550/275/275/250/250 (AC 750, attack 800).</li>
+                        <li>Death only counts if he reaches state 5 at AC 750; otherwise the corpse depops with no loot.</li>
+                    </ul>
                     <h4>Loot</h4>
                     <p>Drops 3 items from the following:</p>
                     <ul>
@@ -1236,7 +1380,14 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase5.lua</code>): Innoruuk spawns at a fixed location in the central area. He is a melee shadowknight with a damage shield and fear spells; he is meant to spawn adds at 66% and 20% HP.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase5.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Signal 501 spawns Innoruuk (223007) at a fixed location, initially untargetable; clearing his trash pile (six Clerics of Innoruuk 223152, six Abhorrents 223153) makes him targetable.</li>
+                        <li>A 3-second leash timer with a 130-unit box pulls him back to spawn, wipes hate, and casts Balance of the Nameless (3230).</li>
+                        <li>At 81% HP: two Guardian of the Dark Prince (223156) and one Hatebringer of Innoruuk (223157) spawn at fixed locations and run to the boss.</li>
+                        <li>At 21% HP: two more Guardians and two more Hatebringers spawn.</li>
+                        <li>Adds have a 6-second leash timer that pulls them back to the boss; if combat leaves while Innoruuk is above 98% HP, all adds depop (reset).</li>
+                    </ul>
                     <h4>Loot</h4>
                     <p>Drops 3 items from the following:</p>
                     <ul>
@@ -1289,7 +1440,16 @@
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                     <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase6.lua</code>): Quarm spawns on controller signal 601 and moves to a fixed position on the first combat join. He spawns two time vortices near himself; the vortices depop when the fight leaves. Quarm cycles through 4 states with different resistances and AC. State 1 (full HP): MR 300 / FR 400 / CR 300 / PR 280 / DR 250, AC 400. State 2: MR 300 / FR 200 / CR 400 / PR 280 / DR 250, AC 400. State 3: MR 400 / FR 300 / CR 175 / PR 400 / DR 200, AC 200. State 4: MR 200 / FR 200 / CR 200 / PR 200 / DR 400, AC 1000. Eggs and cascade spells are part of the fight mechanics.</p>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>potimeb/encounters/Phase6.lua</code>):</p>
+                    <ul class="script-list">
+                        <li>Controller signal 601 spawns Quarm (223008) at (−401, −1106, 22) in state 1, along with an Egg (223161); on first combat join he moves to his arena position.</li>
+                        <li>Cycles through 4 states: the first transition fires at a random 73–77% HP, then 48–52%, then 23–27%.</li>
+                        <li>State 1 (full HP): MR 300 / FR 400 / CR 300 / PR 280 / DR 250, AC 400; state 2: MR 300 / FR 200 / CR 400 / PR 280 / DR 250, AC 400; state 3: MR 400 / FR 300 / CR 175 / PR 400 / DR 200, AC 200; state 4: MR 200 / FR 200 / CR 200 / PR 200 / DR 400, AC 1000.</li>
+                        <li>Each head-burst state change: close message, illusion packet (new helmet texture), casts Balance of the Nameless (3230), and after a 4-second delay the phase spell (Drakeen Vortex / Timeforged Airblast III / Venomed Mist).</li>
+                        <li>AE timer: 10 seconds on combat join, then 25–33 seconds between casts; each state has a 1-in-3 chance of a cascade volley (9 casts at 2-second intervals) plus random spells (Epoch Conviction, Infernal Flames, Glacier Breath, Plagued Earth, etc.).</li>
+                        <li>Time vortices (223158): every 25 seconds spawns two near Quarm (±75 range), one on a random client, and one on a ranged (Ranger) client 400–500 away (hate 10000, anti-range mechanic); each vortex holds aggro for 9 seconds before releasing, and all vortices depop when combat leaves.</li>
+                        <li>Death only counts if Quarm is in state 4 at AC 1000; otherwise the corpse depops with no loot. Death complete activates the Egg (No Harm from Players and NoTarget off), and the Egg spawns Zebuxoruk (223159) to start the finale sequence.</li>
+                    </ul>
                     <h4>Loot</h4>
                     <p>Drops 3 items from the following:</p>
                     <ul>
