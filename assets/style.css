@@ -213,6 +213,8 @@ figure.guide-img figcaption { color: #8a8a8a; font-size: .78rem; margin-top: 8px
 }
 .video-card:hover { border-color: var(--gold); }
 .video-card iframe, .video-card video-frame { width: 100%; aspect-ratio: 16/9; display: block; border: none; }
+.video-card a { display: block; }
+.video-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #000; }
 .video-caption { padding: 14px 18px; font-size: .85rem; color: #999; line-height: 1.5; }
 
 /* ---------- Source / attribution boxes ---------- */
