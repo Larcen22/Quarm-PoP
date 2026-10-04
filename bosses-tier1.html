@@ -361,72 +361,6 @@
             </div>
         </section>
 
-        <!-- ==================== MANAETIC BEHEMOTH — PLANE OF INNOVATION (eqprogression.com) ==================== -->
-        <section>
-            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/206046" target="_blank" rel="noopener">Manaetic Behemoth</a></h2>
-           
-            <div class="encounter">
-                <div class="enc-head">
-                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/206046" target="_blank" rel="noopener">Manaetic Behemoth</a></h3>
-                    <p class="enc-meta">
-                        Expansion: Planes of Power · Zone: Plane of Innovation (MAP) · Level: 70<br>
-                        Respawn Timer: Estimated 2-3 days. Can also be spawned via Agent of Change.<br>
-                        Notes: Manaetic Behemoth is located inside the factory, which has a locked door requiring a key to open. The key quest can be found &gt;&gt; HERE &lt;&lt;. Manaetic Behemoth is required for PoP Progression.
-                    </p>
-                </div>
-                <div class="enc-body">
-                     <figure class="guide-img"><img src="img/PoInnovation-Manaetic_Behemoth/manaetic-behemoth-p-eqprog.png" alt=""><figcaption></figcaption></figure>
-
-                    <h4>Loot</h4>
-                    <ul>
-                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/9498" target="_blank" rel="noopener" data-pqdi-id="9498">Coil of Twisted Platinum Wire</a></li>
-                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/10074" target="_blank" rel="noopener" data-pqdi-id="10074">Glowing Steel Shim</a></li>
-                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/21865" target="_blank" rel="noopener" data-pqdi-id="21865">Innovator’s Hammer</a></li>
-                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/15831" target="_blank" rel="noopener" data-pqdi-id="15831">Protective Dust Drape</a></li>
-                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/27286" target="_blank" rel="noopener" data-pqdi-id="27286">Self Contained Force Barrier</a></li>
-                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/29112" target="_blank" rel="noopener" data-pqdi-id="29112">Ethereal Parchment</a></li>
-                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/29131" target="_blank" rel="noopener" data-pqdi-id="29131">Spectral Parchment</a></li>
-                    </ul>
-                    <h4>Fight Info</h4>
-                    <p>Inside the first room you will see a gnome on a grate, Giwin Mirakon. Say the phrase "I will test the machine" to him for your pre-flag.</p>
-                    <figure class="guide-img"><img src="img/PoInnovation-Manaetic_Behemoth/Giwin-Mirakon.png" alt=""><figcaption></figcaption></figure>
-                    <figure class="guide-img"><img src="img/PoInnovation-Manaetic_Behemoth/Factory-Door-Map.png" alt=""><figcaption></figcaption></figure>
-                    <p>For this event, you will want to split your raid force into two groups. Spiders will constantly run into Behemoths room from two sides and explode once inside. Their explosion sets off a 4,000 damage AE inside of his room. In order to avoid this, the two groups will want to setup outside each door of Behemoths room and kill all spiders trying to get inside.</p>
-                    <figure class="guide-img"><img src="img/PoInnovation-Manaetic_Behemoth/behemoth-map.png" alt=""><figcaption></figcaption></figure>
-                    <p>After about 5 to 10 minutes of preventing spiders from entering, Behemoth will become targetable and you’ll be able to kill him. At this point you will want to have 1 or 2 groups (or whatever is necessary) stay outside and continue killing spiders, while the rest of the raid charges in for the kill. Spiders must be prevented from entering the room at all times otherwise they will trigger the AE and wipe the raid. Once Behemoth is dead, everyone needs to run out of the room ASAP and finish off the aggroed spiders.</p>
-                    <ul>
-                        <li>150,000 HP (PQDI; eqprogression estimated ~175K MoTM)</li>
-                        <li>Slowable (Disease-based may be easiest to land)</li>
-                        <li>Hits 205–843</li>
-                        <li>Casts Gyrosonic Disruption (PBAE, Knockback + 600 DD, -300 Magic Based)</li>
-                        <li>Casts Wave of White Noise (PBAE, Silence, Unresistable)</li>
-                    </ul>
-                    <p>Note : Even after Behemoth is dead, spiders will still run inside. In short, never go into his room unless spiders are being prevented from entering.</p>
-                    <p>Giwin Mirakon will spawn again at East door of Behemoths room, make sure to hail him for your flag. This will grant you access to Plane of Tactics!</p>
-
-                    <h4>Quarm Script</h4>
-                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poinnovation/encounters/Behemoth.lua</code>, SecretsOTheP/quests):</p>
-                    <ul class="script-list">
-                        <li>A controller (Weapon_Event_Master, NPC 206197) spawns a wave of Clockwork Devices (NPC 206001) every 48 seconds, each wave appearing at one of six clock positions (12:00, 2:30, 4:30, 6:00, 7:30, 10:30).</li>
-                        <li>Clockwork Devices that reach the core explode (spell 2321); a device that is being attacked is held as an “exploder” and explodes when it drops out of combat.</li>
-                        <li>The Behemoth (NPC 206046) is dormant (Will Not Aggro / No Harm from Players) until 10 devices have been killed.</li>
-                        <li>After 10 kills the Behemoth awakens: it becomes attackable and gains one of four random special abilities — Gas Leak (1080), Deathfog IV (1081), Biomelt IX (1082), or Liquid Hydrokill (1083).</li>
-                        <li>Bounds check: if the Behemoth leaves the arena it teleports back, wipes its hate list, fully heals, and casts Balance of the Nameless (3230).</li>
-                        <li>On death: the waves stop, all remaining Clockwork Devices despawn, and Giwin Mirakon (NPC 206203) spawns and signals the killer (the flag).</li>
-                    </ul>
-                    <table class="stats">
-                        <tr><th>Level</th><td>70</td></tr>
-                        <tr><th>HP</th><td>150,000</td></tr>
-                        <tr><th>Hits</th><td>205 - 843</td></tr>
-                        <tr><th>Resistances</th><td>MR 250 / CR 200 / FR 180 / DR 175 / PR 335</td></tr>
-                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unslowable, Unmezzable, Uncharmable, Unstunable, Immune to fleeing, Will not Aggro, No Harm from Players, Corpse Camper</td></tr>
-                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/1077" target="_blank" rel="noopener" data-pqdi-spell="1077">Mana Beam</a>, <a class="pqdi-spell" href="https://www.pqdi.cc/spell/1078" target="_blank" rel="noopener" data-pqdi-spell="1078">Gyrosonic Disruption</a>, <a class="pqdi-spell" href="https://www.pqdi.cc/spell/1079" target="_blank" rel="noopener" data-pqdi-spell="1079">Wave of White Noise</a></td></tr>
-                    </table>
-                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
-                </div>
-            </div>
-        </section>
-
         <!-- ==================== XANAMECH NEZMIRTHAFEN — PLANE OF INNOVATION (eqprogression.com) ==================== -->
         <section>
             <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/206208" target="_blank" rel="noopener">Xanamech Nezmirthafen</a></h2>
@@ -492,6 +426,72 @@
                         <tr><th>Resistances</th><td>MR 250 / CR 150 / FR 185 / DR 1000 / PR 230</td></tr>
                         <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Unmezzable, Uncharmable, Unstunable, Unfearable, Immune to fleeing, Will not Aggro, Immune to Aggro, No Harm from Players</td></tr>
                         <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/1074" target="_blank" rel="noopener" data-pqdi-spell="1074">Steam Blast</a>, <a class="pqdi-spell" href="https://www.pqdi.cc/spell/1075" target="_blank" rel="noopener" data-pqdi-spell="1075">Electrical Short</a>, <a class="pqdi-spell" href="https://www.pqdi.cc/spell/1076" target="_blank" rel="noopener" data-pqdi-spell="1076">Oil Spray</a></td></tr>
+                    </table>
+                    <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MANAETIC BEHEMOTH — PLANE OF INNOVATION (eqprogression.com) ==================== -->
+        <section>
+            <h2 class="section-title"><a class="pqdi-npc" href="https://www.pqdi.cc/npc/206046" target="_blank" rel="noopener">Manaetic Behemoth</a></h2>
+           
+            <div class="encounter">
+                <div class="enc-head">
+                    <h3><a class="pqdi-npc" href="https://www.pqdi.cc/npc/206046" target="_blank" rel="noopener">Manaetic Behemoth</a></h3>
+                    <p class="enc-meta">
+                        Expansion: Planes of Power · Zone: Plane of Innovation (MAP) · Level: 70<br>
+                        Respawn Timer: Estimated 2-3 days. Can also be spawned via Agent of Change.<br>
+                        Notes: Manaetic Behemoth is located inside the factory, which has a locked door requiring a key to open. Manaetic Behemoth is required for PoP Progression.
+                    </p>
+                </div>
+                <div class="enc-body">
+                     <figure class="guide-img"><img src="img/PoInnovation-Manaetic_Behemoth/manaetic-behemoth-p-eqprog.png" alt=""><figcaption></figcaption></figure>
+
+                    <h4>Loot</h4>
+                    <ul>
+                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/9498" target="_blank" rel="noopener" data-pqdi-id="9498">Coil of Twisted Platinum Wire</a></li>
+                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/10074" target="_blank" rel="noopener" data-pqdi-id="10074">Glowing Steel Shim</a></li>
+                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/21865" target="_blank" rel="noopener" data-pqdi-id="21865">Innovator’s Hammer</a></li>
+                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/15831" target="_blank" rel="noopener" data-pqdi-id="15831">Protective Dust Drape</a></li>
+                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/27286" target="_blank" rel="noopener" data-pqdi-id="27286">Self Contained Force Barrier</a></li>
+                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/29112" target="_blank" rel="noopener" data-pqdi-id="29112">Ethereal Parchment</a></li>
+                        <li><a class="pqdi-item" href="https://www.pqdi.cc/item/29131" target="_blank" rel="noopener" data-pqdi-id="29131">Spectral Parchment</a></li>
+                    </ul>
+                    <h4>Fight Info</h4>
+                    <p>Inside the first room you will see a gnome on a grate, Giwin Mirakon. Say the phrase "I will test the machine" to him for your pre-flag.</p>
+                    <figure class="guide-img"><img src="img/PoInnovation-Manaetic_Behemoth/Giwin-Mirakon.png" alt=""><figcaption></figcaption></figure>
+                    <figure class="guide-img"><img src="img/PoInnovation-Manaetic_Behemoth/Factory-Door-Map.png" alt=""><figcaption></figcaption></figure>
+                    <p>For this event, you will want to split your raid force into two groups. Spiders will constantly run into Behemoths room from two sides and explode once inside. Their explosion sets off a 4,000 damage AE inside of his room. In order to avoid this, the two groups will want to setup outside each door of Behemoths room and kill all spiders trying to get inside.</p>
+                    <figure class="guide-img"><img src="img/PoInnovation-Manaetic_Behemoth/behemoth-map.png" alt=""><figcaption></figcaption></figure>
+                    <p>After about 5 to 10 minutes of preventing spiders from entering, Behemoth will become targetable and you’ll be able to kill him. At this point you will want to have 1 or 2 groups (or whatever is necessary) stay outside and continue killing spiders, while the rest of the raid charges in for the kill. Spiders must be prevented from entering the room at all times otherwise they will trigger the AE and wipe the raid. Once Behemoth is dead, everyone needs to run out of the room ASAP and finish off the aggroed spiders.</p>
+                    <ul>
+                        <li>150,000 HP (PQDI; eqprogression estimated ~175K MoTM)</li>
+                        <li>Slowable (Disease-based may be easiest to land)</li>
+                        <li>Hits 205–843</li>
+                        <li>Casts Gyrosonic Disruption (PBAE, Knockback + 600 DD, -300 Magic Based)</li>
+                        <li>Casts Wave of White Noise (PBAE, Silence, Unresistable)</li>
+                    </ul>
+                    <p>Note : Even after Behemoth is dead, spiders will still run inside. In short, never go into his room unless spiders are being prevented from entering.</p>
+                    <p>Giwin Mirakon will spawn again at East door of Behemoths room, make sure to hail him for your flag. This will grant you access to Plane of Tactics!</p>
+
+                    <h4>Quarm Script</h4>
+                    <p class="script-note"><strong>Sourced from the Quarm server Lua script</strong> (<code>poinnovation/encounters/Behemoth.lua</code>, SecretsOTheP/quests):</p>
+                    <ul class="script-list">
+                        <li>A controller (Weapon_Event_Master, NPC 206197) spawns a wave of Clockwork Devices (NPC 206001) every 48 seconds, each wave appearing at one of six clock positions (12:00, 2:30, 4:30, 6:00, 7:30, 10:30).</li>
+                        <li>Clockwork Devices that reach the core explode (spell 2321); a device that is being attacked is held as an “exploder” and explodes when it drops out of combat.</li>
+                        <li>The Behemoth (NPC 206046) is dormant (Will Not Aggro / No Harm from Players) until 10 devices have been killed.</li>
+                        <li>After 10 kills the Behemoth awakens: it becomes attackable and gains one of four random special abilities — Gas Leak (1080), Deathfog IV (1081), Biomelt IX (1082), or Liquid Hydrokill (1083).</li>
+                        <li>Bounds check: if the Behemoth leaves the arena it teleports back, wipes its hate list, fully heals, and casts Balance of the Nameless (3230).</li>
+                        <li>On death: the waves stop, all remaining Clockwork Devices despawn, and Giwin Mirakon (NPC 206203) spawns and signals the killer (the flag).</li>
+                    </ul>
+                    <table class="stats">
+                        <tr><th>Level</th><td>70</td></tr>
+                        <tr><th>HP</th><td>150,000</td></tr>
+                        <tr><th>Hits</th><td>205 - 843</td></tr>
+                        <tr><th>Resistances</th><td>MR 250 / CR 200 / FR 180 / DR 175 / PR 335</td></tr>
+                        <tr><th>Special Abilities</th><td>Summon, Enrage, Dual Wield, Do Not Equip, Magical Attack, Unslowable, Unmezzable, Uncharmable, Unstunable, Immune to fleeing, Will not Aggro, No Harm from Players, Corpse Camper</td></tr>
+                        <tr><th>Can Cast</th><td><a class="pqdi-spell" href="https://www.pqdi.cc/spell/1077" target="_blank" rel="noopener" data-pqdi-spell="1077">Mana Beam</a>, <a class="pqdi-spell" href="https://www.pqdi.cc/spell/1078" target="_blank" rel="noopener" data-pqdi-spell="1078">Gyrosonic Disruption</a>, <a class="pqdi-spell" href="https://www.pqdi.cc/spell/1079" target="_blank" rel="noopener" data-pqdi-spell="1079">Wave of White Noise</a></td></tr>
                     </table>
                     <p style="color:#8a8a8a;font-size:.78rem;text-align:center;font-style:italic;">Cross-referenced from pqdi.cc (Project Quarm Database Interface)</p>
                 </div>
